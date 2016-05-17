@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.TagsName
+namespace Assets.Enumeration
 {
-    public enum TagName
+    public enum BuildingAction
     {
-        Building
+        BUY,
+        UPG
     }
 }
