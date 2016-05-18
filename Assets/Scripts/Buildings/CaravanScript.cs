@@ -44,7 +44,7 @@ public class CaravanScript : MonoBehaviour
     {
         if (_popUp)
         {
-            _windowInfo = GUI.Window(0, _windowInfo, winFunction, _caravan.Name.ToString());
+            _windowInfo = GUI.Window(0, _windowInfo, winFunction, _caravan.Name.ToString() + " Lv "+_caravan.Level);
             GameScript.PopStats = true;
         }
 
