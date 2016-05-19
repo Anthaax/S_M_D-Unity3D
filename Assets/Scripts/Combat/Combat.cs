@@ -27,8 +27,8 @@ public class Combat : MonoBehaviour {
         _gtx = new GameContext();
        
         BaseHeros[] list = new BaseHeros[4];
-        list[0] = _gtx.HeroManager.Find(HerosEnum.Warrior.ToString()).CreateHero();
-        list[1] = _gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
+        list[0] = _gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
+        list[1] = _gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
         list[2] = _gtx.HeroManager.Find(HerosEnum.Priest.ToString()).CreateHero();
         list[3] = _gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
 
