@@ -12,7 +12,6 @@ public class CemeteryScript : MonoBehaviour {
         _cemeteryGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Cemetery.ToString());
         _cemetery = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Cemetery) as Cemetery;
     }
-	
 	// Update is called once per frame
 	void Update () {
 	

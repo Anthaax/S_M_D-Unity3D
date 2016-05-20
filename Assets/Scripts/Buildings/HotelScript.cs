@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using S_M_D.Camp.Class;
+using S_M_D.Character;
 
 public class HotelScript : MonoBehaviour {
 
@@ -8,11 +9,23 @@ public class HotelScript : MonoBehaviour {
     private GameObject _hotelGameObject;
     private Hotel _hotel;
 
+    private BaseHeros _hero1;
+    private BaseHeros _hero2;
+
+
+    private Rect _windowInfo;
+    int widhtRect = 300, heightRect = 200;
+    int widhtClose = 18, heightClose = 18;
+    int decalage = 25;
+
 
     // Use this for initialization
     void Start () {
         _hotelGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Hotel.ToString());
         _hotel = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Hotel) as Hotel;
+        _hero1 = GameScript.GameContext.PlayerInfo.MyHeros[1];
+        _hero2 = null;
+        _windowInfo = new Rect((Screen.width / 2) - (widhtRect / 2), (Screen.height / 2) - (heightRect / 2), widhtRect, heightRect);
     }
 	
 	// Update is called once per frame
@@ -37,6 +50,59 @@ public class HotelScript : MonoBehaviour {
         if (CanShowNews())
         {
             showName();
+            showWindow();
         }
     }
-}
+    void OnMouseDown()
+    {
+        if (!GameScript.PopStats)
+            _popUp = true;
+    }
+
+    void showWindow()
+    {
+        if (_popUp)
+        {
+            _windowInfo = GUI.Window(0, _windowInfo, winFunction, _hotel.Name.ToString() + " Lv " + _hotel.Level);
+            GameScript.PopStats = true;
+        }
+
+    }
+
+    void winFunction(int windowID)
+    {
+        if (GUI.Button(new Rect(widhtRect - (widhtClose + 2), 2, widhtClose, heightClose), "x"))
+        {
+            _popUp = false;
+            GameScript.PopStats = _popUp;
+        }
+        if (_hero1 != null)
+        {
+            GUI.Label(new Rect(20, 20 + (decalage), 100, 50), "" + _hero1.CharacterClassName);
+            GUI.Label(new Rect(20 + 100, 20 + (decalage), 100, 50), "" + _hero1.CharacterName);
+            GUI.Label(new Rect(20 + 160, 20 + (decalage), 100, 50), "" + _hero1.Price);
+            string action = _hero1.EffectivHPMax == 100 ? "RMV" : "ADD";
+            if (GUI.Button(new Rect(20 + 210, 20 + (decalage), 50, 20), action))
+            {
+                if (action == "RMV")
+                    _hotel.setHeros1(_hero1);
+                else
+                    _hotel.deleteHeros();
+            }
+        }
+        if (_hero2 != null)
+        {
+            GUI.Label(new Rect(20, 20 + (decalage), 100, 50), "" + _hero2.CharacterClassName);
+            GUI.Label(new Rect(20 + 100, 20 + (decalage), 100, 50), "" + _hero2.CharacterName);
+            GUI.Label(new Rect(20 + 160, 20 + (decalage), 100, 50), "" + _hero2.Price);
+            string action2 = _hero2.EffectivHPMax == 100 ? "RMV" : "ADD";
+            if (GUI.Button(new Rect(20 + 210, 20 + (decalage), 50, 20), action2))
+            {
+                if (action2 == "RMV")
+                    _hotel.setHeros2(_hero2);
+                else
+                    _hotel.deleteHeros();
+            }
+        }
+        }
+    }

@@ -3,10 +3,10 @@ using System.Collections;
 using S_M_D.Camp.Class;
 using S_M_D.Character;
 
-public class ArmoryScript : MonoBehaviour
-{
-    private GameObject _armoryGameObject;
-    private Armory _armory;
+public class CasernScript : MonoBehaviour {
+
+    private GameObject _casernGameObject;
+    private Casern _casern;
     private bool _popUp;
     private BaseHeros _hero;
     private Rect _windowInfo;
@@ -18,8 +18,8 @@ public class ArmoryScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        _armoryGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Hospital.ToString());
-        _armory = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Armory) as Armory;
+        _casernGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Casern.ToString());
+        _casern = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Casern) as Casern;
         _hero = null;
         _windowInfo = new Rect((Screen.width / 2) - (widhtRect / 2), (Screen.height / 2) - (heightRect / 2), widhtRect, heightRect);
     }
@@ -32,15 +32,15 @@ public class ArmoryScript : MonoBehaviour
 
     private void showName()
     {
-        var position = Camera.main.WorldToScreenPoint(_armoryGameObject.transform.position);
-        var size = Camera.main.WorldToScreenPoint(_armoryGameObject.GetComponent<Collider2D>().bounds.size);
-        GUI.Box(new Rect(position.x - (size.x / 9.5f), position.y - (size.y / 1.25f), 100, 22), _armory.Name.ToString());
+        var position = Camera.main.WorldToScreenPoint(_casernGameObject.transform.position);
+        var size = Camera.main.WorldToScreenPoint(_casernGameObject.GetComponent<Collider2D>().bounds.size);
+        GUI.Box(new Rect(position.x - (size.x / 9.5f), position.y - (size.y / 1.25f), 100, 22), _casern.Name.ToString());
 
     }
 
     private bool CanShowNews()
     {
-        return _armory.Level > 0;
+        return _casern.Level > 0;
     }
     void OnGUI()
     {
@@ -60,7 +60,7 @@ public class ArmoryScript : MonoBehaviour
     {
         if (_popUp)
         {
-            _windowInfo = GUI.Window(0, _windowInfo, winFunction, _armory.Name.ToString() + " Lv " + _armory.Level);
+            _windowInfo = GUI.Window(0, _windowInfo, winFunction, _casern.Name.ToString() + " Lv " + _casern.Level);
             GameScript.PopStats = true;
         }
     }
@@ -80,9 +80,9 @@ public class ArmoryScript : MonoBehaviour
             if (GUI.Button(new Rect(20 + 210, 20 + (decalage), 50, 20), action))
             {
                 if (action == "RMV")
-                    _armory.Hero = _hero;
+                    _casern.Hero = _hero;
                 else
-                    _armory.deleteHero();
+                    _casern.deleteHero();
             }
         }
     }
