@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using S_M_D;
+using S_M_D.Character;
 using System.Collections.Generic;
 using Assets.ParticularName;
 using S_M_D.Camp.Class;
 using S_M_D.Camp;
 using UnityEngine.UI;
-
 public class GameScript : MonoBehaviour {
 
     #region
