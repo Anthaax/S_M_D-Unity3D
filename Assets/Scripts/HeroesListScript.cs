@@ -16,7 +16,6 @@ public class HeroesListScript : MonoBehaviour {
         _heroes = GameScript.GameContext.PlayerInfo.MyHeros;
         _pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag(TagName.pHero.ToString()));
         _pHeroes.Sort((x, y) => x.name.CompareTo(y.name));
-        Debug.Log("Connerie : "+_spritesHeroes.Find(s => s.name == "PriestM"));
     }
 	
 	// Update is called once per frame
