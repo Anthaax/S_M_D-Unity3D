@@ -8,19 +8,8 @@ using System.Collections.Generic;
 public class Combat : MonoBehaviour {
     private static CombatManager _combat;
     public  GameContext _gtx;
+    private static BaseHeros _heros;
 
-    public static CombatManager Comba
-    {
-        get
-        {
-            return _combat;
-        }
-
-        set
-        {
-            _combat = value;
-        }
-    }
 
     void Awake()
     {
@@ -42,5 +31,30 @@ public class Combat : MonoBehaviour {
 	void Update () {
 	
 	}
+    public static CombatManager Comba
+    {
+        get
+        {
+            return _combat;
+        }
+
+        set
+        {
+            _combat = value;
+        }
+    }
+
+    public static BaseHeros Heros
+    {
+        get
+        {
+            return _heros;
+        }
+
+        set
+        {
+            _heros = value;
+        }
+    }
 
 }
