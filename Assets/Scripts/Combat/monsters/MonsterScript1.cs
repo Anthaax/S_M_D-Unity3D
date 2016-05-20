@@ -19,7 +19,7 @@ public class MonsterScript1 : MonoBehaviour
 
         HeroAndMonsterSprite monsterSprite = new HeroAndMonsterSprite();
         combat = FindObjectOfType(typeof(Combat)) as Combat;
-        int index = monsterSprite.chooseMonsterSprite(combat.Comba.Monsters[0]);
+        int index = monsterSprite.chooseMonsterSprite(Combat.Comba.Monsters[0]);
         gameObject.GetComponent<SpriteRenderer>().sprite = _sprites[index];
     }
 

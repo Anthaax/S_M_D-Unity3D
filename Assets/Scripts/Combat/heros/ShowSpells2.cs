@@ -15,7 +15,7 @@ public class ShowSpells2 : MonoBehaviour
     {
         HeroAndMonsterSprite heroSprit = new HeroAndMonsterSprite();
         combat = FindObjectOfType(typeof(Combat)) as Combat;
-        _heros = combat.Comba.Heros;
+        _heros = Combat.Comba.Heros;
 
     }
 
@@ -33,4 +33,5 @@ public class ShowSpells2 : MonoBehaviour
         GameObject.Find("Spell3").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" + _heros[1].Spells[2].Name);
         GameObject.Find("Spell4").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" + _heros[1].Spells[3].Name);
     }
+
 }

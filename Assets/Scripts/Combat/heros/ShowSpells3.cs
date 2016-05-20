@@ -15,7 +15,7 @@ public class ShowSpells3 : MonoBehaviour
     {
         HeroAndMonsterSprite heroSprit = new HeroAndMonsterSprite();
         combat = FindObjectOfType(typeof(Combat)) as Combat;
-        _heros = combat.Comba.Heros;
+        _heros = Combat.Comba.Heros;
 
     }
 

@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: a430237e9cd5b2e418e7325af9cb1ec6
+timeCreated: 1463666948
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Scavengers_SpriteSheet_0
+    21300002: Scavengers_SpriteSheet_1
+    21300004: Scavengers_SpriteSheet_2
+    21300006: Scavengers_SpriteSheet_3
+    21300008: Scavengers_SpriteSheet_4
+    21300010: Scavengers_SpriteSheet_5
+    21300012: Scavengers_SpriteSheet_6
+    21300014: Scavengers_SpriteSheet_7
+    21300016: Scavengers_SpriteSheet_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Scavengers_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 192
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 192
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 192
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 192
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 192
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Scavengers_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: -42.5}
+        - {x: 91, y: -35.5}
+        - {x: 97, y: -34.5}
+        - {x: 96, y: -44.5}
+        - {x: 96, y: -54.5}
+        - {x: 97, y: -58.5}
+        - {x: 102, y: -67.5}
+        - {x: 128, y: -64.5}
+        - {x: 128, y: 94.5}
+        - {x: 126, y: 95.5}
+        - {x: 68, y: 95.5}
+        - {x: 65, y: 89.5}
+        - {x: 67, y: 84.5}
+        - {x: 64, y: 73.5}
+        - {x: 69, y: 68.5}
+        - {x: 70, y: 68.5}
+        - {x: 63, y: 67.5}
+        - {x: 65, y: 69.5}
+        - {x: 65, y: 71.5}
+        - {x: 63, y: 73.5}
+        - {x: 64, y: 76.5}
+        - {x: 62, y: 84.5}
+        - {x: 53, y: 95.5}
+        - {x: 40, y: 95.5}
+        - {x: 33, y: 89.5}
+        - {x: 35, y: 84.5}
+        - {x: 21, y: 95.5}
+        - {x: 7, y: 95.5}
+        - {x: 2, y: 90.5}
+        - {x: -3, y: 67.5}
+        - {x: -30, y: 51.5}
+        - {x: -31, y: 45.5}
+        - {x: -31, y: 43.5}
+        - {x: -28, y: 39.5}
+        - {x: -6, y: 37.5}
+        - {x: -32, y: 37.5}
+        - {x: -32, y: 39.5}
+        - {x: -31, y: 42.5}
+        - {x: -31, y: 77.5}
+        - {x: -34, y: 91.5}
+        - {x: -42, y: 95.5}
+        - {x: -60, y: 95.5}
+        - {x: -65, y: 88.5}
+        - {x: -64, y: 82.5}
+        - {x: -62, y: 76.5}
+        - {x: -64, y: 70.5}
+        - {x: -63, y: 64.5}
+        - {x: -58, y: 62.5}
+        - {x: -66, y: 64.5}
+        - {x: -62, y: 76.5}
+        - {x: -70, y: 88.5}
+        - {x: -76, y: 95.5}
+        - {x: -88, y: 95.5}
+        - {x: -97, y: 88.5}
+        - {x: -96, y: 82.5}
+        - {x: -94, y: 75.5}
+        - {x: -95, y: 69.5}
+        - {x: -95, y: 66.5}
+        - {x: -93, y: 63.5}
+        - {x: -95, y: 58.5}
+        - {x: -94, y: 51.5}
+        - {x: -96, y: 41.5}
+        - {x: -91, y: 36.5}
+        - {x: -90, y: 36.5}
+        - {x: -97, y: 35.5}
+        - {x: -95, y: 37.5}
+        - {x: -95, y: 39.5}
+        - {x: -97, y: 41.5}
+        - {x: -96, y: 44.5}
+        - {x: -95, y: 76.5}
+        - {x: -101, y: 95.5}
+        - {x: -125, y: 95.5}
+        - {x: -128, y: 91.5}
+        - {x: -128, y: 40.5}
+        - {x: -123, y: 36.5}
+        - {x: -122, y: 36.5}
+        - {x: -128, y: 35.5}
+        - {x: -128, y: -95.5}
+        - {x: 98, y: -95.5}
+        - {x: 99, y: -62.5}
+        - {x: 92, y: -56.5}
+        - {x: 96, y: -45.5}
+      - - {x: -29, y: 95.5}
+        - {x: -32, y: 89.5}
+        - {x: -32, y: 87.5}
+        - {x: -31, y: 84.5}
+        - {x: -27, y: 80.5}
+        - {x: -30, y: 76.5}
+        - {x: -32, y: 73.5}
+        - {x: -32, y: 67.5}
+        - {x: -30, y: 62.5}
+        - {x: -4, y: 62.5}
+        - {x: 0, y: 63.5}
+        - {x: 0, y: 81.5}
+        - {x: -5, y: 95.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

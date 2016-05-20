@@ -6,10 +6,10 @@ using S_M_D;
 using System.Collections.Generic;
 
 public class Combat : MonoBehaviour {
-    private CombatManager _combat;
+    private static CombatManager _combat;
     public  GameContext _gtx;
 
-    public CombatManager Comba
+    public static CombatManager Comba
     {
         get
         {
@@ -25,13 +25,11 @@ public class Combat : MonoBehaviour {
     void Awake()
     {
         _gtx = new GameContext();
-       
         BaseHeros[] list = new BaseHeros[4];
         list[0] = _gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
-        list[1] = _gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
+        list[1] = _gtx.HeroManager.Find(HerosEnum.Warrior.ToString()).CreateHero();
         list[2] = _gtx.HeroManager.Find(HerosEnum.Priest.ToString()).CreateHero();
         list[3] = _gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
-
         Comba= new CombatManager(list, _gtx);
     }
     // Use this for initialization

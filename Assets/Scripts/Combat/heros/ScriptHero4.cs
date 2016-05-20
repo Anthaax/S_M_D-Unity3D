@@ -18,7 +18,7 @@ public class ScriptHero4 : MonoBehaviour
 
         HeroAndMonsterSprite heroSprit = new HeroAndMonsterSprite();
         combat = FindObjectOfType(typeof(Combat)) as Combat;
-        int index = heroSprit.chooseHeroSprite(combat.Comba.Heros[3]);
+        int index = heroSprit.chooseHeroSprite(Combat.Comba.Heros[3]);
         gameObject.GetComponent<SpriteRenderer>().sprite = _sprites[index];
         gameObject.AddComponent<BoxCollider>();
     }
