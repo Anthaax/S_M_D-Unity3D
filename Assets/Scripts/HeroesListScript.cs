@@ -16,7 +16,6 @@ public class HeroesListScript : MonoBehaviour {
         _heroes = GameScript.GameContext.PlayerInfo.MyHeros;
         _pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag(TagName.pHero.ToString()));
         _pHeroes.Sort((x, y) => x.name.CompareTo(y.name));
-        Debug.Log("Connerie : "+_spritesHeroes.Find(s => s.name == "PriestM"));
     }
 	
 	// Update is called once per frame
@@ -24,7 +23,7 @@ public class HeroesListScript : MonoBehaviour {
 	    for(int i = 0; i < _heroes.Count; i++)
         {
             string sexe = _heroes[i].IsMale ? "M" : "F";
-            _pHeroes[i].GetComponentsInChildren<Image>()[1].sprite = _spritesHeroes.Find(s => s.name == (_heroes[i].CharacterClassName + sexe));
+            _pHeroes[i].GetComponentsInChildren<Image>()[1].sprite = _spritesHeroes.Find(s => s.name == (_heroes[i].CharacterClassName + "Icone" + sexe));
             _pHeroes[i].GetComponentInChildren<Text>().text = _heroes[i].CharacterClassName + _heroes[i].CharacterName;
 
         }
