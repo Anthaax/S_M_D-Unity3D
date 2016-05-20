@@ -87,6 +87,7 @@ public class CaravanScript : MonoBehaviour
         {
             GameScript.GameContext.MoneyManager.Buy(hero.Price);
             _caravan.BuyHero(hero);
+
         }
     }
 
