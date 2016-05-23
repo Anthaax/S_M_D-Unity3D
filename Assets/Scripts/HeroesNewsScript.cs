@@ -18,6 +18,11 @@ public class HeroesNewsScript : MonoBehaviour
     int widhtClose = 18, heightClose = 18;
     int decalage = 25;
     private bool _popUp;
+
+    void Start()
+    {
+        _windowInfo = new Rect((Screen.width / 2) - (widhtRect / 2), (Screen.height / 2) - (heightRect / 2), widhtRect, heightRect);
+    }
     void Update()
     {
         if (HasInput)
@@ -25,28 +30,38 @@ public class HeroesNewsScript : MonoBehaviour
             PickUp();
         }
     }
+
+    private void showWindow()
+    {
+        if (_popUp)
+        {
+            if (pickObject != null)
+            {
+                actualHero = GameScript.GameContext.PlayerInfo.MyHeros[GetIndice(pickObject.name)];
+
+                _windowInfo = GUI.Window(0, _windowInfo, winFunction, actualHero.CharacterName.ToString() + " " + actualHero.CharacterClassName.ToString() + " Lv " + actualHero.Lvl);
+                GameScript.PopStats = true;
+            }
+        }
+        
+    }
     void OnGUI()
     {
-        if (pickObject != null)
-        {
-            actualHero = GameScript.GameContext.PlayerInfo.MyHeros[GetIndice(pickObject.name)];
-            //Debug.Log("name : " + pickObject.name + "; indice : " + GetIndice(pickObject.name));
-            //AFFICHAGE DE LA GUI
-
-            _windowInfo = GUI.Window(0, _windowInfo, winFunction, actualHero.CharacterName.ToString() + " " + actualHero.CharacterClassName.ToString() + " Lv " + actualHero.Lvl);
-        }
+        showWindow();
+        
     }
     void winFunction(int windowID)
     {
         if (GUI.Button(new Rect(widhtRect - (widhtClose + 2), 2, widhtClose, heightClose), "x"))
         {
-            GUI.enabled = false;
+            _popUp = false;
+            GameScript.PopStats = _popUp;
         }
             GUI.Label(new Rect(20, 20, 100, 50), "" + actualHero.HP);
             GUI.Label(new Rect(20 + 100, 20, 100, 50), "" + actualHero.Mana);
             GUI.Label(new Rect(20 + 160, 20, 100, 50), "" + actualHero.Damage);
     }
-        Vector2 CurrentTouchPosition
+    Vector2 CurrentTouchPosition
     {
         get
         {
@@ -71,12 +86,13 @@ public class HeroesNewsScript : MonoBehaviour
             var hit = touches[0];
             if (hit.transform != null && hit.transform.gameObject.tag == TagName.pHero.ToString())
             {
+                if (!GameScript.PopStats)
+                    _popUp = true;
                 pickObject = hit.transform.gameObject;
                 touchOffset = (Vector2)hit.transform.position - inputPosition;
             }
         }
     }
-
     private bool HasInput
     {
         get

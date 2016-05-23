@@ -18,7 +18,7 @@ public class ArmoryScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        _armoryGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Hospital.ToString());
+        _armoryGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Armory.ToString());
         _armory = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Armory) as Armory;
         _hero = null;
         _windowInfo = new Rect((Screen.width / 2) - (widhtRect / 2), (Screen.height / 2) - (heightRect / 2), widhtRect, heightRect);
