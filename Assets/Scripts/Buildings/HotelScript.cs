@@ -8,10 +8,10 @@ public class HotelScript : MonoBehaviour {
     private bool _popUp;
     private GameObject _hotelGameObject;
     private Hotel _hotel;
-
+    /*
     private BaseHeros _hero1;
     private BaseHeros _hero2;
-
+    */
 
     private Rect _windowInfo;
     int widhtRect = 300, heightRect = 200;
