@@ -25,7 +25,6 @@ public class HeroesListScript : MonoBehaviour {
             string sexe = _heroes[i].IsMale ? "M" : "F";
             _pHeroes[i].GetComponentsInChildren<Image>()[1].sprite = _spritesHeroes.Find(s => s.name == (_heroes[i].CharacterClassName + "Icone" + sexe));
             _pHeroes[i].GetComponentInChildren<Text>().text = _heroes[i].CharacterClassName + _heroes[i].CharacterName;
-
         }
     }
 }

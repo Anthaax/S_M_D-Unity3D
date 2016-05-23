@@ -8,10 +8,10 @@ public class HotelScript : MonoBehaviour {
     private bool _popUp;
     private GameObject _hotelGameObject;
     private Hotel _hotel;
-
+    /*
     private BaseHeros _hero1;
     private BaseHeros _hero2;
-
+    */
 
     private Rect _windowInfo;
     int widhtRect = 300, heightRect = 200;
@@ -23,14 +23,13 @@ public class HotelScript : MonoBehaviour {
     void Start () {
         _hotelGameObject = GameScript.BuildingsGameObjects.Find(b => b.name == BuildingName.Hotel.ToString());
         _hotel = GameScript.GameContext.PlayerInfo.GetBuilding(BuildingName.Hotel) as Hotel;
-        _hero1 = GameScript.GameContext.PlayerInfo.MyHeros[1];
-        _hero2 = null;
+        _hotel.setHeros1( GameScript.GameContext.PlayerInfo.MyHeros[0]);
+        _hotel.setHeros2( GameScript.GameContext.PlayerInfo.MyHeros[1]);
         _windowInfo = new Rect((Screen.width / 2) - (widhtRect / 2), (Screen.height / 2) - (heightRect / 2), widhtRect, heightRect);
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
     private void showName()
@@ -76,33 +75,21 @@ public class HotelScript : MonoBehaviour {
             _popUp = false;
             GameScript.PopStats = _popUp;
         }
-        if (_hero1 != null)
+        if (_hotel.Hero1 != null)
         {
-            GUI.Label(new Rect(20, 20 + (decalage), 100, 50), "" + _hero1.CharacterClassName);
-            GUI.Label(new Rect(20 + 100, 20 + (decalage), 100, 50), "" + _hero1.CharacterName);
-            GUI.Label(new Rect(20 + 160, 20 + (decalage), 100, 50), "" + _hero1.Price);
-            string action = _hero1.EffectivHPMax == 100 ? "RMV" : "ADD";
-            if (GUI.Button(new Rect(20 + 210, 20 + (decalage), 50, 20), action))
+            GUI.Label(new Rect(20, 20 , 100, 50), "" + _hotel.Hero1.CharacterClassName);
+            GUI.Label(new Rect(20 + 100, 20 , 100, 50), "" + _hotel.Hero1.CharacterName);
+            GUI.Label(new Rect(20 + 160, 20 , 100, 50), "" + _hotel.Hero1.Price);
+            if (GUI.Button(new Rect(20 + 210, 20 , 50, 20), "delete"))
             {
-                if (action == "RMV")
-                    _hotel.setHeros1(_hero1);
-                else
                     _hotel.deleteHeros();
             }
         }
-        if (_hero2 != null)
+        if (_hotel.Hero2 != null)
         {
-            GUI.Label(new Rect(20, 20 + (decalage), 100, 50), "" + _hero2.CharacterClassName);
-            GUI.Label(new Rect(20 + 100, 20 + (decalage), 100, 50), "" + _hero2.CharacterName);
-            GUI.Label(new Rect(20 + 160, 20 + (decalage), 100, 50), "" + _hero2.Price);
-            string action2 = _hero2.EffectivHPMax == 100 ? "RMV" : "ADD";
-            if (GUI.Button(new Rect(20 + 210, 20 + (decalage), 50, 20), action2))
-            {
-                if (action2 == "RMV")
-                    _hotel.setHeros2(_hero2);
-                else
-                    _hotel.deleteHeros();
-            }
+            GUI.Label(new Rect(20, 20 + (decalage), 100, 50), "" + _hotel.Hero2.CharacterClassName);
+            GUI.Label(new Rect(20 + 100, 20 + (decalage), 100, 50), "" + _hotel.Hero2.CharacterName);
+            GUI.Label(new Rect(20 + 160, 20 + (decalage), 100, 50), "" + _hotel.Hero2.Price);
         }
         }
     }
