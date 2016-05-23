@@ -151,6 +151,7 @@ public class GameScript : MonoBehaviour {
                 _buildingsGameObjects[i].AddComponent<BoxCollider2D>();
                 Vector2 S = _buildingsGameObjects[i].GetComponent<SpriteRenderer>().sprite.bounds.size;
                 _buildingsGameObjects[i].GetComponent<BoxCollider2D>().size = S;
+                _buildingsGameObjects[i].AddComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
                 break;
             }
         }
