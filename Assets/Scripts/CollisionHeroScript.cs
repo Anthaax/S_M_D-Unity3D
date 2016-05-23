@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.ParticularName;
+using S_M_D.Camp.Class;
 
 public class CollisionHeroScript : MonoBehaviour {
 
@@ -19,7 +20,6 @@ public class CollisionHeroScript : MonoBehaviour {
         if (coll.gameObject.tag == TagName.Building.ToString())
         {
             Debug.Log("Voila la collisoin !!!");
-            //gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
         }
     }
 }
