@@ -39,6 +39,7 @@ public class DragAndDropScript : MonoBehaviour {
 
         if (draggingItem)
         {
+            //draggedObject.GetComponent<Rigidbody2D>().isKinematic = false;
             draggedObject.transform.position = inputPosition + touchOffset;
         }
         else

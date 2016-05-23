@@ -19,7 +19,7 @@ public class CollisionHeroScript : MonoBehaviour {
         if (coll.gameObject.tag == TagName.Building.ToString())
         {
             Debug.Log("Voila la collisoin !!!");
-            gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            //gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
         }
     }
 }
