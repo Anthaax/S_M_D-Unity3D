@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: 550fdc77fdda7ee4692408a1e41d3223
+timeCreated: 1463995354
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HeroBase2_0
+    21300002: HeroBase2_1
+    21300004: HeroBase2_2
+    21300006: HeroBase2_3
+    21300008: HeroBase2_4
+    21300010: HeroBase2_5
+    21300012: HeroBase2_6
+    21300014: HeroBase2_7
+    21300016: HeroBase2_8
+    21300018: HeroBase2_9
+    21300020: HeroBase2_10
+    21300022: HeroBase2_11
+    21300024: HeroBase2_12
+    21300026: HeroBase2_13
+    21300028: HeroBase2_14
+    21300030: HeroBase2_15
+    21300032: HeroBase2_16
+    21300034: HeroBase2_17
+    21300036: HeroBase2_18
+    21300038: HeroBase2_19
+    21300040: HeroBase2_20
+    21300042: HeroBase2_21
+    21300044: HeroBase2_22
+    21300046: HeroBase2_23
+    21300048: HeroBase2_24
+    21300050: HeroBase2_25
+    21300052: HeroBase2_26
+    21300054: HeroBase2_27
+    21300056: HeroBase2_28
+    21300058: HeroBase2_29
+    21300060: HeroBase2_30
+    21300062: HeroBase2_31
+    21300064: HeroBase2_32
+    21300066: HeroBase2_33
+    21300068: HeroBase2_34
+    21300070: HeroBase2_35
+    21300072: HeroBase2_36
+    21300074: HeroBase2_37
+    21300076: HeroBase2_38
+    21300078: HeroBase2_39
+    21300080: HeroBase2_40
+    21300082: HeroBase2_41
+    21300084: HeroBase2_42
+    21300086: HeroBase2_43
+    21300088: HeroBase2_44
+    21300090: HeroBase2_45
+    21300092: HeroBase2_46
+    21300094: HeroBase2_47
+    21300096: HeroBase2_48
+    21300098: HeroBase2_49
+    21300100: HeroBase2_50
+    21300102: HeroBase2_51
+    21300104: HeroBase2_52
+    21300106: HeroBase2_53
+    21300108: HeroBase2_54
+    21300110: HeroBase2_55
+    21300112: HeroBase2_56
+    21300114: HeroBase2_57
+    21300116: HeroBase2_58
+    21300118: HeroBase2_59
+    21300120: HeroBase2_60
+    21300122: HeroBase2_61
+    21300124: HeroBase2_62
+    21300126: HeroBase2_63
+    21300128: HeroBase2_64
+    21300130: HeroBase2_65
+    21300132: HeroBase2_66
+    21300134: HeroBase2_67
+    21300136: HeroBase2_68
+    21300138: HeroBase2_69
+    21300140: HeroBase2_70
+    21300142: HeroBase2_71
+    21300144: HeroBase2_72
+    21300146: HeroBase2_73
+    21300148: HeroBase2_74
+    21300150: HeroBase2_75
+    21300152: HeroBase2_76
+    21300154: HeroBase2_77
+    21300156: HeroBase2_78
+    21300158: HeroBase2_79
+    21300160: HeroBase2_80
+    21300162: HeroBase2_81
+    21300164: HeroBase2_82
+    21300166: HeroBase2_83
+    21300168: HeroBase2_84
+    21300170: HeroBase2_85
+    21300172: HeroBase2_86
+    21300174: HeroBase2_87
+    21300176: HeroBase2_88
+    21300178: HeroBase2_89
+    21300180: HeroBase2_90
+    21300182: HeroBase2_91
+    21300184: HeroBase2_92
+    21300186: HeroBase2_93
+    21300188: HeroBase2_94
+    21300190: HeroBase2_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HeroBase2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 337
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 337
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 337
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 337
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 337
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 337
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 337
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 337
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 337
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 337
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 337
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 337
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 289
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 289
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 289
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 289
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 289
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 289
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 289
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 289
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 290
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_21
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 289
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 289
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 289
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 241
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 241
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 241
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 241
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 241
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_30
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 241
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 241
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 242
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_33
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 241
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 241
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_35
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 241
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 193
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_37
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 193
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_38
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_39
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 193
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 193
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_41
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 193
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 193
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_43
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 193
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_44
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 193
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_45
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 193
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_46
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 193
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_47
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 193
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 145
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_49
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 145
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 145
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 144
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_52
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 145
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_53
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 144
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_54
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 145
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_55
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 145
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_56
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 145
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_57
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 145
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_58
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 145
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_59
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 145
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 97
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_61
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 97
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_62
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 97
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_63
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_64
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 97
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_65
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 97
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_66
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 97
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_67
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 97
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_68
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 97
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_69
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 97
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_70
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 97
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_71
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 97
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_72
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 49
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_73
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 49
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_74
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 49
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 49
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_76
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 49
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_77
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 49
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_78
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_79
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 49
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_80
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 49
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_81
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 49
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_82
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 49
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_83
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 49
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_84
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_85
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_86
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_87
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_88
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_89
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_90
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_91
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_92
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_93
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_94
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HeroBase2_95
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
