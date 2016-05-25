@@ -9,24 +9,20 @@ using UnityEngine.UI;
 public class Start : MonoBehaviour {
 
     private static GameContext _gtx;
-    private static List<BaseHeros> _characterList;
-    private static List<BaseBuilding> _buildingList;
 
 
     // Use this for initialization
     void Awake () {
 
          Gtx = GameContext.CreateNewGame();
-        CharacterList = Gtx.PlayerInfo.MyHeros;
-        BuildingList = Gtx.PlayerInfo.MyBuildings;
-
-	
+        GameObject.Find("MenuBGArmory").SetActive(false);
+        GameObject.Find("Profil").SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         int x = 1;
-        foreach (BaseHeros heros in CharacterList)
+        foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
         {
             GameObject.Find("Hero" + x + "T").GetComponent<Text>().text = heros.CharacterName;
             GameObject.Find("Hero" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
@@ -45,32 +41,6 @@ public class Start : MonoBehaviour {
         set
         {
             _gtx = value;
-        }
-    }
-
-    public static List<BaseBuilding> BuildingList
-    {
-        get
-        {
-            return _buildingList;
-        }
-
-        set
-        {
-            _buildingList = value;
-        }
-    }
-
-    public static List<BaseHeros> CharacterList
-    {
-        get
-        {
-            return _characterList;
-        }
-
-        set
-        {
-            _characterList = value;
         }
     }
 }
