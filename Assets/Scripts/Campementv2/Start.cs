@@ -16,6 +16,14 @@ public class Start : MonoBehaviour {
 
          Gtx = GameContext.CreateNewGame();
         GameObject.Find("MenuBGArmory").SetActive(false);
+        GameObject.Find("MenuBGTownhall").SetActive(false);
+        GameObject.Find("MenuBGBar").SetActive(false);
+        GameObject.Find("MenuBGCaravan").SetActive(false);
+        GameObject.Find("MenuBGCasern").SetActive(false);
+        GameObject.Find("MenuBGCemetery").SetActive(false);
+        GameObject.Find("MenuBGHospital").SetActive(false);
+        GameObject.Find("MenuBGMentalhospital").SetActive(false);
+        GameObject.Find("MenuBGHotel").SetActive(false);
         GameObject.Find("Profil").SetActive(false);
 	}
 	
