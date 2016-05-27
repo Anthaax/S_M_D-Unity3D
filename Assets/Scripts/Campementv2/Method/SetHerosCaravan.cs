@@ -13,7 +13,9 @@ public class SetHerosCaravan : MonoBehaviour {
         foreach (BaseHeros heros in caravan.HerosDispo )
         {
             GameObject.Find("HeroDispo" + x + "T").GetComponent<Text>().text = heros.CharacterName;
-            GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            //GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            if (heros.IsMale == true) GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            else GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             x++;
 
         }

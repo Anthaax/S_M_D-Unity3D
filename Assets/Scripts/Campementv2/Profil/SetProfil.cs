@@ -20,7 +20,8 @@ public class SetProfil : MonoBehaviour {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Armory) as Armory;
             armory.Hero = heros;
             GameObject IconeHero = GameObject.Find("ArmoryHero");
-            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
         }
         else if(Start.MenuBGHospital.activeInHierarchy)
         {
@@ -42,7 +43,9 @@ public class SetProfil : MonoBehaviour {
         else
         {
             Start.MenuProfil.SetActive(true);
-            GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            //GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             GameObject.Find("ArmorT").GetComponent<Text>().text = heros.EffectivDefense.ToString();
             GameObject.Find("AttackT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
             GameObject.Find("HitChanceT").GetComponent<Text>().text = heros.EffectivHitChance.ToString();
@@ -65,7 +68,9 @@ public class SetProfil : MonoBehaviour {
         Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingName.Caravan) as Caravan;
         int index = int.Parse("" + name[name.Length - 2]);
         BaseHeros heros = caravan.HerosDispo[index - 1];
-        GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+        // GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+        if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+        else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
         GameObject.Find("ArmorT").GetComponent<Text>().text = heros.EffectivDefense.ToString();
         GameObject.Find("AttackT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
         GameObject.Find("HitChanceT").GetComponent<Text>().text = heros.EffectivHitChance.ToString();
