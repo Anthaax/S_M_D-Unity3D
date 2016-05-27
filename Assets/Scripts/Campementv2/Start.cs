@@ -10,21 +10,41 @@ public class Start : MonoBehaviour {
 
     private static GameContext _gtx;
 
-
+    public static GameObject MenuBGArmory;
+    public static GameObject MenuBGTownhall;
+    public static GameObject MenuBGBar;
+    public static GameObject MenuBGCaravan;
+    public static GameObject MenuBGCasern;
+    public static GameObject MenuBGCemetery;
+    public static GameObject MenuBGHospital;
+    public static GameObject MenuBGMentalhospital;
+    public static GameObject MenuBGHotel;
+    public static GameObject MenuProfil;
     // Use this for initialization
     void Awake () {
 
          Gtx = GameContext.CreateNewGame();
-        GameObject.Find("MenuBGArmory").SetActive(false);
-        GameObject.Find("MenuBGTownhall").SetActive(false);
-        GameObject.Find("MenuBGBar").SetActive(false);
-        GameObject.Find("MenuBGCaravan").SetActive(false);
-        GameObject.Find("MenuBGCasern").SetActive(false);
-        GameObject.Find("MenuBGCemetery").SetActive(false);
-        GameObject.Find("MenuBGHospital").SetActive(false);
-        GameObject.Find("MenuBGMentalhospital").SetActive(false);
-        GameObject.Find("MenuBGHotel").SetActive(false);
-        GameObject.Find("Profil").SetActive(false);
+        MenuBGArmory = GameObject.Find("MenuBGArmory");
+        MenuBGTownhall = GameObject.Find("MenuBGTownhall");
+        MenuBGBar = GameObject.Find("MenuBGBar");
+        MenuBGCaravan = GameObject.Find("MenuBGCaravan");
+        MenuBGCasern = GameObject.Find("MenuBGCasern");
+        MenuBGCemetery = GameObject.Find("MenuBGCemetery");
+        MenuBGHospital = GameObject.Find("MenuBGHospital");
+        MenuBGMentalhospital = GameObject.Find("MenuBGMentalhospital");
+        MenuBGHotel = GameObject.Find("MenuBGHotel");
+        MenuProfil = GameObject.Find("Profil");
+
+        MenuBGArmory.SetActive(false);
+        MenuBGTownhall.SetActive(false);
+        MenuBGBar.SetActive(false);
+        MenuBGCaravan.SetActive(false);
+        MenuBGCasern.SetActive(false);
+        MenuBGCemetery.SetActive(false);
+        MenuBGHospital.SetActive(false);
+        MenuBGMentalhospital.SetActive(false);
+        MenuBGHotel.SetActive(false);
+        MenuProfil.SetActive(false);
 	}
 	
 	// Update is called once per frame
