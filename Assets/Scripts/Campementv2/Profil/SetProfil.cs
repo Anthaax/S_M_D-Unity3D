@@ -6,13 +6,13 @@ using S_M_D.Camp.Class;
 
 public class SetProfil : MonoBehaviour {
 
-	
+
     public void Show()
     {
         string name = gameObject.name;
         int index = int.Parse("" + name[name.Length - 2]);
         BaseHeros heros = Start.Gtx.PlayerInfo.MyHeros[index - 1];
-
+        
         Start.MenuProfil.SetActive(false);
 
         if (Start.MenuBGArmory.activeInHierarchy)
@@ -27,6 +27,10 @@ public class SetProfil : MonoBehaviour {
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Hospital) as Hospital;
             hospital.Hero = heros;
+            GameObject IconeHero = GameObject.Find("HospitalHero");
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            heros.GetSickness(new Fever());
+            checkSicknesses(heros);
         }
         else if (Start.MenuBGCasern.activeInHierarchy)
         {
@@ -62,6 +66,29 @@ public class SetProfil : MonoBehaviour {
         
         
     }
+
+
+    public void checkSicknesses(BaseHeros heros)
+    {
+
+        for (int i = 0; i < Start.ButtonsSicknesses.Length; i++)
+        {
+            if (Start.ButtonsSicknesses[i].name != "Close")
+                Start.ButtonsSicknesses[i].enabled = false;
+        }
+        for (int i = 0; i < heros.Sicknesses.Count; i++)
+        {
+            for (int j = 0; j < Start.ButtonsSicknesses.Length; j++)
+            {
+                if (heros.Sicknesses[i].Name == Start.ButtonsSicknesses[j].name)
+                {
+                    Start.ButtonsSicknesses[j].enabled = true;
+                }
+            }
+        }
+    }
+
+
     public void ShowDispo()
     {
         string name = gameObject.name;
@@ -84,4 +111,6 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
         GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
     }
+
+   
 }
