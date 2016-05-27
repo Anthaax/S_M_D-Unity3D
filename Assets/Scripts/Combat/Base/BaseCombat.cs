@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 using S_M_D.Character;
 using S_M_D.Combat;
 using S_M_D;
@@ -10,18 +11,22 @@ public class BaseCombat : MonoBehaviour {
     private static CombatManager _combat;
     private static GameContext gtx;
     private static BaseHeros herosPLaying;
+    private static int _heroPosition;
 
     void Awake()
     {
-        Gtx = new GameContext();
-        BaseHeros[] list = new BaseHeros[4];
-        list[0] = Gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
-        list[1] = Gtx.HeroManager.Find(HerosEnum.Warrior.ToString()).CreateHero();
-        list[2] = Gtx.HeroManager.Find(HerosEnum.Priest.ToString()).CreateHero();
-        list[3] = Gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
+        Gtx = GameContext.CreateNewGame();
+        BaseHeros[] list = Gtx.PlayerInfo.MyHeros.ToArray();
+
+        GameObject.Find("Arrow1").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("Arrow2").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("Arrow3").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("Arrow4").GetComponent<Renderer>().enabled = false;
+
 
         Combat = new CombatManager(list, Gtx);
-        HerosPLaying = Combat.Heros[3];
+        HerosPLaying = Combat.Heros[2];
+        _heroPosition = 2;
         
     }
 	// Use this for initialization
@@ -70,6 +75,19 @@ public class BaseCombat : MonoBehaviour {
         set
         {
             herosPLaying = value;
+        }
+    }
+
+    public static int HeroPosition
+    {
+        get
+        {
+            return _heroPosition;
+        }
+
+        set
+        {
+            _heroPosition = value;
         }
     }
 }
