@@ -9,24 +9,48 @@ using UnityEngine.UI;
 public class Start : MonoBehaviour {
 
     private static GameContext _gtx;
-    private static List<BaseHeros> _characterList;
-    private static List<BaseBuilding> _buildingList;
 
-
+    public static GameObject MenuBGArmory;
+    public static GameObject MenuBGTownhall;
+    public static GameObject MenuBGBar;
+    public static GameObject MenuBGCaravan;
+    public static GameObject MenuBGCasern;
+    public static GameObject MenuBGCemetery;
+    public static GameObject MenuBGHospital;
+    public static GameObject MenuBGMentalhospital;
+    public static GameObject MenuBGHotel;
+    public static GameObject MenuProfil;
     // Use this for initialization
     void Awake () {
 
          Gtx = GameContext.CreateNewGame();
-        CharacterList = Gtx.PlayerInfo.MyHeros;
-        BuildingList = Gtx.PlayerInfo.MyBuildings;
+        MenuBGArmory = GameObject.Find("MenuBGArmory");
+        MenuBGTownhall = GameObject.Find("MenuBGTownhall");
+        MenuBGBar = GameObject.Find("MenuBGBar");
+        MenuBGCaravan = GameObject.Find("MenuBGCaravan");
+        MenuBGCasern = GameObject.Find("MenuBGCasern");
+        MenuBGCemetery = GameObject.Find("MenuBGCemetery");
+        MenuBGHospital = GameObject.Find("MenuBGHospital");
+        MenuBGMentalhospital = GameObject.Find("MenuBGMentalhospital");
+        MenuBGHotel = GameObject.Find("MenuBGHotel");
+        MenuProfil = GameObject.Find("Profil");
 
-	
+        MenuBGArmory.SetActive(false);
+        MenuBGTownhall.SetActive(false);
+        MenuBGBar.SetActive(false);
+        MenuBGCaravan.SetActive(false);
+        MenuBGCasern.SetActive(false);
+        MenuBGCemetery.SetActive(false);
+        MenuBGHospital.SetActive(false);
+        MenuBGMentalhospital.SetActive(false);
+        MenuBGHotel.SetActive(false);
+        MenuProfil.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         int x = 1;
-        foreach (BaseHeros heros in CharacterList)
+        foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
         {
             GameObject.Find("Hero" + x + "T").GetComponent<Text>().text = heros.CharacterName;
             GameObject.Find("Hero" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
@@ -45,32 +69,6 @@ public class Start : MonoBehaviour {
         set
         {
             _gtx = value;
-        }
-    }
-
-    public static List<BaseBuilding> BuildingList
-    {
-        get
-        {
-            return _buildingList;
-        }
-
-        set
-        {
-            _buildingList = value;
-        }
-    }
-
-    public static List<BaseHeros> CharacterList
-    {
-        get
-        {
-            return _characterList;
-        }
-
-        set
-        {
-            _characterList = value;
         }
     }
 }
