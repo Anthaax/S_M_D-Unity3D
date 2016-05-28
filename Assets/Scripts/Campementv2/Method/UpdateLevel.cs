@@ -15,7 +15,7 @@ public class UpdateLevel : MonoBehaviour {
 	void Update () {
         string Te = gameObject.GetComponent<Text>().text;
         string firstWord = Te.Split(' ').First();
-        TownHall t = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Townhall) as TownHall;
+        TownHall t = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Townhall) as TownHall;
         foreach (BaseBuilding B in Start.Gtx.PlayerInfo.MyBuildings)
         {
             if (B.Name.ToString() == firstWord)

@@ -49,8 +49,10 @@ public class Start : MonoBehaviour {
         MenuProfil.SetActive(false);
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
+        HospitalBoard.InitializedButtonsHospitalBoard();
     }
 	
+    
 	// Update is called once per frame
 	void Update () {
         int x = 1;
