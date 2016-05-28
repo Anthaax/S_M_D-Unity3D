@@ -42,6 +42,24 @@ public class SetProfil : MonoBehaviour {
             MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.MentalHospital) as MentalHospital;
             mentalHospital.Hero = heros;
         }
+        else if (Start.MenuBGHotel.activeInHierarchy)
+        {
+            Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Hotel) as Hotel;
+            if (hotel.Hero1 == null)
+            {
+                hotel.setHeros1(heros);
+                GameObject IconeHero = GameObject.Find("HotelHero1");
+                if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+                else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            }
+            else {
+                hotel.setHeros2(heros);
+                hotel.setHeros1(heros);
+                GameObject IconeHero = GameObject.Find("HotelHero2");
+                if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+                else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            }
+        }
 
 
         else
