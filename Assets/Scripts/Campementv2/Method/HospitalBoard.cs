@@ -75,10 +75,6 @@ public class HospitalBoard : MonoBehaviour {
 
     public static void CheckSicknesses(BaseHeros heros, BaseBuilding building)
     {
-        /*foreach(Sickness s in heros.Sicknesses)
-        {
-            Debug.Log("sick : " + s.Name);
-        }*/
        
         for (int i = 0; i < Start.ButtonsSicknesses.Length; i++)
         {

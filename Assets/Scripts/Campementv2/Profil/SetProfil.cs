@@ -28,7 +28,6 @@ public class SetProfil : MonoBehaviour {
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
             hospital.setHero(heros);
-            hospital.LevelUP(); hospital.LevelUP();
             GameObject IconeHero = GameObject.Find("HospitalHero");
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             HospitalBoard.CheckSicknesses(heros, hospital);
@@ -42,6 +41,9 @@ public class SetProfil : MonoBehaviour {
         {
             MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
             mentalHospital.setHero(heros);
+            GameObject IconeHero = GameObject.Find("MentalHospitalHero");
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
         }
         /*else if (Start.MenuBGHotel.activeInHierarchy)
         {

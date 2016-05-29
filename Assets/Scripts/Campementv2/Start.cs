@@ -22,6 +22,7 @@ public class Start : MonoBehaviour {
     public static GameObject MenuProfil;
 
     public static Button[] ButtonsSicknesses;
+    public static Button[] ButtonsMentalPsycho;
     // Use this for initialization
     void Awake () {
 
@@ -50,6 +51,9 @@ public class Start : MonoBehaviour {
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
+
+        ButtonsMentalPsycho = MenuBGMentalhospital.GetComponentsInChildren<Button>();
+        MentalHospitalBoard.InitializedButtonsMentalHospitalBoard();
     }
 	
     
