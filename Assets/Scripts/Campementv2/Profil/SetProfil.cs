@@ -6,6 +6,9 @@ using S_M_D.Camp.Class;
 using S_M_D.Camp;
 
 public class SetProfil : MonoBehaviour {
+
+    public static BaseHeros[] coupleHeros = new BaseHeros[2];
+
     public void Show()
     {
         string name = gameObject.name;
@@ -46,17 +49,27 @@ public class SetProfil : MonoBehaviour {
         else if (Start.MenuBGHotel.activeInHierarchy)
         {
             Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
-            if (hotel.Hero1 == null )
+            GameObject IconeHero1 = GameObject.Find("HotelHero1");
+            GameObject IconeHero2 = GameObject.Find("HotelHero2");
+
+            if(IconeHero1.GetComponent<Image>().sprite == null)
             {
-                GameObject IconeHero = GameObject.Find("HotelHero1");
-                if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-                else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+                coupleHeros[0] = heros;
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
             }
-            else {
-                GameObject IconeHero = GameObject.Find("HotelHero2");
-                if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-                else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            else
+            {
+                coupleHeros[1] = heros;
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+
             }
+            Debug.Log("----");
+            Debug.Log("Heros 1 : " + coupleHeros[0]);
+            Debug.Log("Heros 2 : " + coupleHeros[1]);
+            Debug.Log("----");
+
         }
 
 
