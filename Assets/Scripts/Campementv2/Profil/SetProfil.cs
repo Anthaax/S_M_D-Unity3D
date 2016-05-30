@@ -6,8 +6,6 @@ using S_M_D.Camp.Class;
 using S_M_D.Camp;
 
 public class SetProfil : MonoBehaviour {
-
-
     public void Show()
     {
         string name = gameObject.name;
@@ -45,24 +43,21 @@ public class SetProfil : MonoBehaviour {
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
         }
-        /*else if (Start.MenuBGHotel.activeInHierarchy)
+        else if (Start.MenuBGHotel.activeInHierarchy)
         {
             Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
-            if (hotel.Hero1 == null)
+            if (hotel.Hero1 == null )
             {
-                hotel.setHeros1(heros);
                 GameObject IconeHero = GameObject.Find("HotelHero1");
                 if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
                 else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             }
             else {
-                hotel.setHeros2(heros);
-                hotel.setHeros1(heros);
                 GameObject IconeHero = GameObject.Find("HotelHero2");
                 if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
                 else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             }
-        }*/
+        }
 
 
         else
@@ -111,6 +106,5 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
         GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
     }
-
    
 }
