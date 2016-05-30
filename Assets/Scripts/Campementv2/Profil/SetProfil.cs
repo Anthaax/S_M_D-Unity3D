@@ -24,6 +24,32 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+
+            foreach(Button b in Start.ButtonsArmor)
+            {
+                if(b.name == "Armor")
+                {
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName;
+                }
+                else if (b.name == "Weapon")
+                {
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[1].ItemName;
+                }
+                else if (b.name == "Trinket1")
+                {
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[2].ItemName;
+                }
+                else if (b.name == "Trinket2")
+                {
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[3].ItemName;
+                }
+            }
+            /*
+            IconeArmor.GetComponent<Image>().sprite =;
+            GameObject IconeWeapon = GameObject.Find("Weapon");
+            GameObject IconeTrinket1 = GameObject.Find("Trinket1");
+            GameObject IconeTrinket2 = GameObject.Find("Trinket2");
+            */
         }
         else if(Start.MenuBGHospital.activeInHierarchy)
         {

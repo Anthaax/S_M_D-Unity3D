@@ -25,6 +25,7 @@ public class Start : MonoBehaviour {
     public static Button[] ButtonsSicknesses;
     public static Button[] ButtonsMentalPsycho;
     public static Button[] ButtonsTownHall;
+    public static Button[] ButtonsArmor;
     // Use this for initialization
     void Awake () {
 
@@ -56,6 +57,8 @@ public class Start : MonoBehaviour {
 
         ButtonsMentalPsycho = MenuBGMentalhospital.GetComponentsInChildren<Button>();
         MentalHospitalBoard.InitializedButtonsMentalHospitalBoard();
+
+        ButtonsArmor = MenuBGArmory.GetComponentsInChildren<Button>();
 
         ButtonsTownHall = MenuBGTownhall.GetComponentsInChildren<Button>();
 
