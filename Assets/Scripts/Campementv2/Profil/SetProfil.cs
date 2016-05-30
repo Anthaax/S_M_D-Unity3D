@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using S_M_D.Character;
 using S_M_D.Camp.Class;
+using S_M_D.Camp;
 
 public class SetProfil : MonoBehaviour {
 
@@ -17,7 +18,7 @@ public class SetProfil : MonoBehaviour {
 
         if (Start.MenuBGArmory.activeInHierarchy)
         {
-            Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Armory) as Armory;
+            Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
             armory.Hero = heros;
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
@@ -25,26 +26,28 @@ public class SetProfil : MonoBehaviour {
         }
         else if(Start.MenuBGHospital.activeInHierarchy)
         {
-            Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Hospital) as Hospital;
-            hospital.Hero = heros;
+            Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+            hospital.setHero(heros);
             GameObject IconeHero = GameObject.Find("HospitalHero");
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            heros.GetSickness(new Fever());
-            checkSicknesses(heros);
+            HospitalBoard.CheckSicknesses(heros, hospital);
         }
         else if (Start.MenuBGCasern.activeInHierarchy)
         {
-            Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Casern) as Casern;
-            casern.Hero = heros;
+            Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+            casern.setHero(heros);
         }
         else if (Start.MenuBGMentalhospital.activeInHierarchy)
         {
-            MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.MentalHospital) as MentalHospital;
-            mentalHospital.Hero = heros;
+            MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+            mentalHospital.setHero(heros);
+            GameObject IconeHero = GameObject.Find("MentalHospitalHero");
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
         }
-        else if (Start.MenuBGHotel.activeInHierarchy)
+        /*else if (Start.MenuBGHotel.activeInHierarchy)
         {
-            Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingName.Hotel) as Hotel;
+            Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
             if (hotel.Hero1 == null)
             {
                 hotel.setHeros1(heros);
@@ -59,7 +62,7 @@ public class SetProfil : MonoBehaviour {
                 if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
                 else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             }
-        }
+        }*/
 
 
         else
@@ -86,31 +89,10 @@ public class SetProfil : MonoBehaviour {
     }
 
 
-    public void checkSicknesses(BaseHeros heros)
-    {
-
-        for (int i = 0; i < Start.ButtonsSicknesses.Length; i++)
-        {
-            if (Start.ButtonsSicknesses[i].name != "Close")
-                Start.ButtonsSicknesses[i].enabled = false;
-        }
-        for (int i = 0; i < heros.Sicknesses.Count; i++)
-        {
-            for (int j = 0; j < Start.ButtonsSicknesses.Length; j++)
-            {
-                if (heros.Sicknesses[i].Name == Start.ButtonsSicknesses[j].name)
-                {
-                    Start.ButtonsSicknesses[j].enabled = true;
-                }
-            }
-        }
-    }
-
-
     public void ShowDispo()
     {
         string name = gameObject.name;
-        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingName.Caravan) as Caravan;
+        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         int index = int.Parse("" + name[name.Length - 2]);
         BaseHeros heros = caravan.HerosDispo[index - 1];
         // GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SetHerosCaravan : MonoBehaviour {
     
 	public void OnClick () {
-        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingName.Caravan) as Caravan;
+        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         int x = 1;
         caravan.Initialized();
         foreach (BaseHeros heros in caravan.HerosDispo )

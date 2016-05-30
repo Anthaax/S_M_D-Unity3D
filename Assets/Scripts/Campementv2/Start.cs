@@ -22,6 +22,7 @@ public class Start : MonoBehaviour {
     public static GameObject MenuProfil;
 
     public static Button[] ButtonsSicknesses;
+    public static Button[] ButtonsMentalPsycho;
     // Use this for initialization
     void Awake () {
 
@@ -49,8 +50,13 @@ public class Start : MonoBehaviour {
         MenuProfil.SetActive(false);
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
+        HospitalBoard.InitializedButtonsHospitalBoard();
+
+        ButtonsMentalPsycho = MenuBGMentalhospital.GetComponentsInChildren<Button>();
+        MentalHospitalBoard.InitializedButtonsMentalHospitalBoard();
     }
 	
+    
 	// Update is called once per frame
 	void Update () {
         int x = 1;
