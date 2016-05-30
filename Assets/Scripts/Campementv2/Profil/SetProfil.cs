@@ -22,13 +22,15 @@ public class SetProfil : MonoBehaviour {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
             armory.Hero = heros;
             GameObject IconeHero = GameObject.Find("ArmoryHero");
-            if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
         }
         else if(Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
             hospital.setHero(heros);
+            hospital.LevelUP();
+            heros.GetSickness(new Fever());
             GameObject IconeHero = GameObject.Find("HospitalHero");
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             HospitalBoard.CheckSicknesses(heros, hospital);
@@ -77,8 +79,8 @@ public class SetProfil : MonoBehaviour {
         {
             Start.MenuProfil.SetActive(true);
             //GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             GameObject.Find("ArmorT").GetComponent<Text>().text = heros.EffectivDefense.ToString();
             GameObject.Find("AttackT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
             GameObject.Find("HitChanceT").GetComponent<Text>().text = heros.EffectivHitChance.ToString();
@@ -104,8 +106,8 @@ public class SetProfil : MonoBehaviour {
         int index = int.Parse("" + name[name.Length - 2]);
         BaseHeros heros = caravan.HerosDispo[index - 1];
         // GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-        if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-        else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+        if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+        else GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
         GameObject.Find("ArmorT").GetComponent<Text>().text = heros.EffectivDefense.ToString();
         GameObject.Find("AttackT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
         GameObject.Find("HitChanceT").GetComponent<Text>().text = heros.EffectivHitChance.ToString();

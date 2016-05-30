@@ -5,6 +5,7 @@ using S_M_D.Camp;
 using S_M_D;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using S_M_D.Camp.Class;
 
 public class Start : MonoBehaviour {
 
@@ -54,6 +55,9 @@ public class Start : MonoBehaviour {
 
         ButtonsMentalPsycho = MenuBGMentalhospital.GetComponentsInChildren<Button>();
         MentalHospitalBoard.InitializedButtonsMentalHospitalBoard();
+
+        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
+        caravan.Initialized();
     }
 	
     

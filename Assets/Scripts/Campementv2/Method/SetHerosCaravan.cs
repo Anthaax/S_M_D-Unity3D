@@ -9,13 +9,12 @@ public class SetHerosCaravan : MonoBehaviour {
 	public void OnClick () {
         Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         int x = 1;
-        caravan.Initialized();
+        Debug.Log("Nb : " + caravan.HerosDispo.Count);
         foreach (BaseHeros heros in caravan.HerosDispo )
         {
             GameObject.Find("HeroDispo" + x + "T").GetComponent<Text>().text = heros.CharacterName;
-            //GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            if (heros.IsMale == true) GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            else GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            if (heros.IsMale == true) GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            else GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             x++;
 
         }
