@@ -7,7 +7,8 @@ using S_M_D.Camp;
 
 public class SetProfil : MonoBehaviour {
 
-    public static BaseHeros[] coupleHeros = new BaseHeros[2];
+    public static BaseHeros[] coupleHerosHotel = new BaseHeros[2];
+    public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
 
     public void Show()
     {
@@ -82,21 +83,38 @@ public class SetProfil : MonoBehaviour {
 
             if(IconeHero1.GetComponent<Image>().sprite == null)
             {
-                coupleHeros[0] = heros;
+                coupleHerosHotel[0] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
             }
             else
             {
-                coupleHeros[1] = heros;
+                coupleHerosHotel[1] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
 
             }
-            Debug.Log("----");
-            Debug.Log("Heros 1 : " + coupleHeros[0]);
-            Debug.Log("Heros 2 : " + coupleHeros[1]);
-            Debug.Log("----");
+
+        }
+        else if (Start.MenuBGBar.activeInHierarchy)
+        {
+            Bar bar = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Bar) as Bar;
+            GameObject IconeHero1 = GameObject.Find("BarHero1");
+            GameObject IconeHero2 = GameObject.Find("BarHero2");
+
+            if (IconeHero1.GetComponent<Image>().sprite == null)
+            {
+                coupleHerosBar[0] = heros;
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+            }
+            else
+            {
+                coupleHerosBar[1] = heros;
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+
+            }
 
         }
 

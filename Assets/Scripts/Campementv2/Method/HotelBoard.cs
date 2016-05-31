@@ -12,10 +12,10 @@ public class HotelBoard : MonoBehaviour {
 
     public void ValidHeroes()
     {
-        if(SetProfil.coupleHeros[0] != null && SetProfil.coupleHeros[1] != null)
+        if(SetProfil.coupleHerosHotel[0] != null && SetProfil.coupleHerosHotel[1] != null)
         {
             Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
-            hotel.SetHeros(SetProfil.coupleHeros[0], SetProfil.coupleHeros[1]);
+            hotel.SetHeros(SetProfil.coupleHerosHotel[0], SetProfil.coupleHerosHotel[1]);
             Start.MenuBGHotel.SetActive(false);
         }
         
@@ -27,12 +27,12 @@ public class HotelBoard : MonoBehaviour {
         GameObject IconeHero2 = GameObject.Find("HotelHero2");
         if (gameObject.name == "RemoveHero1")
         {
-            SetProfil.coupleHeros[0] = null;
+            SetProfil.coupleHerosHotel[0] = null;
             IconeHero1.GetComponent<Image>().sprite = null;
         }
         else if (gameObject.name == "RemoveHero2")
         {
-            SetProfil.coupleHeros[1] = null;
+            SetProfil.coupleHerosHotel[1] = null;
             IconeHero2.GetComponent<Image>().sprite = null;
         }
     }
