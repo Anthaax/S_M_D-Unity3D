@@ -137,6 +137,11 @@ public class SetProfil : MonoBehaviour {
             GameObject.Find("BleedingResT").GetComponent<Text>().text = heros.EffectivBleedingRes.ToString();
             GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
             GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
+
+            GameObject.Find("ArmorProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
+            GameObject.Find("WeaponProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
+            GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
+            GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
         }
         
         
