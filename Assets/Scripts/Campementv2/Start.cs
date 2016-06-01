@@ -26,7 +26,7 @@ public class Start : MonoBehaviour {
     // Use this for initialization
     void Awake () {
 
-         Gtx = GameContext.CreateNewGame();
+
         MenuBGArmory = GameObject.Find("MenuBGArmory");
         MenuBGTownhall = GameObject.Find("MenuBGTownhall");
         MenuBGBar = GameObject.Find("MenuBGBar");
