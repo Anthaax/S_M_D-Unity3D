@@ -19,7 +19,7 @@ public class BarBoard : MonoBehaviour {
             bar.SetHeros(SetProfil.coupleHerosBar[0], SetProfil.coupleHerosBar[1]);
             Start.MenuBGBar.SetActive(false);
         }
-
+        //
     }
 
     public void RemoveHeros()
