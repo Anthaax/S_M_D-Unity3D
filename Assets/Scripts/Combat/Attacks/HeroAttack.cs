@@ -7,16 +7,12 @@ using System.Collections.Generic;
 using System.Threading;
 using S_M_D.Spell;
 
-public class HeroAttack : MonoBehaviour {
+public class HeroAttack {
 
     int monster;
     Spells spell;
     int index;
 
-    public void Attack()
-    {
-        BaseCombat.Combat.SpellManager.HeroLaunchSpell(spell, monster);
-    }
     public int Monster
     {
         get

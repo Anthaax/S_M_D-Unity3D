@@ -5,28 +5,31 @@ using S_M_D.Character;
 using S_M_D.Combat;
 using S_M_D;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class BaseCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
-    private static BaseHeros herosPLaying;
-    private static int _heroPosition;
+    private static HeroAttack attack;
+
 
     void Awake()
     {
         Gtx = GameContext.CreateNewGame();
         BaseHeros[] list = Gtx.PlayerInfo.MyHeros.ToArray();
+        attack = new HeroAttack();
 
-        GameObject.Find("Arrow1").GetComponent<Renderer>().enabled = false;
-        GameObject.Find("Arrow2").GetComponent<Renderer>().enabled = false;
-        GameObject.Find("Arrow3").GetComponent<Renderer>().enabled = false;
-        GameObject.Find("Arrow4").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("Arrow1").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow2").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow3").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow4").GetComponent<Image>().enabled = false;
 
+        Gtx.DungeonManager.InitializedCatalogue();
+        Gtx.DungeonManager.CreateDungeon(list, Gtx.DungeonManager.MapCatalogue.First());
+        Gtx.DungeonManager.LaunchCombat();
+        Combat = Gtx.DungeonManager.CbtManager;
 
-        Combat = new CombatManager(list, Gtx);
-        HerosPLaying = Combat.Heros[2];
-        _heroPosition = 2;
         
     }
 	// Use this for initialization
@@ -65,29 +68,16 @@ public class BaseCombat : MonoBehaviour {
         }
     }
 
-    public static BaseHeros HerosPLaying
+    public static HeroAttack Attack
     {
         get
         {
-            return herosPLaying;
+            return attack;
         }
 
         set
         {
-            herosPLaying = value;
-        }
-    }
-
-    public static int HeroPosition
-    {
-        get
-        {
-            return _heroPosition;
-        }
-
-        set
-        {
-            _heroPosition = value;
+            attack = value;
         }
     }
 }
