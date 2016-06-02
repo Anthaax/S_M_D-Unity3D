@@ -90,16 +90,6 @@ public class BoardManager : NetworkBehaviour
         this.InitBoard(map);
     }
 
-    [PunRPC]
-    public void helloWorld(string name)
-    {
-        Debug.Log("Calling helloworld");
-        if (this.server)
-        {
-            Debug.Log("Hello world, this is " + name);
-        }
-    }
-
     public void InitBoard(Map map)
     {
         // boardHolder = new GameObject("Board").transform;
