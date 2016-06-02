@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-
+using S_M_D;
 
 public class StartOptions : MonoBehaviour {
 
@@ -82,7 +82,7 @@ public class StartOptions : MonoBehaviour {
 		//Hide the main menu UI element
 		showPanels.HideMenu ();
         //Initialized GameContext
-        Start.Gtx = new S_M_D.GameContext();
+        Start.Gtx =GameContext.CreateNewGame();
         //Load the selected scene, by scene index number in build settings
         SceneManager.LoadScene (sceneToStart);
 	}
