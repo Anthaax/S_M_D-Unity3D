@@ -4,11 +4,13 @@ using UnityEngine.UI;
 using S_M_D.Character;
 using S_M_D.Camp.Class;
 using S_M_D.Camp;
+using System.Collections.Generic;
 
 public class SetProfil : MonoBehaviour {
 
     public static BaseHeros[] coupleHerosHotel = new BaseHeros[2];
     public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
+    public static BaseHeros[] HerosAdventure = new BaseHeros[4];
 
     public void Show()
     {
@@ -98,6 +100,7 @@ public class SetProfil : MonoBehaviour {
         }
         else if (Start.MenuBGBar.activeInHierarchy)
         {
+            Debug.Log("Dans le BAR");
             Bar bar = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Bar) as Bar;
             GameObject IconeHero1 = GameObject.Find("BarHero1");
             GameObject IconeHero2 = GameObject.Find("BarHero2");
@@ -117,7 +120,28 @@ public class SetProfil : MonoBehaviour {
             }
 
         }
+        else if (Start.PanelBoardMission.activeInHierarchy)
+        {
+            Debug.Log("Dans le board mission");
+            List<GameObject> IconeHeros = new List<GameObject>();
+            IconeHeros.Add(GameObject.Find("AdvHero1"));
+            IconeHeros.Add(GameObject.Find("AdvHero2"));
+            IconeHeros.Add(GameObject.Find("AdvHero3"));
+            IconeHeros.Add(GameObject.Find("AdvHero4"));
 
+            for(int i = 0; i < IconeHeros.Count; i++)
+            {
+                if(IconeHeros[i].GetComponent<Image>().sprite == null)
+                {
+                    HerosAdventure[i] = heros;
+                    string sex = heros.IsMale ? "M" : "F";
+                    IconeHeros[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                    break;
+                }
+            }
+            
+
+        }
 
         else
         {
