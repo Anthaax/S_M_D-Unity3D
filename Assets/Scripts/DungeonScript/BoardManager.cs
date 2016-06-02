@@ -92,6 +92,7 @@ public class BoardManager : NetworkBehaviour
 
     public void InitBoard(Map map)
     {
+ 
         // boardHolder = new GameObject("Board").transform;
         Debug.Log("Calling other initboard !");
         this.map = map;
@@ -450,7 +451,7 @@ public class BoardManager : NetworkBehaviour
 
         if ( room is S_M_D.Dungeon.Room && ( ( S_M_D.Dungeon.Room ) room ).events.Contains( "Combat" ) )
         {
-            SceneManager.LoadScene( "Combat" );
+            //SceneManager.LoadScene( "Combat" );
         }
         // setting non visited rooms images (monster or items room)
         /*
