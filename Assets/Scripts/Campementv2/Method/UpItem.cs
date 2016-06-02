@@ -13,6 +13,7 @@ public class UpItem : MonoBehaviour {
         if (gameObject.name == "Armor")
             {
                 t.UpgrateItemOfAnHero(heros.Equipement[0]);
+            Debug.Log(heros.Equipement[0].Lvl);
             }
             if (gameObject.name == "Weapon")
             {
