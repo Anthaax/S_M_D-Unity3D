@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using S_M_D.Character;
+using System.Linq;
 
 public class CharacterShow : MonoBehaviour {
 
@@ -30,10 +31,19 @@ public class CharacterShow : MonoBehaviour {
         }
         foreach (BaseMonster M in monsters)
         {
-            
+            if (M != null)
             GameObject.Find("Monstre" + j).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Monster/"+M.Type );
+            else
+            {
+                if (GameObject.Find("Monstre" + j) != null)
+                GameObject.Find("Monstre" + j).SetActive(false);
+                if (GameObject.Find("Arrow" + j)!= null)
+                GameObject.Find("Arrow" + j).SetActive(false);
+            }
+
             j++;
         }
+        
 
     }
 }
