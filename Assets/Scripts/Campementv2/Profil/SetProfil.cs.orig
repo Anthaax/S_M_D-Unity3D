@@ -4,13 +4,11 @@ using UnityEngine.UI;
 using S_M_D.Character;
 using S_M_D.Camp.Class;
 using S_M_D.Camp;
-using System.Collections.Generic;
 
 public class SetProfil : MonoBehaviour {
 
     public static BaseHeros[] coupleHerosHotel = new BaseHeros[2];
     public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
-    public static BaseHeros[] HerosAdventure = new BaseHeros[4];
 
     public void Show()
     {
@@ -23,7 +21,7 @@ public class SetProfil : MonoBehaviour {
         if (Start.MenuBGArmory.activeInHierarchy)
         {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
-            armory.SetHero(heros);
+            armory.Hero = heros;
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
@@ -119,6 +117,7 @@ public class SetProfil : MonoBehaviour {
             }
 
         }
+<<<<<<< HEAD
         else if (Start.PanelBoardMission.activeInHierarchy)
         {
             List<GameObject> IconeHeros = new List<GameObject>();
@@ -138,6 +137,9 @@ public class SetProfil : MonoBehaviour {
                 }
             }
             
+=======
+>>>>>>> 13209456e023997cc899cd59126ca6a9976c278d
+
 
         else
         {
