@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using S_M_D.Character;
 using S_M_D.Camp.Class;
 using S_M_D.Camp;
+using System.Collections.Generic;
 
 public class SetProfil : MonoBehaviour {
 
@@ -138,7 +139,7 @@ public class SetProfil : MonoBehaviour {
             }
             
 =======
->>>>>>> 13209456e023997cc899cd59126ca6a9976c278d
+>>>>>>> bfc45b93da655f3b61ea7bdd2378a30eb9459b2f
 
 
         else

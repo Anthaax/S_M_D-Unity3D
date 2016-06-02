@@ -25,12 +25,12 @@ public class SetProfil : MonoBehaviour {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
             armory.SetHero(heros);
             GameObject IconeHero = GameObject.Find("ArmoryHero");
-            if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
 
-            foreach(Button b in Start.ButtonsArmor)
+            foreach (Button b in Start.ButtonsArmor)
             {
-                if(b.name == "Armor")
+                if (b.name == "Armor")
                 {
                     b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName;
                 }
@@ -54,7 +54,7 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeTrinket2 = GameObject.Find("Trinket2");
             */
         }
-        else if(Start.MenuBGHospital.activeInHierarchy)
+        else if (Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
             hospital.setHero(heros);
@@ -83,11 +83,11 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeHero1 = GameObject.Find("HotelHero1");
             GameObject IconeHero2 = GameObject.Find("HotelHero2");
 
-            if(IconeHero1.GetComponent<Image>().sprite == null)
+            if (IconeHero1.GetComponent<Image>().sprite == null)
             {
                 coupleHerosHotel[0] = heros;
                 string sex = heros.IsMale ? "M" : "F";
-                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
+                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
             }
             else
             {
@@ -127,9 +127,9 @@ public class SetProfil : MonoBehaviour {
             IconeHeros.Add(GameObject.Find("AdvHero3"));
             IconeHeros.Add(GameObject.Find("AdvHero4"));
 
-            for(int i = 0; i < IconeHeros.Count; i++)
+            for (int i = 0; i < IconeHeros.Count; i++)
             {
-                if(IconeHeros[i].GetComponent<Image>().sprite == null)
+                if (IconeHeros[i].GetComponent<Image>().sprite == null)
                 {
                     HerosAdventure[i] = heros;
                     string sex = heros.IsMale ? "M" : "F";
@@ -137,7 +137,8 @@ public class SetProfil : MonoBehaviour {
                     break;
                 }
             }
-            
+        }
+
 
         else
         {
