@@ -6,12 +6,14 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using S_M_D.Character;
 //using System.Drawing;
 
 public class BoardManager : NetworkBehaviour
 {
 
     private Map map;
+    private BaseHeros[] hero; 
     private GameObject[,] goArray;
     private Transform boardHolder;
 
