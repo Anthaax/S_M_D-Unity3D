@@ -21,7 +21,7 @@ public class SetProfil : MonoBehaviour {
         if (Start.MenuBGArmory.activeInHierarchy)
         {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
-            armory.Hero = heros;
+            armory.SetHero(heros);
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");

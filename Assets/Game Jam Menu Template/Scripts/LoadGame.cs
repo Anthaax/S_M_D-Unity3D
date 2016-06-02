@@ -4,6 +4,15 @@ using System.IO;
 using UnityEngine.UI;
 using System.Linq;
 using System.Collections.Generic;
+using System;
+using System.Text;
+using S_M_D.Character;
+using S_M_D.Camp;
+using System.Reflection;
+using System.Xml.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+using System.Diagnostics;
 
 public class LoadGame : MonoBehaviour {
 
@@ -28,6 +37,7 @@ public class LoadGame : MonoBehaviour {
     private PlayMusic playMusic;                                        //Reference to PlayMusic script
     private float fastFadeIn = .01f;                                    //Very short fade time (10 milliseconds) to start playing music immediately without a click/glitch
     private ShowPanels showPanels;										//Reference to ShowPanels script on UI GameObject, to show and hide panels
+    private StartOptions starOptions;
 
     void Start () {
 
@@ -37,6 +47,9 @@ public class LoadGame : MonoBehaviour {
         //Get a reference to PlayMusic attached to UI object
         playMusic = GetComponent<PlayMusic>();
 
+        starOptions = GetComponent<StartOptions>();
+
+        ChargeSave();
     }
 
     public void ChargeSave()
@@ -50,12 +63,18 @@ public class LoadGame : MonoBehaviour {
             if (file[i] != null)
             {
                 FileInfo fileinfo = new FileInfo(file[i]);
-                Debug.Log(fileinfo.CreationTime.ToString());
+                UnityEngine.Debug.Log(fileinfo.CreationTime.ToString());
                 int partie = i + 1;
                 save.GetComponent<Text>().text = "Partie " + partie + " Date : " + fileinfo.CreationTime.ToString();
             }
             else
                 save.GetComponent<Text>().text = "Pas de partie";
         }
+    }
+
+    public void LaunchFirstSave()
+    {
+        starOptions.PrepareSave(0);
+        starOptions.StartSave();
     }
 }

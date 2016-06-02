@@ -13,7 +13,7 @@ public class BaseCombat : MonoBehaviour {
 
     void Awake()
     {
-        Gtx = new GameContext();
+        Gtx = GameContext.CreateNewGame();
         BaseHeros[] list = new BaseHeros[4];
         list[0] = Gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
         list[1] = Gtx.HeroManager.Find(HerosEnum.Warrior.ToString()).CreateHero();
