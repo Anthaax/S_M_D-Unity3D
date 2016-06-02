@@ -122,7 +122,6 @@ public class SetProfil : MonoBehaviour {
         }
         else if (Start.PanelBoardMission.activeInHierarchy)
         {
-            Debug.Log("Dans le board mission");
             List<GameObject> IconeHeros = new List<GameObject>();
             IconeHeros.Add(GameObject.Find("AdvHero1"));
             IconeHeros.Add(GameObject.Find("AdvHero2"));
