@@ -2,6 +2,7 @@
 using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AdventureBoard : MonoBehaviour {
 	
@@ -15,9 +16,7 @@ public class AdventureBoard : MonoBehaviour {
         if (SetProfil.HerosAdventure[0] != null && SetProfil.HerosAdventure[1] != null
             && SetProfil.HerosAdventure[2] != null && SetProfil.HerosAdventure[3] != null)
         {
-            //Initialiser les héros dans le dongeon!!!!!
-
-            //Start.Gtx.DungeonManager.cr
+            SceneManager.LoadScene("Dungeon");
             Start.PanelBoardMission.SetActive(false);
         }
         //
