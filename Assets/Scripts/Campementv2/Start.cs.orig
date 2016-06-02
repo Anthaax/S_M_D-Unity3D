@@ -24,12 +24,15 @@ public class Start : MonoBehaviour {
 
     public static Button[] ButtonsSicknesses;
     public static Button[] ButtonsMentalPsycho;
+<<<<<<< HEAD
     public static Button[] ButtonsTownHall;
+=======
     public static Button[] ButtonsArmor;
+>>>>>>> bccb04d7f24a3220f51b8eff6cb5885cd08999d6
     // Use this for initialization
     void Awake () {
 
-
+         Gtx = GameContext.CreateNewGame();
         MenuBGArmory = GameObject.Find("MenuBGArmory");
         MenuBGTownhall = GameObject.Find("MenuBGTownhall");
         MenuBGBar = GameObject.Find("MenuBGBar");
@@ -58,11 +61,15 @@ public class Start : MonoBehaviour {
         ButtonsMentalPsycho = MenuBGMentalhospital.GetComponentsInChildren<Button>();
         MentalHospitalBoard.InitializedButtonsMentalHospitalBoard();
 
-        ButtonsArmor = MenuBGArmory.GetComponentsInChildren<Button>();
-
+<<<<<<< HEAD
         ButtonsTownHall = MenuBGTownhall.GetComponentsInChildren<Button>();
 
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
+=======
+        ButtonsArmor = MenuBGArmory.GetComponentsInChildren<Button>();
+
+        Caravan caravan = Start.Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
+>>>>>>> bccb04d7f24a3220f51b8eff6cb5885cd08999d6
         caravan.Initialized();
     }
 	
