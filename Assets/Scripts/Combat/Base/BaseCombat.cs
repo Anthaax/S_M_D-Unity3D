@@ -1,27 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 using S_M_D.Character;
 using S_M_D.Combat;
 using S_M_D;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class BaseCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
-    private static BaseHeros herosPLaying;
+    private static HeroAttack attack;
+
 
     void Awake()
     {
         Gtx = GameContext.CreateNewGame();
-        BaseHeros[] list = new BaseHeros[4];
-        list[0] = Gtx.HeroManager.Find(HerosEnum.Paladin.ToString()).CreateHero();
-        list[1] = Gtx.HeroManager.Find(HerosEnum.Warrior.ToString()).CreateHero();
-        list[2] = Gtx.HeroManager.Find(HerosEnum.Priest.ToString()).CreateHero();
-        list[3] = Gtx.HeroManager.Find(HerosEnum.Mage.ToString()).CreateHero();
+        BaseHeros[] list = Gtx.PlayerInfo.MyHeros.ToArray();
+        attack = new HeroAttack();
 
-        Combat = new CombatManager(list, Gtx);
-        HerosPLaying = Combat.Heros[3];
+        GameObject.Find("Arrow1").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow2").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow3").GetComponent<Image>().enabled = false;
+        GameObject.Find("Arrow4").GetComponent<Image>().enabled = false;
+
+        Gtx.DungeonManager.InitializedCatalogue();
+        Gtx.DungeonManager.CreateDungeon(list, Gtx.DungeonManager.MapCatalogue.First());
+        Gtx.DungeonManager.LaunchCombat();
+        Combat = Gtx.DungeonManager.CbtManager;
+
         
     }
 	// Use this for initialization
@@ -60,16 +68,16 @@ public class BaseCombat : MonoBehaviour {
         }
     }
 
-    public static BaseHeros HerosPLaying
+    public static HeroAttack Attack
     {
         get
         {
-            return herosPLaying;
+            return attack;
         }
 
         set
         {
-            herosPLaying = value;
+            attack = value;
         }
     }
 }
