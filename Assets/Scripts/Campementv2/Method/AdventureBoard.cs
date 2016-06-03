@@ -19,7 +19,8 @@ public class AdventureBoard : MonoBehaviour {
             //Initialiser les héros dans le dongeon!!!!!
 
             SceneManager.LoadScene(2);
-
+            BoardManager.hero = SetProfil.HerosAdventure;
+            BoardManager.Gtx = Start.Gtx;
 
             //Start.Gtx.DungeonManager.cr
             Start.PanelBoardMission.SetActive(false);

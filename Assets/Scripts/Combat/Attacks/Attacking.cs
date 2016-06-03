@@ -2,7 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;
 using S_M_D.Character;
+using S_M_D.Combat;
 using System;
+using System.Collections.Generic;
+using S_M_D.Spell;
+using System.Linq;
 
 public class Attacking : MonoBehaviour {
 
@@ -14,7 +18,6 @@ public class Attacking : MonoBehaviour {
             StartCoroutine(Movement());
             BaseCombat.Combat.SpellManager.HeroLaunchSpell(BaseCombat.Attack.Spell, BaseCombat.Attack.Monster);
             BaseCombat.Combat.NextTurn();
-
             Timer T = GameObject.Find("Timer").GetComponent<Timer>();
             T.timeLeft = 30.0f;
 
@@ -30,6 +33,23 @@ public class Attacking : MonoBehaviour {
             }
         }
        
+    }
+
+    void Update()
+    {
+        BaseMonster monster = BaseCombat.Combat.GetCharacterTurn() as BaseMonster;
+        Debug.Log( monster );
+
+        if (monster != null)
+        {
+            StartCoroutine( MonsterAttack( monster ) );
+            BaseCombat.Combat.NextTurn();
+            Timer T = GameObject.Find( "Timer" ).GetComponent<Timer>();
+            T.timeLeft = 30.0f;
+        }
+
+
+        
     }
 
     public IEnumerator Movement()
@@ -48,6 +68,28 @@ public class Attacking : MonoBehaviour {
         GameObject.Find("Heros"+y).GetComponent<Transform>().transform.Translate(0, 3, 0);
         yield return new WaitForSeconds(2);
         GameObject.Find("Heros"+y).GetComponent<Transform>().transform.Translate(0, -3, 0);
+
+    }
+
+    public IEnumerator MonsterAttack(BaseMonster Monster)
+    {
+        Debug.Log( Monster.Spells.Count );
+        List<Spells> canLauncSpell = Monster.Spells
+                                    .Where( c => c.TargetManager.WhoCanBeTargetable( Monster.Position ) != new bool[4] { false, false, false, false } )
+                                    .Where( c => c.CooldownManager.IsOnCooldown == false )
+                                    .ToList();
+        Debug.Log( canLauncSpell.Count );
+        Spells spellToLaunch = canLauncSpell[BaseCombat.Combat.GameContext.Rnd.Next( canLauncSpell.Count )];
+        int position = BaseCombat.Combat.GameContext.Rnd.Next( 4 );
+        if (canLauncSpell.Count > 0)
+        {
+            BaseCombat.Combat.SpellManager.MonsterLaunchSpell( spellToLaunch, position );
+            GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = spellToLaunch.Description;
+        }
+            
+        yield return new WaitForSeconds( 2 );
+        GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = "";
+        
 
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class NetworkMan : NetworkLobbyManager {
+public class NetworkMan : NetworkManager {
 
 	// Use this for initialization
 	void Start () {
@@ -41,12 +41,6 @@ public class NetworkMan : NetworkLobbyManager {
         NetworkServer.Spawn(boardManager);
         //var player = (GameObject)GameObject.Instantiate(playerPrefab, playerSpawnPos, Quaternion.identity);
        // NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
-    }
-
-    public override void OnLobbyServerConnect( NetworkConnection conn )
-    {
-        base.OnLobbyServerConnect( conn );
-        Debug.Log( "OnLobbyServerConnect" );
     }
 
     // Update is called once per frame

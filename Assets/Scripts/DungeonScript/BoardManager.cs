@@ -7,13 +7,15 @@ using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 using S_M_D.Character;
+using S_M_D;
 //using System.Drawing;
 
 public class BoardManager : NetworkBehaviour
 {
 
     private Map map;
-    private BaseHeros[] hero; 
+    public static BaseHeros[] hero;
+    public static GameContext Gtx;
     private GameObject[,] goArray;
     private Transform boardHolder;
 
@@ -392,6 +394,13 @@ public class BoardManager : NetworkBehaviour
                 {
                     Debug.Log( "Chest !" );
                     goArray[ r.Center.Y, r.Center.X ] = Instantiate( floorTiles[ 2 ], new Vector3( r.Center.X, r.Center.Y, 0f ), Quaternion.identity ) as GameObject;
+                }
+                else if (r.events.Contains("Combat"))
+                {
+                    SceneManager.LoadScene( 3 );
+                    BaseCombat.Gtx = Gtx;
+                    BaseCombat.Heros = hero;
+                    BaseCombat.Map = map;
                 }
             }
         }
