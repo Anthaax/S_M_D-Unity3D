@@ -3,6 +3,7 @@ using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using S_M_D.Character;
 
 public class AdventureBoard : MonoBehaviour {
 	
@@ -49,5 +50,15 @@ public class AdventureBoard : MonoBehaviour {
             SetProfil.HerosAdventure[3] = null;
             IconeHero4.GetComponent<Image>().sprite = null;
         }
+    }
+
+    public static bool ContainsHero(BaseHeros heros)
+    {
+        foreach(BaseHeros h in SetProfil.HerosAdventure)
+        {
+            if (h == heros)
+                return true;
+        }
+        return false;
     }
 }

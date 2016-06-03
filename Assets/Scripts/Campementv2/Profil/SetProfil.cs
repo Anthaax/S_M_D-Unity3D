@@ -129,7 +129,7 @@ public class SetProfil : MonoBehaviour {
 
             for (int i = 0; i < IconeHeros.Count; i++)
             {
-                if (IconeHeros[i].GetComponent<Image>().sprite == null)
+                if (IconeHeros[i].GetComponent<Image>().sprite == null && !AdventureBoard.ContainsHero(heros))
                 {
                     HerosAdventure[i] = heros;
                     string sex = heros.IsMale ? "M" : "F";
