@@ -195,8 +195,12 @@ public class SetProfil : MonoBehaviour {
     {
 
         GameObject.Find("GoldT").GetComponent<Text>().text = Start.Gtx.MoneyManager.Money.ToString();
-
-        GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
+        int x = 1;
+        foreach(BaseItem item in Start.Gtx.PlayerInfo.MyItems)
+        {
+            GameObject.Find("Item" + x + "T").GetComponent<Text>().text = item.ItemName;
+        }
+        //GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
         /*GameObject.Find("Item2T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         GameObject.Find("Item3T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
