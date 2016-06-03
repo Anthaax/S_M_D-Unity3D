@@ -28,6 +28,7 @@ public class Start : MonoBehaviour {
     public static Button[] ButtonsMentalPsycho;
     public static Button[] ButtonsTownHall;
     public static Button[] ButtonsArmor;
+    public static List<GameObject> ButtonsBuildings;
     // Use this for initialization
     void Awake () {
 
@@ -44,6 +45,8 @@ public class Start : MonoBehaviour {
         MenuProfil = GameObject.Find("Profil");
         PanelBoardMission = GameObject.Find("PanelBoardMission");
         MenuProfilPlayer = GameObject.Find("ProfilPlayer");
+
+        ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
 
         MenuBGArmory.SetActive(false);
         MenuBGTownhall.SetActive(false);
