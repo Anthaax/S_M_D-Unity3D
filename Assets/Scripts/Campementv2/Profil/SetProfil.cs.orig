@@ -10,7 +10,6 @@ public class SetProfil : MonoBehaviour {
 
     public static BaseHeros[] coupleHerosHotel = new BaseHeros[2];
     public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
-    public static BaseHeros[] HerosAdventure = new BaseHeros[4];
 
     public void Show()
     {
@@ -23,14 +22,14 @@ public class SetProfil : MonoBehaviour {
         if (Start.MenuBGArmory.activeInHierarchy)
         {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
-            armory.SetHero(heros);
+            armory.Hero = heros;
             GameObject IconeHero = GameObject.Find("ArmoryHero");
-            if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+            if(heros.IsMale==true)IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
 
-            foreach (Button b in Start.ButtonsArmor)
+            foreach(Button b in Start.ButtonsArmor)
             {
-                if (b.name == "Armor")
+                if(b.name == "Armor")
                 {
                     b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName;
                 }
@@ -54,7 +53,7 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeTrinket2 = GameObject.Find("Trinket2");
             */
         }
-        else if (Start.MenuBGHospital.activeInHierarchy)
+        else if(Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
             hospital.setHero(heros);
@@ -83,11 +82,11 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeHero1 = GameObject.Find("HotelHero1");
             GameObject IconeHero2 = GameObject.Find("HotelHero2");
 
-            if (IconeHero1.GetComponent<Image>().sprite == null)
+            if(IconeHero1.GetComponent<Image>().sprite == null)
             {
                 coupleHerosHotel[0] = heros;
                 string sex = heros.IsMale ? "M" : "F";
-                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
             }
             else
             {
@@ -119,6 +118,7 @@ public class SetProfil : MonoBehaviour {
             }
 
         }
+<<<<<<< HEAD
         else if (Start.PanelBoardMission.activeInHierarchy)
         {
             List<GameObject> IconeHeros = new List<GameObject>();
@@ -127,9 +127,9 @@ public class SetProfil : MonoBehaviour {
             IconeHeros.Add(GameObject.Find("AdvHero3"));
             IconeHeros.Add(GameObject.Find("AdvHero4"));
 
-            for (int i = 0; i < IconeHeros.Count; i++)
+            for(int i = 0; i < IconeHeros.Count; i++)
             {
-                if (IconeHeros[i].GetComponent<Image>().sprite == null)
+                if(IconeHeros[i].GetComponent<Image>().sprite == null)
                 {
                     HerosAdventure[i] = heros;
                     string sex = heros.IsMale ? "M" : "F";
@@ -137,7 +137,9 @@ public class SetProfil : MonoBehaviour {
                     break;
                 }
             }
-        }
+            
+=======
+>>>>>>> bfc45b93da655f3b61ea7bdd2378a30eb9459b2f
 
 
         else
@@ -196,7 +198,7 @@ public class SetProfil : MonoBehaviour {
 
         GameObject.Find("GoldT").GetComponent<Text>().text = Start.Gtx.MoneyManager.Money.ToString();
 
-        GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
+        GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.ToString();
         /*GameObject.Find("Item2T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         GameObject.Find("Item3T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();

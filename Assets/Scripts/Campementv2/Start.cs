@@ -22,6 +22,7 @@ public class Start : MonoBehaviour {
     public static GameObject MenuBGHotel;
     public static GameObject MenuProfil;
     public static GameObject PanelBoardMission;
+    public static GameObject MenuProfilPlayer;
 
     public static Button[] ButtonsSicknesses;
     public static Button[] ButtonsMentalPsycho;
@@ -42,6 +43,7 @@ public class Start : MonoBehaviour {
         MenuBGHotel = GameObject.Find("MenuBGHotel");
         MenuProfil = GameObject.Find("Profil");
         PanelBoardMission = GameObject.Find("PanelBoardMission");
+        MenuProfilPlayer = GameObject.Find("ProfilPlayer");
 
         MenuBGArmory.SetActive(false);
         MenuBGTownhall.SetActive(false);
@@ -54,6 +56,7 @@ public class Start : MonoBehaviour {
         MenuBGHotel.SetActive(false);
         MenuProfil.SetActive(false);
         PanelBoardMission.SetActive(false);
+        MenuProfilPlayer.SetActive(false);
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
