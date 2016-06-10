@@ -21,6 +21,7 @@ public class BoardManager : NetworkBehaviour
 
     public GameObject[] floorTiles;
     public GameObject[] wallTiles;
+    public GameObject[] miscTiles;
     public GameObject playerPrefab;
     public GameObject player;
 
@@ -94,6 +95,14 @@ public class BoardManager : NetworkBehaviour
         this.InitBoard(map);
     }
 
+
+    public void initMisc()
+    {
+        GameObject ironMaiden;
+        ironMaiden = Instantiate( miscTiles[0], new Vector3( map.Rooms[0].Center.X, map.Rooms[ 0 ].Center.Y + 1, 0f ), Quaternion.identity ) as GameObject;
+        ironMaiden.transform.localScale = new Vector3( 3f, 3f, 0f );
+    }
+
     public void InitBoard(Map map)
     {
  
@@ -144,6 +153,7 @@ public class BoardManager : NetworkBehaviour
         Camera.main.orthographicSize /= 2;
         Camera.main.transform.position = new Vector3(map.HeroPosition.X, map.HeroPosition.Y, -10f);
         playerAnimator = player.GetComponent<Animator>();
+        initMisc( );
     }
 
     // Use this for initialization
@@ -198,6 +208,7 @@ public class BoardManager : NetworkBehaviour
         Camera.main.orthographicSize /= 2;
         Camera.main.transform.position = new Vector3(map.HeroPosition.X, map.HeroPosition.Y, -10f);
         playerAnimator = player.GetComponent<Animator>();
+        initMisc( );
     }
 
     // Update is called once per frame
