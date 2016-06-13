@@ -90,7 +90,7 @@ public class BoardManager : NetworkBehaviour
     [ClientRpc]
     public void Rpc_SendClientsMap(string s)
     {
-        this.map = new Map(s);
+        this.map = new Map(Gtx, s);
         this.InitBoard(map);
     }
 
@@ -152,7 +152,7 @@ public class BoardManager : NetworkBehaviour
         Debug.Log("Calling normal initboard !");
         boardHolder = new GameObject("Board").transform;
 
-        this.map = new Map();
+        this.map = new Map( Gtx );
         Debug.Log("X = " + map.Rooms[0].Center.X + " Y = " + map.Rooms[0].Center.Y);
         this.goArray = new GameObject[map.Height, map.Width];
 

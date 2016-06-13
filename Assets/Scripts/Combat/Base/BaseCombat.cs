@@ -30,7 +30,11 @@ public class BaseCombat : MonoBehaviour {
         Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
-
+        Combat.Monsters.ToList().ForEach( c => 
+                                        {
+                                            c.HP = 200;
+                                            c.HPmax = 200;
+                                        });
         
     }
 	// Use this for initialization
