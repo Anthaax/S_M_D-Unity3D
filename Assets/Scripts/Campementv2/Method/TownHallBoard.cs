@@ -65,6 +65,7 @@ public class TownHallBoard : MonoBehaviour {
             if(building.name == buildingName)
             {
                 Debug.Log("Entrer 222 !!!!!!!");
+                building.GetComponent<Button>().enabled = true;
                 building.GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + buildingName);
                 break;
             }
