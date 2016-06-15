@@ -12,12 +12,14 @@ public class Attacking : MonoBehaviour {
 
     public void OnClick()
     {
-        if (BaseCombat.Attack.Spell!=null && BaseCombat.Attack.Monster!=0)
+        if (BaseCombat.Attack.Spell != null && BaseCombat.Attack.Monster >= 0) 
         {
 
             StartCoroutine(Movement());
+            Debug.Log( "Monstre n°" + BaseCombat.Attack.Monster );
             BaseCombat.Combat.SpellManager.HeroLaunchSpell(BaseCombat.Attack.Spell, BaseCombat.Attack.Monster);
             BaseCombat.Combat.NextTurn();
+            BaseCombat.Attack.Monster = -1;
             Timer T = GameObject.Find("Timer").GetComponent<Timer>();
             T.timeLeft = 30.0f;
 
@@ -38,7 +40,6 @@ public class Attacking : MonoBehaviour {
     void Update()
     {
         BaseMonster monster = BaseCombat.Combat.GetCharacterTurn() as BaseMonster;
-        Debug.Log( monster );
 
         if (monster != null)
         {

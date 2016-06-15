@@ -63,7 +63,6 @@ public class LoadGame : MonoBehaviour {
             if (file[i] != null)
             {
                 FileInfo fileinfo = new FileInfo(file[i]);
-                UnityEngine.Debug.Log(fileinfo.CreationTime.ToString());
                 int partie = i + 1;
                 save.GetComponent<Text>().text = "Partie " + partie + " Date : " + fileinfo.CreationTime.ToString();
             }
