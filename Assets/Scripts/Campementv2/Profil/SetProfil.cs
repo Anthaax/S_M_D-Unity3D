@@ -163,9 +163,29 @@ public class SetProfil : MonoBehaviour {
             GameObject.Find("WeaponProfilText").GetComponent<Text>().text = heros.Equipement[1].ItemName;
             GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = heros.Equipement[2].ItemName;
             GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = heros.Equipement[3].ItemName;
+            /*
+            Diarrhea d = new Diarrhea();
+            Fever f = new Fever();
+            heros.GetSickness(d);
+            heros.GetSickness(f);
+            Crazyness c = new Crazyness();
+            heros.GetPsycho(c);
+            */
+            int i = 1;
+            foreach(Sickness p in heros.Sicknesses)
+            {
+                Debug.Log(p.Name);
+                GameObject.Find("Maladie"+i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Sicknesses/Normal/" + p.Name);
+                i += 1;
+            }
+            i = 1;
+            foreach (Psychology p in heros.Psycho)
+            {
+                Debug.Log(p.Name);
+                GameObject.Find("Sick" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Sicknesses/Mental/" + p.Name);
+                i += 1;
+            }
         }
-        
-        
     }
 
 
