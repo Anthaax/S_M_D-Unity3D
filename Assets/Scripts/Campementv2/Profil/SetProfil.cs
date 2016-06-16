@@ -11,13 +11,12 @@ public class SetProfil : MonoBehaviour {
     public static BaseHeros[] coupleHerosHotel = new BaseHeros[2];
     public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
     public static BaseHeros[] HerosAdventure = new BaseHeros[4];
-
+    public static BaseHeros HeroOpen;
     public void Show()
     {
         string name = gameObject.name;
         int index = int.Parse("" + name[name.Length - 2]);
         BaseHeros heros = Start.Gtx.PlayerInfo.MyHeros[index - 1];
-        
         Start.MenuProfil.SetActive(false);
 
         if (Start.MenuBGArmory.activeInHierarchy)
@@ -142,6 +141,7 @@ public class SetProfil : MonoBehaviour {
 
         else
         {
+            HeroOpen = heros;
             Start.MenuProfil.SetActive(true);
             //GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
             if (heros.IsMale == true) GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
