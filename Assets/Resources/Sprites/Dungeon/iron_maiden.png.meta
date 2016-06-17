@@ -1,0 +1,1774 @@
+fileFormatVersion: 2
+guid: 63bf835a764b7664da7bb6c3fda349fb
+timeCreated: 1465546700
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: iron_maiden_0
+    21300002: iron_maiden_1
+    21300004: iron_maiden_2
+    21300006: iron_maiden_3
+    21300008: iron_maiden_4
+    21300010: iron_maiden_5
+    21300012: iron_maiden_6
+    21300014: iron_maiden_7
+    21300016: iron_maiden_8
+    21300018: iron_maiden_9
+    21300020: iron_maiden_10
+    21300022: iron_maiden_11
+    21300024: iron_maiden_12
+    21300026: iron_maiden_13
+    21300028: iron_maiden_14
+    21300030: iron_maiden_15
+    21300032: iron_maiden_16
+    21300034: iron_maiden_17
+    21300036: iron_maiden_18
+    21300038: iron_maiden_19
+    21300040: iron_maiden_20
+    21300042: iron_maiden_21
+    21300044: iron_maiden_22
+    21300046: iron_maiden_23
+    21300048: iron_maiden_24
+    21300050: iron_maiden_25
+    21300052: iron_maiden_26
+    21300054: iron_maiden_27
+    21300056: iron_maiden_28
+    21300058: iron_maiden_29
+    21300060: iron_maiden_30
+    21300062: iron_maiden_31
+    21300064: iron_maiden_32
+    21300066: iron_maiden_33
+    21300068: iron_maiden_34
+    21300070: iron_maiden_35
+    21300072: iron_maiden_36
+    21300074: iron_maiden_37
+    21300076: iron_maiden_38
+    21300078: iron_maiden_39
+    21300080: iron_maiden_40
+    21300082: iron_maiden_41
+    21300084: iron_maiden_42
+    21300086: iron_maiden_43
+    21300088: iron_maiden_44
+    21300090: iron_maiden_45
+    21300092: iron_maiden_46
+    21300094: iron_maiden_47
+    21300096: iron_maiden_48
+    21300098: iron_maiden_49
+    21300100: iron_maiden_50
+    21300102: iron_maiden_51
+    21300104: iron_maiden_52
+    21300106: iron_maiden_53
+    21300108: iron_maiden_54
+    21300110: iron_maiden_55
+    21300112: iron_maiden_56
+    21300114: iron_maiden_57
+    21300116: iron_maiden_58
+    21300118: iron_maiden_59
+    21300120: iron_maiden_60
+    21300122: iron_maiden_61
+    21300124: iron_maiden_62
+    21300126: iron_maiden_63
+    21300128: iron_maiden_64
+    21300130: iron_maiden_65
+    21300132: iron_maiden_66
+    21300134: iron_maiden_67
+    21300136: iron_maiden_68
+    21300138: iron_maiden_69
+    21300140: iron_maiden_70
+    21300142: iron_maiden_71
+    21300144: iron_maiden_72
+    21300146: iron_maiden_73
+    21300148: iron_maiden_74
+    21300150: iron_maiden_75
+    21300152: iron_maiden_76
+    21300154: iron_maiden_77
+    21300156: iron_maiden_78
+    21300158: iron_maiden_79
+    21300160: iron_maiden_80
+    21300162: iron_maiden_81
+    21300164: iron_maiden_82
+    21300166: iron_maiden_83
+    21300168: iron_maiden_84
+    21300170: iron_maiden_85
+    21300172: iron_maiden_86
+    21300174: iron_maiden_87
+    21300176: iron_maiden_88
+    21300178: iron_maiden_89
+    21300180: iron_maiden_90
+    21300182: iron_maiden_91
+    21300184: iron_maiden_92
+    21300186: iron_maiden_93
+    21300188: iron_maiden_94
+    21300190: iron_maiden_95
+    21300192: iron_maiden_96
+    21300194: iron_maiden_97
+    21300196: iron_maiden_98
+    21300198: iron_maiden_99
+    21300200: iron_maiden_100
+    21300202: iron_maiden_101
+    21300204: iron_maiden_102
+    21300206: iron_maiden_103
+    21300208: iron_maiden_104
+    21300210: iron_maiden_105
+    21300212: iron_maiden_106
+    21300214: iron_maiden_107
+    21300216: iron_maiden_108
+    21300218: iron_maiden_109
+    21300220: iron_maiden_110
+    21300222: iron_maiden_111
+    21300224: iron_maiden_112
+    21300226: iron_maiden_113
+    21300228: iron_maiden_114
+    21300230: iron_maiden_115
+    21300232: iron_maiden_116
+    21300234: iron_maiden_117
+    21300236: iron_maiden_118
+    21300238: iron_maiden_119
+    21300240: iron_maiden_120
+    21300242: iron_maiden_121
+    21300244: iron_maiden_122
+    21300246: iron_maiden_123
+    21300248: iron_maiden_124
+    21300250: iron_maiden_125
+    21300252: iron_maiden_126
+    21300254: iron_maiden_127
+    21300256: iron_maiden_128
+    21300258: iron_maiden_129
+    21300260: iron_maiden_130
+    21300262: iron_maiden_131
+    21300264: iron_maiden_132
+    21300266: iron_maiden_133
+    21300268: iron_maiden_134
+    21300270: iron_maiden_135
+    21300272: iron_maiden_136
+    21300274: iron_maiden_137
+    21300276: iron_maiden_138
+    21300278: iron_maiden_139
+    21300280: iron_maiden_140
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: iron_maiden_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 221
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 221
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 229
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 229
+        width: 9
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 229
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 254
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_7
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 245
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 243
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 246
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 181
+        width: 8
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 181
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 181
+        width: 9
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 177
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 169
+        width: 15
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_15
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 189
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 177
+        width: 18
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 189
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 217
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_19
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 217
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 217
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_21
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 217
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 217
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_23
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 217
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_24
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 217
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_25
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 217
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_26
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 201
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 201
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_30
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 201
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_32
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 201
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_33
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 201
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_34
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 201
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_35
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 201
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_36
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 201
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_37
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_38
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 201
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_39
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_40
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 201
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 201
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_42
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_43
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 201
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_44
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_45
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 201
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_46
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_47
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 169
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_48
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 173
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 173
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_50
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 182
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_51
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 185
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_52
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 185
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_53
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 182
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_54
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 142
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_55
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 142
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_56
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 163
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_57
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 159
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_58
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 152
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_59
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 169
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_60
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 166
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_61
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 169
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_62
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 169
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_63
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_64
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_65
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 169
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_66
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 166
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_67
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 166
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_68
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_69
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 169
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_70
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 169
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_71
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 166
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_72
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 169
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_73
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 169
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_74
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_75
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 169
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_76
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_77
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 166
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_78
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 169
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_79
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 142
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_80
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 142
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_81
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 142
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_82
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 149
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_83
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 142
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_84
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 153
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_85
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_86
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 153
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_87
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 153
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_88
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 153
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_89
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_90
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_91
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 153
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_92
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_93
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_94
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_95
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_96
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_97
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_98
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 150
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_99
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 153
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_100
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_101
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 153
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_102
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 153
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_103
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 49
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 38.5}
+        - {x: -20.5, y: 26.5}
+        - {x: -20.5, y: -23.5}
+        - {x: -15.5, y: -35.5}
+        - {x: -9.5, y: -38.5}
+        - {x: 10.5, y: -38.5}
+        - {x: 20.5, y: -21.5}
+        - {x: 20.5, y: 22.5}
+        - {x: 9.5, y: 38.5}
+    - name: iron_maiden_104
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 50
+        width: 46
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 38.5}
+        - {x: -23, y: 25.5}
+        - {x: -23, y: -26.5}
+        - {x: -12, y: -38.5}
+        - {x: 5, y: -38.5}
+        - {x: 23, y: -20.5}
+        - {x: 23, y: 21.5}
+        - {x: 2, y: 38.5}
+    - name: iron_maiden_105
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 50
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 38.5}
+        - {x: -18.5, y: 29.5}
+        - {x: -18.5, y: -29.5}
+        - {x: -10.5, y: -38.5}
+        - {x: 16.5, y: -38.5}
+        - {x: 18.5, y: -29.5}
+        - {x: 18.5, y: 37.5}
+        - {x: 16.5, y: 38.5}
+    - name: iron_maiden_106
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 50
+        width: 27
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_107
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 50
+        width: 25
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_108
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 50
+        width: 27
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_109
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_110
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 29
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_111
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 29
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_112
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_113
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 29
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_114
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 29
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_115
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_116
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 29
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_117
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 29
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_118
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_119
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 29
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_120
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_121
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 26
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_122
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_123
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_124
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 29
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_125
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 29
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_126
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_127
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_128
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_129
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 29
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_130
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 29
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_131
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_132
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_133
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 29
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_134
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 13
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_135
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 13
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_136
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_137
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 13
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_138
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_139
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: iron_maiden_140
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 13
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

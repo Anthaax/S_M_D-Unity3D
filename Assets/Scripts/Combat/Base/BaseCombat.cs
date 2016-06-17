@@ -6,18 +6,19 @@ using S_M_D.Combat;
 using S_M_D;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using S_M_D.Dungeon;
 
 public class BaseCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
     private static HeroAttack attack;
+    private static BaseHeros[] heros;
+    private static Map map;
 
 
     void Awake()
     {
-        Gtx = GameContext.CreateNewGame();
-        BaseHeros[] list = Gtx.PlayerInfo.MyHeros.ToArray();
         attack = new HeroAttack();
 
         GameObject.Find("Arrow1").GetComponent<Image>().enabled = false;
@@ -26,10 +27,15 @@ public class BaseCombat : MonoBehaviour {
         GameObject.Find("Arrow4").GetComponent<Image>().enabled = false;
 
         Gtx.DungeonManager.InitializedCatalogue();
-        Gtx.DungeonManager.CreateDungeon(list, Gtx.DungeonManager.MapCatalogue.First());
+        Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
-
+        Combat.Monsters.ToList().ForEach( c => 
+                                        {
+                                            c.HP = 200;
+                                            c.HPmax = 200;
+                                        });
+        Attack.Monster = -1;
         
     }
 	// Use this for initialization
@@ -78,6 +84,32 @@ public class BaseCombat : MonoBehaviour {
         set
         {
             attack = value;
+        }
+    }
+
+    public static BaseHeros[] Heros
+    {
+        get
+        {
+            return heros;
+        }
+
+        set
+        {
+            heros = value;
+        }
+    }
+
+    public static Map Map
+    {
+        get
+        {
+            return map;
+        }
+
+        set
+        {
+            map = value;
         }
     }
 }

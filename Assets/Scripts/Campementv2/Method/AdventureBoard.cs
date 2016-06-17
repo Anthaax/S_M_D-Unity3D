@@ -17,7 +17,13 @@ public class AdventureBoard : MonoBehaviour {
         if (SetProfil.HerosAdventure[0] != null && SetProfil.HerosAdventure[1] != null
             && SetProfil.HerosAdventure[2] != null && SetProfil.HerosAdventure[3] != null)
         {
-            SceneManager.LoadScene("Dungeon");
+            //Initialiser les héros dans le dongeon!!!!!
+
+            SceneManager.LoadScene(2);
+            BoardManager.hero = SetProfil.HerosAdventure;
+            BoardManager.Gtx = Start.Gtx;
+
+            //Start.Gtx.DungeonManager.cr
             Start.PanelBoardMission.SetActive(false);
         }
         //

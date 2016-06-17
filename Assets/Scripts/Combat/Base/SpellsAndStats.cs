@@ -80,7 +80,6 @@ public class SpellsAndStats : MonoBehaviour {
             else
             {
                 Y = 0;
-                GameObject.Find("MonsterHPG" + y).GetComponent<SpriteRenderer>().enabled = false;
                 GameObject.Find("MonsterHPT" + y).GetComponent<Text>().text = "Dead";
             }
                 
