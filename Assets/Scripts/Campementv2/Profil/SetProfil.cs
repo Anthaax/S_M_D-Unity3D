@@ -26,12 +26,15 @@ public class SetProfil : MonoBehaviour {
             //---
             if(armory.Hero != null)
             {
-
+                BaseHeros h = armory.Hero;
+                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
             }
             armory.SetHero(heros);
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+
+            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
             //---
 
             foreach (Button b in Start.ButtonsArmor)
@@ -63,12 +66,21 @@ public class SetProfil : MonoBehaviour {
         else if (Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+
+            //---
+            if (hospital.Hero != null)
+            {
+                BaseHeros h = hospital.Hero;
+                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+            }
             hospital.setHero(heros);
-            hospital.LevelUP();
-            heros.GetSickness(new Fever());
             GameObject IconeHero = GameObject.Find("HospitalHero");
-            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            string sex = heros.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
             HospitalBoard.CheckSicknesses(heros, hospital);
+
+            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+            //---
         }
         else if (Start.MenuBGCasern.activeInHierarchy)
         {
@@ -78,10 +90,21 @@ public class SetProfil : MonoBehaviour {
         else if (Start.MenuBGMentalhospital.activeInHierarchy)
         {
             MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+
+            //---
+            if (mentalHospital.Hero != null)
+            {
+                BaseHeros h = mentalHospital.Hero;
+                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+            }
             mentalHospital.setHero(heros);
             GameObject IconeHero = GameObject.Find("MentalHospitalHero");
-            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            string sex = heros.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
             MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
+
+            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+            //---
         }
         else if (Start.MenuBGHotel.activeInHierarchy)
         {
@@ -94,13 +117,23 @@ public class SetProfil : MonoBehaviour {
                 coupleHerosHotel[0] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
             }
             else
             {
+                //---
+                if (coupleHerosHotel[1] != null)
+                {
+                    BaseHeros h = coupleHerosHotel[1];
+                    SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                }
                 coupleHerosHotel[1] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
 
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
             }
 
         }
@@ -115,13 +148,22 @@ public class SetProfil : MonoBehaviour {
                 coupleHerosBar[0] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
             }
             else
             {
+                //---
+                if (coupleHerosBar[1] != null)
+                {
+                    BaseHeros h = coupleHerosBar[1];
+                    SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                }
                 coupleHerosBar[1] = heros;
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
-
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
             }
 
         }
@@ -132,7 +174,7 @@ public class SetProfil : MonoBehaviour {
             IconeHeros.Add(GameObject.Find("AdvHero2"));
             IconeHeros.Add(GameObject.Find("AdvHero3"));
             IconeHeros.Add(GameObject.Find("AdvHero4"));
-
+            Debug.Log("Contient : " + AdventureBoard.ContainsHero(heros));
             for (int i = 0; i < IconeHeros.Count; i++)
             {
                 if (IconeHeros[i].GetComponent<Image>().sprite == null && !AdventureBoard.ContainsHero(heros))
@@ -140,6 +182,8 @@ public class SetProfil : MonoBehaviour {
                     HerosAdventure[i] = heros;
                     string sex = heros.IsMale ? "M" : "F";
                     IconeHeros[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                    SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                    //---
                     break;
                 }
             }
@@ -233,15 +277,15 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         */
     }
-
-    public void SetToInactiveButton(Button button)
+    public static void SetToInactiveButton(Button button)
     {
-        button.GetComponent<Image>().color = Color.gray;
+        button.GetComponent<Image>().color = Color.black;
         button.enabled = false;
     }
-    public void SetToActiveButton(Button button)
+    public static void SetToActiveButton(Button button)
     {
         button.GetComponent<Image>().color = Color.white;
         button.enabled = true;
     }
+
 }
