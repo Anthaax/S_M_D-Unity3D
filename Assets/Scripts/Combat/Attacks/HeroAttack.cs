@@ -9,20 +9,20 @@ using S_M_D.Spell;
 
 public class HeroAttack {
 
-    int monster;
+    int _target;
     Spells spell;
     int index;
 
-    public int Monster
+    public int Target
     {
         get
         {
-            return monster;
+            return _target;
         }
 
         set
         {
-            monster = value;
+            _target = value;
         }
     }
 
