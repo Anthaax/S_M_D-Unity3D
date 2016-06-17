@@ -22,10 +22,17 @@ public class SetProfil : MonoBehaviour {
         if (Start.MenuBGArmory.activeInHierarchy)
         {
             Armory armory = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
+
+            //---
+            if(armory.Hero != null)
+            {
+
+            }
             armory.SetHero(heros);
             GameObject IconeHero = GameObject.Find("ArmoryHero");
             if (heros.IsMale == true) IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
             else IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
+            //---
 
             foreach (Button b in Start.ButtonsArmor)
             {
@@ -225,5 +232,16 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("Item3T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
         */
+    }
+
+    public void SetToInactiveButton(Button button)
+    {
+        button.GetComponent<Image>().color = Color.gray;
+        button.enabled = false;
+    }
+    public void SetToActiveButton(Button button)
+    {
+        button.GetComponent<Image>().color = Color.white;
+        button.enabled = true;
     }
 }
