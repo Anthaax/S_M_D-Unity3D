@@ -2,6 +2,7 @@
 using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
+using S_M_D.Character;
 
 public class HotelBoard : MonoBehaviour {
 	
@@ -27,13 +28,25 @@ public class HotelBoard : MonoBehaviour {
         GameObject IconeHero2 = GameObject.Find("HotelHero2");
         if (gameObject.name == "RemoveHero1")
         {
-            SetProfil.coupleHerosHotel[0] = null;
-            IconeHero1.GetComponent<Image>().sprite = null;
+            if(SetProfil.coupleHerosHotel[0] != null)
+            {
+                BaseHeros h = SetProfil.coupleHerosHotel[0];
+                SetProfil.SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                SetProfil.coupleHerosHotel[0] = null;
+                IconeHero1.GetComponent<Image>().sprite = null;
+            }
+            
         }
         else if (gameObject.name == "RemoveHero2")
         {
-            SetProfil.coupleHerosHotel[1] = null;
-            IconeHero2.GetComponent<Image>().sprite = null;
+            if(SetProfil.coupleHerosHotel[1] != null)
+            {
+                BaseHeros h = SetProfil.coupleHerosHotel[1];
+                SetProfil.SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                SetProfil.coupleHerosHotel[1] = null;
+                IconeHero2.GetComponent<Image>().sprite = null;
+            }
+            
         }
     }
 }
