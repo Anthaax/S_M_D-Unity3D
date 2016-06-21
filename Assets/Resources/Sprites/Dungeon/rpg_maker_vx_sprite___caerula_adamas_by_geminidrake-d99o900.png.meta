@@ -1,0 +1,1448 @@
+fileFormatVersion: 2
+guid: ec9dce5b751cd5942819bc3f60c96a67
+timeCreated: 1466513860
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_0
+    21300002: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_1
+    21300004: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_2
+    21300006: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_3
+    21300008: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_4
+    21300010: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_5
+    21300012: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_6
+    21300014: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_7
+    21300016: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_8
+    21300018: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_9
+    21300020: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_10
+    21300022: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_11
+    21300024: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_12
+    21300026: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_13
+    21300028: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_14
+    21300030: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_15
+    21300032: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_16
+    21300034: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_17
+    21300036: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_18
+    21300038: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_19
+    21300040: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_20
+    21300042: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_21
+    21300044: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_22
+    21300046: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_23
+    21300048: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_24
+    21300050: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_25
+    21300052: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_26
+    21300054: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_27
+    21300056: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_28
+    21300058: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_29
+    21300060: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_30
+    21300062: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_31
+    21300064: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_32
+    21300066: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_33
+    21300068: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_34
+    21300070: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_35
+    21300072: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_36
+    21300074: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_37
+    21300076: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_38
+    21300078: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_39
+    21300080: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_40
+    21300082: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_41
+    21300084: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_42
+    21300086: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_43
+    21300088: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_44
+    21300090: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_45
+    21300092: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_46
+    21300094: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_47
+    21300096: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_48
+    21300098: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_49
+    21300100: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_50
+    21300102: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_51
+    21300104: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_52
+    21300106: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_53
+    21300108: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_54
+    21300110: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_55
+    21300112: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_56
+    21300114: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_57
+    21300116: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_58
+    21300118: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_59
+    21300120: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_60
+    21300122: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_61
+    21300124: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_62
+    21300126: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_63
+    21300128: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_64
+    21300130: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_65
+    21300132: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_66
+    21300134: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_67
+    21300136: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_68
+    21300138: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_69
+    21300140: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_70
+    21300142: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_71
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 8, y: 0}
+        - {x: 2, y: -7}
+        - {x: 2, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -7}
+        - {x: 31, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 1, y: -9}
+        - {x: 1, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -2}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 1, y: -5}
+        - {x: 1, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -4}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 2, y: -8}
+        - {x: 2, y: -32}
+        - {x: 28, y: -32}
+        - {x: 31, y: -29}
+        - {x: 31, y: -6}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 1, y: -9}
+        - {x: 1, y: -28}
+        - {x: 4, y: -32}
+        - {x: 25, y: -32}
+        - {x: 32, y: -27}
+        - {x: 32, y: -8}
+        - {x: 25, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 3, y: -2}
+        - {x: 2, y: -8}
+        - {x: 2, y: -30}
+        - {x: 5, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 2, y: -7}
+        - {x: 2, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -1}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 0}
+        - {x: 1, y: -31}
+        - {x: 5, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 0, y: -7}
+        - {x: 0, y: -25}
+        - {x: 6, y: -32}
+        - {x: 27, y: -32}
+        - {x: 31, y: -30}
+        - {x: 31, y: -5}
+        - {x: 30, y: -1}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 8, y: 0}
+        - {x: 2, y: -7}
+        - {x: 2, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -7}
+        - {x: 31, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 1, y: -9}
+        - {x: 1, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -2}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 1, y: -5}
+        - {x: 1, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -4}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 2, y: -5}
+        - {x: 2, y: -18}
+        - {x: 5, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -5}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 0}
+        - {x: 6, y: 0}
+        - {x: 2, y: -5}
+        - {x: 2, y: -15}
+        - {x: 10, y: -32}
+        - {x: 29, y: -32}
+        - {x: 29, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 2, y: -3}
+        - {x: 2, y: -18}
+        - {x: 5, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -7}
+        - {x: 23, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 2, y: -1}
+        - {x: 2, y: -15}
+        - {x: 8, y: -32}
+        - {x: 24, y: -32}
+        - {x: 30, y: -17}
+        - {x: 30, y: -7}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 0}
+        - {x: 2, y: -14}
+        - {x: 7, y: -32}
+        - {x: 24, y: -32}
+        - {x: 26, y: -31}
+        - {x: 30, y: -24}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 2, y: -4}
+        - {x: 2, y: -9}
+        - {x: 7, y: -32}
+        - {x: 24, y: -32}
+        - {x: 30, y: -27}
+        - {x: 30, y: -7}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: -7}
+        - {x: 23, y: 0}
+        - {x: 3, y: 0}
+        - {x: 3, y: -27}
+        - {x: 9, y: -32}
+        - {x: 25, y: -32}
+        - {x: 31, y: -28}
+        - {x: 32, y: -25}
+        - {x: 32, y: -10}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: -13}
+        - {x: 29, y: -6}
+        - {x: 24, y: 0}
+        - {x: 4, y: 0}
+        - {x: 3, y: -1}
+        - {x: 3, y: -22}
+        - {x: 11, y: -32}
+        - {x: 22, y: -32}
+        - {x: 28, y: -29}
+        - {x: 32, y: -23}
+        - {x: 32, y: -17}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 0}
+        - {x: 3, y: -24}
+        - {x: 5, y: -32}
+        - {x: 30, y: -32}
+        - {x: 32, y: -27}
+        - {x: 32, y: -3}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 2, y: -5}
+        - {x: 2, y: -18}
+        - {x: 5, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -5}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 0}
+        - {x: 6, y: 0}
+        - {x: 2, y: -5}
+        - {x: 2, y: -15}
+        - {x: 10, y: -32}
+        - {x: 29, y: -32}
+        - {x: 29, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 2, y: -3}
+        - {x: 2, y: -18}
+        - {x: 5, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -7}
+        - {x: 23, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 1, y: -9}
+        - {x: 0, y: -14}
+        - {x: 0, y: -31}
+        - {x: 2, y: -32}
+        - {x: 24, y: -32}
+        - {x: 29, y: -24}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 0}
+        - {x: 3, y: 0}
+        - {x: 3, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -30}
+        - {x: 29, y: -8}
+        - {x: 29, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 1, y: -1}
+        - {x: 1, y: -32}
+        - {x: 26, y: -32}
+        - {x: 29, y: -19}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 2, y: -8}
+        - {x: 2, y: -19}
+        - {x: 8, y: -32}
+        - {x: 24, y: -32}
+        - {x: 30, y: -22}
+        - {x: 30, y: -1}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 2, y: -11}
+        - {x: 2, y: -25}
+        - {x: 8, y: -32}
+        - {x: 23, y: -32}
+        - {x: 30, y: -13}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 2, y: -6}
+        - {x: 2, y: -22}
+        - {x: 7, y: -32}
+        - {x: 25, y: -32}
+        - {x: 30, y: -16}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 0, y: -8}
+        - {x: 0, y: -27}
+        - {x: 3, y: -32}
+        - {x: 25, y: -32}
+        - {x: 29, y: -24}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 0, y: -11}
+        - {x: 0, y: -28}
+        - {x: 2, y: -31}
+        - {x: 6, y: -32}
+        - {x: 26, y: -32}
+        - {x: 29, y: -19}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 0, y: -8}
+        - {x: 0, y: -27}
+        - {x: 7, y: -32}
+        - {x: 25, y: -32}
+        - {x: 29, y: -27}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 0}
+        - {x: 1, y: -9}
+        - {x: 0, y: -14}
+        - {x: 0, y: -31}
+        - {x: 2, y: -32}
+        - {x: 24, y: -32}
+        - {x: 29, y: -24}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 0}
+        - {x: 3, y: 0}
+        - {x: 3, y: -32}
+        - {x: 23, y: -32}
+        - {x: 26, y: -30}
+        - {x: 29, y: -8}
+        - {x: 29, y: -2}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 1, y: -1}
+        - {x: 1, y: -32}
+        - {x: 26, y: -32}
+        - {x: 29, y: -19}
+        - {x: 29, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 2, y: -9}
+        - {x: 1, y: -30}
+        - {x: 1, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -14}
+        - {x: 29, y: -4}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 2, y: -3}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -1}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 6, y: 0}
+        - {x: 2, y: -1}
+        - {x: 2, y: -30}
+        - {x: 3, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: -23}
+        - {x: 29, y: -4}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 8, y: 0}
+        - {x: 2, y: -8}
+        - {x: 2, y: -29}
+        - {x: 7, y: -32}
+        - {x: 26, y: -32}
+        - {x: 28, y: -31}
+        - {x: 31, y: -22}
+        - {x: 31, y: -6}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 2, y: -5}
+        - {x: 2, y: -32}
+        - {x: 26, y: -32}
+        - {x: 31, y: -30}
+        - {x: 31, y: -8}
+        - {x: 25, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 0}
+        - {x: 8, y: 0}
+        - {x: 2, y: -8}
+        - {x: 2, y: -31}
+        - {x: 5, y: -32}
+        - {x: 27, y: -32}
+        - {x: 29, y: -27}
+        - {x: 31, y: -19}
+        - {x: 31, y: -8}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 1, y: -2}
+        - {x: 1, y: -24}
+        - {x: 4, y: -32}
+        - {x: 29, y: -32}
+        - {x: 32, y: -25}
+        - {x: 32, y: -8}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 1, y: -7}
+        - {x: 1, y: -25}
+        - {x: 7, y: -32}
+        - {x: 25, y: -32}
+        - {x: 32, y: -26}
+        - {x: 32, y: -9}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 0}
+        - {x: 1, y: -2}
+        - {x: 1, y: -28}
+        - {x: 7, y: -32}
+        - {x: 23, y: -32}
+        - {x: 32, y: -22}
+        - {x: 32, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 2, y: -9}
+        - {x: 1, y: -30}
+        - {x: 1, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -14}
+        - {x: 29, y: -4}
+        - {x: 24, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 2, y: -3}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -1}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 6, y: 0}
+        - {x: 2, y: -1}
+        - {x: 2, y: -30}
+        - {x: 3, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: -23}
+        - {x: 29, y: -4}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 4, y: -2}
+        - {x: 2, y: -13}
+        - {x: 2, y: -31}
+        - {x: 4, y: -32}
+        - {x: 27, y: -32}
+        - {x: 31, y: -23}
+        - {x: 31, y: -2}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -13}
+        - {x: 1, y: -28}
+        - {x: 4, y: -32}
+        - {x: 27, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: -3}
+        - {x: 28, y: 0}
+        - {x: 4, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 2, y: 0}
+        - {x: 2, y: -30}
+        - {x: 6, y: -32}
+        - {x: 25, y: -32}
+        - {x: 29, y: -31}
+        - {x: 31, y: -30}
+        - {x: 31, y: -11}
+        - {x: 30, y: -4}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 0}
+        - {x: 7, y: 0}
+        - {x: 2, y: -9}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: -27}
+        - {x: 29, y: -5}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 1, y: -9}
+        - {x: 1, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -2}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -31}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -8}
+        - {x: 30, y: -4}
+        - {x: 28, y: 0}
+        - {x: 6, y: 0}
+        - {x: 1, y: -3}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 4, y: -25}
+        - {x: 9, y: -32}
+        - {x: 24, y: -32}
+        - {x: 27, y: -25}
+        - {x: 27, y: -3}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 4, y: -25}
+        - {x: 10, y: -32}
+        - {x: 24, y: -32}
+        - {x: 27, y: -29}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -3}
+        - {x: 23, y: 0}
+        - {x: 7, y: 0}
+        - {x: 4, y: -4}
+        - {x: 4, y: -17}
+        - {x: 6, y: -32}
+        - {x: 25, y: -32}
+        - {x: 28, y: -28}
+        - {x: 28, y: -6}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 4, y: -25}
+        - {x: 9, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -13}
+        - {x: 25, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 0}
+        - {x: 4, y: -26}
+        - {x: 9, y: -32}
+        - {x: 29, y: -32}
+        - {x: 29, y: -3}
+        - {x: 25, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 4, y: -5}
+        - {x: 4, y: -19}
+        - {x: 7, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -23}
+        - {x: 28, y: -2}
+        - {x: 23, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 5, y: -30}
+        - {x: 6, y: -32}
+        - {x: 25, y: -32}
+        - {x: 28, y: -15}
+        - {x: 28, y: -3}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 5, y: -32}
+        - {x: 22, y: -32}
+        - {x: 28, y: -18}
+        - {x: 28, y: -3}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 0}
+        - {x: 4, y: -5}
+        - {x: 4, y: -23}
+        - {x: 8, y: -31}
+        - {x: 9, y: -32}
+        - {x: 24, y: -32}
+        - {x: 28, y: -27}
+        - {x: 28, y: -4}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 0}
+        - {x: 3, y: -5}
+        - {x: 0, y: -21}
+        - {x: 0, y: -32}
+        - {x: 25, y: -32}
+        - {x: 28, y: -21}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 0}
+        - {x: 3, y: -32}
+        - {x: 24, y: -32}
+        - {x: 28, y: -18}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 0}
+        - {x: 1, y: -8}
+        - {x: 1, y: -32}
+        - {x: 27, y: -32}
+        - {x: 28, y: -27}
+        - {x: 28, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: 3, y: -9}
+        - {x: 3, y: -25}
+        - {x: 5, y: -29}
+        - {x: 8, y: -32}
+        - {x: 30, y: -32}
+        - {x: 30, y: -2}
+        - {x: 26, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 0}
+        - {x: 3, y: -29}
+        - {x: 7, y: -32}
+        - {x: 28, y: -32}
+        - {x: 30, y: -28}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 3, y: -7}
+        - {x: 3, y: -27}
+        - {x: 12, y: -32}
+        - {x: 26, y: -32}
+        - {x: 30, y: -28}
+        - {x: 30, y: -6}
+        - {x: 27, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_69
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 0}
+        - {x: 4, y: 0}
+        - {x: 1, y: -29}
+        - {x: 1, y: -30}
+        - {x: 3, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -5}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_70
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 0}
+        - {x: 5, y: -1}
+        - {x: 2, y: -21}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: -8}
+        - {x: 30, y: 0}
+    - name: rpg_maker_vx_sprite___caerula_adamas_by_geminidrake-d99o900_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 0}
+        - {x: 5, y: 0}
+        - {x: 2, y: -10}
+        - {x: 2, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -31}
+        - {x: 32, y: -25}
+        - {x: 30, y: -5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
