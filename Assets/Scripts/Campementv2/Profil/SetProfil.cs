@@ -210,10 +210,22 @@ public class SetProfil : MonoBehaviour {
             GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
             GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
 
-            GameObject.Find("ArmorProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
-            GameObject.Find("WeaponProfilText").GetComponent<Text>().text = heros.Equipement[1].ItemName;
-            GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = heros.Equipement[2].ItemName;
-            GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = heros.Equipement[3].ItemName;
+            if (heros.Equipement[0] != null) GameObject.Find("ArmorProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
+            else GameObject.Find("ArmorProfilText").GetComponent<Text>().text = "";
+            if (heros.Equipement[1] != null) GameObject.Find("WeaponProfilText").GetComponent<Text>().text = heros.Equipement[1].ItemName;
+            else GameObject.Find("WeaponProfilText").GetComponent<Text>().text = "";
+            if (heros.Equipement[2] != null) GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = heros.Equipement[2].ItemName;
+            else GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = "";
+            if (heros.Equipement[3] != null) GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = heros.Equipement[3].ItemName;
+            else GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = "";
+            if (heros.Equipement[0] != null) GameObject.Find("ArmorProfil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
+            else GameObject.Find("ArmorProfil").GetComponent<Image>().sprite = null;
+            if (heros.Equipement[1] != null) GameObject.Find("WeaponProfil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
+            else GameObject.Find("WeaponProfil").GetComponent<Image>().sprite = null;
+            if (heros.Equipement[2] != null) GameObject.Find("Trinket1Profil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
+            else GameObject.Find("Trinket1Profil").GetComponent<Image>().sprite = null;
+            if (heros.Equipement[3] != null) GameObject.Find("Trinket2Profil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
+            else GameObject.Find("Trinket2Profil").GetComponent<Image>().sprite = null;
             /*
             Diarrhea d = new Diarrhea();
             Fever f = new Fever();
@@ -269,7 +281,11 @@ public class SetProfil : MonoBehaviour {
         int x = 1;
         foreach(BaseItem item in Start.Gtx.PlayerInfo.MyItems)
         {
+            Debug.Log(item.ItemName);
             GameObject.Find("Item" + x + "T").GetComponent<Text>().text = item.ItemName;
+            if(item.Itemtype==BaseItem.ItemTypes.Armor) GameObject.Find("Item"+x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
+            if (item.Itemtype == BaseItem.ItemTypes.Weapon) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
+            if (item.Itemtype == BaseItem.ItemTypes.Trinket) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
         }
         //GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
         /*GameObject.Find("Item2T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
