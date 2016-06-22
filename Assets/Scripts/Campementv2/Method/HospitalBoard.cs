@@ -58,7 +58,7 @@ public class HospitalBoard : MonoBehaviour {
         {
             BaseHeros h = hospital.Hero;
             SetProfil.SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
-            hospital.deleteHeros();
+            hospital.DeleteHero();
             GameObject IconeHero = GameObject.Find("HospitalHero");
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/noprofil");
             InitializedButtonsHospitalBoard();
