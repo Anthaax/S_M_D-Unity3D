@@ -58,6 +58,58 @@ public class CasernBoard : MonoBehaviour {
             spellsBox[i].GetComponent<Button>().image.color = Color.red;
     }
 
+    public void setSpellEquipedOrNot()
+    {
+        Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+        BaseHeros hero = casern.Hero;
+
+        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text;
+        for(int i = 0; i < hero.Spells.Length; i++)
+        {
+            if(hero.Spells[i] != null && spellName == hero.Spells[i].Name)
+            {
+                if(hero.Spells[i].IsBuy)
+                {
+                   
+                }
+                if (hero.Spells[i].IsEquiped)
+                {
+                    hero.Spells[i].IsEquiped = false;
+                    CheckEquiped(i, hero.Spells[i]);
+                }
+                else
+                {
+                    if (NumberOfSpellsEquiped() < 4)
+                    {
+                        hero.Spells[i].IsEquiped = true;
+                        CheckEquiped(i, hero.Spells[i]);
+                    }
+
+                }
+
+                break;
+            }
+        }
+
+    }
+
+    private int NumberOfSpellsEquiped()
+    {
+        Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+        BaseHeros hero = casern.Hero;
+        int nb = 0;
+        foreach(Spells spell in hero.Spells)
+        {
+            if(spell != null)
+            {
+                if (spell.IsEquiped)
+                    nb++;
+            }
+        }
+
+        return nb;
+    }
+
     public static void SetToInactiveButton(Button button)
     {
         button.GetComponent<Image>().color = Color.gray;

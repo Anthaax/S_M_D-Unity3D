@@ -50,6 +50,7 @@ public class Start : MonoBehaviour {
 
         ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
+        CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
 
         MenuBGArmory.SetActive(false);
