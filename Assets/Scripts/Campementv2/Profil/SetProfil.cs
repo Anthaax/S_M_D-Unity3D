@@ -63,6 +63,31 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeTrinket2 = GameObject.Find("Trinket2");
             */
         }
+
+        else if(Start.MenuBGCasern.activeInHierarchy)
+        {
+            Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+            for(int i = 0; i < heros.Spells.Length; i++)
+            {
+                if(heros.Spells[i] != null)
+                Debug.Log("Spell " + i + ": " + heros.Spells[i].Name+"; equiped: "+heros.Spells[i].IsEquiped);
+            }
+            //---
+            if (casern.Hero != null)
+            {
+                BaseHeros h = casern.Hero;
+                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+            }
+            casern.setHero(heros);
+            GameObject IconeHero = GameObject.Find("CasernHero");
+            string sex = heros.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+
+            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+            //---
+            CasernBoard.SetBoard();
+        }
+
         else if (Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
