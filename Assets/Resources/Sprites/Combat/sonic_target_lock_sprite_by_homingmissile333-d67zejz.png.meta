@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: f9cb63ec33b76f54faa9037dc6af3814
+timeCreated: 1466599577
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sonic_target_lock_sprite_by_homingmissile333-d67zejz_0
+    21300002: sonic_target_lock_sprite_by_homingmissile333-d67zejz_1
+    21300004: sonic_target_lock_sprite_by_homingmissile333-d67zejz_2
+    21300006: sonic_target_lock_sprite_by_homingmissile333-d67zejz_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sonic_target_lock_sprite_by_homingmissile333-d67zejz_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: -9.5}
+        - {x: -25, y: -10.5}
+        - {x: -18, y: -18.5}
+        - {x: -15, y: -17.5}
+        - {x: -15, y: -10.5}
+        - {x: -18, y: -7.5}
+        - {x: -23, y: -7.5}
+      - - {x: 4, y: 22.5}
+        - {x: -8, y: 22.5}
+        - {x: -18, y: 9.5}
+        - {x: -18, y: -7.5}
+        - {x: -13, y: -18.5}
+        - {x: 13, y: -18.5}
+        - {x: 16, y: -12.5}
+        - {x: 16, y: 11.5}
+        - {x: 7, y: 21.5}
+      - - {x: 21, y: -7.5}
+        - {x: 16, y: -7.5}
+        - {x: 13, y: -10.5}
+        - {x: 13, y: -17.5}
+        - {x: 15, y: -18.5}
+        - {x: 18, y: -18.5}
+        - {x: 23, y: -11.5}
+        - {x: 23, y: -9.5}
+      - - {x: -4, y: 4.5}
+        - {x: -7, y: 0.5}
+        - {x: -7, y: -4.5}
+        - {x: -4, y: -7.5}
+        - {x: 3, y: -7.5}
+        - {x: 5, y: -4.5}
+        - {x: 5, y: 2.5}
+        - {x: 2, y: 4.5}
+    - name: sonic_target_lock_sprite_by_homingmissile333-d67zejz_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -1.5}
+        - {x: 12, y: -1.5}
+        - {x: 9, y: -3.5}
+        - {x: 12, y: -1.5}
+        - {x: 18, y: -1.5}
+        - {x: 18, y: 19.5}
+        - {x: 13, y: 22.5}
+        - {x: 7, y: 22.5}
+        - {x: -23, y: 9.5}
+        - {x: -23, y: -12.5}
+        - {x: -9, y: -24.5}
+        - {x: -1, y: -25.5}
+        - {x: 13, y: -25.5}
+        - {x: 18, y: -18.5}
+        - {x: 17, y: -15.5}
+        - {x: 18, y: -3.5}
+      - - {x: -2, y: 4.5}
+        - {x: -5, y: 0.5}
+        - {x: -5, y: -4.5}
+        - {x: -2, y: -7.5}
+        - {x: 5, y: -7.5}
+        - {x: 7, y: -4.5}
+        - {x: 7, y: 2.5}
+        - {x: 4, y: 4.5}
+    - name: sonic_target_lock_sprite_by_homingmissile333-d67zejz_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 15.5}
+        - {x: -9, y: 15.5}
+        - {x: -17, y: 9.5}
+        - {x: -17, y: -8.5}
+        - {x: -8, y: -24.5}
+        - {x: -5, y: -25.5}
+        - {x: 7, y: -25.5}
+        - {x: 8, y: -24.5}
+        - {x: 17, y: -11.5}
+        - {x: 17, y: 3.5}
+      - - {x: -3, y: 4.5}
+        - {x: -6, y: 0.5}
+        - {x: -6, y: -4.5}
+        - {x: -3, y: -7.5}
+        - {x: 4, y: -7.5}
+        - {x: 6, y: -4.5}
+        - {x: 6, y: 2.5}
+        - {x: 3, y: 4.5}
+      - - {x: -16, y: 15.5}
+        - {x: -19, y: 15.5}
+        - {x: -24, y: 9.5}
+        - {x: -24, y: 6.5}
+        - {x: -23, y: 4.5}
+        - {x: -17, y: 4.5}
+        - {x: -14, y: 7.5}
+        - {x: -14, y: 14.5}
+      - - {x: 14, y: 14.5}
+        - {x: 14, y: 7.5}
+        - {x: 17, y: 4.5}
+        - {x: 23, y: 4.5}
+        - {x: 24, y: 6.5}
+        - {x: 24, y: 9.5}
+        - {x: 17, y: 15.5}
+    - name: sonic_target_lock_sprite_by_homingmissile333-d67zejz_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 22}
+        - {x: -18, y: 15}
+        - {x: -17, y: 12}
+        - {x: -18, y: 0}
+        - {x: -16, y: -2}
+        - {x: -12, y: -2}
+        - {x: -9, y: 0}
+        - {x: -12, y: -2}
+        - {x: -18, y: -2}
+        - {x: -18, y: -22}
+        - {x: -16, y: -26}
+        - {x: -1, y: -26}
+        - {x: 22, y: -11}
+        - {x: 23, y: -10}
+        - {x: 23, y: 8}
+        - {x: 8, y: 19}
+      - - {x: -4, y: 4}
+        - {x: -7, y: 0}
+        - {x: -7, y: -5}
+        - {x: -4, y: -8}
+        - {x: 3, y: -8}
+        - {x: 5, y: -5}
+        - {x: 5, y: 2}
+        - {x: 2, y: 4}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
