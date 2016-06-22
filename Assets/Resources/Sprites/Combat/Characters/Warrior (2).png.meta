@@ -1,0 +1,3123 @@
+fileFormatVersion: 2
+guid: ecd82d16690aede4a96c55cf97ca7e2a
+timeCreated: 1465987347
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Warrior (2)_0
+    21300002: Warrior (2)_1
+    21300004: Warrior (2)_2
+    21300006: Warrior (2)_3
+    21300008: Warrior (2)_4
+    21300010: Warrior (2)_5
+    21300012: Warrior (2)_6
+    21300014: Warrior (2)_7
+    21300016: Warrior (2)_8
+    21300018: Warrior (2)_9
+    21300020: Warrior (2)_10
+    21300022: Warrior (2)_11
+    21300024: Warrior (2)_12
+    21300026: Warrior (2)_13
+    21300028: Warrior (2)_14
+    21300030: Warrior (2)_15
+    21300032: Warrior (2)_16
+    21300034: Warrior (2)_17
+    21300036: Warrior (2)_18
+    21300038: Warrior (2)_19
+    21300040: Warrior (2)_20
+    21300042: Warrior (2)_21
+    21300044: Warrior (2)_22
+    21300046: Warrior (2)_23
+    21300048: Warrior (2)_24
+    21300050: Warrior (2)_25
+    21300052: Warrior (2)_26
+    21300054: Warrior (2)_27
+    21300056: Warrior (2)_28
+    21300058: Warrior (2)_29
+    21300060: Warrior (2)_30
+    21300062: Warrior (2)_31
+    21300064: Warrior (2)_32
+    21300066: Warrior (2)_33
+    21300068: Warrior (2)_34
+    21300070: Warrior (2)_35
+    21300072: Warrior (2)_36
+    21300074: Warrior (2)_37
+    21300076: Warrior (2)_38
+    21300078: Warrior (2)_39
+    21300080: Warrior (2)_40
+    21300082: Warrior (2)_41
+    21300084: Warrior (2)_42
+    21300086: Warrior (2)_43
+    21300088: Warrior (2)_44
+    21300090: Warrior (2)_45
+    21300092: Warrior (2)_46
+    21300094: Warrior (2)_47
+    21300096: Warrior (2)_48
+    21300098: Warrior (2)_49
+    21300100: Warrior (2)_50
+    21300102: Warrior (2)_51
+    21300104: Warrior (2)_52
+    21300106: Warrior (2)_53
+    21300108: Warrior (2)_54
+    21300110: Warrior (2)_55
+    21300112: Warrior (2)_56
+    21300114: Warrior (2)_57
+    21300116: Warrior (2)_58
+    21300118: Warrior (2)_59
+    21300120: Warrior (2)_60
+    21300122: Warrior (2)_61
+    21300124: Warrior (2)_62
+    21300126: Warrior (2)_63
+    21300128: Warrior (2)_64
+    21300130: Warrior (2)_65
+    21300132: Warrior (2)_66
+    21300134: Warrior (2)_67
+    21300136: Warrior (2)_68
+    21300138: Warrior (2)_69
+    21300140: Warrior (2)_70
+    21300142: Warrior (2)_71
+    21300144: Warrior (2)_72
+    21300146: Warrior (2)_73
+    21300148: Warrior (2)_74
+    21300150: Warrior (2)_75
+    21300152: Warrior (2)_76
+    21300154: Warrior (2)_77
+    21300156: Warrior (2)_78
+    21300158: Warrior (2)_79
+    21300160: Warrior (2)_80
+    21300162: Warrior (2)_81
+    21300164: Warrior (2)_82
+    21300166: Warrior (2)_83
+    21300168: Warrior (2)_84
+    21300170: Warrior (2)_85
+    21300172: Warrior (2)_86
+    21300174: Warrior (2)_87
+    21300176: Warrior (2)_88
+    21300178: Warrior (2)_89
+    21300180: Warrior (2)_90
+    21300182: Warrior (2)_91
+    21300184: Warrior (2)_92
+    21300186: Warrior (2)_93
+    21300188: Warrior (2)_94
+    21300190: Warrior (2)_95
+    21300192: Warrior (2)_96
+    21300194: Warrior (2)_97
+    21300196: Warrior (2)_98
+    21300198: Warrior (2)_99
+    21300200: Warrior (2)_100
+    21300202: Warrior (2)_101
+    21300204: Warrior (2)_102
+    21300206: Warrior (2)_103
+    21300208: Warrior (2)_104
+    21300210: Warrior (2)_105
+    21300212: Warrior (2)_106
+    21300214: Warrior (2)_107
+    21300216: Warrior (2)_108
+    21300218: Warrior (2)_109
+    21300220: Warrior (2)_110
+    21300222: Warrior (2)_111
+    21300224: Warrior (2)_112
+    21300226: Warrior (2)_113
+    21300228: Warrior (2)_114
+    21300230: Warrior (2)_115
+    21300232: Warrior (2)_116
+    21300234: Warrior (2)_117
+    21300236: Warrior (2)_118
+    21300238: Warrior (2)_119
+    21300240: Warrior (2)_120
+    21300242: Warrior (2)_121
+    21300244: Warrior (2)_122
+    21300246: Warrior (2)_123
+    21300248: Warrior (2)_124
+    21300250: Warrior (2)_125
+    21300252: Warrior (2)_126
+    21300254: Warrior (2)_127
+    21300256: Warrior (2)_128
+    21300258: Warrior (2)_129
+    21300260: Warrior (2)_130
+    21300262: Warrior (2)_131
+    21300264: Warrior (2)_132
+    21300266: Warrior (2)_133
+    21300268: Warrior (2)_134
+    21300270: Warrior (2)_135
+    21300272: Warrior (2)_136
+    21300274: Warrior (2)_137
+    21300276: Warrior (2)_138
+    21300278: Warrior (2)_139
+    21300280: Warrior (2)_140
+    21300282: Warrior (2)_141
+    21300284: Warrior (2)_142
+    21300286: Warrior (2)_143
+    21300288: Warrior (2)_144
+    21300290: Warrior (2)_145
+    21300292: Warrior (2)_146
+    21300294: Warrior (2)_147
+    21300296: Warrior (2)_148
+    21300298: Warrior (2)_149
+    21300300: Warrior (2)_150
+    21300302: Warrior (2)_151
+    21300304: Warrior (2)_152
+    21300306: Warrior (2)_153
+    21300308: Warrior (2)_154
+    21300310: Warrior (2)_155
+    21300312: Warrior (2)_156
+    21300314: Warrior (2)_157
+    21300316: Warrior (2)_158
+    21300318: Warrior (2)_159
+    21300320: Warrior (2)_160
+    21300322: Warrior (2)_161
+    21300324: Warrior (2)_162
+    21300326: Warrior (2)_163
+    21300328: Warrior (2)_164
+    21300330: Warrior (2)_165
+    21300332: Warrior (2)_166
+    21300334: Warrior (2)_167
+    21300336: Warrior (2)_168
+    21300338: Warrior (2)_169
+    21300340: Warrior (2)_170
+    21300342: Warrior (2)_171
+    21300344: Warrior (2)_172
+    21300346: Warrior (2)_173
+    21300348: Warrior (2)_174
+    21300350: Warrior (2)_175
+    21300352: Warrior (2)_176
+    21300354: Warrior (2)_177
+    21300356: Warrior (2)_178
+    21300358: Warrior (2)_179
+    21300360: Warrior (2)_180
+    21300362: Warrior (2)_181
+    21300364: Warrior (2)_182
+    21300366: Warrior (2)_183
+    21300368: Warrior (2)_184
+    21300370: Warrior (2)_185
+    21300372: Warrior (2)_186
+    21300374: Warrior (2)_187
+    21300376: Warrior (2)_188
+    21300378: Warrior (2)_189
+    21300380: Warrior (2)_190
+    21300382: Warrior (2)_191
+    21300384: Warrior (2)_192
+    21300386: Warrior (2)_193
+    21300388: Warrior (2)_194
+    21300390: Warrior (2)_195
+    21300392: Warrior (2)_196
+    21300394: Warrior (2)_197
+    21300396: Warrior (2)_198
+    21300398: Warrior (2)_199
+    21300400: Warrior (2)_200
+    21300402: Warrior (2)_201
+    21300404: Warrior (2)_202
+    21300406: Warrior (2)_203
+    21300408: Warrior (2)_204
+    21300410: Warrior (2)_205
+    21300412: Warrior (2)_206
+    21300414: Warrior (2)_207
+    21300416: Warrior (2)_208
+    21300418: Warrior (2)_209
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Warrior (2)_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2049
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2049
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2049
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2049
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.696625, y: 24.802734}
+        - {x: -10.303375, y: 24.802734}
+        - {x: -17.303375, y: 11.802734}
+        - {x: -17.303375, y: -7.1972656}
+        - {x: -9.303375, y: -24.197266}
+        - {x: 12.696625, y: -24.197266}
+        - {x: 18.696625, y: -15.197266}
+        - {x: 18.696625, y: 19.802734}
+        - {x: 17.696625, y: 23.802734}
+    - name: Warrior (2)_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2049
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.891296, y: 24.802734}
+        - {x: -12.108704, y: 24.802734}
+        - {x: -22.108704, y: 15.802734}
+        - {x: -22.108704, y: -16.197266}
+        - {x: -9.108704, y: -24.197266}
+        - {x: 19.891296, y: -24.197266}
+        - {x: 23.891296, y: -15.197266}
+        - {x: 23.891296, y: 13.802734}
+        - {x: 17.891296, y: 23.802734}
+    - name: Warrior (2)_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2049
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.067047, y: 24.802734}
+        - {x: -22.067047, y: 19.802734}
+        - {x: -22.067047, y: -1.1972656}
+        - {x: -10.067047, y: -24.197266}
+        - {x: 17.932953, y: -24.197266}
+        - {x: 23.932953, y: -4.1972656}
+        - {x: 23.932953, y: 21.802734}
+        - {x: 17.932953, y: 24.802734}
+    - name: Warrior (2)_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2049
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.821625, y: 24.802734}
+        - {x: -10.178375, y: 24.802734}
+        - {x: -17.178375, y: 22.802734}
+        - {x: -17.178375, y: -10.197266}
+        - {x: -13.178375, y: -24.197266}
+        - {x: 12.821625, y: -24.197266}
+        - {x: 18.821625, y: -13.197266}
+        - {x: 18.821625, y: 7.8027344}
+        - {x: 14.821625, y: 21.802734}
+    - name: Warrior (2)_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1984
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1984
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1984
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1984
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1984
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.353516, y: 25.291748}
+        - {x: -16.353516, y: 13.291748}
+        - {x: -16.353516, y: -24.708252}
+        - {x: 13.646484, y: -24.708252}
+        - {x: 17.646484, y: -14.708252}
+        - {x: 17.646484, y: 10.291748}
+        - {x: 7.6464844, y: 25.291748}
+    - name: Warrior (2)_12
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1984
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.311829, y: 25.291748}
+        - {x: -16.311829, y: -24.708252}
+        - {x: 11.688171, y: -24.708252}
+        - {x: 17.688171, y: -14.708252}
+        - {x: 17.688171, y: 19.291748}
+        - {x: 8.688171, y: 25.291748}
+    - name: Warrior (2)_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1984
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1919
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1919
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1919
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1919
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.333984, y: 26.28064}
+        - {x: -16.333984, y: 22.28064}
+        - {x: -16.333984, y: -25.71936}
+        - {x: 14.666016, y: -25.71936}
+        - {x: 17.666016, y: -16.71936}
+        - {x: 17.666016, y: 24.28064}
+        - {x: 14.666016, y: 26.28064}
+    - name: Warrior (2)_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1919
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.891296, y: 26.28064}
+        - {x: -17.108704, y: 26.28064}
+        - {x: -21.108704, y: 25.28064}
+        - {x: -22.108704, y: 20.28064}
+        - {x: -22.108704, y: -13.71936}
+        - {x: -13.108704, y: -25.71936}
+        - {x: 10.891296, y: -25.71936}
+        - {x: 14.891296, y: -24.71936}
+        - {x: 23.891296, y: -2.7193604}
+        - {x: 23.891296, y: 13.28064}
+    - name: Warrior (2)_19
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1919
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.932953, y: 26.28064}
+        - {x: -22.067047, y: 26.28064}
+        - {x: -22.067047, y: -25.71936}
+        - {x: 17.932953, y: -25.71936}
+        - {x: 23.932953, y: -17.71936}
+        - {x: 23.932953, y: 21.28064}
+    - name: Warrior (2)_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1919
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.2089844, y: 26.28064}
+        - {x: -16.208984, y: 23.28064}
+        - {x: -16.208984, y: -13.71936}
+        - {x: -10.208984, y: -25.71936}
+        - {x: 9.791016, y: -25.71936}
+        - {x: 17.791016, y: -14.71936}
+        - {x: 17.791016, y: 15.28064}
+        - {x: 15.791016, y: 26.28064}
+    - name: Warrior (2)_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1856
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1856
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1856
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1856
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1856
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.23111, y: 25.208374}
+        - {x: -16.23111, y: 16.208374}
+        - {x: -16.23111, y: -3.791626}
+        - {x: -7.2311096, y: -24.791626}
+        - {x: 16.76889, y: -24.791626}
+        - {x: 17.76889, y: -16.791626}
+        - {x: 17.76889, y: 25.208374}
+    - name: Warrior (2)_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1856
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.810547, y: 25.208374}
+        - {x: -7.189453, y: 25.208374}
+        - {x: -16.189453, y: 20.208374}
+        - {x: -16.189453, y: -9.791626}
+        - {x: -11.189453, y: -24.791626}
+        - {x: 15.810547, y: -24.791626}
+        - {x: 16.810547, y: -16.791626}
+        - {x: 17.810547, y: -12.791626}
+        - {x: 17.810547, y: 16.208374}
+    - name: Warrior (2)_27
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1856
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1792
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1791
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_31
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_32
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_33
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_34
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_35
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1728
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1728
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1727
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1727
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_43
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1663
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1663
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_46
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1664
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1664
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_48
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1664
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_49
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1664
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_50
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1664
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_51
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1664
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_52
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1600
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_53
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1600
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_54
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1600
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_56
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_57
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1599
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_58
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_59
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1537
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1537
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_62
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1536
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_63
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1535
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_64
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1536
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1537
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_66
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1536
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_67
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1535
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_68
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1536
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1472
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_70
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1473
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_71
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1474
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_72
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1474
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_73
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1473
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_74
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1473
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_75
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1473
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_76
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1473
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_77
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1473
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_78
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1407
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_79
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1407
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_80
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1407
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_81
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1408
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1407
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_83
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1407
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_84
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1407
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_85
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1408
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_86
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1407
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_87
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1344
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_88
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1345
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_89
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1346
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_90
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1346
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_91
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1345
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_92
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1345
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_93
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1345
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_94
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1345
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_95
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1345
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1281
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_97
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1281
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_98
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1281
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1281
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_100
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1281
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.9147034, y: 26.302734}
+        - {x: -16.914703, y: 19.302734}
+        - {x: -16.914703, y: -15.697266}
+        - {x: -12.914703, y: -24.697266}
+        - {x: 18.085297, y: -24.697266}
+        - {x: 18.085297, y: 26.302734}
+    - name: Warrior (2)_101
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1281
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.626953, y: 12.302734}
+        - {x: 6.626953, y: 26.302734}
+        - {x: -10.373047, y: 26.302734}
+        - {x: -18.373047, y: 21.302734}
+        - {x: -18.373047, y: -15.697266}
+        - {x: -14.373047, y: -24.697266}
+        - {x: 3.6269531, y: -24.697266}
+        - {x: 6.626953, y: -21.697266}
+        - {x: 17.626953, y: -3.6972656}
+        - {x: 19.626953, y: -0.6972656}
+    - name: Warrior (2)_102
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1216
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1215
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_104
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1215
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1216
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.2115784, y: 26.291748}
+        - {x: -16.211578, y: 9.291748}
+        - {x: -16.211578, y: -16.708252}
+        - {x: -13.211578, y: -24.708252}
+        - {x: 17.788422, y: -24.708252}
+        - {x: 17.788422, y: 26.291748}
+    - name: Warrior (2)_106
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1216
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.6393127, y: 26.291748}
+        - {x: -16.639313, y: 17.291748}
+        - {x: -16.639313, y: -16.708252}
+        - {x: -13.639313, y: -24.708252}
+        - {x: 18.360687, y: -24.708252}
+        - {x: 18.360687, y: 16.291748}
+        - {x: 13.360687, y: 26.291748}
+    - name: Warrior (2)_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1216
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.871765, y: 26.291748}
+        - {x: -4.128235, y: 26.291748}
+        - {x: -16.128235, y: 16.291748}
+        - {x: -16.128235, y: -9.708252}
+        - {x: -12.128235, y: -22.708252}
+        - {x: 4.871765, y: -24.708252}
+        - {x: 7.871765, y: -24.708252}
+        - {x: 12.871765, y: -23.708252}
+        - {x: 17.871765, y: -19.708252}
+        - {x: 17.871765, y: 16.291748}
+    - name: Warrior (2)_108
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1152
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_109
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1152
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_110
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1152
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_111
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1153
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_112
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1153
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_113
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1153
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.373047, y: 26.219482}
+        - {x: -17.373047, y: 24.219482}
+        - {x: -17.373047, y: -19.780518}
+        - {x: -15.373047, y: -24.780518}
+        - {x: 13.626953, y: -24.780518}
+        - {x: 18.626953, y: -13.780518}
+        - {x: 18.626953, y: 10.219482}
+        - {x: 6.626953, y: 26.219482}
+    - name: Warrior (2)_114
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1088
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_115
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1086
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_116
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1087
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1088
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.456375, y: 26.208374}
+        - {x: -16.456375, y: 22.208374}
+        - {x: -16.456375, y: -22.791626}
+        - {x: -14.456375, y: -24.791626}
+        - {x: 17.543625, y: -24.791626}
+        - {x: 17.543625, y: 10.208374}
+        - {x: 8.543625, y: 26.208374}
+    - name: Warrior (2)_118
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1088
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.914703, y: 26.208374}
+        - {x: -16.914703, y: 23.208374}
+        - {x: -16.914703, y: -24.791626}
+        - {x: 13.085297, y: -24.791626}
+        - {x: 18.085297, y: -4.791626}
+        - {x: 18.085297, y: 13.208374}
+        - {x: 10.085297, y: 26.208374}
+    - name: Warrior (2)_119
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1088
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.373047, y: 26.208374}
+        - {x: -16.373047, y: 23.208374}
+        - {x: -16.373047, y: -24.791626}
+        - {x: 12.626953, y: -24.791626}
+        - {x: 17.626953, y: -9.791626}
+        - {x: 17.626953, y: 20.208374}
+        - {x: 12.626953, y: 26.208374}
+    - name: Warrior (2)_120
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1025
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1024
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_122
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_123
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_124
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_125
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1023
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_126
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1023
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1023
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_129
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_130
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_131
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_132
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_133
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 960
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_134
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 960
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_135
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 960
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.314453, y: 26.125}
+        - {x: -10.314453, y: 25.125}
+        - {x: -16.314453, y: 8.125}
+        - {x: -16.314453, y: -16.875}
+        - {x: -7.314453, y: -24.875}
+        - {x: 12.685547, y: -24.875}
+        - {x: 15.685547, y: -22.875}
+        - {x: 17.685547, y: -17.875}
+        - {x: 17.685547, y: 15.125}
+        - {x: 12.685547, y: 26.125}
+    - name: Warrior (2)_136
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 959
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.288422, y: 25.65564}
+        - {x: -5.7115784, y: 25.65564}
+        - {x: -17.711578, y: 11.65564}
+        - {x: -17.711578, y: -24.34436}
+        - {x: 14.288422, y: -24.34436}
+        - {x: 19.288422, y: -16.34436}
+        - {x: 19.288422, y: 17.65564}
+        - {x: 17.288422, y: 23.65564}
+    - name: Warrior (2)_137
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.330078, y: 26.65564}
+        - {x: -10.669922, y: 26.65564}
+        - {x: -17.669922, y: 11.65564}
+        - {x: -17.669922, y: -11.34436}
+        - {x: -11.669922, y: -22.34436}
+        - {x: -2.6699219, y: -25.34436}
+        - {x: 12.330078, y: -25.34436}
+        - {x: 15.330078, y: -22.34436}
+        - {x: 19.330078, y: -8.34436}
+        - {x: 19.330078, y: 13.65564}
+    - name: Warrior (2)_138
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 959
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.0976562, y: 26.65564}
+        - {x: -16.097656, y: 11.65564}
+        - {x: -16.097656, y: -10.34436}
+        - {x: -8.097656, y: -21.34436}
+        - {x: 3.9023438, y: -25.34436}
+        - {x: 15.902344, y: -25.34436}
+        - {x: 17.902344, y: -24.34436}
+        - {x: 17.902344, y: 26.65564}
+    - name: Warrior (2)_139
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.0559692, y: 26.65564}
+        - {x: -7.055969, y: 24.65564}
+        - {x: -17.05597, y: 18.65564}
+        - {x: -17.05597, y: -18.34436}
+        - {x: -15.055969, y: -23.34436}
+        - {x: -2.0559692, y: -25.34436}
+        - {x: 16.94403, y: -25.34436}
+        - {x: 18.94403, y: -23.34436}
+        - {x: 18.94403, y: 22.65564}
+        - {x: 15.944031, y: 26.65564}
+    - name: Warrior (2)_140
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 959
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.044922, y: -16.34436}
+        - {x: -16.044922, y: -25.34436}
+        - {x: 15.955078, y: -25.34436}
+        - {x: 19.955078, y: -18.34436}
+        - {x: 19.955078, y: 24.65564}
+        - {x: 16.955078, y: 26.65564}
+        - {x: -5.044922, y: 26.65564}
+        - {x: -18.044922, y: 17.65564}
+    - name: Warrior (2)_141
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 959
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.996765, y: -25.34436}
+        - {x: 20.996765, y: -22.34436}
+        - {x: 20.996765, y: 19.65564}
+        - {x: 12.996765, y: 26.65564}
+        - {x: -4.003235, y: 26.65564}
+        - {x: -19.003235, y: 21.65564}
+        - {x: -19.003235, y: -25.34436}
+    - name: Warrior (2)_142
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.9615479, y: 26.65564}
+        - {x: -17.961548, y: 13.65564}
+        - {x: -17.961548, y: -12.34436}
+        - {x: -13.961548, y: -23.34436}
+        - {x: -6.961548, y: -25.34436}
+        - {x: 18.038452, y: -25.34436}
+        - {x: 18.038452, y: 26.65564}
+    - name: Warrior (2)_143
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.419922, y: 26.65564}
+        - {x: -17.419922, y: 9.65564}
+        - {x: -17.419922, y: -11.34436}
+        - {x: -9.419922, y: -24.34436}
+        - {x: -4.419922, y: -25.34436}
+        - {x: 17.580078, y: -25.34436}
+        - {x: 17.580078, y: 26.65564}
+    - name: Warrior (2)_144
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.121765, y: 23.65564}
+        - {x: 13.121765, y: 26.65564}
+        - {x: -12.878235, y: 26.65564}
+        - {x: -17.878235, y: 12.65564}
+        - {x: -17.878235, y: -9.34436}
+        - {x: -11.878235, y: -21.34436}
+        - {x: -2.8782349, y: -25.34436}
+        - {x: 11.121765, y: -25.34436}
+        - {x: 17.121765, y: -22.34436}
+        - {x: 15.121765, y: -17.34436}
+        - {x: 18.121765, y: -7.3443604}
+        - {x: 18.121765, y: 12.65564}
+    - name: Warrior (2)_145
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.836548, y: 26.65564}
+        - {x: -11.836548, y: 25.65564}
+        - {x: -17.836548, y: 11.65564}
+        - {x: -17.836548, y: -10.34436}
+        - {x: -11.836548, y: -21.34436}
+        - {x: -1.8365479, y: -25.34436}
+        - {x: 18.163452, y: -25.34436}
+        - {x: 18.163452, y: 26.65564}
+    - name: Warrior (2)_146
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 896
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_147
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 895
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_148
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_149
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_150
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_151
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_152
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_153
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_154
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_155
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_156
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_157
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_158
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 895
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_159
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 832
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_160
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 832
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_161
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 832
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.40625, y: 25.541687}
+        - {x: -16.40625, y: 21.541687}
+        - {x: -16.40625, y: -24.458313}
+        - {x: 17.59375, y: -24.458313}
+        - {x: 17.59375, y: 7.541687}
+        - {x: 9.59375, y: 25.541687}
+    - name: Warrior (2)_162
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 831
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.1660156, y: 25.572266}
+        - {x: -12.833984, y: 25.572266}
+        - {x: -17.833984, y: 13.572266}
+        - {x: -17.833984, y: -12.427734}
+        - {x: -13.833984, y: -21.427734}
+        - {x: -9.833984, y: -24.427734}
+        - {x: 5.1660156, y: -24.427734}
+        - {x: 11.166016, y: -22.427734}
+        - {x: 19.166016, y: -11.427734}
+        - {x: 19.166016, y: 8.572266}
+        - {x: 16.166016, y: 20.572266}
+    - name: Warrior (2)_163
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.792297, y: 26.072266}
+        - {x: -17.792297, y: -24.927734}
+        - {x: 14.207703, y: -24.927734}
+        - {x: 19.207703, y: -13.927734}
+        - {x: 19.207703, y: 17.072266}
+        - {x: 8.207703, y: 26.072266}
+    - name: Warrior (2)_164
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 831
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.373047, y: 26.072266}
+        - {x: -16.373047, y: -24.927734}
+        - {x: 10.626953, y: -24.927734}
+        - {x: 17.626953, y: -19.927734}
+        - {x: 17.626953, y: 13.072266}
+        - {x: 5.626953, y: 26.072266}
+    - name: Warrior (2)_165
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 831
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.270172, y: 26.072266}
+        - {x: -17.270172, y: 22.072266}
+        - {x: -17.270172, y: -17.927734}
+        - {x: -16.270172, y: -21.927734}
+        - {x: -12.270172, y: -24.927734}
+        - {x: 2.729828, y: -24.927734}
+        - {x: 8.729828, y: -22.927734}
+        - {x: 18.729828, y: 0.072265625}
+        - {x: 18.729828, y: 16.072266}
+        - {x: 4.729828, y: 26.072266}
+    - name: Warrior (2)_166
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 831
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.863281, y: 13.072266}
+        - {x: 6.8632812, y: 26.072266}
+        - {x: -18.136719, y: 26.072266}
+        - {x: -18.136719, y: -24.927734}
+        - {x: 4.8632812, y: -24.927734}
+        - {x: 10.863281, y: -22.927734}
+        - {x: 11.863281, y: -19.927734}
+        - {x: 11.863281, y: -14.927734}
+        - {x: 19.863281, y: -0.9277344}
+    - name: Warrior (2)_167
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 831
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.966156, y: 26.072266}
+        - {x: -11.033844, y: 26.072266}
+        - {x: -19.033844, y: 17.072266}
+        - {x: -19.033844, y: -24.927734}
+        - {x: 6.966156, y: -24.927734}
+        - {x: 12.966156, y: -22.927734}
+        - {x: 20.966156, y: -8.927734}
+        - {x: 20.966156, y: 19.072266}
+    - name: Warrior (2)_168
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.416016, y: 26.072266}
+        - {x: -17.583984, y: 26.072266}
+        - {x: -17.583984, y: -24.927734}
+        - {x: 15.416016, y: -24.927734}
+        - {x: 19.416016, y: -15.927734}
+        - {x: 19.416016, y: 18.072266}
+        - {x: 12.416016, y: 25.072266}
+    - name: Warrior (2)_169
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 831
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.072876, y: 26.072266}
+        - {x: -17.072876, y: -24.927734}
+        - {x: 16.927124, y: -24.927734}
+        - {x: 18.927124, y: -19.927734}
+        - {x: 18.927124, y: 17.072266}
+        - {x: 8.927124, y: 26.072266}
+    - name: Warrior (2)_170
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.50061, y: 26.072266}
+        - {x: -17.50061, y: 17.072266}
+        - {x: -17.50061, y: -15.927734}
+        - {x: -14.50061, y: -21.927734}
+        - {x: -9.50061, y: -24.927734}
+        - {x: 15.49939, y: -24.927734}
+        - {x: 19.49939, y: -15.927734}
+        - {x: 19.49939, y: 16.072266}
+        - {x: 7.4993896, y: 26.072266}
+    - name: Warrior (2)_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 831
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.520142, y: 26.072266}
+        - {x: -16.520142, y: 23.072266}
+        - {x: -16.520142, y: -23.927734}
+        - {x: -14.520142, y: -24.927734}
+        - {x: 14.479858, y: -24.927734}
+        - {x: 18.479858, y: -22.927734}
+        - {x: 18.479858, y: 21.072266}
+        - {x: 17.479858, y: 26.072266}
+    - name: Warrior (2)_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 767
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_173
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 768
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_174
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 767
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_175
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 769
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_176
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 770
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_177
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 767
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.28125, y: 19.53064}
+        - {x: -17.28125, y: -17.46936}
+        - {x: -15.28125, y: -18.46936}
+        - {x: 18.71875, y: -18.46936}
+        - {x: 18.71875, y: 19.53064}
+    - name: Warrior (2)_178
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 640
+        width: 95
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.8157539, y: 25.416687}
+        - {x: -8.815754, y: 17.416687}
+        - {x: -45.815754, y: -1.583313}
+        - {x: -45.815754, y: -11.583313}
+        - {x: -35.815754, y: -19.583313}
+        - {x: -16.815754, y: -24.583313}
+        - {x: 36.184246, y: -24.583313}
+        - {x: 47.184246, y: -19.583313}
+        - {x: 47.184246, y: 3.416687}
+        - {x: 32.184246, y: 25.416687}
+    - name: Warrior (2)_179
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 639
+        width: 89
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.221344, y: 2.4472656}
+        - {x: -12.221344, y: -24.552734}
+        - {x: 44.778656, y: -24.552734}
+        - {x: 44.778656, y: 4.4472656}
+        - {x: 35.778656, y: 25.447266}
+        - {x: -32.221344, y: 25.447266}
+        - {x: -43.221344, y: 20.447266}
+    - name: Warrior (2)_180
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 639
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.7200623, y: 16.947266}
+        - {x: 2.7200623, y: 11.947266}
+        - {x: -9.279938, y: 26.947266}
+        - {x: -22.279938, y: 34.947266}
+        - {x: -32.279938, y: 34.947266}
+        - {x: -32.279938, y: 17.947266}
+        - {x: 2.7200623, y: -34.052734}
+        - {x: 33.720062, y: -34.052734}
+        - {x: 33.720062, y: 19.947266}
+        - {x: 11.720062, y: 19.947266}
+    - name: Warrior (2)_181
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 637
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_182
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 639
+        width: 26
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_183
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 639
+        width: 26
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_184
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 639
+        width: 26
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_185
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 637
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_186
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 448
+        width: 90
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.285156, y: 25.291687}
+        - {x: -43.285156, y: 20.291687}
+        - {x: -43.285156, y: -11.708313}
+        - {x: -16.285156, y: -24.708313}
+        - {x: 44.714844, y: -24.708313}
+        - {x: 44.714844, y: -5.708313}
+        - {x: 30.714844, y: 25.291687}
+    - name: Warrior (2)_187
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 448
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.13997, y: 25.291687}
+        - {x: -45.13997, y: -6.708313}
+        - {x: -32.13997, y: -13.708313}
+        - {x: 10.860031, y: -24.708313}
+        - {x: 30.860031, y: -24.708313}
+        - {x: 45.86003, y: -12.708313}
+        - {x: 45.86003, y: 25.291687}
+    - name: Warrior (2)_188
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.014954, y: -25.177734}
+        - {x: 35.985046, y: -25.177734}
+        - {x: 46.985046, y: -18.177734}
+        - {x: 46.985046, y: 16.822266}
+        - {x: 43.985046, y: 25.822266}
+        - {x: -17.014954, y: 25.822266}
+        - {x: -46.014954, y: 13.822266}
+        - {x: -46.014954, y: -12.177734}
+    - name: Warrior (2)_189
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.98175, y: -18.177734}
+        - {x: -29.98175, y: -25.177734}
+        - {x: 40.01825, y: -25.177734}
+        - {x: 47.01825, y: -17.177734}
+        - {x: 47.01825, y: 21.822266}
+        - {x: 45.01825, y: 25.822266}
+        - {x: -26.98175, y: 25.822266}
+        - {x: -43.98175, y: 19.822266}
+        - {x: -45.98175, y: 15.822266}
+    - name: Warrior (2)_190
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.38806, y: 25.822266}
+        - {x: 10.388062, y: 25.822266}
+        - {x: -37.61194, y: 10.822266}
+        - {x: -45.61194, y: -0.17773438}
+        - {x: -45.61194, y: -20.177734}
+        - {x: -22.611938, y: -25.177734}
+        - {x: 38.38806, y: -25.177734}
+        - {x: 41.38806, y: -22.177734}
+        - {x: 47.38806, y: -10.177734}
+        - {x: 47.38806, y: 4.8222656}
+        - {x: 41.38806, y: 18.822266}
+    - name: Warrior (2)_191
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.574219, y: 25.822266}
+        - {x: -46.42578, y: 1.8222656}
+        - {x: -46.42578, y: -19.177734}
+        - {x: -29.425781, y: -25.177734}
+        - {x: 46.57422, y: -25.177734}
+        - {x: 46.57422, y: 14.822266}
+        - {x: 40.57422, y: 25.822266}
+    - name: Warrior (2)_192
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.576904, y: 25.822266}
+        - {x: 13.576904, y: 22.822266}
+        - {x: 8.576904, y: 14.822266}
+        - {x: -36.423096, y: 5.8222656}
+        - {x: -46.423096, y: -2.1777344}
+        - {x: -46.423096, y: -16.177734}
+        - {x: -14.423096, y: -25.177734}
+        - {x: 43.576904, y: -25.177734}
+        - {x: 46.576904, y: -20.177734}
+        - {x: 46.576904, y: 11.822266}
+        - {x: 35.576904, y: 25.822266}
+    - name: Warrior (2)_193
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 447
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.48169, y: 25.822266}
+        - {x: -46.48169, y: 9.822266}
+        - {x: -46.48169, y: -10.177734}
+        - {x: -38.48169, y: -17.177734}
+        - {x: 4.5183105, y: -25.177734}
+        - {x: 27.51831, y: -25.177734}
+        - {x: 33.51831, y: -22.177734}
+        - {x: 46.51831, y: -12.177734}
+        - {x: 46.51831, y: 12.822266}
+        - {x: 30.51831, y: 25.822266}
+    - name: Warrior (2)_194
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 255
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.152344, y: -5.8027344}
+        - {x: -46.152344, y: -14.802734}
+        - {x: -32.152344, y: -25.802734}
+        - {x: 27.847656, y: -25.802734}
+        - {x: 46.847656, y: -19.802734}
+        - {x: 46.847656, y: 3.1972656}
+        - {x: 43.847656, y: 7.1972656}
+        - {x: 6.8476562, y: 26.197266}
+        - {x: -16.152344, y: 26.197266}
+        - {x: -24.152344, y: 20.197266}
+    - name: Warrior (2)_195
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 251
+        width: 89
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.363922, y: 28.319672}
+        - {x: -43.363922, y: 13.319672}
+        - {x: -43.363922, y: -2.6803284}
+        - {x: -21.363922, y: -27.680328}
+        - {x: -4.363922, y: -26.680328}
+        - {x: 3.636078, y: -27.680328}
+        - {x: 43.636078, y: -27.680328}
+        - {x: 43.636078, y: -3.6803284}
+        - {x: 11.636078, y: 28.319672}
+    - name: Warrior (2)_196
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 227
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.514313, y: -0.44595337}
+        - {x: 5.4856873, y: -39.445953}
+        - {x: 33.485687, y: -39.445953}
+        - {x: 33.485687, y: 2.5540466}
+        - {x: 19.485687, y: 39.554047}
+        - {x: -31.514313, y: 39.554047}
+    - name: Warrior (2)_197
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 226
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_198
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 218
+        width: 26
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_199
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 210
+        width: 26
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_200
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 218
+        width: 26
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_201
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 226
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Warrior (2)_202
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 64
+        width: 90
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.835938, y: 25.041668}
+        - {x: -43.835938, y: 6.041668}
+        - {x: -43.835938, y: -24.958332}
+        - {x: 31.164062, y: -24.958332}
+        - {x: 44.164062, y: -0.95833206}
+        - {x: 44.164062, y: 25.041668}
+    - name: Warrior (2)_203
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 64
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.860687, y: 11.041668}
+        - {x: -5.1393127, y: 25.041668}
+        - {x: -34.139313, y: 25.041668}
+        - {x: -45.139313, y: 4.041668}
+        - {x: -45.139313, y: -17.958332}
+        - {x: -32.139313, y: -24.958332}
+        - {x: -10.139313, y: -24.958332}
+        - {x: 32.860687, y: -13.958332}
+        - {x: 46.860687, y: -5.958332}
+        - {x: 46.860687, y: 3.041668}
+    - name: Warrior (2)_204
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 64
+        width: 95
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.453125, y: 25.041668}
+        - {x: -39.453125, y: 25.041668}
+        - {x: -46.453125, y: 2.041668}
+        - {x: -46.453125, y: -14.958332}
+        - {x: -40.453125, y: -24.958332}
+        - {x: 31.546875, y: -24.958332}
+        - {x: 46.546875, y: -13.958332}
+        - {x: 46.546875, y: -3.958332}
+        - {x: 38.546875, y: 1.0416679}
+    - name: Warrior (2)_205
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 63
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.236328, y: 25.572266}
+        - {x: -34.23633, y: 23.572266}
+        - {x: -46.23633, y: 3.5722656}
+        - {x: -46.23633, y: -10.427734}
+        - {x: -43.23633, y: -16.427734}
+        - {x: -38.23633, y: -25.427734}
+        - {x: 37.76367, y: -25.427734}
+        - {x: 46.76367, y: -23.427734}
+        - {x: 46.76367, y: 7.5722656}
+        - {x: 8.763672, y: 25.572266}
+    - name: Warrior (2)_206
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 63
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.35608, y: 25.572266}
+        - {x: -39.35608, y: 23.572266}
+        - {x: -46.35608, y: -0.42773438}
+        - {x: -46.35608, y: -10.427734}
+        - {x: -39.35608, y: -22.427734}
+        - {x: -35.35608, y: -25.427734}
+        - {x: 4.643921, y: -25.427734}
+        - {x: 46.64392, y: -11.427734}
+        - {x: 46.64392, y: 11.572266}
+        - {x: 16.64392, y: 25.572266}
+    - name: Warrior (2)_207
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 63
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.292297, y: 25.572266}
+        - {x: -43.292297, y: 17.572266}
+        - {x: -46.292297, y: 8.572266}
+        - {x: -46.292297, y: -18.427734}
+        - {x: -42.292297, y: -25.427734}
+        - {x: 6.7077026, y: -25.427734}
+        - {x: 46.707703, y: -11.427734}
+        - {x: 46.707703, y: 11.572266}
+        - {x: 11.707703, y: 25.572266}
+    - name: Warrior (2)_208
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 63
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.95508, y: 2.5722656}
+        - {x: 27.955078, y: 5.5722656}
+        - {x: -10.044922, y: 25.572266}
+        - {x: -35.04492, y: 25.572266}
+        - {x: -46.04492, y: 8.572266}
+        - {x: -46.04492, y: -18.427734}
+        - {x: -34.04492, y: -25.427734}
+        - {x: -1.0449219, y: -25.427734}
+        - {x: 35.95508, y: -14.427734}
+        - {x: 46.95508, y: -7.4277344}
+        - {x: 46.95508, y: -2.4277344}
+    - name: Warrior (2)_209
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 63
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.736328, y: 25.572266}
+        - {x: -25.736328, y: 25.572266}
+        - {x: -32.73633, y: 23.572266}
+        - {x: -45.73633, y: 4.5722656}
+        - {x: -45.73633, y: -21.427734}
+        - {x: -42.73633, y: -25.427734}
+        - {x: 14.263672, y: -25.427734}
+        - {x: 47.26367, y: -16.427734}
+        - {x: 47.26367, y: 1.5722656}
+        - {x: 20.263672, y: 6.5722656}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
