@@ -3,6 +3,7 @@ using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using S_M_D.Character;
 
 public class AdventureBoard : MonoBehaviour {
 	
@@ -37,23 +38,39 @@ public class AdventureBoard : MonoBehaviour {
 
         if (gameObject.name == "RemoveHero1Adv")
         {
-            SetProfil.HerosAdventure[0] = null;
-            IconeHero1.GetComponent<Image>().sprite = null;
+            Remove(0, IconeHero1);
         }
         else if (gameObject.name == "RemoveHero2Adv")
         {
-            SetProfil.HerosAdventure[1] = null;
-            IconeHero2.GetComponent<Image>().sprite = null;
+            Remove(1, IconeHero2);
         }
         else if (gameObject.name == "RemoveHero3Adv")
         {
-            SetProfil.HerosAdventure[2] = null;
-            IconeHero3.GetComponent<Image>().sprite = null;
+            Remove(2, IconeHero3);
         }
         else if (gameObject.name == "RemoveHero4Adv")
         {
-            SetProfil.HerosAdventure[3] = null;
-            IconeHero4.GetComponent<Image>().sprite = null;
+            Remove(3, IconeHero4);
         }
+    }
+
+    private void Remove(int i, GameObject gameObj)
+    {
+        if(SetProfil.HerosAdventure[i] != null)
+        {
+            SetProfil.SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == SetProfil.HerosAdventure[i].CharacterName).GetComponentInChildren<Button>());
+            SetProfil.HerosAdventure[i] = null;
+            gameObj.GetComponent<Image>().sprite = null;
+        }
+    }
+
+    public static bool ContainsHero(BaseHeros heros)
+    {
+        foreach(BaseHeros h in SetProfil.HerosAdventure)
+        {
+            if (h == heros)
+                return true;
+        }
+        return false;
     }
 }

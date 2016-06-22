@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using S_M_D.Spell;
 
 public class ArrowOnClick : MonoBehaviour {
 
@@ -13,11 +14,14 @@ public class ArrowOnClick : MonoBehaviour {
             {
                 GameObject.Find("Arrow" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
             }
+            else if (BaseCombat.Attack.Spell.KindOfEffect.DamageType == DamageTypeEnum.Heal || BaseCombat.Attack.Spell.KindOfEffect.DamageType == DamageTypeEnum.Move)
+            {
+                //ajout de fleche pour les heros
+            }
         }
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/greenarrow");
         string result = gameObject.name.Substring(gameObject.name.Length - 1);
         int R = Convert.ToInt32(result);
-        BaseCombat.Attack.Monster = R-1;
-
+        BaseCombat.Attack.Target = R-1;
     }
 }

@@ -21,7 +21,6 @@ public class TownHallBoard : MonoBehaviour {
         {
             Armory building = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Armory) as Armory;
             townHall.BuyBuilding(building);
-            Debug.Log("Acheté");
         }
         else if(buildingName == "Bar")
         {
@@ -54,8 +53,25 @@ public class TownHallBoard : MonoBehaviour {
             townHall.BuyBuilding(building);
         }
 
+        UpdatePanelBuilding(buildingName);
         UpdateBoard();
     }
+
+    private void UpdatePanelBuilding(string buildingName)
+    {
+        Debug.Log("Entrer !!!!!!!");
+        foreach(GameObject building in Start.ButtonsBuildings)
+        {
+            if(building.name == buildingName)
+            {
+                Debug.Log("Entrer 222 !!!!!!!");
+                building.GetComponent<Button>().enabled = true;
+                building.GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + buildingName);
+                break;
+            }
+        }
+    }
+
 
     public void UpgradeBuilding()
     {

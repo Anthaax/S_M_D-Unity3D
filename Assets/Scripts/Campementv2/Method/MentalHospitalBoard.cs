@@ -56,6 +56,9 @@ public class MentalHospitalBoard : MonoBehaviour {
         MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
         if (mentalHospital.Hero != null)
         {
+            BaseHeros h = mentalHospital.Hero;
+            SetProfil.SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+
             mentalHospital.deleteHeros();
             GameObject IconeHero = GameObject.Find("MentalHospitalHero");
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/noprofil");

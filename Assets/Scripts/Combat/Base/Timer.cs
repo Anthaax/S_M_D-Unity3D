@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class Timer : MonoBehaviour {
     void Update()
     {
         timeLeft -= Time.deltaTime;
+        CombatIsOver();
         if (timeLeft <= 0)
         {
             BaseCombat.Combat.NextTurn();
@@ -22,4 +24,9 @@ public class Timer : MonoBehaviour {
         GameObject.Find("TimerText").GetComponent<Text>().text = timeLeft.ToString();
     }
 
+    private void CombatIsOver()
+    {
+        if (BaseCombat.Combat.CheckIfTheCombatWasOver())
+            SceneManager.LoadScene( 2 );
+    }
 }

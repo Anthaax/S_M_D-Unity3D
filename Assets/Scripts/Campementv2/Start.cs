@@ -28,6 +28,8 @@ public class Start : MonoBehaviour {
     public static Button[] ButtonsMentalPsycho;
     public static Button[] ButtonsTownHall;
     public static Button[] ButtonsArmor;
+    public static List<GameObject> ButtonsBuildings;
+    public static List<GameObject> pHeroes;
     // Use this for initialization
     void Awake () {
 
@@ -44,6 +46,9 @@ public class Start : MonoBehaviour {
         MenuProfil = GameObject.Find("Profil");
         PanelBoardMission = GameObject.Find("PanelBoardMission");
         MenuProfilPlayer = GameObject.Find("ProfilPlayer");
+
+        ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
+        pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
 
         MenuBGArmory.SetActive(false);
         MenuBGTownhall.SetActive(false);
@@ -70,6 +75,8 @@ public class Start : MonoBehaviour {
 
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         caravan.Initialized();
+
+        setButtonsBuildings();
     }
 	
     
@@ -86,6 +93,15 @@ public class Start : MonoBehaviour {
 
         }
 	}
+
+    private void setButtonsBuildings()
+    {
+        foreach(BaseBuilding building in Gtx.PlayerInfo.MyBuildings)
+        {
+            if (building.Level < 1)
+                ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = false;
+        }
+    }
 
     public static GameContext Gtx
     {
