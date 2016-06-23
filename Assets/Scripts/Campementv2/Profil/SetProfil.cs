@@ -73,7 +73,7 @@ public class SetProfil : MonoBehaviour {
                 BaseHeros h = hospital.Hero;
                 SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
             }
-            hospital.setHero(heros);
+            hospital.SetHero(heros);
             GameObject IconeHero = GameObject.Find("HospitalHero");
             string sex = heros.IsMale ? "M" : "F";
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
@@ -85,7 +85,7 @@ public class SetProfil : MonoBehaviour {
         else if (Start.MenuBGCasern.activeInHierarchy)
         {
             Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
-            casern.setHero(heros);
+            casern.SetHero(heros);
         }
         else if (Start.MenuBGMentalhospital.activeInHierarchy)
         {
@@ -97,7 +97,7 @@ public class SetProfil : MonoBehaviour {
                 BaseHeros h = mentalHospital.Hero;
                 SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
             }
-            mentalHospital.setHero(heros);
+            mentalHospital.SetHero(heros);
             GameObject IconeHero = GameObject.Find("MentalHospitalHero");
             string sex = heros.IsMale ? "M" : "F";
             IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
