@@ -35,7 +35,7 @@ public class BaseCombat : MonoBehaviour {
                                             c.HP = 200;
                                             c.HPmax = 200;
                                         });
-        Attack.Monster = -1;
+        Attack.Target = -1;
         
     }
 	// Use this for initialization

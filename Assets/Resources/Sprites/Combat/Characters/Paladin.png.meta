@@ -1,0 +1,3020 @@
+fileFormatVersion: 2
+guid: 86306ca30bbc79e488b3c5d083aa9d55
+timeCreated: 1465987315
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Paladin_0
+    21300002: Paladin_1
+    21300004: Paladin_2
+    21300006: Paladin_3
+    21300008: Paladin_4
+    21300010: Paladin_5
+    21300012: Paladin_6
+    21300014: Paladin_7
+    21300016: Paladin_8
+    21300018: Paladin_9
+    21300020: Paladin_10
+    21300022: Paladin_11
+    21300024: Paladin_12
+    21300026: Paladin_13
+    21300028: Paladin_14
+    21300030: Paladin_15
+    21300032: Paladin_16
+    21300034: Paladin_17
+    21300036: Paladin_18
+    21300038: Paladin_19
+    21300040: Paladin_20
+    21300042: Paladin_21
+    21300044: Paladin_22
+    21300046: Paladin_23
+    21300048: Paladin_24
+    21300050: Paladin_25
+    21300052: Paladin_26
+    21300054: Paladin_27
+    21300056: Paladin_28
+    21300058: Paladin_29
+    21300060: Paladin_30
+    21300062: Paladin_31
+    21300064: Paladin_32
+    21300066: Paladin_33
+    21300068: Paladin_34
+    21300070: Paladin_35
+    21300072: Paladin_36
+    21300074: Paladin_37
+    21300076: Paladin_38
+    21300078: Paladin_39
+    21300080: Paladin_40
+    21300082: Paladin_41
+    21300084: Paladin_42
+    21300086: Paladin_43
+    21300088: Paladin_44
+    21300090: Paladin_45
+    21300092: Paladin_46
+    21300094: Paladin_47
+    21300096: Paladin_48
+    21300098: Paladin_49
+    21300100: Paladin_50
+    21300102: Paladin_51
+    21300104: Paladin_52
+    21300106: Paladin_53
+    21300108: Paladin_54
+    21300110: Paladin_55
+    21300112: Paladin_56
+    21300114: Paladin_57
+    21300116: Paladin_58
+    21300118: Paladin_59
+    21300120: Paladin_60
+    21300122: Paladin_61
+    21300124: Paladin_62
+    21300126: Paladin_63
+    21300128: Paladin_64
+    21300130: Paladin_65
+    21300132: Paladin_66
+    21300134: Paladin_67
+    21300136: Paladin_68
+    21300138: Paladin_69
+    21300140: Paladin_70
+    21300142: Paladin_71
+    21300144: Paladin_72
+    21300146: Paladin_73
+    21300148: Paladin_74
+    21300150: Paladin_75
+    21300152: Paladin_76
+    21300154: Paladin_77
+    21300156: Paladin_78
+    21300158: Paladin_79
+    21300160: Paladin_80
+    21300162: Paladin_81
+    21300164: Paladin_82
+    21300166: Paladin_83
+    21300168: Paladin_84
+    21300170: Paladin_85
+    21300172: Paladin_86
+    21300174: Paladin_87
+    21300176: Paladin_88
+    21300178: Paladin_89
+    21300180: Paladin_90
+    21300182: Paladin_91
+    21300184: Paladin_92
+    21300186: Paladin_93
+    21300188: Paladin_94
+    21300190: Paladin_95
+    21300192: Paladin_96
+    21300194: Paladin_97
+    21300196: Paladin_98
+    21300198: Paladin_99
+    21300200: Paladin_100
+    21300202: Paladin_101
+    21300204: Paladin_102
+    21300206: Paladin_103
+    21300208: Paladin_104
+    21300210: Paladin_105
+    21300212: Paladin_106
+    21300214: Paladin_107
+    21300216: Paladin_108
+    21300218: Paladin_109
+    21300220: Paladin_110
+    21300222: Paladin_111
+    21300224: Paladin_112
+    21300226: Paladin_113
+    21300228: Paladin_114
+    21300230: Paladin_115
+    21300232: Paladin_116
+    21300234: Paladin_117
+    21300236: Paladin_118
+    21300238: Paladin_119
+    21300240: Paladin_120
+    21300242: Paladin_121
+    21300244: Paladin_122
+    21300246: Paladin_123
+    21300248: Paladin_124
+    21300250: Paladin_125
+    21300252: Paladin_126
+    21300254: Paladin_127
+    21300256: Paladin_128
+    21300258: Paladin_129
+    21300260: Paladin_130
+    21300262: Paladin_131
+    21300264: Paladin_132
+    21300266: Paladin_133
+    21300268: Paladin_134
+    21300270: Paladin_135
+    21300272: Paladin_136
+    21300274: Paladin_137
+    21300276: Paladin_138
+    21300278: Paladin_139
+    21300280: Paladin_140
+    21300282: Paladin_141
+    21300284: Paladin_142
+    21300286: Paladin_143
+    21300288: Paladin_144
+    21300290: Paladin_145
+    21300292: Paladin_146
+    21300294: Paladin_147
+    21300296: Paladin_148
+    21300298: Paladin_149
+    21300300: Paladin_150
+    21300302: Paladin_151
+    21300304: Paladin_152
+    21300306: Paladin_153
+    21300308: Paladin_154
+    21300310: Paladin_155
+    21300312: Paladin_156
+    21300314: Paladin_157
+    21300316: Paladin_158
+    21300318: Paladin_159
+    21300320: Paladin_160
+    21300322: Paladin_161
+    21300324: Paladin_162
+    21300326: Paladin_163
+    21300328: Paladin_164
+    21300330: Paladin_165
+    21300332: Paladin_166
+    21300334: Paladin_167
+    21300336: Paladin_168
+    21300338: Paladin_169
+    21300340: Paladin_170
+    21300342: Paladin_171
+    21300344: Paladin_172
+    21300346: Paladin_173
+    21300348: Paladin_174
+    21300350: Paladin_175
+    21300352: Paladin_176
+    21300354: Paladin_177
+    21300356: Paladin_178
+    21300358: Paladin_179
+    21300360: Paladin_180
+    21300362: Paladin_181
+    21300364: Paladin_182
+    21300366: Paladin_183
+    21300368: Paladin_184
+    21300370: Paladin_185
+    21300372: Paladin_186
+    21300374: Paladin_187
+    21300376: Paladin_188
+    21300378: Paladin_189
+    21300380: Paladin_190
+    21300382: Paladin_191
+    21300384: Paladin_192
+    21300386: Paladin_193
+    21300388: Paladin_194
+    21300390: Paladin_195
+    21300392: Paladin_196
+    21300394: Paladin_197
+    21300396: Paladin_198
+    21300398: Paladin_199
+    21300400: Paladin_200
+    21300402: Paladin_201
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Paladin_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2049
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2049
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2049
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2049
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.696625, y: 24.302734}
+        - {x: -11.303375, y: 24.302734}
+        - {x: -17.303375, y: 15.302734}
+        - {x: -17.303375, y: -12.697266}
+        - {x: -13.303375, y: -23.697266}
+        - {x: 10.696625, y: -23.697266}
+        - {x: 18.696625, y: -9.697266}
+        - {x: 18.696625, y: 21.302734}
+    - name: Paladin_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2049
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.108704, y: 24.302734}
+        - {x: -14.108704, y: 23.302734}
+        - {x: -22.108704, y: 16.302734}
+        - {x: -22.108704, y: -10.697266}
+        - {x: -17.108704, y: -23.697266}
+        - {x: 16.891296, y: -23.697266}
+        - {x: 23.891296, y: -2.6972656}
+        - {x: 23.891296, y: 13.302734}
+        - {x: 13.891296, y: 24.302734}
+    - name: Paladin_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2049
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.067047, y: 24.302734}
+        - {x: -21.067047, y: 21.302734}
+        - {x: -22.067047, y: 20.302734}
+        - {x: -22.067047, y: 0.30273438}
+        - {x: -10.067047, y: -23.697266}
+        - {x: 13.932953, y: -23.697266}
+        - {x: 23.932953, y: -5.6972656}
+        - {x: 23.932953, y: 21.302734}
+        - {x: 19.932953, y: 24.302734}
+    - name: Paladin_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2049
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.821625, y: 24.302734}
+        - {x: -16.178375, y: 24.302734}
+        - {x: -17.178375, y: 21.302734}
+        - {x: -17.178375, y: -16.697266}
+        - {x: -11.178375, y: -23.697266}
+        - {x: 14.821625, y: -23.697266}
+        - {x: 18.821625, y: -11.697266}
+        - {x: 18.821625, y: 14.302734}
+        - {x: 13.821625, y: 23.302734}
+    - name: Paladin_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1984
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1984
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1984
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1984
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1984
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.353516, y: 25.291748}
+        - {x: -16.353516, y: 15.291748}
+        - {x: -16.353516, y: -24.708252}
+        - {x: 13.646484, y: -24.708252}
+        - {x: 17.646484, y: -19.708252}
+        - {x: 17.646484, y: 17.291748}
+        - {x: 14.646484, y: 25.291748}
+    - name: Paladin_12
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1984
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.311829, y: 25.291748}
+        - {x: -16.311829, y: -24.708252}
+        - {x: 12.688171, y: -24.708252}
+        - {x: 17.688171, y: -16.708252}
+        - {x: 17.688171, y: 20.291748}
+        - {x: 13.688171, y: 25.291748}
+    - name: Paladin_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1984
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1919
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1919
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1919
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1919
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.333984, y: 25.78064}
+        - {x: -12.333984, y: 20.78064}
+        - {x: -16.333984, y: 6.7806396}
+        - {x: -16.333984, y: -13.21936}
+        - {x: -10.333984, y: -25.21936}
+        - {x: 17.666016, y: -25.21936}
+        - {x: 17.666016, y: 22.78064}
+        - {x: 11.666016, y: 25.78064}
+    - name: Paladin_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1919
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.108704, y: 25.78064}
+        - {x: -22.108704, y: 15.78064}
+        - {x: -22.108704, y: -2.2193604}
+        - {x: -10.108704, y: -25.21936}
+        - {x: 17.891296, y: -25.21936}
+        - {x: 23.891296, y: -13.21936}
+        - {x: 23.891296, y: 11.78064}
+        - {x: 12.891296, y: 25.78064}
+    - name: Paladin_19
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1919
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.067047, y: 25.78064}
+        - {x: -22.067047, y: 20.78064}
+        - {x: -22.067047, y: -1.2193604}
+        - {x: -10.067047, y: -25.21936}
+        - {x: 16.932953, y: -25.21936}
+        - {x: 23.932953, y: -13.21936}
+        - {x: 23.932953, y: 23.78064}
+        - {x: 18.932953, y: 25.78064}
+    - name: Paladin_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1919
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.791016, y: -22.21936}
+        - {x: 17.791016, y: -12.21936}
+        - {x: 17.791016, y: 11.78064}
+        - {x: 14.791016, y: 25.78064}
+        - {x: -9.208984, y: 25.78064}
+        - {x: -13.208984, y: 20.78064}
+        - {x: -16.208984, y: 7.7806396}
+        - {x: -16.208984, y: -12.21936}
+        - {x: -10.208984, y: -22.21936}
+        - {x: -7.2089844, y: -25.21936}
+        - {x: 9.791016, y: -25.21936}
+    - name: Paladin_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1856
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1856
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_23
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1856
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1856
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1856
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.76889, y: 25.208374}
+        - {x: -10.23111, y: 25.208374}
+        - {x: -16.23111, y: 19.208374}
+        - {x: -16.23111, y: -8.791626}
+        - {x: -10.23111, y: -24.791626}
+        - {x: 17.76889, y: -24.791626}
+        - {x: 17.76889, y: 18.208374}
+        - {x: 15.76889, y: 24.208374}
+    - name: Paladin_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1856
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.810547, y: 25.208374}
+        - {x: -9.189453, y: 25.208374}
+        - {x: -16.189453, y: 14.208374}
+        - {x: -16.189453, y: -10.791626}
+        - {x: -10.189453, y: -22.791626}
+        - {x: -5.189453, y: -24.791626}
+        - {x: 16.810547, y: -24.791626}
+        - {x: 17.810547, y: -17.791626}
+        - {x: 17.810547, y: 19.208374}
+    - name: Paladin_27
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1856
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1792
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1791
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_31
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1791
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_33
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1791
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_34
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1791
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_35
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1728
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1728
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1727
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1727
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1727
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1727
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_43
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1727
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1663
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1663
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1664
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1664
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_48
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1664
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_49
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1664
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_50
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1664
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_51
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1664
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_52
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1600
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1600
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_54
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1600
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_56
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1599
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_57
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1599
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_58
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1599
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_59
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1599
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1537
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1537
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_62
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1536
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1535
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_64
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1536
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1537
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_66
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1536
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_67
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1535
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_68
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1536
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1472
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_70
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1473
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_71
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1474
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_72
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1474
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_73
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1473
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_74
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1473
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_75
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1473
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_76
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1473
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_77
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1473
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_78
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1407
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_79
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1407
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_80
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1407
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_81
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1408
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1407
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_83
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1407
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_84
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1407
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_85
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1408
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_86
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1407
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_87
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1344
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_88
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1345
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_89
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1346
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_90
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1346
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_91
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1345
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_92
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1345
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_93
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1345
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_94
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1345
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_95
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1345
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1281
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_97
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1281
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1281
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1281
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_100
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1281
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.914703, y: 25.802734}
+        - {x: -16.914703, y: 15.802734}
+        - {x: -16.914703, y: -20.197266}
+        - {x: -12.914703, y: -24.197266}
+        - {x: 6.0852966, y: -24.197266}
+        - {x: 18.085297, y: -0.19726562}
+        - {x: 18.085297, y: 16.802734}
+        - {x: 8.085297, y: 25.802734}
+    - name: Paladin_101
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1281
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.6269531, y: 25.802734}
+        - {x: -11.373047, y: 25.802734}
+        - {x: -18.373047, y: 15.802734}
+        - {x: -18.373047, y: -17.197266}
+        - {x: -14.373047, y: -24.197266}
+        - {x: 4.626953, y: -24.197266}
+        - {x: 19.626953, y: -4.1972656}
+        - {x: 19.626953, y: 12.802734}
+    - name: Paladin_102
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1216
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1215
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_104
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1215
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1216
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.2115784, y: 26.291748}
+        - {x: -16.211578, y: 11.291748}
+        - {x: -16.211578, y: -19.708252}
+        - {x: -14.211578, y: -24.708252}
+        - {x: 17.788422, y: -24.708252}
+        - {x: 17.788422, y: 23.291748}
+        - {x: 14.788422, y: 26.291748}
+    - name: Paladin_106
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1216
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.639313, y: -11.708252}
+        - {x: -12.639313, y: -23.708252}
+        - {x: -9.639313, y: -24.708252}
+        - {x: 13.360687, y: -24.708252}
+        - {x: 18.360687, y: -20.708252}
+        - {x: 18.360687, y: 19.291748}
+        - {x: 15.360687, y: 26.291748}
+        - {x: -5.6393127, y: 26.291748}
+        - {x: -16.639313, y: 16.291748}
+    - name: Paladin_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1216
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.128235, y: 26.291748}
+        - {x: -16.128235, y: 16.291748}
+        - {x: -16.128235, y: 0.29174805}
+        - {x: -8.128235, y: -23.708252}
+        - {x: 0.87176514, y: -24.708252}
+        - {x: 13.871765, y: -24.708252}
+        - {x: 17.871765, y: -16.708252}
+        - {x: 17.871765, y: 26.291748}
+    - name: Paladin_108
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1152
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_109
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1152
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_110
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1152
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_111
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1153
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_112
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1153
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_113
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1153
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.373047, y: 25.719482}
+        - {x: -17.373047, y: 21.719482}
+        - {x: -17.373047, y: -17.280518}
+        - {x: -14.373047, y: -24.280518}
+        - {x: 5.626953, y: -24.280518}
+        - {x: 11.626953, y: -23.280518}
+        - {x: 18.626953, y: -17.280518}
+        - {x: 18.626953, y: 13.719482}
+        - {x: 13.626953, y: 25.719482}
+    - name: Paladin_114
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1088
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_115
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1086
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_116
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1087
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1088
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.456375, y: 26.208374}
+        - {x: -16.456375, y: 21.208374}
+        - {x: -16.456375, y: -17.791626}
+        - {x: -13.456375, y: -24.791626}
+        - {x: 11.543625, y: -24.791626}
+        - {x: 17.543625, y: -17.791626}
+        - {x: 17.543625, y: 5.208374}
+        - {x: 7.543625, y: 26.208374}
+    - name: Paladin_118
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1088
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.914703, y: 26.208374}
+        - {x: -16.914703, y: 20.208374}
+        - {x: -16.914703, y: -17.791626}
+        - {x: -13.914703, y: -24.791626}
+        - {x: 16.085297, y: -24.791626}
+        - {x: 18.085297, y: -16.791626}
+        - {x: 18.085297, y: 16.208374}
+        - {x: 5.0852966, y: 26.208374}
+    - name: Paladin_119
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1088
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.373047, y: 26.208374}
+        - {x: -15.373047, y: 17.208374}
+        - {x: -16.373047, y: 9.208374}
+        - {x: -16.373047, y: -14.791626}
+        - {x: -11.373047, y: -24.791626}
+        - {x: 4.626953, y: -24.791626}
+        - {x: 9.626953, y: -23.791626}
+        - {x: 17.626953, y: -9.791626}
+        - {x: 17.626953, y: 14.208374}
+        - {x: 10.626953, y: 26.208374}
+    - name: Paladin_120
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1025
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1024
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_122
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1023
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_123
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1023
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_124
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1023
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_125
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1023
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_126
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1023
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1023
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1023
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_129
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1023
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_130
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1023
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_131
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1023
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_132
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1023
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_133
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 960
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_134
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 960
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_135
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 960
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.314453, y: 26.125}
+        - {x: -15.314453, y: 22.125}
+        - {x: -16.314453, y: 14.125}
+        - {x: -16.314453, y: -9.875}
+        - {x: -13.314453, y: -10.875}
+        - {x: -8.314453, y: -10.875}
+        - {x: -6.314453, y: -12.875}
+        - {x: -10.314453, y: -17.875}
+        - {x: -10.314453, y: -20.875}
+        - {x: -8.314453, y: -22.875}
+        - {x: -4.314453, y: -24.875}
+        - {x: 17.685547, y: -24.875}
+        - {x: 17.685547, y: 26.125}
+    - name: Paladin_136
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 959
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.7115784, y: 25.65564}
+        - {x: -8.711578, y: 19.65564}
+        - {x: -17.711578, y: 6.6556396}
+        - {x: -17.711578, y: -16.34436}
+        - {x: -7.7115784, y: -24.34436}
+        - {x: 19.288422, y: -24.34436}
+        - {x: 19.288422, y: 21.65564}
+        - {x: 12.288422, y: 25.65564}
+    - name: Paladin_137
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.669922, y: 26.65564}
+        - {x: -17.669922, y: 21.65564}
+        - {x: -17.669922, y: -11.34436}
+        - {x: -13.669922, y: -23.34436}
+        - {x: -2.6699219, y: -25.34436}
+        - {x: 14.330078, y: -25.34436}
+        - {x: 19.330078, y: -9.34436}
+        - {x: 19.330078, y: 20.65564}
+        - {x: 17.330078, y: 26.65564}
+    - name: Paladin_138
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.0976562, y: 26.65564}
+        - {x: -17.097656, y: 18.65564}
+        - {x: -17.097656, y: -19.34436}
+        - {x: -15.097656, y: -25.34436}
+        - {x: 18.902344, y: -25.34436}
+        - {x: 18.902344, y: 26.65564}
+    - name: Paladin_139
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.94403, y: 26.65564}
+        - {x: -17.05597, y: 26.65564}
+        - {x: -17.05597, y: -25.34436}
+        - {x: 15.944031, y: -25.34436}
+        - {x: 17.94403, y: -22.34436}
+        - {x: 18.94403, y: -16.34436}
+        - {x: 18.94403, y: 21.65564}
+    - name: Paladin_140
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 959
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.955078, y: 26.65564}
+        - {x: -6.044922, y: 26.65564}
+        - {x: -18.044922, y: 17.65564}
+        - {x: -18.044922, y: -16.34436}
+        - {x: -15.044922, y: -24.34436}
+        - {x: -12.044922, y: -25.34436}
+        - {x: 11.955078, y: -25.34436}
+        - {x: 16.955078, y: -22.34436}
+        - {x: 19.955078, y: -1.3443604}
+        - {x: 19.955078, y: 13.65564}
+        - {x: 15.955078, y: 22.65564}
+    - name: Paladin_141
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 959
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.003235, y: 26.65564}
+        - {x: -14.003235, y: 22.65564}
+        - {x: -19.003235, y: 14.65564}
+        - {x: -19.003235, y: 0.65563965}
+        - {x: -18.003235, y: -1.3443604}
+        - {x: -14.003235, y: -21.34436}
+        - {x: -4.003235, y: -25.34436}
+        - {x: 10.996765, y: -25.34436}
+        - {x: 16.996765, y: -22.34436}
+        - {x: 20.996765, y: -10.34436}
+        - {x: 20.996765, y: 10.65564}
+        - {x: 12.996765, y: 26.65564}
+    - name: Paladin_142
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.961548, y: 26.65564}
+        - {x: -17.961548, y: 21.65564}
+        - {x: -17.961548, y: -14.34436}
+        - {x: -13.961548, y: -25.34436}
+        - {x: 18.038452, y: -25.34436}
+        - {x: 18.038452, y: 25.65564}
+        - {x: 17.038452, y: 26.65564}
+    - name: Paladin_143
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.419922, y: 26.65564}
+        - {x: -17.419922, y: 14.65564}
+        - {x: -17.419922, y: -9.34436}
+        - {x: -11.419922, y: -21.34436}
+        - {x: 0.5800781, y: -25.34436}
+        - {x: 10.580078, y: -25.34436}
+        - {x: 17.580078, y: -24.34436}
+        - {x: 17.580078, y: 25.65564}
+        - {x: 15.580078, y: 26.65564}
+    - name: Paladin_144
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 959
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.878235, y: 26.65564}
+        - {x: -17.878235, y: 17.65564}
+        - {x: -17.878235, y: -7.3443604}
+        - {x: -9.878235, y: -22.34436}
+        - {x: -3.8782349, y: -25.34436}
+        - {x: 11.121765, y: -25.34436}
+        - {x: 17.121765, y: -22.34436}
+        - {x: 18.121765, y: -17.34436}
+        - {x: 18.121765, y: 17.65564}
+        - {x: 13.121765, y: 26.65564}
+    - name: Paladin_145
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 959
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.836548, y: 26.65564}
+        - {x: -17.836548, y: 18.65564}
+        - {x: -17.836548, y: -25.34436}
+        - {x: 18.163452, y: -25.34436}
+        - {x: 18.163452, y: 25.65564}
+        - {x: 17.163452, y: 26.65564}
+    - name: Paladin_146
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 896
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_147
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 895
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_148
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 897
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_149
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 895
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_150
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 895
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_151
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 895
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_152
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 895
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_153
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 895
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_154
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 895
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_155
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 895
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_156
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 895
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_157
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 895
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_158
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 895
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_159
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 832
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_160
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 832
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_161
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 832
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.59375, y: 25.541687}
+        - {x: -12.40625, y: 25.541687}
+        - {x: -14.40625, y: 23.541687}
+        - {x: -16.40625, y: 15.541687}
+        - {x: -16.40625, y: -17.458313}
+        - {x: -10.40625, y: -24.458313}
+        - {x: 17.59375, y: -24.458313}
+        - {x: 17.59375, y: 14.541687}
+        - {x: 12.59375, y: 24.541687}
+    - name: Paladin_162
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 831
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.833984, y: 25.572266}
+        - {x: -17.833984, y: 11.572266}
+        - {x: -17.833984, y: -17.427734}
+        - {x: -15.833984, y: -22.427734}
+        - {x: -10.833984, y: -24.427734}
+        - {x: 11.166016, y: -24.427734}
+        - {x: 19.166016, y: -17.427734}
+        - {x: 19.166016, y: 5.5722656}
+        - {x: 5.1660156, y: 25.572266}
+    - name: Paladin_163
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.792297, y: -14.927734}
+        - {x: -14.792297, y: -24.927734}
+        - {x: 14.207703, y: -24.927734}
+        - {x: 19.207703, y: -19.927734}
+        - {x: 19.207703, y: 19.072266}
+        - {x: 11.207703, y: 26.072266}
+        - {x: -11.792297, y: 26.072266}
+        - {x: -17.792297, y: 15.072266}
+    - name: Paladin_164
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 831
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.311829, y: 26.072266}
+        - {x: -17.311829, y: 19.072266}
+        - {x: -17.311829, y: -24.927734}
+        - {x: 11.688171, y: -24.927734}
+        - {x: 18.688171, y: -15.927734}
+        - {x: 18.688171, y: 15.072266}
+        - {x: 10.688171, y: 26.072266}
+    - name: Paladin_165
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 831
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.270172, y: 26.072266}
+        - {x: -17.270172, y: -24.927734}
+        - {x: 2.729828, y: -24.927734}
+        - {x: 12.729828, y: -21.927734}
+        - {x: 18.729828, y: -0.9277344}
+        - {x: 18.729828, y: 15.072266}
+        - {x: 10.729828, y: 26.072266}
+    - name: Paladin_166
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 831
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.136719, y: 26.072266}
+        - {x: -18.136719, y: 14.072266}
+        - {x: -18.136719, y: -10.927734}
+        - {x: -15.136719, y: -21.927734}
+        - {x: -11.136719, y: -24.927734}
+        - {x: 4.8632812, y: -24.927734}
+        - {x: 14.863281, y: -21.927734}
+        - {x: 19.863281, y: -3.9277344}
+        - {x: 19.863281, y: 16.072266}
+        - {x: 11.863281, y: 26.072266}
+    - name: Paladin_167
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 831
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.966156, y: 26.072266}
+        - {x: -10.033844, y: 26.072266}
+        - {x: -19.033844, y: 16.072266}
+        - {x: -19.033844, y: -7.9277344}
+        - {x: -14.033844, y: -21.927734}
+        - {x: -10.033844, y: -24.927734}
+        - {x: 9.966156, y: -24.927734}
+        - {x: 20.966156, y: -15.927734}
+        - {x: 20.966156, y: 16.072266}
+    - name: Paladin_168
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.583984, y: 26.072266}
+        - {x: -17.583984, y: -22.927734}
+        - {x: -13.583984, y: -24.927734}
+        - {x: 16.416016, y: -24.927734}
+        - {x: 19.416016, y: -17.927734}
+        - {x: 19.416016, y: 20.072266}
+        - {x: 13.416016, y: 26.072266}
+    - name: Paladin_169
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 831
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.072876, y: 26.072266}
+        - {x: -17.072876, y: 23.072266}
+        - {x: -17.072876, y: -24.927734}
+        - {x: 4.927124, y: -24.927734}
+        - {x: 14.927124, y: -21.927734}
+        - {x: 18.927124, y: -17.927734}
+        - {x: 18.927124, y: 17.072266}
+        - {x: 13.927124, y: 26.072266}
+    - name: Paladin_170
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 831
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.50061, y: 26.072266}
+        - {x: -17.50061, y: -24.927734}
+        - {x: 18.49939, y: -24.927734}
+        - {x: 19.49939, y: -21.927734}
+        - {x: 19.49939, y: 21.072266}
+        - {x: 14.49939, y: 26.072266}
+    - name: Paladin_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 831
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.520142, y: 26.072266}
+        - {x: -16.520142, y: -23.927734}
+        - {x: -14.520142, y: -24.927734}
+        - {x: 15.479858, y: -24.927734}
+        - {x: 18.479858, y: -16.927734}
+        - {x: 18.479858, y: 21.072266}
+        - {x: 14.479858, y: 26.072266}
+    - name: Paladin_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 767
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_173
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 768
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_174
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 767
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_175
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 769
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_176
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 770
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_177
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 767
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.28125, y: 19.53064}
+        - {x: -17.28125, y: 18.53064}
+        - {x: -16.28125, y: 9.53064}
+        - {x: -12.28125, y: 5.5306396}
+        - {x: -9.28125, y: 5.5306396}
+        - {x: -11.28125, y: 5.5306396}
+        - {x: -17.28125, y: -2.4693604}
+        - {x: -17.28125, y: -18.46936}
+        - {x: 18.71875, y: -18.46936}
+        - {x: 18.71875, y: 19.53064}
+    - name: Paladin_178
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 641
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.76432, y: 24.386108}
+        - {x: -17.76432, y: 17.386108}
+        - {x: -17.76432, y: -4.6138916}
+        - {x: -8.76432, y: -23.613892}
+        - {x: 19.23568, y: -23.613892}
+        - {x: 19.23568, y: 24.386108}
+    - name: Paladin_179
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 641
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.77212524, y: 24.386108}
+        - {x: -22.772125, y: -0.6138916}
+        - {x: -22.772125, y: -11.613892}
+        - {x: -6.7721252, y: -23.613892}
+        - {x: 21.227875, y: -23.613892}
+        - {x: 23.227875, y: -21.613892}
+        - {x: 23.227875, y: 18.386108}
+        - {x: 18.227875, y: 24.386108}
+    - name: Paladin_180
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 641
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.6777344, y: 24.386108}
+        - {x: -21.677734, y: -10.613892}
+        - {x: -21.677734, y: -19.613892}
+        - {x: -15.677734, y: -21.613892}
+        - {x: -7.6777344, y: -23.613892}
+        - {x: 22.322266, y: -23.613892}
+        - {x: 22.322266, y: 24.386108}
+    - name: Paladin_181
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 641
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.2161255, y: 24.886108}
+        - {x: -28.216125, y: 9.886108}
+        - {x: -28.216125, y: -14.113892}
+        - {x: -22.216125, y: -17.113892}
+        - {x: -19.216125, y: -18.113892}
+        - {x: -6.2161255, y: -24.113892}
+        - {x: 29.783875, y: -24.113892}
+        - {x: 29.783875, y: 24.886108}
+    - name: Paladin_182
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 641
+        width: 83
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.060547, y: 33.88611}
+        - {x: -33.060547, y: 24.886108}
+        - {x: -40.060547, y: 12.886108}
+        - {x: -40.060547, y: -30.113892}
+        - {x: -36.060547, y: -33.11389}
+        - {x: 21.939453, y: -33.11389}
+        - {x: 41.939453, y: 6.8861084}
+        - {x: 41.939453, y: 33.88611}
+    - name: Paladin_183
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 641
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.914673, y: 32.88611}
+        - {x: -32.914673, y: 30.886108}
+        - {x: -36.914673, y: 24.886108}
+        - {x: -36.914673, y: -32.11389}
+        - {x: 31.085327, y: -32.11389}
+        - {x: 37.085327, y: -28.113892}
+        - {x: 37.085327, y: 20.886108}
+        - {x: 31.085327, y: 31.886108}
+        - {x: 21.085327, y: 32.88611}
+    - name: Paladin_184
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 446
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.9088554, y: 26.352875}
+        - {x: -28.091145, y: -6.6471252}
+        - {x: -28.091145, y: -25.647125}
+        - {x: 24.908855, y: -25.647125}
+        - {x: 28.908855, y: -19.647125}
+        - {x: 28.908855, y: 26.352875}
+    - name: Paladin_185
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 447
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Paladin_186
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 447
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.228516, y: 25.322266}
+        - {x: -18.228516, y: -24.677734}
+        - {x: 7.7714844, y: -24.677734}
+        - {x: 19.771484, y: -5.6777344}
+        - {x: 19.771484, y: 12.322266}
+        - {x: 7.7714844, y: 25.322266}
+    - name: Paladin_187
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 448
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.736328, y: 25.291687}
+        - {x: -28.736328, y: 10.291687}
+        - {x: -28.736328, y: -24.708313}
+        - {x: 10.263672, y: -24.708313}
+        - {x: 29.263672, y: -17.708313}
+        - {x: 29.263672, y: 17.291687}
+        - {x: 22.263672, y: 25.291687}
+    - name: Paladin_188
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 448
+        width: 91
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.05078, y: 25.291687}
+        - {x: -44.05078, y: 17.291687}
+        - {x: -44.05078, y: -7.708313}
+        - {x: -1.0507812, y: -24.708313}
+        - {x: 45.94922, y: -24.708313}
+        - {x: 45.94922, y: 24.291687}
+        - {x: 44.94922, y: 25.291687}
+    - name: Paladin_189
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 448
+        width: 92
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.895142, y: 25.291687}
+        - {x: -44.89514, y: 16.291687}
+        - {x: -44.89514, y: -2.708313}
+        - {x: -41.89514, y: -10.708313}
+        - {x: 15.104858, y: -24.708313}
+        - {x: 45.10486, y: -24.708313}
+        - {x: 45.10486, y: 25.291687}
+    - name: Paladin_190
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 254
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.641922, y: 26.227875}
+        - {x: -19.641922, y: -14.772125}
+        - {x: -19.641922, y: -25.772125}
+        - {x: 12.358078, y: -25.772125}
+        - {x: 21.358078, y: -22.772125}
+        - {x: 21.358078, y: 21.227875}
+        - {x: 14.358078, y: 26.227875}
+    - name: Paladin_191
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 256
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.22787476, y: 24.166672}
+        - {x: -5.7721252, y: 19.166672}
+        - {x: -22.772125, y: -5.8333282}
+        - {x: -22.772125, y: -17.833328}
+        - {x: -13.772125, y: -23.833328}
+        - {x: 23.227875, y: -23.833328}
+        - {x: 23.227875, y: 22.166672}
+        - {x: 19.227875, y: 24.166672}
+    - name: Paladin_192
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 256
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.2695312, y: 24.666672}
+        - {x: -20.269531, y: 21.666672}
+        - {x: -20.269531, y: 1.6666718}
+        - {x: -9.269531, y: -24.333328}
+        - {x: 20.730469, y: -24.333328}
+        - {x: 20.730469, y: 22.666672}
+        - {x: 16.730469, y: 24.666672}
+    - name: Paladin_193
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 257
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.807922, y: 24.636078}
+        - {x: -26.807922, y: -8.363922}
+        - {x: -21.807922, y: -21.363922}
+        - {x: -8.807922, y: -24.363922}
+        - {x: 27.192078, y: -24.363922}
+        - {x: 28.192078, y: -22.363922}
+        - {x: 28.192078, y: 22.636078}
+        - {x: 27.192078, y: 24.636078}
+    - name: Paladin_194
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 236
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.029907, y: 35.778656}
+        - {x: -40.029907, y: -15.221344}
+        - {x: -27.029907, y: -34.221344}
+        - {x: 41.970093, y: -34.221344}
+        - {x: 41.970093, y: 35.778656}
+    - name: Paladin_195
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 239
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.914673, y: 34.18686}
+        - {x: -35.914673, y: 23.18686}
+        - {x: -35.914673, y: -32.81314}
+        - {x: 26.085327, y: -32.81314}
+        - {x: 30.085327, y: -31.81314}
+        - {x: 36.085327, y: -27.81314}
+        - {x: 36.085327, y: 13.186859}
+        - {x: 13.085327, y: 34.18686}
+    - name: Paladin_196
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 62
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.00911, y: -25.897133}
+        - {x: 28.99089, y: -25.897133}
+        - {x: 28.99089, y: -16.897133}
+        - {x: -3.0091095, y: 26.102867}
+        - {x: -24.00911, y: 26.102867}
+        - {x: -28.00911, y: 16.102867}
+    - name: Paladin_197
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 62
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5852966, y: 25.102867}
+        - {x: -16.414703, y: 25.102867}
+        - {x: -16.414703, y: -23.897133}
+        - {x: -13.414703, y: -24.897133}
+        - {x: 7.5852966, y: -24.897133}
+        - {x: 13.585297, y: -22.897133}
+        - {x: 17.585297, y: -18.897133}
+        - {x: 17.585297, y: -3.8971329}
+    - name: Paladin_198
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 63
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.485687, y: 25.072266}
+        - {x: -2.5143127, y: 25.072266}
+        - {x: -7.5143127, y: 23.072266}
+        - {x: -17.514313, y: 13.072266}
+        - {x: -17.514313, y: -8.927734}
+        - {x: -9.514313, y: -24.927734}
+        - {x: 15.485687, y: -24.927734}
+        - {x: 19.485687, y: -23.927734}
+        - {x: 19.485687, y: 7.0722656}
+        - {x: 17.485687, y: 22.072266}
+    - name: Paladin_199
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.583313, y: -5.958332}
+        - {x: -15.583313, y: -24.958332}
+        - {x: 29.416687, y: -24.958332}
+        - {x: 29.416687, y: 20.041668}
+        - {x: 28.416687, y: 25.041668}
+        - {x: -15.583313, y: 25.041668}
+        - {x: -28.583313, y: 19.041668}
+    - name: Paladin_200
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 64
+        width: 91
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.960327, y: 25.041668}
+        - {x: -38.039673, y: 25.041668}
+        - {x: -43.039673, y: 23.041668}
+        - {x: -44.039673, y: 19.041668}
+        - {x: -44.039673, y: -20.958332}
+        - {x: -41.039673, y: -24.958332}
+        - {x: -3.0396729, y: -24.958332}
+        - {x: 45.960327, y: -0.95833206}
+        - {x: 45.960327, y: 12.041668}
+        - {x: 26.960327, y: 23.041668}
+    - name: Paladin_201
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 64
+        width: 92
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.914673, y: 25.041668}
+        - {x: -44.914673, y: -24.958332}
+        - {x: -3.9146729, y: -24.958332}
+        - {x: 23.085327, y: -16.958332}
+        - {x: 45.085327, y: -0.95833206}
+        - {x: 45.085327, y: 25.041668}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,6 +20,11 @@ public class SpellsAndStats : MonoBehaviour {
             for (int i = 1; i < 5; i++)
             {
                 GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" +heros.Spells[i-1].Name);
+                if (heros.Mana < heros.Spells[i - 1].ManaCost || heros.Spells[i - 1].CooldownManager.IsOnCooldown)
+                {
+                    GameObject.Find( "Spell" + i ).GetComponent<Button>().enabled = false;
+                    GameObject.Find( "Spell" + i ).GetComponent<Image>().color = Color.gray;
+                }
             }
             GameObject.Find("DamageT").GetComponent<Text>().text =heros.EffectivDamage.ToString();
             GameObject.Find("HitT").GetComponent<Text>().text =heros.EffectivHitChance.ToString();
