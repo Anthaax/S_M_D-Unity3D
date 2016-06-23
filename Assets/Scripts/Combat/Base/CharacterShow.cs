@@ -23,6 +23,12 @@ public class CharacterShow : MonoBehaviour {
 
         foreach (BaseHeros H in heros)
         {
+
+
+            Animator animator = GameObject.Find("Heros" + i).GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load("Animations/AnimationsController/" + H.CharacterClassName + "F") as RuntimeAnimatorController;
+
+
             if (H.IsMale)
                 GameObject.Find("Heros"+i).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Heros/" + H.CharacterClassName+"M");
             else

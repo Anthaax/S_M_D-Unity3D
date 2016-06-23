@@ -75,9 +75,10 @@ public class Attacking : MonoBehaviour {
             }
             x++;
         }
-        GameObject.Find("Heros"+y).GetComponent<Transform>().transform.Translate(0, 3, 0);
+        Animator animator = GameObject.Find("Heros" + y).GetComponent<Animator>();
+        animator.Play(H.CharacterClassName+"Attack");
         yield return new WaitForSeconds(2);
-        GameObject.Find("Heros"+y).GetComponent<Transform>().transform.Translate(0, -3, 0);
+        animator.Play(H.CharacterClassName + "Idle");
 
     }
 
@@ -97,7 +98,8 @@ public class Attacking : MonoBehaviour {
             GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = spellToLaunch.Description;
         }
             
-        yield return new WaitForSeconds( 2 );
+        yield return new WaitForSeconds( 1 );
+        
         GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = "";
         
 
