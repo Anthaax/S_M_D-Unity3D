@@ -334,8 +334,13 @@ public class BoardManager : NetworkBehaviour
         for ( int i = 0; i <= 5; i++ )
         {
 
-            player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
-            Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+            //player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
+            //Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+
+            float step = 0.2f * Time.deltaTime;
+            player1.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X, map.HeroPosition.Y, 0f ), new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f ), step );
+            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X,map.HeroPosition.Y,-10f ),new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f ),step);
+
             yield return new WaitForSeconds( waitTime / 10f );
         }
         map.HeroPosition = dest;
