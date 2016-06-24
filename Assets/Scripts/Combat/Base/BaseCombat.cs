@@ -36,7 +36,7 @@ public class BaseCombat : MonoBehaviour {
                                             c.HPmax = 200;
                                         });
         Attack.Target = -1;
-        
+        SpellsAndStats.UpdateSpell();
     }
 	// Use this for initialization
 	void Start () {

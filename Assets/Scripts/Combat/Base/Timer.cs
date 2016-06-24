@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour {
         if (timeLeft <= 0)
         {
             BaseCombat.Combat.NextTurn();
+            SpellsAndStats.UpdateSpell();
             timeLeft = 30.0f;
         }
         GameObject.Find("TimerText").GetComponent<Text>().text = timeLeft.ToString();

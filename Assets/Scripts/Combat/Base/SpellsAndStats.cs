@@ -2,21 +2,25 @@
 using System.Collections;
 using S_M_D.Character;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using S_M_D.Spell;
+using System.Linq;
 
 public class SpellsAndStats : MonoBehaviour {
-
-    BaseHeros heros;
+    public static int count = 0;
 	// Use this for initialization
 	void Start () {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public static void UpdateSpell () {
         BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
+        Debug.Log( heros  + "Dans updateSpell" + count);
         if (heros !=null)
         {
-           
+            Debug.Log( heros.Spells + heros.CharacterClassName );
+            //GetSpellList( heros );
             for (int i = 1; i < 5; i++)
             {
                 GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" +heros.Spells[i-1].Name);
@@ -27,8 +31,8 @@ public class SpellsAndStats : MonoBehaviour {
                 }
                 else
                 {
-                    GameObject.Find("Spell" + i).GetComponent<Button>().enabled = true;
-                    GameObject.Find("Spell" + i).GetComponent<Image>().color = Color.white;
+                    GameObject.Find( "Spell" + i ).GetComponent<Button>().enabled = true;
+                    GameObject.Find( "Spell" + i ).GetComponent<Image>().color = Color.white;
                 }
             }
             GameObject.Find("DamageT").GetComponent<Text>().text =heros.EffectivDamage.ToString();
@@ -48,11 +52,8 @@ public class SpellsAndStats : MonoBehaviour {
             GameObject.Find("IconeT1").GetComponent<Text>().text = heros.CharacterName;
             GameObject.Find("IconeT2").GetComponent<Text>().text = heros.CharacterClassName;
             GameObject.Find("MANA").GetComponent<Text>().text =heros.Mana.ToString()+ "/" +heros.EffectivManaMax.ToString();
-            
-
-
         }
-
+        count++;
         int x = 1;
         foreach (BaseHeros H in BaseCombat.Combat.Heros)
         {
@@ -95,6 +96,13 @@ public class SpellsAndStats : MonoBehaviour {
                 
             y++;
         }
-
+    }
+    private static void GetSpellList(BaseHeros hero)
+    {
+        hero.Spells.OrderBy( c => c.IsEquiped == true );
+        foreach (var spell in hero.Spells)
+        {
+            Debug.Log( spell.Name );
+        }
     }
 }
