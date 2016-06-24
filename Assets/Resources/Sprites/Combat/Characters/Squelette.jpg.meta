@@ -1,0 +1,2605 @@
+fileFormatVersion: 2
+guid: aff4d23afd27344419dace67e428bb92
+timeCreated: 1466754997
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Squelette_0
+    21300002: Squelette_1
+    21300004: Squelette_2
+    21300006: Squelette_3
+    21300008: Squelette_4
+    21300010: Squelette_5
+    21300012: Squelette_6
+    21300014: Squelette_7
+    21300016: Squelette_8
+    21300018: Squelette_9
+    21300020: Squelette_10
+    21300022: Squelette_11
+    21300024: Squelette_12
+    21300026: Squelette_13
+    21300028: Squelette_14
+    21300030: Squelette_15
+    21300032: Squelette_16
+    21300034: Squelette_17
+    21300036: Squelette_18
+    21300038: Squelette_19
+    21300040: Squelette_20
+    21300042: Squelette_21
+    21300044: Squelette_22
+    21300046: Squelette_23
+    21300048: Squelette_24
+    21300050: Squelette_25
+    21300052: Squelette_26
+    21300054: Squelette_27
+    21300056: Squelette_28
+    21300058: Squelette_29
+    21300060: Squelette_30
+    21300062: Squelette_31
+    21300064: Squelette_32
+    21300066: Squelette_33
+    21300068: Squelette_34
+    21300070: Squelette_35
+    21300072: Squelette_36
+    21300074: Squelette_37
+    21300076: Squelette_38
+    21300078: Squelette_39
+    21300080: Squelette_40
+    21300082: Squelette_41
+    21300084: Squelette_42
+    21300086: Squelette_43
+    21300088: Squelette_44
+    21300090: Squelette_45
+    21300092: Squelette_46
+    21300094: Squelette_47
+    21300096: Squelette_48
+    21300098: Squelette_49
+    21300100: Squelette_50
+    21300102: Squelette_51
+    21300104: Squelette_52
+    21300106: Squelette_53
+    21300108: Squelette_54
+    21300110: Squelette_55
+    21300112: Squelette_56
+    21300114: Squelette_57
+    21300116: Squelette_58
+    21300118: Squelette_59
+    21300120: Squelette_60
+    21300122: Squelette_61
+    21300124: Squelette_62
+    21300126: Squelette_63
+    21300128: Squelette_64
+    21300130: Squelette_65
+    21300132: Squelette_66
+    21300134: Squelette_67
+    21300136: Squelette_68
+    21300138: Squelette_69
+    21300140: Squelette_70
+    21300142: Squelette_71
+    21300144: Squelette_72
+    21300146: Squelette_73
+    21300148: Squelette_74
+    21300150: Squelette_75
+    21300152: Squelette_76
+    21300154: Squelette_77
+    21300156: Squelette_78
+    21300158: Squelette_79
+    21300160: Squelette_80
+    21300162: Squelette_81
+    21300164: Squelette_82
+    21300166: Squelette_83
+    21300168: Squelette_84
+    21300170: Squelette_85
+    21300172: Squelette_86
+    21300174: Squelette_87
+    21300176: Squelette_88
+    21300178: Squelette_89
+    21300180: Squelette_90
+    21300182: Squelette_91
+    21300184: Squelette_92
+    21300186: Squelette_93
+    21300188: Squelette_94
+    21300190: Squelette_95
+    21300192: Squelette_96
+    21300194: Squelette_97
+    21300196: Squelette_98
+    21300198: Squelette_99
+    21300200: Squelette_100
+    21300202: Squelette_101
+    21300204: Squelette_102
+    21300206: Squelette_103
+    21300208: Squelette_104
+    21300210: Squelette_105
+    21300212: Squelette_106
+    21300214: Squelette_107
+    21300216: Squelette_108
+    21300218: Squelette_109
+    21300220: Squelette_110
+    21300222: Squelette_111
+    21300224: Squelette_112
+    21300226: Squelette_113
+    21300228: Squelette_114
+    21300230: Squelette_115
+    21300232: Squelette_116
+    21300234: Squelette_117
+    21300236: Squelette_118
+    21300238: Squelette_119
+    21300240: Squelette_120
+    21300242: Squelette_121
+    21300244: Squelette_122
+    21300246: Squelette_123
+    21300248: Squelette_124
+    21300250: Squelette_125
+    21300252: Squelette_126
+    21300254: Squelette_127
+    21300256: Squelette_128
+    21300258: Squelette_129
+    21300260: Squelette_130
+    21300262: Squelette_131
+    21300264: Squelette_132
+    21300266: Squelette_133
+    21300268: Squelette_134
+    21300270: Squelette_135
+    21300272: Squelette_136
+    21300274: Squelette_137
+    21300276: Squelette_138
+    21300278: Squelette_139
+    21300280: Squelette_140
+    21300282: Squelette_141
+    21300284: Squelette_142
+    21300286: Squelette_143
+    21300288: Squelette_144
+    21300290: Squelette_145
+    21300292: Squelette_146
+    21300294: Squelette_147
+    21300296: Squelette_148
+    21300298: Squelette_149
+    21300300: Squelette_150
+    21300302: Squelette_151
+    21300304: Squelette_152
+    21300306: Squelette_153
+    21300308: Squelette_154
+    21300310: Squelette_155
+    21300312: Squelette_156
+    21300314: Squelette_157
+    21300316: Squelette_158
+    21300318: Squelette_159
+    21300320: Squelette_160
+    21300322: Squelette_161
+    21300324: Squelette_162
+    21300326: Squelette_163
+    21300328: Squelette_164
+    21300330: Squelette_165
+    21300332: Squelette_166
+    21300334: Squelette_167
+    21300336: Squelette_168
+    21300338: Squelette_169
+    21300340: Squelette_170
+    21300342: Squelette_171
+    21300344: Squelette_172
+    21300346: Squelette_173
+    21300348: Squelette_174
+    21300350: Squelette_175
+    21300352: Squelette_176
+    21300354: Squelette_177
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Squelette_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1282
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1282
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1282
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1282
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 23}
+        - {x: -18, y: 11}
+        - {x: -18, y: -19}
+        - {x: -17, y: -23}
+        - {x: 18, y: -23}
+        - {x: 18, y: 10}
+        - {x: 14, y: 23}
+    - name: Squelette_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1282
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 23}
+        - {x: -14, y: 23}
+        - {x: -25, y: 18}
+        - {x: -25, y: -23}
+        - {x: 18, y: -23}
+        - {x: 25, y: -16}
+        - {x: 25, y: 13}
+        - {x: 17, y: 10}
+    - name: Squelette_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1282
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 23}
+        - {x: -24, y: -23}
+        - {x: 22, y: -23}
+        - {x: 24, y: -13}
+        - {x: 24, y: 23}
+    - name: Squelette_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1282
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 23}
+        - {x: -18, y: 11}
+        - {x: -18, y: -19}
+        - {x: -17, y: -23}
+        - {x: 18, y: -23}
+        - {x: 18, y: 10}
+        - {x: 14, y: 23}
+    - name: Squelette_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1218
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1218
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1218
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1218
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1218
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: -16.5}
+        - {x: -15.5, y: -22.5}
+        - {x: -14.5, y: -23.5}
+        - {x: 11.5, y: -23.5}
+        - {x: 16.5, y: -18.5}
+        - {x: 16.5, y: 12.5}
+        - {x: 6.5, y: 23.5}
+        - {x: -12.5, y: 23.5}
+        - {x: -16.5, y: 16.5}
+    - name: Squelette_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1218
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23.5}
+        - {x: -16.5, y: 17.5}
+        - {x: -16.5, y: -3.5}
+        - {x: -14.5, y: -22.5}
+        - {x: -11.5, y: -23.5}
+        - {x: 7.5, y: -23.5}
+        - {x: 16.5, y: -1.5}
+        - {x: 16.5, y: 17.5}
+        - {x: 7.5, y: 23.5}
+    - name: Squelette_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1218
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1154
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1154
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1154
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1154
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 23.5}
+        - {x: -10, y: 23.5}
+        - {x: -18, y: 12.5}
+        - {x: -18, y: -22.5}
+        - {x: -17, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 18, y: -21.5}
+        - {x: 18, y: 9.5}
+    - name: Squelette_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1154
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23.5}
+        - {x: -25, y: 17.5}
+        - {x: -25, y: -21.5}
+        - {x: -19, y: -23.5}
+        - {x: 25, y: -23.5}
+        - {x: 25, y: 20.5}
+        - {x: 22, y: 23.5}
+    - name: Squelette_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1154
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 23.5}
+        - {x: -12, y: 23.5}
+        - {x: -14, y: 22.5}
+        - {x: -24, y: 19.5}
+        - {x: -24, y: -2.5}
+        - {x: -17, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 24, y: 0.5}
+        - {x: 24, y: 16.5}
+        - {x: 22, y: 19.5}
+    - name: Squelette_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1154
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 23.5}
+        - {x: -14, y: 23.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -22.5}
+        - {x: -16, y: -23.5}
+        - {x: 15, y: -23.5}
+        - {x: 17, y: -18.5}
+        - {x: 17, y: 9.5}
+    - name: Squelette_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1090
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1090
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1090
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1090
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1090
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 23.5}
+        - {x: -11.5, y: 23.5}
+        - {x: -16.5, y: 16.5}
+        - {x: -16.5, y: -6.5}
+        - {x: -11.5, y: -23.5}
+        - {x: 14.5, y: -23.5}
+        - {x: 15.5, y: -22.5}
+        - {x: 16.5, y: -15.5}
+        - {x: 16.5, y: 15.5}
+    - name: Squelette_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1090
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 23.5}
+        - {x: -16.5, y: 20.5}
+        - {x: -16.5, y: -19.5}
+        - {x: -15.5, y: -23.5}
+        - {x: 16.5, y: -23.5}
+        - {x: 16.5, y: 21.5}
+        - {x: 15.5, y: 23.5}
+    - name: Squelette_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1090
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1026
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_29
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1024
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_30
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1024
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1024
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1024
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_33
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1024
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_34
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1024
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_35
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1024
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_36
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 962
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 962
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 962
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_39
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 962
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_40
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 962
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 962
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_42
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 962
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_43
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 962
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 898
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 899
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_46
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 899
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 899
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_48
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 899
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_49
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 899
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_50
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 899
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_51
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 899
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_52
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 834
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_53
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 834
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 834
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_55
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 834
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_56
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 834
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_57
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 834
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_58
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 834
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_59
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 834
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 772
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 772
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_62
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 771
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 770
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_64
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 771
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 772
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_66
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 771
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_67
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 770
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_68
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 771
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_69
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 707
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_70
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 707
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_71
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 708
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_72
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 708
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_73
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 707
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_74
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 707
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_75
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 707
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_76
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 707
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_77
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 707
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_78
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 643
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_79
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 643
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_80
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 642
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_81
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 642
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_82
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 642
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_83
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 643
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_84
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 642
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_85
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 642
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_86
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 642
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_87
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 579
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_88
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 579
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_89
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 580
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_90
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 580
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_91
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 579
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_92
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 579
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_93
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 579
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_94
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 579
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_95
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 579
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 514
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_97
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 513
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_98
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 513
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 513
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_100
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 513
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 23.5}
+        - {x: -15, y: 23.5}
+        - {x: -18, y: 17.5}
+        - {x: -18, y: -23.5}
+        - {x: 14, y: -23.5}
+        - {x: 18, y: -15.5}
+        - {x: 18, y: 20.5}
+    - name: Squelette_101
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 513
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 23.5}
+        - {x: -19.5, y: 16.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 14.5, y: -23.5}
+        - {x: 19.5, y: -12.5}
+        - {x: 19.5, y: 15.5}
+        - {x: 9.5, y: 23.5}
+    - name: Squelette_102
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 450
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 450
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_104
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 450
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 450
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23.5}
+        - {x: -17, y: 11.5}
+        - {x: -17, y: -9.5}
+        - {x: -15, y: -11.5}
+        - {x: -11, y: -22.5}
+        - {x: -11, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 17, y: 12.5}
+        - {x: 14, y: 18.5}
+        - {x: 10, y: 23.5}
+    - name: Squelette_106
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 450
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23.5}
+        - {x: -18, y: 18.5}
+        - {x: -18, y: -15.5}
+        - {x: -15, y: -23.5}
+        - {x: 18, y: -23.5}
+        - {x: 18, y: 23.5}
+    - name: Squelette_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 450
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 23.5}
+        - {x: -16.5, y: 15.5}
+        - {x: -16.5, y: -2.5}
+        - {x: -14.5, y: -7.5}
+        - {x: -8.5, y: -23.5}
+        - {x: 15.5, y: -23.5}
+        - {x: 16.5, y: -19.5}
+        - {x: 16.5, y: 11.5}
+        - {x: 13.5, y: 23.5}
+    - name: Squelette_108
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 386
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_109
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 386
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_110
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 386
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_111
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 386
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_112
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 386
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 22.5}
+        - {x: 9.5, y: 23.5}
+        - {x: -14.5, y: 23.5}
+        - {x: -17.5, y: 16.5}
+        - {x: -17.5, y: -23.5}
+        - {x: 15.5, y: -23.5}
+        - {x: 17.5, y: -14.5}
+        - {x: 17.5, y: 6.5}
+    - name: Squelette_113
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 386
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 23.5}
+        - {x: -15.5, y: 23.5}
+        - {x: -19.5, y: 12.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 14.5, y: -23.5}
+        - {x: 19.5, y: -11.5}
+        - {x: 19.5, y: 8.5}
+    - name: Squelette_114
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 322
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_115
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 322
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_116
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 322
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 322
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 23.5}
+        - {x: -13, y: 23.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -23.5}
+        - {x: 10, y: -23.5}
+        - {x: 17, y: -16.5}
+        - {x: 17, y: 13.5}
+        - {x: 15, y: 19.5}
+    - name: Squelette_118
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 322
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 23.5}
+        - {x: -18, y: -23.5}
+        - {x: 10, y: -23.5}
+        - {x: 18, y: -3.5}
+        - {x: 18, y: 13.5}
+        - {x: 7, y: 23.5}
+    - name: Squelette_119
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 322
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 12.5}
+        - {x: 9.5, y: 23.5}
+        - {x: -13.5, y: 23.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -16.5, y: -21.5}
+        - {x: -15.5, y: -23.5}
+        - {x: 7.5, y: -23.5}
+        - {x: 8.5, y: -21.5}
+        - {x: 8.5, y: -18.5}
+        - {x: 16.5, y: 0.5}
+    - name: Squelette_120
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 258
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 23}
+        - {x: -19, y: 6}
+        - {x: -19, y: -13}
+        - {x: -11, y: -23}
+        - {x: 19, y: -23}
+        - {x: 19, y: 16}
+        - {x: 17, y: 23}
+    - name: Squelette_121
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 256
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 23.5}
+        - {x: -17, y: -5.5}
+        - {x: -6, y: -23.5}
+        - {x: 15, y: -23.5}
+        - {x: 17, y: -21.5}
+        - {x: 17, y: 15.5}
+        - {x: 15, y: 23.5}
+    - name: Squelette_122
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 256
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -21}
+        - {x: -14, y: -24}
+        - {x: 16, y: -24}
+        - {x: 18, y: -23}
+        - {x: 18, y: 4}
+        - {x: 11, y: 24}
+        - {x: -18, y: 24}
+        - {x: -18, y: -8}
+    - name: Squelette_123
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 256
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_124
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 256
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_125
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 256
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_126
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 256
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_127
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 256
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_128
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 256
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_129
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 256
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_130
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_131
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_132
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_133
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 194
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 23.5}
+        - {x: -22, y: -3.5}
+        - {x: -11, y: -23.5}
+        - {x: 15, y: -23.5}
+        - {x: 22, y: -5.5}
+        - {x: 22, y: 20.5}
+        - {x: 17, y: 23.5}
+    - name: Squelette_134
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 194
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -18, y: 21.5}
+        - {x: -18, y: -16.5}
+        - {x: -9, y: -23.5}
+        - {x: 18, y: -23.5}
+        - {x: 18, y: 4.5}
+        - {x: 16, y: 18.5}
+    - name: Squelette_135
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 194
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 23.5}
+        - {x: -18.5, y: -6.5}
+        - {x: -8.5, y: -22.5}
+        - {x: -5.5, y: -23.5}
+        - {x: 15.5, y: -23.5}
+        - {x: 18.5, y: -15.5}
+        - {x: 18.5, y: 14.5}
+        - {x: 17.5, y: 23.5}
+    - name: Squelette_136
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 194
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 23.5}
+        - {x: -16.5, y: 19.5}
+        - {x: -16.5, y: -13.5}
+        - {x: -8.5, y: -23.5}
+        - {x: 16.5, y: -23.5}
+        - {x: 16.5, y: 18.5}
+        - {x: 15.5, y: 23.5}
+    - name: Squelette_137
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 194
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 25}
+        - {x: -17.5, y: 20}
+        - {x: -17.5, y: -11}
+        - {x: -8.5, y: -25}
+        - {x: 17.5, y: -25}
+        - {x: 17.5, y: 19}
+        - {x: 11.5, y: 25}
+    - name: Squelette_138
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 194
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 26.5}
+        - {x: -14, y: 18.5}
+        - {x: -16, y: 15.5}
+        - {x: -16, y: -6.5}
+        - {x: -14, y: -9.5}
+        - {x: -6, y: -24.5}
+        - {x: -5, y: -26.5}
+        - {x: 16, y: -26.5}
+        - {x: 16, y: 22.5}
+        - {x: 5, y: 26.5}
+    - name: Squelette_139
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 194
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 27.5}
+        - {x: -15, y: 19.5}
+        - {x: -17, y: 16.5}
+        - {x: -17, y: -6.5}
+        - {x: -6, y: -27.5}
+        - {x: 17, y: -27.5}
+        - {x: 17, y: 23.5}
+        - {x: 16, y: 27.5}
+    - name: Squelette_140
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 194
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 26.5}
+        - {x: -16, y: 26.5}
+        - {x: -18, y: 18.5}
+        - {x: -18, y: -11.5}
+        - {x: -8, y: -26.5}
+        - {x: 14, y: -26.5}
+        - {x: 15, y: -21.5}
+        - {x: 18, y: -13.5}
+        - {x: 18, y: 14.5}
+    - name: Squelette_141
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 194
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24.5}
+        - {x: -19, y: 13.5}
+        - {x: -19, y: -5.5}
+        - {x: -10, y: -22.5}
+        - {x: -8, y: -24.5}
+        - {x: 17, y: -24.5}
+        - {x: 19, y: -20.5}
+        - {x: 19, y: 15.5}
+        - {x: 15, y: 24.5}
+    - name: Squelette_142
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 194
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 25.5}
+        - {x: -17.5, y: 16.5}
+        - {x: -17.5, y: -15.5}
+        - {x: -10.5, y: -24.5}
+        - {x: -7.5, y: -25.5}
+        - {x: 17.5, y: -25.5}
+        - {x: 17.5, y: 17.5}
+        - {x: 10.5, y: 25.5}
+    - name: Squelette_143
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 194
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 25.5}
+        - {x: -16.5, y: 16.5}
+        - {x: -16.5, y: -15.5}
+        - {x: -9.5, y: -24.5}
+        - {x: -5.5, y: -25.5}
+        - {x: 16.5, y: -25.5}
+        - {x: 16.5, y: 21.5}
+        - {x: 14.5, y: 25.5}
+    - name: Squelette_144
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 194
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_145
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 194
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 25.5}
+        - {x: -16.5, y: 16.5}
+        - {x: -16.5, y: -15.5}
+        - {x: -9.5, y: -24.5}
+        - {x: -5.5, y: -25.5}
+        - {x: 16.5, y: -25.5}
+        - {x: 16.5, y: 21.5}
+        - {x: 14.5, y: 25.5}
+    - name: Squelette_146
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 23.5}
+        - {x: -19, y: 15.5}
+        - {x: -19, y: -23.5}
+        - {x: 15, y: -23.5}
+        - {x: 19, y: -9.5}
+        - {x: 19, y: 6.5}
+        - {x: 5, y: 23.5}
+    - name: Squelette_147
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 131
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 23}
+        - {x: -12, y: 16}
+        - {x: -17, y: -6}
+        - {x: -17, y: -18}
+        - {x: -12, y: -23}
+        - {x: 14, y: -23}
+        - {x: 14, y: -22}
+        - {x: 17, y: -11}
+        - {x: 17, y: 23}
+    - name: Squelette_148
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 131
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 23}
+        - {x: -17, y: 16}
+        - {x: -18, y: 6}
+        - {x: -18, y: -23}
+        - {x: 10, y: -23}
+        - {x: 18, y: -5}
+        - {x: 18, y: 22}
+        - {x: 14, y: 23}
+    - name: Squelette_149
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 128
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_150
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 128
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_151
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 130
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_152
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 130
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_153
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 130
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_154
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 130
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_155
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 128
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_156
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 128
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_157
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 128
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_158
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 128
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_159
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 66
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 23.5}
+        - {x: -22, y: 14.5}
+        - {x: -22, y: -5.5}
+        - {x: -16, y: -23.5}
+        - {x: 10, y: -23.5}
+        - {x: 22, y: -11.5}
+        - {x: 22, y: 12.5}
+        - {x: 5, y: 23.5}
+    - name: Squelette_160
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 66
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23.5}
+        - {x: -16, y: 18.5}
+        - {x: -18, y: -0.5}
+        - {x: -18, y: -22.5}
+        - {x: -17, y: -23.5}
+        - {x: 7, y: -23.5}
+        - {x: 10, y: -22.5}
+        - {x: 18, y: -2.5}
+        - {x: 18, y: 23.5}
+    - name: Squelette_161
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 66
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 23.5}
+        - {x: -18.5, y: -20.5}
+        - {x: -17.5, y: -23.5}
+        - {x: 15.5, y: -23.5}
+        - {x: 18.5, y: -13.5}
+        - {x: 18.5, y: 23.5}
+    - name: Squelette_162
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 66
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 23.5}
+        - {x: -16.5, y: 18.5}
+        - {x: -16.5, y: -20.5}
+        - {x: -15.5, y: -23.5}
+        - {x: 11.5, y: -23.5}
+        - {x: 16.5, y: -14.5}
+        - {x: 16.5, y: 11.5}
+        - {x: 5.5, y: 23.5}
+    - name: Squelette_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 66
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 25}
+        - {x: -17.5, y: 23}
+        - {x: -17.5, y: -16}
+        - {x: -14.5, y: -25}
+        - {x: 13.5, y: -25}
+        - {x: 17.5, y: -14}
+        - {x: 17.5, y: 23}
+        - {x: 14.5, y: 25}
+    - name: Squelette_164
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 66
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 26.5}
+        - {x: -16, y: 22.5}
+        - {x: -16, y: -26.5}
+        - {x: 10, y: -26.5}
+        - {x: 16, y: -12.5}
+        - {x: 16, y: 25.5}
+        - {x: 15, y: 26.5}
+    - name: Squelette_165
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 66
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 27.5}
+        - {x: -17, y: 23.5}
+        - {x: -17, y: -27.5}
+        - {x: 16, y: -27.5}
+        - {x: 17, y: -20.5}
+        - {x: 17, y: 27.5}
+    - name: Squelette_166
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 66
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 26.5}
+        - {x: -12, y: 24.5}
+        - {x: -18, y: 15.5}
+        - {x: -18, y: -26.5}
+        - {x: 13, y: -26.5}
+        - {x: 18, y: -8.5}
+        - {x: 18, y: 18.5}
+        - {x: 12, y: 26.5}
+    - name: Squelette_167
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 66
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 24.5}
+        - {x: -12, y: 20.5}
+        - {x: -19, y: 7.5}
+        - {x: -19, y: -6.5}
+        - {x: -13, y: -24.5}
+        - {x: 12, y: -24.5}
+        - {x: 19, y: -6.5}
+        - {x: 19, y: 13.5}
+        - {x: 9, y: 24.5}
+    - name: Squelette_168
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 66
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 25.5}
+        - {x: -17.5, y: 24.5}
+        - {x: -17.5, y: -25.5}
+        - {x: 17.5, y: -25.5}
+        - {x: 17.5, y: 25.5}
+    - name: Squelette_169
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 66
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 25.5}
+        - {x: -16.5, y: 21.5}
+        - {x: -16.5, y: -22.5}
+        - {x: -15.5, y: -25.5}
+        - {x: 5.5, y: -25.5}
+        - {x: 9.5, y: -24.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 16.5}
+        - {x: 9.5, y: 25.5}
+    - name: Squelette_170
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 66
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_171
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 66
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 25.5}
+        - {x: -16.5, y: 21.5}
+        - {x: -16.5, y: -22.5}
+        - {x: -15.5, y: -25.5}
+        - {x: 5.5, y: -25.5}
+        - {x: 9.5, y: -24.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 16.5}
+        - {x: 9.5, y: 25.5}
+    - name: Squelette_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_173
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_174
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 2
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_175
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_176
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 3
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Squelette_177
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 17.5}
+        - {x: -17, y: 15.5}
+        - {x: -17, y: -17.5}
+        - {x: 17, y: -17.5}
+        - {x: 17, y: 17.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

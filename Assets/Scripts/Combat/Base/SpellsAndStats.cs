@@ -25,6 +25,11 @@ public class SpellsAndStats : MonoBehaviour {
                     GameObject.Find( "Spell" + i ).GetComponent<Button>().enabled = false;
                     GameObject.Find( "Spell" + i ).GetComponent<Image>().color = Color.gray;
                 }
+                else
+                {
+                    GameObject.Find("Spell" + i).GetComponent<Button>().enabled = true;
+                    GameObject.Find("Spell" + i).GetComponent<Image>().color = Color.white;
+                }
             }
             GameObject.Find("DamageT").GetComponent<Text>().text =heros.EffectivDamage.ToString();
             GameObject.Find("HitT").GetComponent<Text>().text =heros.EffectivHitChance.ToString();
