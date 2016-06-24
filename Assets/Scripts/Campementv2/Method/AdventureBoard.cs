@@ -4,9 +4,14 @@ using S_M_D.Camp.Class;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using S_M_D.Character;
+using UnityEngine.Networking;
 
 public class AdventureBoard : MonoBehaviour {
-	
+
+    public static string HostAddress;
+    public static string HostState;
+    public static string Online;
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -14,18 +19,42 @@ public class AdventureBoard : MonoBehaviour {
 
     public void ValidHeroes()
     {
-        if (SetProfil.HerosAdventure[0] != null && SetProfil.HerosAdventure[1] != null
-            && SetProfil.HerosAdventure[2] != null && SetProfil.HerosAdventure[3] != null)
+        GameObject LineMode = GameObject.Find("OnOffLine");
+        GameObject Host = GameObject.Find("ClientServer");
+
+        string SelectMode = LineMode.GetComponent<Dropdown>().captionText.text;
+        string SelectHost = Host.GetComponent<Dropdown>().captionText.text;
+
+        HostState = SelectHost;
+        Online = SelectMode;
+
+        if(SelectMode == "Offline")
         {
-            //Initialiser les héros dans le dongeon!!!!!
+            if (SetProfil.HerosAdventure[0] != null && SetProfil.HerosAdventure[1] != null
+            && SetProfil.HerosAdventure[2] != null && SetProfil.HerosAdventure[3] != null)
+            {
+                //Initialiser les héros dans le dongeon!!!!!
 
-            SceneManager.LoadScene(2);
-            BoardManager.hero = SetProfil.HerosAdventure;
-            BoardManager.Gtx = Start.Gtx;
+                SceneManager.LoadScene(2);
+                BoardManager.hero = SetProfil.HerosAdventure;
+                BoardManager.Gtx = Start.Gtx;
 
-            //Start.Gtx.DungeonManager.cr
-            Start.PanelBoardMission.SetActive(false);
+                //Start.Gtx.DungeonManager.cr
+                Start.PanelBoardMission.SetActive(false);
+            }
         }
+        else
+        {
+            if(NumberOfHeroes() == 2)
+            {
+                HostAddress = GameObject.Find("IpAddress").GetComponent<InputField>().text;
+                SceneManager.LoadScene(2);
+                BoardManager.hero = SetProfil.HerosAdventure;
+                BoardManager.Gtx = Start.Gtx;
+
+            }
+        }
+        
         //
     }
 
@@ -72,5 +101,16 @@ public class AdventureBoard : MonoBehaviour {
                 return true;
         }
         return false;
+    }
+
+    private int NumberOfHeroes()
+    {
+        int nb = 0;
+        for(int i = 0; i < SetProfil.HerosAdventure.Length; i++)
+        {
+            if (SetProfil.HerosAdventure[i] != null)
+                nb++;
+        }
+        return nb;
     }
 }
