@@ -67,12 +67,7 @@ public class SetProfil : MonoBehaviour {
         else if(Start.MenuBGCasern.activeInHierarchy)
         {
             Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
-            for(int i = 0; i < heros.Spells.Length; i++)
-            {
-                if(heros.Spells[i] != null)
-                Debug.Log("Spell " + i + ": " + heros.Spells[i].Name+"; equiped: "+heros.Spells[i].IsEquiped);
-            }
-            //---
+            
             if (casern.Hero != null)
             {
                 BaseHeros h = casern.Hero;
@@ -306,17 +301,11 @@ public class SetProfil : MonoBehaviour {
         int x = 1;
         foreach(BaseItem item in Start.Gtx.PlayerInfo.MyItems)
         {
-            Debug.Log(item.ItemName);
             GameObject.Find("Item" + x + "T").GetComponent<Text>().text = item.ItemName;
             if(item.Itemtype==BaseItem.ItemTypes.Armor) GameObject.Find("Item"+x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
             if (item.Itemtype == BaseItem.ItemTypes.Weapon) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
             if (item.Itemtype == BaseItem.ItemTypes.Trinket) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
         }
-        //GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
-        /*GameObject.Find("Item2T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        GameObject.Find("Item3T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        */
     }
     public static void SetToInactiveButton(Button button)
     {
