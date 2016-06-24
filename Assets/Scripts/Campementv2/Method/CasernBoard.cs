@@ -13,7 +13,7 @@ public class CasernBoard : MonoBehaviour {
     {
         Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
         BaseHeros hero = casern.Hero;
-
+  
         List<GameObject> spellsBox = Start.CasernSpells;
 
         for (int i = 0; i < spellsBox.Count; i++)
@@ -58,6 +58,25 @@ public class CasernBoard : MonoBehaviour {
             spellsBox[i].GetComponent<Button>().image.color = Color.red;
     }
 
+    public void BuySpell()
+    {
+        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text;
+        Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+        casern.BuySpellToHero(FindSpellByName(spellName));
+        SetBoard();
+    }
+
+    private Spells FindSpellByName(string spellName)
+    {
+        Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+        BaseHeros hero = casern.Hero;
+        foreach (Spells s in hero.Spells)
+        {
+            if (s.Name == spellName)
+                return s;
+        }
+        return null;
+    }
     public void setSpellEquipedOrNot()
     {
         Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
@@ -70,23 +89,21 @@ public class CasernBoard : MonoBehaviour {
             {
                 if(hero.Spells[i].IsBuy)
                 {
-                   
-                }
-                if (hero.Spells[i].IsEquiped)
-                {
-                    hero.Spells[i].IsEquiped = false;
-                    CheckEquiped(i, hero.Spells[i]);
-                }
-                else
-                {
-                    if (NumberOfSpellsEquiped() < 4)
+                    if (hero.Spells[i].IsEquiped)
                     {
-                        hero.Spells[i].IsEquiped = true;
+                        hero.Spells[i].IsEquiped = false;
                         CheckEquiped(i, hero.Spells[i]);
                     }
+                    else
+                    {
+                        if (NumberOfSpellsEquiped() < 4)
+                        {
+                            hero.Spells[i].IsEquiped = true;
+                            CheckEquiped(i, hero.Spells[i]);
+                        }
 
+                    }
                 }
-
                 break;
             }
         }
