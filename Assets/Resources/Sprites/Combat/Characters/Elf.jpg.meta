@@ -1,0 +1,2950 @@
+fileFormatVersion: 2
+guid: 52ce331df099b5242a650107294fb63a
+timeCreated: 1466754968
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Elf_0
+    21300002: Elf_1
+    21300004: Elf_2
+    21300006: Elf_3
+    21300008: Elf_4
+    21300010: Elf_5
+    21300012: Elf_6
+    21300014: Elf_7
+    21300016: Elf_8
+    21300018: Elf_9
+    21300020: Elf_10
+    21300022: Elf_11
+    21300024: Elf_12
+    21300026: Elf_13
+    21300028: Elf_14
+    21300030: Elf_15
+    21300032: Elf_16
+    21300034: Elf_17
+    21300036: Elf_18
+    21300038: Elf_19
+    21300040: Elf_20
+    21300042: Elf_21
+    21300044: Elf_22
+    21300046: Elf_23
+    21300048: Elf_24
+    21300050: Elf_25
+    21300052: Elf_26
+    21300054: Elf_27
+    21300056: Elf_28
+    21300058: Elf_29
+    21300060: Elf_30
+    21300062: Elf_31
+    21300064: Elf_32
+    21300066: Elf_33
+    21300068: Elf_34
+    21300070: Elf_35
+    21300072: Elf_36
+    21300074: Elf_37
+    21300076: Elf_38
+    21300078: Elf_39
+    21300080: Elf_40
+    21300082: Elf_41
+    21300084: Elf_42
+    21300086: Elf_43
+    21300088: Elf_44
+    21300090: Elf_45
+    21300092: Elf_46
+    21300094: Elf_47
+    21300096: Elf_48
+    21300098: Elf_49
+    21300100: Elf_50
+    21300102: Elf_51
+    21300104: Elf_52
+    21300106: Elf_53
+    21300108: Elf_54
+    21300110: Elf_55
+    21300112: Elf_56
+    21300114: Elf_57
+    21300116: Elf_58
+    21300118: Elf_59
+    21300120: Elf_60
+    21300122: Elf_61
+    21300124: Elf_62
+    21300126: Elf_63
+    21300128: Elf_64
+    21300130: Elf_65
+    21300132: Elf_66
+    21300134: Elf_67
+    21300136: Elf_68
+    21300138: Elf_69
+    21300140: Elf_70
+    21300142: Elf_71
+    21300144: Elf_72
+    21300146: Elf_73
+    21300148: Elf_74
+    21300150: Elf_75
+    21300152: Elf_76
+    21300154: Elf_77
+    21300156: Elf_78
+    21300158: Elf_79
+    21300160: Elf_80
+    21300162: Elf_81
+    21300164: Elf_82
+    21300166: Elf_83
+    21300168: Elf_84
+    21300170: Elf_85
+    21300172: Elf_86
+    21300174: Elf_87
+    21300176: Elf_88
+    21300178: Elf_89
+    21300180: Elf_90
+    21300182: Elf_91
+    21300184: Elf_92
+    21300186: Elf_93
+    21300188: Elf_94
+    21300190: Elf_95
+    21300192: Elf_96
+    21300194: Elf_97
+    21300196: Elf_98
+    21300198: Elf_99
+    21300200: Elf_100
+    21300202: Elf_101
+    21300204: Elf_102
+    21300206: Elf_103
+    21300208: Elf_104
+    21300210: Elf_105
+    21300212: Elf_106
+    21300214: Elf_107
+    21300216: Elf_108
+    21300218: Elf_109
+    21300220: Elf_110
+    21300222: Elf_111
+    21300224: Elf_112
+    21300226: Elf_113
+    21300228: Elf_114
+    21300230: Elf_115
+    21300232: Elf_116
+    21300234: Elf_117
+    21300236: Elf_118
+    21300238: Elf_119
+    21300240: Elf_120
+    21300242: Elf_121
+    21300244: Elf_122
+    21300246: Elf_123
+    21300248: Elf_124
+    21300250: Elf_125
+    21300252: Elf_126
+    21300254: Elf_127
+    21300256: Elf_128
+    21300258: Elf_129
+    21300260: Elf_130
+    21300262: Elf_131
+    21300264: Elf_132
+    21300266: Elf_133
+    21300268: Elf_134
+    21300270: Elf_135
+    21300272: Elf_136
+    21300274: Elf_137
+    21300276: Elf_138
+    21300278: Elf_139
+    21300280: Elf_140
+    21300282: Elf_141
+    21300284: Elf_142
+    21300286: Elf_143
+    21300288: Elf_144
+    21300290: Elf_145
+    21300292: Elf_146
+    21300294: Elf_147
+    21300296: Elf_148
+    21300298: Elf_149
+    21300300: Elf_150
+    21300302: Elf_151
+    21300304: Elf_152
+    21300306: Elf_153
+    21300308: Elf_154
+    21300310: Elf_155
+    21300312: Elf_156
+    21300314: Elf_157
+    21300316: Elf_158
+    21300318: Elf_159
+    21300320: Elf_160
+    21300322: Elf_161
+    21300324: Elf_162
+    21300326: Elf_163
+    21300328: Elf_164
+    21300330: Elf_165
+    21300332: Elf_166
+    21300334: Elf_167
+    21300336: Elf_168
+    21300338: Elf_169
+    21300340: Elf_170
+    21300342: Elf_171
+    21300344: Elf_172
+    21300346: Elf_173
+    21300348: Elf_174
+    21300350: Elf_175
+    21300352: Elf_176
+    21300354: Elf_177
+    21300356: Elf_178
+    21300358: Elf_179
+    21300360: Elf_180
+    21300362: Elf_181
+    21300364: Elf_182
+    21300366: Elf_183
+    21300368: Elf_184
+    21300370: Elf_185
+    21300372: Elf_186
+    21300374: Elf_187
+    21300376: Elf_188
+    21300378: Elf_189
+    21300380: Elf_190
+    21300382: Elf_191
+    21300384: Elf_192
+    21300386: Elf_193
+    21300388: Elf_194
+    21300390: Elf_195
+    21300392: Elf_196
+    21300394: Elf_197
+    21300396: Elf_198
+    21300398: Elf_199
+    21300400: Elf_200
+    21300402: Elf_201
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Elf_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2049
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2049
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2049
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2049
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.727219, y: 24.802734}
+        - {x: -10.272781, y: 24.802734}
+        - {x: -12.272781, y: 22.802734}
+        - {x: -18.272781, y: 12.802734}
+        - {x: -18.272781, y: -15.197266}
+        - {x: -15.272781, y: -24.197266}
+        - {x: 18.727219, y: -24.197266}
+        - {x: 19.727219, y: -21.197266}
+        - {x: 19.727219, y: 9.802734}
+        - {x: 16.727219, y: 22.802734}
+    - name: Elf_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2049
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.016922, y: 24.802734}
+        - {x: -25.016922, y: 11.802734}
+        - {x: -25.016922, y: -1.1972656}
+        - {x: -23.016922, y: -8.197266}
+        - {x: -15.016922, y: -24.197266}
+        - {x: 20.983078, y: -24.197266}
+        - {x: 26.983078, y: -9.197266}
+        - {x: 26.983078, y: 16.802734}
+        - {x: 17.983078, y: 24.802734}
+    - name: Elf_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2049
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.99414, y: 17.802734}
+        - {x: 17.99414, y: 17.802734}
+        - {x: 15.994141, y: 15.802734}
+        - {x: 9.994141, y: 24.802734}
+        - {x: -20.00586, y: 24.802734}
+        - {x: -24.00586, y: 19.802734}
+        - {x: -24.00586, y: -14.197266}
+        - {x: -15.005859, y: -24.197266}
+        - {x: 21.99414, y: -24.197266}
+        - {x: 25.99414, y: -1.1972656}
+        - {x: 25.99414, y: 14.802734}
+    - name: Elf_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2049
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.147766, y: 24.802734}
+        - {x: -18.147766, y: 16.802734}
+        - {x: -18.147766, y: -16.197266}
+        - {x: -14.147766, y: -24.197266}
+        - {x: 19.852234, y: -24.197266}
+        - {x: 19.852234, y: 7.8027344}
+        - {x: 12.852234, y: 24.802734}
+    - name: Elf_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1985
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1985
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1985
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1985
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1985
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.853516, y: 24.761108}
+        - {x: -16.853516, y: 23.761108}
+        - {x: -16.853516, y: -23.238892}
+        - {x: -11.853516, y: -24.238892}
+        - {x: 7.1464844, y: -24.238892}
+        - {x: 18.146484, y: -11.238892}
+        - {x: 18.146484, y: 14.761108}
+        - {x: 11.146484, y: 24.761108}
+    - name: Elf_12
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1985
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.811829, y: 24.761108}
+        - {x: -16.811829, y: -12.238892}
+        - {x: -13.811829, y: -24.238892}
+        - {x: 12.188171, y: -24.238892}
+        - {x: 18.188171, y: -12.238892}
+        - {x: 18.188171, y: 16.761108}
+        - {x: 12.188171, y: 24.761108}
+    - name: Elf_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1985
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1921
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1921
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1921
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_17
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1921
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.272781, y: 25.219482}
+        - {x: -18.272781, y: 16.219482}
+        - {x: -18.272781, y: -19.780518}
+        - {x: -16.272781, y: -24.780518}
+        - {x: 19.727219, y: -24.780518}
+        - {x: 19.727219, y: 22.219482}
+        - {x: 12.727219, y: 25.219482}
+    - name: Elf_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1921
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.983078, y: 25.219482}
+        - {x: -13.016922, y: 25.219482}
+        - {x: -25.016922, y: 16.219482}
+        - {x: -25.016922, y: -1.7805176}
+        - {x: -22.016922, y: -4.7805176}
+        - {x: -13.016922, y: -24.780518}
+        - {x: 15.983078, y: -24.780518}
+        - {x: 23.983078, y: -17.780518}
+        - {x: 26.983078, y: -9.780518}
+        - {x: 26.983078, y: 17.219482}
+    - name: Elf_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1921
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.99414, y: 21.219482}
+        - {x: 14.994141, y: 25.219482}
+        - {x: -19.00586, y: 25.219482}
+        - {x: -24.00586, y: 20.219482}
+        - {x: -24.00586, y: 0.21948242}
+        - {x: -13.005859, y: -24.780518}
+        - {x: 14.994141, y: -24.780518}
+        - {x: 16.99414, y: -18.780518}
+        - {x: 25.99414, y: -1.7805176}
+        - {x: 25.99414, y: 20.219482}
+    - name: Elf_20
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1921
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.178375, y: 25.219482}
+        - {x: -16.178375, y: 22.219482}
+        - {x: -17.178375, y: 12.219482}
+        - {x: -17.178375, y: -18.780518}
+        - {x: -16.178375, y: -24.780518}
+        - {x: 18.821625, y: -24.780518}
+        - {x: 18.821625, y: 18.219482}
+        - {x: 14.821625, y: 25.219482}
+    - name: Elf_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1857
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_22
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1857
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1857
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_24
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1857
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_25
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1857
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.2994995, y: 24.677734}
+        - {x: -9.7005005, y: 24.677734}
+        - {x: -16.7005, y: 11.677734}
+        - {x: -16.7005, y: -10.322266}
+        - {x: -7.7005005, y: -24.322266}
+        - {x: 14.2994995, y: -24.322266}
+        - {x: 17.2995, y: -23.322266}
+        - {x: 18.2995, y: -17.322266}
+        - {x: 18.2995, y: 23.677734}
+    - name: Elf_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1857
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.658844, y: 24.677734}
+        - {x: -16.658844, y: 17.677734}
+        - {x: -16.658844, y: -1.3222656}
+        - {x: -8.658844, y: -24.322266}
+        - {x: 14.341156, y: -24.322266}
+        - {x: 18.341156, y: -4.3222656}
+        - {x: 18.341156, y: 16.677734}
+        - {x: 12.341156, y: 24.677734}
+    - name: Elf_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1857
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1793
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1791
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_31
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_32
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_33
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_34
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1791
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_35
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1791
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_36
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1729
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1729
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1729
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1729
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1729
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1729
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1729
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_43
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1729
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1665
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1666
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_46
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1666
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1666
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_48
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1666
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_49
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1666
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_50
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1666
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_51
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1666
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_52
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1601
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_53
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1601
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_54
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1601
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1601
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_56
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1601
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_57
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1601
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_58
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1601
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_59
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1601
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_60
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1538
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1538
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1537
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_63
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1536
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_64
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1537
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_65
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1538
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_66
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1537
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_67
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1536
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_68
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1537
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_69
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1473
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_70
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1473
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_71
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1474
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_72
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1474
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_73
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1473
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_74
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1473
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_75
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1473
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_76
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1473
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_77
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1473
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_78
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1409
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_79
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1409
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_80
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1408
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_81
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1408
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_82
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1408
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_83
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1409
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1408
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_85
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1408
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_86
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1408
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_87
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1345
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_88
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1345
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_89
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1346
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_90
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1346
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_91
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1345
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_92
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1345
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_93
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1345
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_94
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1345
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_95
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1345
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_96
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1281
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_97
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1280
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_98
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1280
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_99
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1280
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_100
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1280
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.353516, y: 26.333374}
+        - {x: -18.353516, y: 11.333374}
+        - {x: -18.353516, y: -24.666626}
+        - {x: 14.646484, y: -24.666626}
+        - {x: 19.646484, y: -2.666626}
+        - {x: 19.646484, y: 14.333374}
+        - {x: 6.6464844, y: 26.333374}
+    - name: Elf_101
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1280
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.1881714, y: 26.333374}
+        - {x: -10.811829, y: 26.333374}
+        - {x: -19.811829, y: 22.333374}
+        - {x: -19.811829, y: -21.666626}
+        - {x: -12.811829, y: -24.666626}
+        - {x: 13.188171, y: -24.666626}
+        - {x: 21.188171, y: -7.666626}
+        - {x: 21.188171, y: 9.333374}
+        - {x: 20.188171, y: 12.333374}
+    - name: Elf_102
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1217
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_103
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1217
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_104
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1217
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_105
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1217
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.1809845, y: 25.761108}
+        - {x: -17.180984, y: 11.761108}
+        - {x: -17.180984, y: -14.238892}
+        - {x: -10.1809845, y: -24.238892}
+        - {x: 14.8190155, y: -24.238892}
+        - {x: 18.819016, y: -18.238892}
+        - {x: 18.819016, y: 23.761108}
+        - {x: 12.8190155, y: 25.761108}
+    - name: Elf_106
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1217
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.952484, y: 25.761108}
+        - {x: -13.047516, y: 25.761108}
+        - {x: -18.047516, y: 20.761108}
+        - {x: -18.047516, y: -11.238892}
+        - {x: -13.047516, y: -24.238892}
+        - {x: 17.952484, y: -24.238892}
+        - {x: 19.952484, y: -19.238892}
+        - {x: 19.952484, y: 18.761108}
+        - {x: 18.952484, y: 23.761108}
+    - name: Elf_107
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1217
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.402344, y: 25.761108}
+        - {x: -9.597656, y: 25.761108}
+        - {x: -12.597656, y: 24.761108}
+        - {x: -16.597656, y: 18.761108}
+        - {x: -16.597656, y: -6.2388916}
+        - {x: -10.597656, y: -23.238892}
+        - {x: -5.5976562, y: -24.238892}
+        - {x: 17.402344, y: -24.238892}
+        - {x: 18.402344, y: -21.238892}
+        - {x: 18.402344, y: 5.7611084}
+        - {x: 15.402344, y: 20.761108}
+    - name: Elf_108
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1153
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_109
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1153
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_110
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1153
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_111
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1153
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_112
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1153
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.0852966, y: 26.219482}
+        - {x: -11.914703, y: 26.219482}
+        - {x: -17.914703, y: 10.219482}
+        - {x: -17.914703, y: -24.780518}
+        - {x: 16.085297, y: -24.780518}
+        - {x: 19.085297, y: -19.780518}
+        - {x: 19.085297, y: 4.2194824}
+        - {x: 13.085297, y: 19.219482}
+    - name: Elf_113
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1153
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.157562, y: 26.219482}
+        - {x: -13.842438, y: 26.219482}
+        - {x: -19.842438, y: 9.219482}
+        - {x: -19.842438, y: -21.780518}
+        - {x: -18.842438, y: -24.780518}
+        - {x: 9.157562, y: -24.780518}
+        - {x: 21.157562, y: -16.780518}
+        - {x: 21.157562, y: 16.219482}
+        - {x: 18.157562, y: 24.219482}
+    - name: Elf_114
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1089
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_115
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1089
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_116
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1089
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_117
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1089
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.574219, y: 21.677734}
+        - {x: 12.574219, y: 25.677734}
+        - {x: -17.425781, y: 25.677734}
+        - {x: -17.425781, y: -24.322266}
+        - {x: 5.5742188, y: -24.322266}
+        - {x: 11.574219, y: -22.322266}
+        - {x: 18.574219, y: -16.322266}
+        - {x: 18.574219, y: 18.677734}
+    - name: Elf_118
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1089
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.414703, y: 25.677734}
+        - {x: -17.414703, y: 21.677734}
+        - {x: -18.414703, y: 17.677734}
+        - {x: -18.414703, y: -19.322266}
+        - {x: -15.414703, y: -24.322266}
+        - {x: 14.585297, y: -24.322266}
+        - {x: 19.585297, y: -6.3222656}
+        - {x: 19.585297, y: 20.677734}
+        - {x: 12.585297, y: 25.677734}
+    - name: Elf_119
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1089
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.873047, y: 25.677734}
+        - {x: -16.873047, y: -24.322266}
+        - {x: 8.126953, y: -24.322266}
+        - {x: 18.126953, y: -2.3222656}
+        - {x: 18.126953, y: 15.677734}
+        - {x: 7.126953, y: 25.677734}
+    - name: Elf_120
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1025
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_121
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1023
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_122
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_123
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_124
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_125
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1023
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_126
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1023
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1023
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_129
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1023
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_130
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_131
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_132
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1023
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_133
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 961
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_134
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 961
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_135
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 961
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.345047, y: 25.594421}
+        - {x: -12.345047, y: 23.594421}
+        - {x: -16.345047, y: 6.5944214}
+        - {x: -16.345047, y: -13.405579}
+        - {x: -7.345047, y: -24.405579}
+        - {x: 17.654953, y: -24.405579}
+        - {x: 17.654953, y: 25.594421}
+    - name: Elf_136
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 961
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.7421875, y: 25.594421}
+        - {x: -12.7421875, y: 24.594421}
+        - {x: -17.742188, y: 7.5944214}
+        - {x: -17.742188, y: -12.405579}
+        - {x: -9.7421875, y: -22.405579}
+        - {x: -2.7421875, y: -24.405579}
+        - {x: 16.257812, y: -24.405579}
+        - {x: 19.257812, y: -17.405579}
+        - {x: 19.257812, y: 22.594421}
+        - {x: 14.2578125, y: 25.594421}
+    - name: Elf_137
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 961
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.2995, y: -24.405579}
+        - {x: 19.2995, y: 25.594421}
+        - {x: -17.7005, y: 25.594421}
+        - {x: -17.7005, y: -24.405579}
+    - name: Elf_138
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 961
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.1282349, y: 25.594421}
+        - {x: -16.128235, y: 15.594421}
+        - {x: -16.128235, y: -16.405579}
+        - {x: -13.128235, y: -24.405579}
+        - {x: 17.871765, y: -24.405579}
+        - {x: 17.871765, y: 25.594421}
+    - name: Elf_139
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 961
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.0865784, y: 25.594421}
+        - {x: -17.086578, y: 14.594421}
+        - {x: -17.086578, y: -1.4055786}
+        - {x: -7.0865784, y: -24.405579}
+        - {x: 18.913422, y: -24.405579}
+        - {x: 18.913422, y: 17.594421}
+        - {x: 14.913422, y: 25.594421}
+    - name: Elf_140
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 961
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.0755005, y: 25.594421}
+        - {x: -18.0755, y: 15.594421}
+        - {x: -18.0755, y: -4.4055786}
+        - {x: -8.0755005, y: -24.405579}
+        - {x: 16.9245, y: -24.405579}
+        - {x: 19.9245, y: -17.405579}
+        - {x: 19.9245, y: 20.594421}
+        - {x: 17.9245, y: 25.594421}
+    - name: Elf_141
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 961
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.966156, y: 25.594421}
+        - {x: -7.033844, y: 25.594421}
+        - {x: -14.033844, y: 21.594421}
+        - {x: -19.033844, y: 8.594421}
+        - {x: -19.033844, y: -5.4055786}
+        - {x: -9.033844, y: -24.405579}
+        - {x: 13.966156, y: -24.405579}
+        - {x: 20.966156, y: -11.405579}
+        - {x: 20.966156, y: 19.594421}
+        - {x: 19.966156, y: 21.594421}
+    - name: Elf_142
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 961
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.022766, y: 25.594421}
+        - {x: -17.022766, y: -24.405579}
+        - {x: 18.977234, y: -24.405579}
+        - {x: 18.977234, y: 23.594421}
+        - {x: 13.977234, y: 25.594421}
+    - name: Elf_143
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 961
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.4505005, y: 25.594421}
+        - {x: -17.4505, y: 22.594421}
+        - {x: -17.4505, y: -24.405579}
+        - {x: 16.5495, y: -24.405579}
+        - {x: 17.5495, y: -22.405579}
+        - {x: 17.5495, y: 23.594421}
+        - {x: 11.5494995, y: 25.594421}
+    - name: Elf_144
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 961
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_145
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 961
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.1328125, y: 25.594421}
+        - {x: -7.8671875, y: 25.594421}
+        - {x: -17.867188, y: 17.594421}
+        - {x: -17.867188, y: -17.405579}
+        - {x: -16.867188, y: -24.405579}
+        - {x: 16.132812, y: -24.405579}
+        - {x: 17.132812, y: -23.405579}
+        - {x: 18.132812, y: -19.405579}
+        - {x: 18.132812, y: 15.594421}
+    - name: Elf_146
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 897
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_147
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 898
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_148
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 898
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_149
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_150
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 897
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_151
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 897
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_152
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 897
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_153
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_154
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_155
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 897
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_156
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_157
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 897
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_158
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 897
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_159
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 833
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_160
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 833
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_161
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 833
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.40625, y: 25.011108}
+        - {x: -16.40625, y: 20.011108}
+        - {x: -16.40625, y: -14.988892}
+        - {x: -10.40625, y: -23.988892}
+        - {x: 17.59375, y: -23.988892}
+        - {x: 17.59375, y: 25.011108}
+    - name: Elf_162
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 833
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.833984, y: 25.011108}
+        - {x: -17.833984, y: -23.988892}
+        - {x: 6.1660156, y: -23.988892}
+        - {x: 12.166016, y: -22.988892}
+        - {x: 19.166016, y: -8.988892}
+        - {x: 19.166016, y: 9.011108}
+        - {x: 10.166016, y: 25.011108}
+    - name: Elf_163
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 833
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.207703, y: 25.011108}
+        - {x: -14.792297, y: 25.011108}
+        - {x: -17.792297, y: 20.011108}
+        - {x: -17.792297, y: -20.988892}
+        - {x: -16.792297, y: -23.988892}
+        - {x: 8.207703, y: -23.988892}
+        - {x: 19.207703, y: -3.9888916}
+        - {x: 19.207703, y: 16.011108}
+        - {x: 15.207703, y: 23.011108}
+    - name: Elf_164
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 833
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.626953, y: 25.011108}
+        - {x: -14.373047, y: 25.011108}
+        - {x: -16.373047, y: 24.011108}
+        - {x: -16.373047, y: -23.988892}
+        - {x: 5.626953, y: -23.988892}
+        - {x: 8.626953, y: -21.988892}
+        - {x: 17.626953, y: -2.9888916}
+        - {x: 17.626953, y: 15.011108}
+    - name: Elf_165
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 833
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.729828, y: 25.011108}
+        - {x: -13.270172, y: 25.011108}
+        - {x: -17.270172, y: 18.011108}
+        - {x: -17.270172, y: -15.988892}
+        - {x: -15.270172, y: -23.988892}
+        - {x: 6.729828, y: -23.988892}
+        - {x: 18.729828, y: 1.0111084}
+        - {x: 18.729828, y: 15.011108}
+        - {x: 11.729828, y: 24.011108}
+    - name: Elf_166
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 833
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.136719, y: 25.011108}
+        - {x: -18.136719, y: -23.988892}
+        - {x: 13.863281, y: -23.988892}
+        - {x: 19.863281, y: -15.988892}
+        - {x: 19.863281, y: 17.011108}
+        - {x: 16.863281, y: 25.011108}
+    - name: Elf_167
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 833
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.966156, y: 25.011108}
+        - {x: -8.033844, y: 25.011108}
+        - {x: -19.033844, y: 13.011108}
+        - {x: -19.033844, y: -6.9888916}
+        - {x: -13.033844, y: -23.988892}
+        - {x: 10.966156, y: -23.988892}
+        - {x: 12.966156, y: -21.988892}
+        - {x: 20.966156, y: -2.9888916}
+        - {x: 20.966156, y: 11.011108}
+    - name: Elf_168
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 833
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.583984, y: 25.011108}
+        - {x: -15.583984, y: 18.011108}
+        - {x: -17.583984, y: 14.011108}
+        - {x: -17.583984, y: -19.988892}
+        - {x: -14.583984, y: -23.988892}
+        - {x: 19.416016, y: -23.988892}
+        - {x: 19.416016, y: 25.011108}
+    - name: Elf_169
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 833
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.927124, y: 19.011108}
+        - {x: 6.927124, y: 25.011108}
+        - {x: -13.072876, y: 25.011108}
+        - {x: -17.072876, y: 24.011108}
+        - {x: -17.072876, y: -23.988892}
+        - {x: 2.927124, y: -23.988892}
+        - {x: 11.927124, y: -21.988892}
+        - {x: 18.927124, y: -2.9888916}
+        - {x: 18.927124, y: 10.011108}
+    - name: Elf_170
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 833
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 833
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.520142, y: 25.011108}
+        - {x: -15.520142, y: 21.011108}
+        - {x: -16.520142, y: 20.011108}
+        - {x: -16.520142, y: -23.988892}
+        - {x: 11.479858, y: -23.988892}
+        - {x: 18.479858, y: -13.988892}
+        - {x: 18.479858, y: 18.011108}
+        - {x: 7.4798584, y: 25.011108}
+    - name: Elf_172
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 769
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_173
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 769
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_174
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 769
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_175
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 770
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_176
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 770
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_177
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 767
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.311829, y: 19.53064}
+        - {x: -17.311829, y: -16.46936}
+        - {x: -16.311829, y: -18.46936}
+        - {x: 18.688171, y: -18.46936}
+        - {x: 18.688171, y: 19.53064}
+    - name: Elf_178
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 641
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_179
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 640
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_180
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 640
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.391907, y: 12.916687}
+        - {x: -19.391907, y: -21.083313}
+        - {x: -18.391907, y: -24.083313}
+        - {x: 19.608093, y: -24.083313}
+        - {x: 19.608093, y: 12.916687}
+        - {x: 18.608093, y: 20.916687}
+        - {x: 15.608093, y: 24.916687}
+        - {x: -6.3919067, y: 24.916687}
+        - {x: -9.391907, y: 23.916687}
+    - name: Elf_181
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 640
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_182
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 640
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.978516, y: 25.416687}
+        - {x: -22.978516, y: 14.416687}
+        - {x: -22.978516, y: -24.583313}
+        - {x: 11.021484, y: -24.583313}
+        - {x: 23.021484, y: 7.416687}
+        - {x: 23.021484, y: 25.416687}
+    - name: Elf_183
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 640
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.353516, y: 25.416687}
+        - {x: -31.353516, y: 23.416687}
+        - {x: -31.353516, y: -24.583313}
+        - {x: 8.646484, y: -24.583313}
+        - {x: 31.646484, y: -2.583313}
+        - {x: 31.646484, y: 21.416687}
+        - {x: 30.646484, y: 25.416687}
+    - name: Elf_184
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 449
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.203125, y: 24.761078}
+        - {x: -17.203125, y: 6.761078}
+        - {x: -17.203125, y: -24.238922}
+        - {x: 18.796875, y: -24.238922}
+        - {x: 18.796875, y: 24.761078}
+    - name: Elf_185
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 449
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_186
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 449
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_187
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 449
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.641296, y: 24.761078}
+        - {x: -9.358704, y: 24.761078}
+        - {x: -18.358704, y: 14.761078}
+        - {x: -18.358704, y: -24.238922}
+        - {x: 18.641296, y: -24.238922}
+        - {x: 18.641296, y: 19.761078}
+        - {x: 17.641296, y: 22.761078}
+    - name: Elf_188
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 449
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.347656, y: 24.761078}
+        - {x: -20.652344, y: 24.761078}
+        - {x: -26.652344, y: 23.761078}
+        - {x: -26.652344, y: -9.238922}
+        - {x: -17.652344, y: -24.238922}
+        - {x: 28.347656, y: -24.238922}
+        - {x: 28.347656, y: 19.761078}
+        - {x: 27.347656, y: 22.761078}
+    - name: Elf_189
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 449
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5644531, y: 24.761078}
+        - {x: -28.435547, y: 13.761078}
+        - {x: -28.435547, y: -9.238922}
+        - {x: -2.4355469, y: -24.238922}
+        - {x: 28.564453, y: -24.238922}
+        - {x: 28.564453, y: 24.761078}
+    - name: Elf_190
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 257
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.552086, y: 25.136078}
+        - {x: -13.447914, y: 25.136078}
+        - {x: -16.447914, y: 23.136078}
+        - {x: -16.447914, y: -24.863922}
+        - {x: 13.552086, y: -24.863922}
+        - {x: 17.552086, y: -21.863922}
+        - {x: 17.552086, y: 20.136078}
+    - name: Elf_191
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 257
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.078125, y: 25.136078}
+        - {x: -8.078125, y: 19.136078}
+        - {x: -18.078125, y: 4.136078}
+        - {x: -18.078125, y: -20.863922}
+        - {x: -10.078125, y: -24.863922}
+        - {x: 19.921875, y: -24.863922}
+        - {x: 19.921875, y: 22.136078}
+        - {x: 14.921875, y: 25.136078}
+    - name: Elf_192
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 257
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.391907, y: 24.136078}
+        - {x: -19.391907, y: 7.136078}
+        - {x: -19.391907, y: -17.863922}
+        - {x: -15.391907, y: -23.863922}
+        - {x: 19.608093, y: -23.863922}
+        - {x: 19.608093, y: 19.136078}
+        - {x: 14.608093, y: 24.136078}
+    - name: Elf_193
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 257
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.981079, y: 24.636078}
+        - {x: -16.98108, y: 6.636078}
+        - {x: -16.98108, y: -17.363922}
+        - {x: -13.981079, y: -24.363922}
+        - {x: 17.01892, y: -24.363922}
+        - {x: 17.01892, y: 18.636078}
+        - {x: 13.018921, y: 24.636078}
+    - name: Elf_194
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 251
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.960327, y: 28.319672}
+        - {x: -15.039673, y: 28.319672}
+        - {x: -22.039673, y: 24.319672}
+        - {x: -22.039673, y: -26.680328}
+        - {x: -10.039673, y: -27.680328}
+        - {x: 21.960327, y: -27.680328}
+        - {x: 23.960327, y: -25.680328}
+        - {x: 23.960327, y: -8.680328}
+        - {x: 12.960327, y: 23.319672}
+    - name: Elf_195
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 257
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.384094, y: 25.136078}
+        - {x: -28.384094, y: 18.136078}
+        - {x: -29.384094, y: 11.136078}
+        - {x: -31.384094, y: 0.13607788}
+        - {x: -31.384094, y: -22.863922}
+        - {x: -30.384094, y: -24.863922}
+        - {x: 31.615906, y: -24.863922}
+        - {x: 31.615906, y: -0.8639221}
+        - {x: -6.384094, y: 25.136078}
+    - name: Elf_196
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 65
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5703125, y: -24.48893}
+        - {x: 11.4296875, y: -24.48893}
+        - {x: 18.429688, y: -23.48893}
+        - {x: 18.429688, y: 2.5110703}
+        - {x: 11.4296875, y: 24.51107}
+        - {x: -17.570312, y: 24.51107}
+        - {x: -17.570312, y: -19.48893}
+    - name: Elf_197
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 65
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_198
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 65
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_199
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 65
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.634094, y: 24.51107}
+        - {x: -17.634094, y: -24.48893}
+        - {x: 15.365906, y: -24.48893}
+        - {x: 19.365906, y: -21.48893}
+        - {x: 19.365906, y: 8.51107}
+        - {x: 12.365906, y: 24.51107}
+    - name: Elf_200
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 65
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.460327, y: 24.51107}
+        - {x: -26.539673, y: 24.51107}
+        - {x: -26.539673, y: -24.48893}
+        - {x: 8.460327, y: -24.48893}
+        - {x: 28.460327, y: -9.48893}
+        - {x: 28.460327, y: 10.51107}
+        - {x: 26.460327, y: 12.51107}
+    - name: Elf_201
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 65
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.585327, y: 13.51107}
+        - {x: 9.585327, y: 24.51107}
+        - {x: -22.414673, y: 24.51107}
+        - {x: -28.414673, y: 21.51107}
+        - {x: -28.414673, y: -17.48893}
+        - {x: -26.414673, y: -23.48893}
+        - {x: -25.414673, y: -24.48893}
+        - {x: -2.4146729, y: -24.48893}
+        - {x: -1.4146729, y: -23.48893}
+        - {x: 28.585327, y: 1.5110703}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
