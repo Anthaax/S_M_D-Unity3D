@@ -26,10 +26,9 @@ public class NetworkMan : NetworkManager {
         {
             ClientScene.Ready(client.connection);
 
-           if (ClientScene.localPlayers.Count == 0)
-           {
-              ClientScene.AddPlayer(0);
-           }
+
+            ClientScene.AddPlayer(0);
+           
            
         }
         GameObject.Find( "menu" ).SetActive( false );
