@@ -41,19 +41,23 @@ public class SetProfil : MonoBehaviour {
             {
                 if (b.name == "Armor")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName+"\n Prix => "+armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
                 }
                 else if (b.name == "Weapon")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[1].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[1].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
                 }
                 else if (b.name == "Trinket1")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[2].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[2].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
                 }
                 else if (b.name == "Trinket2")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[3].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[3].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
                 }
             }
             /*
@@ -63,6 +67,26 @@ public class SetProfil : MonoBehaviour {
             GameObject IconeTrinket2 = GameObject.Find("Trinket2");
             */
         }
+
+        else if(Start.MenuBGCasern.activeInHierarchy)
+        {
+            Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+            
+            if (casern.Hero != null)
+            {
+                BaseHeros h = casern.Hero;
+                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+            }
+            casern.SetHero(heros);
+            GameObject IconeHero = GameObject.Find("CasernHero");
+            string sex = heros.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+
+            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+            //---
+            CasernBoard.SetBoard();
+        }
+
         else if (Start.MenuBGHospital.activeInHierarchy)
         {
             Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
@@ -281,17 +305,11 @@ public class SetProfil : MonoBehaviour {
         int x = 1;
         foreach(BaseItem item in Start.Gtx.PlayerInfo.MyItems)
         {
-            Debug.Log(item.ItemName);
             GameObject.Find("Item" + x + "T").GetComponent<Text>().text = item.ItemName;
             if(item.Itemtype==BaseItem.ItemTypes.Armor) GameObject.Find("Item"+x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
             if (item.Itemtype == BaseItem.ItemTypes.Weapon) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
             if (item.Itemtype == BaseItem.ItemTypes.Trinket) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
         }
-        //GameObject.Find("Item1T").GetComponent<Text>().text = Start.Gtx.PlayerInfo.MyItems.Count.ToString();
-        /*GameObject.Find("Item2T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        GameObject.Find("Item3T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        GameObject.Find("Item4T").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
-        */
     }
     public static void SetToInactiveButton(Button button)
     {

@@ -12,7 +12,7 @@ public class StartOptions : MonoBehaviour {
 	public int sceneToStart = 1;										//Index number in build settings of scene to load if changeScenes is true
 	public bool changeScenes;											//If true, load a new scene when Start is pressed, if false, fade out UI and continue in single scene
 	public bool changeMusicOnStart;                                     //Choose whether to continue playing menu music or start a new music clip
-    public int Save = 0;
+    public int Save;
 
     [HideInInspector] public bool inMainMenu = true;					//If true, pause button disabled in main menu (Cancel in input manager, default escape key)
 	[HideInInspector] public Animator animColorFade; 					//Reference to animator which will fade to and from black when starting game.
@@ -49,7 +49,6 @@ public class StartOptions : MonoBehaviour {
 		{
             //Initialized GameContext
             Start.Gtx = GameContext.CreateNewGame();
-            GameObject.Find("SaveButtons").SetActive(false);
             //Use invoke to delay calling of LoadDelayed by half the length of fadeColorAnimationClip
             Invoke ("LoadDelayed", fadeColorAnimationClip.length * .5f);
 
@@ -102,9 +101,10 @@ public class StartOptions : MonoBehaviour {
         if (changeScenes)
         {
             string[] saveFile = Directory.GetFiles(@"C:\SauvegardeS_M_D", "*", SearchOption.TopDirectoryOnly);
-            Start.Gtx = GameContext.LoadGame(saveFile[Save]).LoadedGame;
+            Start.Gtx = new GameContext( GameContext.LoadGame( saveFile[Save] ).LoadedGame );
+
             //Use invoke to delay calling of LoadDelayed by half the length of fadeColorAnimationClip
-            Invoke("LoadDelayed", fadeColorAnimationClip.length * .5f);
+            Invoke( "LoadDelayed", fadeColorAnimationClip.length * .5f);
 
             //Set the trigger of Animator animColorFade to start transition to the FadeToOpaque state.
             animColorFade.SetTrigger("fade");

@@ -6,13 +6,31 @@ public class NetworkMan : NetworkManager {
 
 	// Use this for initialization
 	void Start () {
-        string gameName = "Synouk_must_die";
-        string roomName = "Synouk_room1";
-        // MasterServer.ipAddress = "127.0.0.1";
-        // Network.natFacilitatorIP = "127.0.0.1";
-        // Network.InitializeServer(4, 25012, !Network.HavePublicAddress());
-        // MasterServer.RegisterHost(gameName, roomName);
-        Time.timeScale = 1.0f;
+        networkAddress = AdventureBoard.HostAddress;
+        if (AdventureBoard.Online == "Offline")
+        {
+            StartServer();
+        }
+        else
+        {
+            if (AdventureBoard.HostState == "Meneur")
+            {
+                StartServer();
+            }
+            else
+            {
+                StartClient();
+            }
+        }
+        if (NetworkClient.active && !ClientScene.ready)
+        {
+            ClientScene.Ready(client.connection);
+
+
+            ClientScene.AddPlayer(0);
+           
+           
+        }
         GameObject.Find( "menu" ).SetActive( false );
     }
 

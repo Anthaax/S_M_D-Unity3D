@@ -59,6 +59,7 @@ public class LoadGame : MonoBehaviour {
         for (int i = 0; i < 4; i++)
         {
             file.Add(null);
+            UnityEngine.Debug.Log(i);
             var save = GameObject.Find("SaveGameText" + i.ToString());
             if (file[i] != null)
             {
@@ -67,13 +68,31 @@ public class LoadGame : MonoBehaviour {
                 save.GetComponent<Text>().text = "Partie " + partie + " Date : " + fileinfo.CreationTime.ToString();
             }
             else
+            {
                 save.GetComponent<Text>().text = "Pas de partie";
+                GameObject.Find( "SaveGameText" + i.ToString() ).GetComponentInParent<Button>().enabled = false;
+            }
         }
     }
 
     public void LaunchFirstSave()
     {
         starOptions.PrepareSave(0);
+        starOptions.StartSave();
+    }
+    public void LaunchSecondSave()
+    {
+        starOptions.PrepareSave( 1 );
+        starOptions.StartSave();
+    }
+    public void LaunchThirdSave()
+    {
+        starOptions.PrepareSave( 2 );
+        starOptions.StartSave();
+    }
+    public void LaunchFouthSave()
+    {
+        starOptions.PrepareSave( 3 );
         starOptions.StartSave();
     }
 }

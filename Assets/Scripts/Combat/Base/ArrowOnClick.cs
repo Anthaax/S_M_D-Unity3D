@@ -10,14 +10,16 @@ public class ArrowOnClick : MonoBehaviour {
     {
         for (int i = 1; i < 5; i++)
         {
-            if (GameObject.Find("Arrow" + i) != null)
+            if (GameObject.Find( "Arrow" + i ) != null || !BaseCombat.Combat.Monsters[i - 1].IsDead)
             {
-                GameObject.Find("Arrow" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
+                GameObject.Find( "Arrow" + i ).GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Combat/1024px-Red_Arrow_Down.svg" );
             }
             else if (BaseCombat.Attack.Spell.KindOfEffect.DamageType == DamageTypeEnum.Heal || BaseCombat.Attack.Spell.KindOfEffect.DamageType == DamageTypeEnum.Move)
             {
                 //ajout de fleche pour les heros
             }
+            else if (BaseCombat.Combat.Monsters[i].IsDead)
+                GameObject.Find( "Arrow" + i ).GetComponent<Image>().enabled = false;
         }
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/greenarrow");
         string result = gameObject.name.Substring(gameObject.name.Length - 1);

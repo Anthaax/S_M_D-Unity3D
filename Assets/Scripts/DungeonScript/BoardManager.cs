@@ -4,7 +4,7 @@ using S_M_D.Dungeon;
 using System.Collections.Generic;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.SceneManagement;
 using S_M_D.Character;
 using S_M_D;
@@ -334,8 +334,13 @@ public class BoardManager : NetworkBehaviour
         for ( int i = 0; i <= 5; i++ )
         {
 
-            player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
-            Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+            //player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
+            //Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+
+            float step = 0.2f * Time.deltaTime;
+            player1.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X, map.HeroPosition.Y, 0f ), new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f ), step );
+            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X,map.HeroPosition.Y,-10f ),new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f ),step);
+
             yield return new WaitForSeconds( waitTime / 10f );
         }
         map.HeroPosition = dest;
@@ -465,7 +470,6 @@ public class BoardManager : NetworkBehaviour
         }
         if ( room is S_M_D.Dungeon.Room && ( ( S_M_D.Dungeon.Room ) room ).events.Contains( "Chest" ) )
         {
-            string texturepath;
             Sprite inputSprite = null;
 
             GameObject canvas = GameObject.Find( "Canvas" );
@@ -478,24 +482,15 @@ public class BoardManager : NetworkBehaviour
 
             if ( r.chest[ 0 ] is S_M_D.Character.BaseArmor )
             {
-                texturepath = "Assets/Sprites/Armor.png";
-
-                inputSprite = ( Sprite ) AssetDatabase.LoadAssetAtPath( texturepath, typeof( Sprite ) );
-                //menu.transform.Find( "ItemImage" ).GetComponent<Image>( ).sprite = Resources.Load( "Sprites/Armor" ) as Sprite;
+                inputSprite = Resources.Load<Sprite>( "Sprites/Dungeon/Armor" );
             }
             else if ( r.chest[ 0 ] is S_M_D.Character.BaseWeapon )
             {
-                texturepath = "Assets/Sprites/Weapon.png";
-
-                inputSprite = ( Sprite ) AssetDatabase.LoadAssetAtPath( texturepath, typeof( Sprite ) );
-                //menu.transform.Find( "ItemImage" ).GetComponent<Image>( ).sprite = Resources.Load( "Sprites/Weapon" ) as Sprite;
+                inputSprite = Resources.Load<Sprite>( "Sprites/Dungeon/Weapon" );
             }
             else if ( r.chest[ 0 ] is S_M_D.Character.BaseTrinket )
             {
-                texturepath = "Assets/Sprites/Trinket.png";
-
-                inputSprite = ( Sprite ) AssetDatabase.LoadAssetAtPath( texturepath, typeof( Sprite ) );
-                //menu.transform.Find( "ItemImage" ).GetComponent<Image>( ).sprite = Resources.Load( "Sprites/Trinket" ) as Sprite;
+                inputSprite = Resources.Load<Sprite>( "Sprites/Dungeon/Trinket.png" );
             }
 
             menu.transform.Find( "ItemImage" ).GetComponent<Image>( ).sprite = inputSprite;
