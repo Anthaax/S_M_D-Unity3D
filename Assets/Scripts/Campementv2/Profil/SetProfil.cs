@@ -41,19 +41,23 @@ public class SetProfil : MonoBehaviour {
             {
                 if (b.name == "Armor")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[0].ItemName+"\n Prix => "+armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
                 }
                 else if (b.name == "Weapon")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[1].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[1].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
                 }
                 else if (b.name == "Trinket1")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[2].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[2].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
                 }
                 else if (b.name == "Trinket2")
                 {
-                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[3].ItemName;
+                    b.GetComponentsInChildren<Text>()[0].text = heros.Equipement[3].ItemName + "\n Prix => " + armory.ActionPrice;
+                    b.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
                 }
             }
             /*
