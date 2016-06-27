@@ -17,16 +17,11 @@ public class Attacking : MonoBehaviour
         {
 
             StartCoroutine( Movement() );
-
-            Debug.Log( "Monstre n°" + BaseCombat.Attack.Target );
-            BaseCombat.Combat.SpellManager.HeroLaunchSpell( BaseCombat.Attack.Spell, BaseCombat.Attack.Target );
-            BaseCombat.Combat.NextTurn();
-            BaseCombat.Attack.Target = -1;
-            Timer T = GameObject.Find( "Timer" ).GetComponent<Timer>();
-            T.timeLeft = 30.0f;
+          
 
         }
-        AfterAction();
+
+        StartCoroutine(Wait());
     }
 
     void Update()
@@ -58,22 +53,40 @@ public class Attacking : MonoBehaviour
             x++;
         }
         Animator animator = GameObject.Find( "Heros" + y ).GetComponent<Animator>();
-        animator.Play( H.CharacterClassName + "Attack" );
-        yield return new WaitForSeconds( 2 );
+        animator.Play( H.CharacterClassName + "Attack" );     
+        yield return new WaitForSeconds( 1 );
+        Debug.Log("Monstre n°" + BaseCombat.Attack.Target);
+        BaseCombat.Combat.SpellManager.HeroLaunchSpell(BaseCombat.Attack.Spell, BaseCombat.Attack.Target);
+        BaseCombat.Combat.NextTurn();
+        BaseCombat.Attack.Target = -1;
+        Timer T = GameObject.Find("Timer").GetComponent<Timer>();
+        T.timeLeft = 30.0f;
         animator.Play( H.CharacterClassName + "Idle" );
 
     }
 
     public IEnumerator MonsterAttack( BaseMonster Monster )
     {
+        int y = 0;
+        int x = 1;
+        foreach (BaseMonster M in BaseCombat.Combat.Monsters)
+        {
+            if (Monster == M)
+            {
+                y = x;
+            }
+            x++;
+        }
+        Animator animator = GameObject.Find("Monstre" + y).GetComponent<Animator>();
+        animator.Play(Monster.Type+"Attack");
         BaseCombat.Combat.IaMonster.MonsterTurnAndDoNextTurn(Monster);
         GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = MonsterAction();
         BaseCombat.Combat.IaMonster.MosterAction.Clear();
         SpellsAndStats.UpdateSpell();
 
-        yield return new WaitForSeconds( 1 );
-
-        GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = "";
+        yield return new WaitForSeconds( 2 );
+        animator.Play(Monster.Type + "Idle");
+        GameObject.Find("SpellsAttack").GetComponent<Text>().text = "";
     }
     public static void AfterAction()
     {
@@ -94,5 +107,11 @@ public class Attacking : MonoBehaviour
             return BaseCombat.Combat.IaMonster.MosterAction.Keys.First().Name;
         else
             return "Changement de position";
+    }
+    
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        AfterAction();
     }
 }

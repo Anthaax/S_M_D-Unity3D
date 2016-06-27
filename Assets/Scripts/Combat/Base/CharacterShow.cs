@@ -37,8 +37,10 @@ public class CharacterShow : MonoBehaviour {
         }
         foreach (BaseMonster M in monsters)
         {
+            Animator animator = GameObject.Find("Monstre" + j).GetComponent<Animator>();
             if (M != null)
-            GameObject.Find("Monstre" + j).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Monster/"+M.Type );
+
+               animator.runtimeAnimatorController = Resources.Load("Animations/AnimationsController/" + M.Type) as RuntimeAnimatorController;
             else
             {
                 if (GameObject.Find("Monstre" + j) != null)
