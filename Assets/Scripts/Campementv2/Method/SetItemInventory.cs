@@ -81,7 +81,7 @@ public class SetItemInventory : MonoBehaviour {
         }
         else if (item.Itemtype == BaseItem.ItemTypes.Trinket)
         {
-            if (SetProfil.HeroOpen.Equipement[2] == null)
+            if (SetProfil.HeroOpen.Equipement[2] == null || SetProfil.HeroOpen.Equipement[3]==null)
             {
                 SetProfil.HeroOpen.GetNewItem(item);
                 Start.Gtx.PlayerInfo.MyItems.Remove(item);
