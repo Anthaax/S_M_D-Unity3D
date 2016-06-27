@@ -27,7 +27,12 @@ public class Timer : MonoBehaviour {
 
     private void CombatIsOver()
     {
-        if (BaseCombat.Combat.CheckIfTheCombatWasOver())
-            SceneManager.LoadScene( 2 );
+        //if (BaseCombat.Combat.CheckIfTheCombatWasOver())
+            SceneManager.LoadScene( 1 );
+        BoardManager.Map = BaseCombat.Map;
+        BoardManager.Gtx = BaseCombat.Gtx;
+        BoardManager.hero = BaseCombat.Heros;
+        BaseCombat.Combat.ApplyRewward();
+        BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
     }
 }

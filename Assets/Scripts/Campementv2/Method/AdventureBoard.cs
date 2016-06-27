@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using S_M_D.Character;
 using UnityEngine.Networking;
+using S_M_D.Dungeon;
+using System.Linq;
 
 public class AdventureBoard : MonoBehaviour {
 
@@ -38,6 +40,10 @@ public class AdventureBoard : MonoBehaviour {
                 SceneManager.LoadScene(2);
                 BoardManager.hero = SetProfil.HerosAdventure;
                 BoardManager.Gtx = Start.Gtx;
+                Start.Gtx.DungeonManager.InitializedCatalogue();
+                Map map = Start.Gtx.DungeonManager.MapCatalogue.First();
+                BoardManager.Map = map;
+
 
                 //Start.Gtx.DungeonManager.cr
                 Start.PanelBoardMission.SetActive(false);
