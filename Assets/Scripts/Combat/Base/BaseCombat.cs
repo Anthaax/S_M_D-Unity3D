@@ -45,8 +45,28 @@ public class BaseCombat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        BaseHeros Player = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
+        Vector3 placement = new Vector3(0, 0, 0);
+        if (Player!= null)
+        {
+            int i = 1;
+            int j = 1;
+
+            foreach (BaseHeros H in heros)
+            {
+
+                if (Player == H)
+                {
+                    placement = GameObject.Find("Heros" + i).GetComponent<Transform>().position;
+                }
+
+                i++;
+            }
+            Vector3 position = new Vector3(placement.x-0.8f,placement.y+1,2);
+            GameObject.Find("ActualPlayer").GetComponent<Transform>().position = position;
+
+        }
+    }
 
     public static CombatManager Combat
     {

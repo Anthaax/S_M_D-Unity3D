@@ -287,7 +287,7 @@ public class BoardManager : NetworkBehaviour
             else
                 Debug.Log("No object was clicked");
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             if ( map.HeroPosition.X + 1 < map.Width && map.Grid[ map.HeroPosition.Y, map.HeroPosition.X + 1] != null )
             {
@@ -295,21 +295,21 @@ public class BoardManager : NetworkBehaviour
 
             }               
         }
-        else if ( Input.GetKeyDown( KeyCode.LeftArrow ) )
+        else if ( Input.GetKey( KeyCode.LeftArrow ) )
         {
             if ( map.HeroPosition.X - 1 >= 0 && map.Grid[ map.HeroPosition.Y, map.HeroPosition.X - 1 ] != null )
             {
                 StartCoroutine( moveHeroToCell( new Point( map.HeroPosition.X - 1, map.HeroPosition.Y ), 0.1f ) );
             }
         }
-        else if ( Input.GetKeyDown( KeyCode.UpArrow ) )
+        else if ( Input.GetKey( KeyCode.UpArrow ) )
         {
             if ( map.HeroPosition.Y + 1 < map.Height && map.Grid[ map.HeroPosition.Y + 1, map.HeroPosition.X ] != null )
             {
                 StartCoroutine( moveHeroToCell( new Point( map.HeroPosition.X , map.HeroPosition.Y + 1 ), 0.1f ) );
             }
         }
-        else if ( Input.GetKeyDown( KeyCode.DownArrow ) )
+        else if ( Input.GetKey( KeyCode.DownArrow ) )
         {
             if ( map.HeroPosition.Y - 1 >= 0 && map.Grid[ map.HeroPosition.Y - 1, map.HeroPosition.X  ] != null )
             {
@@ -334,8 +334,13 @@ public class BoardManager : NetworkBehaviour
         for ( int i = 0; i <= 5; i++ )
         {
 
-            player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
-            Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+            //player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
+            //Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
+
+            float step = 0.2f * Time.deltaTime;
+            player1.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X, map.HeroPosition.Y, 0f ), new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f ), step );
+            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( map.HeroPosition.X,map.HeroPosition.Y,-10f ),new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f ),step);
+
             yield return new WaitForSeconds( waitTime / 10f );
         }
         map.HeroPosition = dest;
