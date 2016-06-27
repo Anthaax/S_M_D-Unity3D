@@ -21,9 +21,10 @@ public class CasernBoard : MonoBehaviour {
             if (hero.Spells[i] != null)
             {
                 spellsBox[i].GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name);
-                spellsBox[i].GetComponentsInChildren<Text>()[0].text = hero.Spells[i].Name;
+                spellsBox[i].GetComponentsInChildren<Text>()[0].text = hero.Spells[i].Name + ". Nv:"+ hero.Spells[i].Lvl;
+                spellsBox[i].GetComponentsInChildren<Text>()[1].text = hero.Spells[i].Price.ToString();
 
-                if(hero.Spells[i].IsBuy)
+                if (hero.Spells[i].IsBuy)
                 {
                     for(int j = 0; j < spellsBox[i].GetComponentsInChildren<Button>().Length; j++)
                     {
@@ -60,10 +61,22 @@ public class CasernBoard : MonoBehaviour {
 
     public void BuySpell()
     {
-        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text;
+        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text.Split('.')[0];
         Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
         casern.BuySpellToHero(FindSpellByName(spellName));
         SetBoard();
+    }
+    public void UpgSpell()
+    {
+        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text.Split('.')[0];
+        if(FindSpellByName(spellName).IsBuy)
+        {
+            Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
+            Debug.Log("obj: " + spellName);
+            casern.UpgradeSpellToHero(FindSpellByName(spellName));
+            SetBoard();
+        }
+        
     }
 
     private Spells FindSpellByName(string spellName)
@@ -82,7 +95,7 @@ public class CasernBoard : MonoBehaviour {
         Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
         BaseHeros hero = casern.Hero;
 
-        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text;
+        string spellName = gameObject.GetComponentsInChildren<Text>()[0].text.Split('.')[0];
         for(int i = 0; i < hero.Spells.Length; i++)
         {
             if(hero.Spells[i] != null && spellName == hero.Spells[i].Name)
