@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
-    public float timeLeft;
-    // Use this for initialization
-    void Start () {
-        timeLeft = 30.0f;
-    }
-
-
+    public float timeLeft = 30.0f;
+    
     void Update()
     {
         timeLeft -= Time.deltaTime;
@@ -28,11 +23,13 @@ public class Timer : MonoBehaviour {
     private void CombatIsOver()
     {
         //if (BaseCombat.Combat.CheckIfTheCombatWasOver())
-            SceneManager.LoadScene( 1 );
-        BoardManager.Map = BaseCombat.Map;
-        BoardManager.Gtx = BaseCombat.Gtx;
-        BoardManager.hero = BaseCombat.Heros;
+        SceneManager.LoadScene( 1 );
+        //BoardManager.Map = BaseCombat.Map;
+        //BoardManager.Gtx = BaseCombat.Gtx;
+        //BoardManager.hero = BaseCombat.Heros;
         BaseCombat.Combat.ApplyRewward();
         BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
+        Start.Gtx = BaseCombat.Gtx;
+
     }
 }
