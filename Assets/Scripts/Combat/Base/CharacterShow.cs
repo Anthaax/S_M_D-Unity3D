@@ -9,12 +9,6 @@ public class CharacterShow : MonoBehaviour {
     BaseMonster[] monsters;
 	// Use this for initialization
 	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
         heros = BaseCombat.Combat.Heros;
         monsters = BaseCombat.Combat.Monsters;
 
@@ -30,28 +24,44 @@ public class CharacterShow : MonoBehaviour {
 
 
             if (H.IsMale)
-                GameObject.Find("Heros"+i).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Heros/" + H.CharacterClassName+"M");
+                GameObject.Find("Heros" + i).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Heros/" + H.CharacterClassName + "M");
             else
                 GameObject.Find("Heros" + i).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Heros/" + H.CharacterClassName + "F");
             i++;
         }
+    }
+	
+	// Update is called once per frame
+	void Update () {
+
+        heros = BaseCombat.Combat.Heros;
+        monsters = BaseCombat.Combat.Monsters;
+
+        int j = 1;
+        int x = 1;
+
         foreach (BaseMonster M in monsters)
         {
-            Animator animator = GameObject.Find("Monstre" + j).GetComponent<Animator>();
-            if (M != null)
-
-               animator.runtimeAnimatorController = Resources.Load("Animations/AnimationsController/" + M.Type) as RuntimeAnimatorController;
-            else
+            if (M.HP <=0)
             {
-                if (GameObject.Find("Monstre" + j) != null)
-                GameObject.Find("Monstre" + j).SetActive(false);
-                if (GameObject.Find("Arrow" + j)!= null)
-                GameObject.Find("Arrow" + j).SetActive(false);
+                Animator animator = GameObject.Find("Monstre" + j).GetComponent<Animator>();
+                animator.SetBool("IsDead", true); 
             }
-
+            
             j++;
         }
-        
+
+        foreach (BaseHeros H in heros)
+        {
+            if (H.HP <= 0)
+            {
+                Animator animator = GameObject.Find("Heros" + x).GetComponent<Animator>();
+                animator.SetBool("IsDead", true);
+            }
+
+            x++;
+        }
+
 
     }
 }

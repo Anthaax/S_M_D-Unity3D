@@ -17,6 +17,7 @@ public class BaseCombat : MonoBehaviour {
     private static Map map;
 
 
+
     void Awake()
     {
         attack = new HeroAttack();

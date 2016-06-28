@@ -58,6 +58,7 @@ public class SpellsAndStats : MonoBehaviour {
         int x = 1;
         foreach (BaseHeros H in BaseCombat.Combat.Heros)
         {
+            Animator animator = GameObject.Find("Heros" + x).GetComponent<Animator>();
             float X;
             if (H.HP > 0)
             {
@@ -72,6 +73,8 @@ public class SpellsAndStats : MonoBehaviour {
                 X = 0;
                 GameObject.Find("HerosHPG" + x).GetComponent<SpriteRenderer>().enabled = false;
                 GameObject.Find("HerosHPT" + x).GetComponent<Text>().text = "Dead";
+                GameObject.Find("HerosHPT" + x).GetComponent<Image>().color = Color.red;
+                animator.SetBool("IsDead", true);
             }
                 
             x++;
@@ -80,6 +83,8 @@ public class SpellsAndStats : MonoBehaviour {
         int y = 1;
         foreach (BaseMonster M in BaseCombat.Combat.Monsters)
         {
+            Animator animator = GameObject.Find("Monstre" + y).GetComponent<Animator>();
+            
             float Y;           
             if (M.HP > 0)               
             {
@@ -93,6 +98,8 @@ public class SpellsAndStats : MonoBehaviour {
             {
                 Y = 0;
                 GameObject.Find("MonsterHPT" + y).GetComponent<Text>().text = "Dead";
+                GameObject.Find("MonsterHPG" + y).GetComponent<Image>().color = Color.red;
+                animator.SetBool("IsDead", true);
             }
                 
             y++;

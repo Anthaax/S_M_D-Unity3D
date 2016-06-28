@@ -23,15 +23,13 @@ public class Timer : MonoBehaviour {
     private void CombatIsOver()
     {
         //if (BaseCombat.Combat.CheckIfTheCombatWasOver())
-        SceneManager.UnloadScene( 2 );
-        SceneManager.LoadScene( 2 );
-        BoardManager.Map = BaseCombat.Map;
-        BoardManager.Gtx = BaseCombat.Gtx;
-        BoardManager.hero = BaseCombat.Heros;
-        NetworkMan.Launch = true;
-        //BaseCombat.Combat.ApplyRewward();
-        //BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
-        //Start.Gtx = BaseCombat.Gtx;
+        // SceneManager.LoadScene( 1 );
+        //BoardManager.Map = BaseCombat.Map;
+        //BoardManager.Gtx = BaseCombat.Gtx;
+        //BoardManager.hero = BaseCombat.Heros;
+        BaseCombat.Combat.ApplyRewward();
+        BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
+        Start.Gtx = BaseCombat.Gtx;
 
     }
 }
