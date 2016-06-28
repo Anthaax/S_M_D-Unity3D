@@ -3,10 +3,26 @@ using System.Collections;
 using UnityEngine.Networking;
 
 public class NetworkMan : NetworkManager {
-
+    public static bool Launch;
 	// Use this for initialization
 	void Start () {
+        
+    }
+    public void OnLevelWasLoaded( int i )
+    {
+        if (Launch)
+        {
+            Debug.Log( "StopServer" );
+            StopServer();
+        }
+        else
+        {
+            Launch = true;
+            GameObject.Find( "menu" ).SetActive( false );
+        }
         networkAddress = AdventureBoard.HostAddress;
+        networkPort = AdventureBoard.Port;
+        Debug.Log( "coucou" );
         if (AdventureBoard.Online == "Offline")
         {
             StartServer();
@@ -24,14 +40,12 @@ public class NetworkMan : NetworkManager {
         }
         if (NetworkClient.active && !ClientScene.ready)
         {
-            ClientScene.Ready(client.connection);
+            ClientScene.Ready( client.connection );
 
 
-            ClientScene.AddPlayer(0);
-           
-           
+            ClientScene.AddPlayer( 0 );
         }
-        GameObject.Find( "menu" ).SetActive( false );
+        AdventureBoard.Port++;
     }
 
     void OnServerInitialized()
