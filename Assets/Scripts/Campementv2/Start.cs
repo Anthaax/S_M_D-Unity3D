@@ -102,7 +102,14 @@ public class Start : MonoBehaviour {
         foreach(BaseBuilding building in Gtx.PlayerInfo.MyBuildings)
         {
             if (building.Level < 1)
+            {
                 ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = false;
+            }
+            else
+            {
+                ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = true;
+                ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + building.Name);
+            }
         }
     }
 
