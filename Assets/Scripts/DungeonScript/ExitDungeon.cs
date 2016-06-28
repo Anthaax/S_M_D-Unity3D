@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class ExitDungeon : MonoBehaviour
 {
@@ -9,9 +10,19 @@ public class ExitDungeon : MonoBehaviour
     {
 	    if(Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene( 1 );
-            BaseCombat.Gtx.DungeonManager.EndOfTheDuengon( );
-            Start.Gtx = BaseCombat.Gtx;
+            EventSystem es = EventSystem.current;
+            if (es == null)
+                return;
+            GameObject currentSel = es.currentSelectedGameObject;
+            if (currentSel == null)
+                return;
+            Debug.Log(currentSel.name);
+            if (currentSel.name == "ExitDungeon")
+            {
+                SceneManager.LoadScene(1);
+                BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
+                Start.Gtx = BaseCombat.Gtx;
+            }
         }
 	}
 }

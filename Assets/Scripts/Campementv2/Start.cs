@@ -83,6 +83,8 @@ public class Start : MonoBehaviour {
         caravan.Initialized();
 
         CasernBoard.SetBoard();
+        BarBoard.Initialize();
+        HotelBoard.Initialize();
 
         setButtonsBuildings();
     }
