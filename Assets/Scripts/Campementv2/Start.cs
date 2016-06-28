@@ -23,6 +23,7 @@ public class Start : MonoBehaviour {
     public static GameObject MenuProfil;
     public static GameObject PanelBoardMission;
     public static GameObject MenuProfilPlayer;
+    public static GameObject MenuProfilStuff;
 
     public static Button[] ButtonsSicknesses;
     public static Button[] ButtonsMentalPsycho;
@@ -47,6 +48,7 @@ public class Start : MonoBehaviour {
         MenuProfil = GameObject.Find("Profil");
         PanelBoardMission = GameObject.Find("PanelBoardMission");
         MenuProfilPlayer = GameObject.Find("ProfilPlayer");
+        MenuProfilStuff = GameObject.Find("ProfilStuff");
 
         ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
@@ -65,6 +67,7 @@ public class Start : MonoBehaviour {
         MenuProfil.SetActive(false);
         PanelBoardMission.SetActive(false);
         MenuProfilPlayer.SetActive(false);
+        MenuProfilStuff.SetActive(false);
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
