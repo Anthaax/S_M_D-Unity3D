@@ -20,7 +20,7 @@ public class DungeonManager : MonoBehaviour
 
     public void InitGame()
     {
-        boardScript.OnLevelWasLoaded(1);
+        boardScript.Start();
     }
 
     // Update is called once per frame

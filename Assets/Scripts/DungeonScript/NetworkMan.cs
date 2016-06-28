@@ -25,6 +25,7 @@ public class NetworkMan : NetworkManager {
         Debug.Log( "coucou" );
         if (AdventureBoard.Online == "Offline")
         {
+            Debug.Log( "server started" );
             StartServer();
         }
         else

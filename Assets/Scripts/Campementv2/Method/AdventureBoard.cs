@@ -59,6 +59,9 @@ public class AdventureBoard : MonoBehaviour {
                 SceneManager.LoadScene(2);
                 BoardManager.hero = SetProfil.HerosAdventure;
                 BoardManager.Gtx = Start.Gtx;
+                Start.Gtx.DungeonManager.InitializedCatalogue( );
+                Map map = Start.Gtx.DungeonManager.MapCatalogue.First( );
+                BoardManager.Map = map;
             }
         }
         //
