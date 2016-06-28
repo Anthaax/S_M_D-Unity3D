@@ -50,15 +50,43 @@ public class BaseCombat : MonoBehaviour {
         Vector3 placement = new Vector3(0, 0, 0);
         if (Player!= null)
         {
+
             int i = 1;
             int j = 1;
+
+            
 
             foreach (BaseHeros H in heros)
             {
 
                 if (Player == H)
                 {
+                    Animator animator = GameObject.Find("Heros" + i).GetComponent<Animator>();
                     placement = GameObject.Find("Heros" + i).GetComponent<Transform>().position;
+                    float X;
+                    if (Player.HP > 0)
+                    {
+                        X = (92.5f * (100f * Player.HP / Player.EffectivHPMax)) / 100;
+                        GameObject.Find("HpBar2").GetComponent<RectTransform>().sizeDelta =
+                                    new Vector2(X, 11.2f);
+                    }
+                    else
+                    {
+                        GameObject.Find("HP").GetComponent<Text>().text = "Dead";
+                        animator.SetBool("IsDead", true);
+
+                    }
+
+                    if (Player.Mana > 0)
+                    {
+                        X = (92.5f * (100f * Player.Mana / Player.EffectivManaMax)) / 100;
+                        GameObject.Find("ManaBar2").GetComponent<RectTransform>().sizeDelta =
+                                    new Vector2(X, 11.2f);
+                    }
+                    else
+                    {
+                        GameObject.Find("ManaBar2").GetComponent<Image>().color = Color.blue;
+                    }
                 }
 
                 i++;

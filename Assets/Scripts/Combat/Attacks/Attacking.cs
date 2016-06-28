@@ -54,7 +54,7 @@ public class Attacking : MonoBehaviour
         }
         Animator animator = GameObject.Find( "Heros" + y ).GetComponent<Animator>();
         animator.Play( H.CharacterClassName + "Attack" );     
-        yield return new WaitForSeconds( 1 );
+        yield return new WaitForSeconds( 2 );
         Debug.Log("Monstre n°" + BaseCombat.Attack.Target);
         BaseCombat.Combat.SpellManager.HeroLaunchSpell(BaseCombat.Attack.Spell, BaseCombat.Attack.Target);
         BaseCombat.Combat.NextTurn();

@@ -56,29 +56,6 @@ public class SpellsAndStats : MonoBehaviour {
         }
         count++;
         int x = 1;
-        foreach (BaseHeros H in BaseCombat.Combat.Heros)
-        {
-            Animator animator = GameObject.Find("Heros" + x).GetComponent<Animator>();
-            float X;
-            if (H.HP > 0)
-            {
-                X = (44f * (100f * H.HP / H.EffectivHPMax)) / 100;
-                GameObject.Find("HerosHPG" + x).GetComponent<RectTransform>().sizeDelta =
-                    new Vector2(X, 7f);
-                GameObject.Find("HerosHPT" + x).GetComponent<Text>().text = H.HP.ToString() + "/" + H.EffectivHPMax.ToString();
-            }
-               
-            else
-            {
-                X = 0;
-                GameObject.Find("HerosHPT" + x).GetComponent<Text>().text = "Dead";
-                GameObject.Find("HerosHPG" + x).GetComponent<Image>().color = Color.red;
-                animator.SetBool("IsDead", true);
-            }
-                
-            x++;
-        }
-
         int y = 1;
         foreach (BaseMonster M in BaseCombat.Combat.Monsters)
         {
