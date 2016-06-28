@@ -16,14 +16,15 @@ public class SpellsAndStats : MonoBehaviour {
 	// Update is called once per frame
 	public static void UpdateSpell () {
         BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
-        Debug.Log( heros  + "Dans updateSpell" + count);
         if (heros !=null)
         {
-            Debug.Log( heros.Spells + heros.CharacterClassName );
-            //GetSpellList( heros );
             for (int i = 1; i < 5; i++)
             {
-                GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" +heros.Spells[i-1].Name);
+                if(heros.Spells[i-1].IsEquiped)
+                    GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" +heros.Spells[i-1].Name);
+                else
+                    GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/NoSpell");
+
                 if (heros.Mana < heros.Spells[i - 1].ManaCost || heros.Spells[i - 1].CooldownManager.IsOnCooldown)
                 {
                     GameObject.Find( "Spell" + i ).GetComponent<Button>().enabled = false;
@@ -95,14 +96,6 @@ public class SpellsAndStats : MonoBehaviour {
             }
                 
             y++;
-        }
-    }
-    private static void GetSpellList(BaseHeros hero)
-    {
-        hero.Spells.OrderBy( c => c.IsEquiped == true );
-        foreach (var spell in hero.Spells)
-        {
-            Debug.Log( spell.Name );
         }
     }
 }
