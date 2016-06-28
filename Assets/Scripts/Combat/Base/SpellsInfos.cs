@@ -25,8 +25,7 @@ public class SpellsInfos : MonoBehaviour {
             {
                 GameObject.Find("Arrow" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
                 GameObject.Find("Arrow"+i).GetComponent<Image>().enabled = false;
-                GameObject.Find("ArrowH" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
-                GameObject.Find("ArrowH" + i).GetComponent<Image>().enabled = false;
+
             }
         }
         BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
@@ -34,7 +33,9 @@ public class SpellsInfos : MonoBehaviour {
         bool[] target = new bool[4];
         string result = gameObject.name.Substring(gameObject.name.Length - 1);
         int R = Convert.ToInt32(result);
-        GameObject.Find("SpellInfo").GetComponent<Text>().text = heros.Spells[R-1].Name+ "\n \n \n" + heros.Spells[R - 1].Description;
+        GameObject.Find("SpellInfo").GetComponent<Text>().text = heros.Spells[R-1].Name+ "\n \n \n" + heros.Spells[R - 1].Description+ "\n \n \n Dégats = " + heros.Spells[R-1].KindOfEffect.Damage
+                +"\n Mana : " + heros.Spells[R-1].ManaCost +"\n Cooldown : " + heros.Spells[R-1].CooldownManager.BaseCooldown +"\n Cooldown Restant : "+ heros.Spells[R-1].CooldownManager.Cooldown;
+
         target = heros.Spells[R - 1].TargetManager.WhoCanBeTargetable(Position(heros));
 
 
@@ -42,7 +43,8 @@ public class SpellsInfos : MonoBehaviour {
         {
             string arrow = "Arrow"+(i + 1);
             if (target[i] == true)
-                if (GameObject.Find(arrow) != null)
+                if (!BaseCombat.Combat.Monsters[i].IsDead)
+                    if (GameObject.Find(arrow) != null)
                 GameObject.Find(arrow).GetComponent<Image>().enabled = true;
         }
 
