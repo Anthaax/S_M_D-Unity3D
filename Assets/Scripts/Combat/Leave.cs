@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Leave : MonoBehaviour {
 
 	public void OnClick()
     {
-        string tasoeur = "Wallah je me casse sur le coran ça fait peur";
+        SceneManager.LoadScene( 2 );
+        BoardManager.Map = BaseCombat.Map;
+        BoardManager.Gtx = BaseCombat.Gtx;
+        BoardManager.hero = BaseCombat.Heros;
     }
 }

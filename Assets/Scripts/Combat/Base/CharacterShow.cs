@@ -41,9 +41,10 @@ public class CharacterShow : MonoBehaviour {
 
         foreach (BaseMonster M in monsters)
         {
+            Animator animator = GameObject.Find("Monstre" + j).GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load("Animations/AnimationsController/" + M.Type) as RuntimeAnimatorController;
             if (M.HP <=0)
-            {
-                Animator animator = GameObject.Find("Monstre" + j).GetComponent<Animator>();
+            {                
                 animator.SetBool("IsDead", true); 
             }
             
@@ -52,9 +53,10 @@ public class CharacterShow : MonoBehaviour {
 
         foreach (BaseHeros H in heros)
         {
+            Animator animator = GameObject.Find("Heros" + x).GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load("Animations/AnimationsController/" + H.CharacterClassName + "F") as RuntimeAnimatorController;
             if (H.HP <= 0)
-            {
-                Animator animator = GameObject.Find("Heros" + x).GetComponent<Animator>();
+            {               
                 animator.SetBool("IsDead", true);
             }
 

@@ -84,7 +84,7 @@ public class Attacking : MonoBehaviour
         BaseCombat.Combat.IaMonster.MosterAction.Clear();
         SpellsAndStats.UpdateSpell();
 
-        yield return new WaitForSeconds( 2 );
+        yield return new WaitForSeconds( 3 );
         animator.Play(Monster.Type + "Idle");
         GameObject.Find("SpellsAttack").GetComponent<Text>().text = "";
     }
