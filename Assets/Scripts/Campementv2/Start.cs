@@ -79,6 +79,8 @@ public class Start : MonoBehaviour {
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         caravan.Initialized();
 
+        CasernBoard.SetBoard();
+
         setButtonsBuildings();
     }
 	
@@ -102,8 +104,29 @@ public class Start : MonoBehaviour {
         foreach(BaseBuilding building in Gtx.PlayerInfo.MyBuildings)
         {
             if (building.Level < 1)
+            {
                 ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = false;
+            }
+            else
+            {
+                if(!isBaseBuilding(building.Name))
+                {
+                    Debug.Log("Name : " + building.Name.ToString());
+                    ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = true;
+                    ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + building.Name.ToString());
+                }
+                
+            }
         }
+    }
+
+    private bool isBaseBuilding(BuildingNameEnum building)
+    {
+        if (building == BuildingNameEnum.Townhall || building == BuildingNameEnum.Caravan
+            || building == BuildingNameEnum.Cemetery)
+            return true;
+
+        return false;
     }
 
     public static GameContext Gtx

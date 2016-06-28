@@ -16,37 +16,60 @@ public class CasernBoard : MonoBehaviour {
   
         List<GameObject> spellsBox = Start.CasernSpells;
 
-        for (int i = 0; i < spellsBox.Count; i++)
+        if(hero != null)
         {
-            if (hero.Spells[i] != null)
+            for (int i = 0; i < spellsBox.Count; i++)
             {
-                spellsBox[i].GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name);
-                spellsBox[i].GetComponentsInChildren<Text>()[0].text = hero.Spells[i].Name + ". Nv:"+ hero.Spells[i].Lvl;
-                spellsBox[i].GetComponentsInChildren<Text>()[1].text = hero.Spells[i].Price.ToString();
-
-                if (hero.Spells[i].IsBuy)
+                if (hero.Spells[i] != null)
                 {
-                    for(int j = 0; j < spellsBox[i].GetComponentsInChildren<Button>().Length; j++)
-                    {
-                        if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "BuySpell")
-                            SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
+                    spellsBox[i].GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name);
+                    spellsBox[i].GetComponentsInChildren<Text>()[0].text = hero.Spells[i].Name + ". Nv:" + hero.Spells[i].Lvl;
+                    spellsBox[i].GetComponentsInChildren<Text>()[1].text = hero.Spells[i].Price.ToString();
 
+                    if (hero.Spells[i].IsBuy)
+                    {
+                        SetToActiveButton(spellsBox[i].GetComponentsInChildren<Button>()[0]);
+                        for (int j = 0; j < spellsBox[i].GetComponentsInChildren<Button>().Length; j++)
+                        {
+                            if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "BuySpell")
+                                SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
+                            if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "UpSpell")
+                                SetToActiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
+                        }
                     }
+                    else
+                    {
+                        for (int j = 0; j < spellsBox[i].GetComponentsInChildren<Button>().Length; j++)
+                        {
+                            if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "BuySpell")
+                                SetToActiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
+
+
+                        }
+                    }
+                    CheckEquiped(i, hero.Spells[i]);
                 }
                 else
                 {
-                    for (int j = 0; j < spellsBox[i].GetComponentsInChildren<Button>().Length; j++)
-                    {
-                        if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "BuySpell")
-                            SetToActiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
-
-                    }
+                    spellsBox[i].GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/NoSpell");
+                    spellsBox[i].GetComponentsInChildren<Text>()[0].text = "NoSpell";
+                    spellsBox[i].GetComponentsInChildren<Text>()[1].text = "";
+                    SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[0]);
+                    SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[1]);
+                    SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[2]);
                 }
-                CheckEquiped(i, hero.Spells[i]);
             }
-            else
-                break;
         }
+
+        else
+        {
+            foreach(Button b in Start.MenuBGCasern.GetComponentsInChildren<Button>())
+            {
+                SetToInactiveButton(b);
+            }
+        }
+
+       
     }
 
     private static void CheckEquiped(int i, Spells spell)
