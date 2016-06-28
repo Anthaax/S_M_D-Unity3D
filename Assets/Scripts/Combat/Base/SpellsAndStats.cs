@@ -71,9 +71,8 @@ public class SpellsAndStats : MonoBehaviour {
             else
             {
                 X = 0;
-                GameObject.Find("HerosHPG" + x).GetComponent<SpriteRenderer>().enabled = false;
                 GameObject.Find("HerosHPT" + x).GetComponent<Text>().text = "Dead";
-                GameObject.Find("HerosHPT" + x).GetComponent<Image>().color = Color.red;
+                GameObject.Find("HerosHPG" + x).GetComponent<Image>().color = Color.red;
                 animator.SetBool("IsDead", true);
             }
                 
