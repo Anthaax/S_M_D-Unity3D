@@ -89,22 +89,25 @@ public class SetProfil : MonoBehaviour {
 
         else if (Start.MenuBGHospital.activeInHierarchy)
         {
-            Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
-
-            //---
-            if (hospital.Hero != null)
+            if(!HospitalBoard.SicknessRemove)
             {
-                BaseHeros h = hospital.Hero;
-                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
-            }
-            hospital.SetHero(heros);
-            GameObject IconeHero = GameObject.Find("HospitalHero");
-            string sex = heros.IsMale ? "M" : "F";
-            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
-            HospitalBoard.CheckSicknesses(heros, hospital);
+                Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+                //---
+                if (hospital.Hero != null)
+                {
+                    BaseHeros h = hospital.Hero;
+                    SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                }
+                hospital.SetHero(heros);
+                GameObject IconeHero = GameObject.Find("HospitalHero");
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                HospitalBoard.CheckSicknesses(heros, hospital);
 
-            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
-            //---
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
+            }
+
         }
         else if (Start.MenuBGCasern.activeInHierarchy)
         {
@@ -113,22 +116,26 @@ public class SetProfil : MonoBehaviour {
         }
         else if (Start.MenuBGMentalhospital.activeInHierarchy)
         {
-            MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
-
-            //---
-            if (mentalHospital.Hero != null)
+            if (!MentalHospitalBoard.MentalSicknessRemove)
             {
-                BaseHeros h = mentalHospital.Hero;
-                SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
-            }
-            mentalHospital.SetHero(heros);
-            GameObject IconeHero = GameObject.Find("MentalHospitalHero");
-            string sex = heros.IsMale ? "M" : "F";
-            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone"+sex);
-            MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
+                MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+                heros.GetPsycho(new Crazyness());
+                //---
+                if (mentalHospital.Hero != null)
+                {
+                    BaseHeros h = mentalHospital.Hero;
+                    SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
+                }
+                mentalHospital.SetHero(heros);
+                GameObject IconeHero = GameObject.Find("MentalHospitalHero");
+                string sex = heros.IsMale ? "M" : "F";
+                IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+                MentalHospitalBoard.CheckSicknesses(heros, mentalHospital);
 
-            SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
-            //---
+                SetToInactiveButton(gameObject.GetComponentInChildren<Button>());
+                //---
+            }
+
         }
         else if (Start.MenuBGHotel.activeInHierarchy)
         {
