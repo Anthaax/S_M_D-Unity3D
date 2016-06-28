@@ -49,7 +49,6 @@ public class AdventureBoard : MonoBehaviour {
 
 
                 //Start.Gtx.DungeonManager.cr
-                Array.Clear(SetProfil.HerosAdventure,0, SetProfil.HerosAdventure.Length);
                 Start.PanelBoardMission.SetActive(false);
             }
         }

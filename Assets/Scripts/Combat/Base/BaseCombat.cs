@@ -27,8 +27,7 @@ public class BaseCombat : MonoBehaviour {
         GameObject.Find("Arrow3").GetComponent<Image>().enabled = false;
         GameObject.Find("Arrow4").GetComponent<Image>().enabled = false;
 
-        Gtx.DungeonManager.InitializedCatalogue();
-        Gtx.DungeonManager.CreateDungeon(Heros, Map);
+        Gtx.DungeonManager.CreateDungeon( Heros, Map );
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
         Combat.Monsters.ToList().ForEach( c => 

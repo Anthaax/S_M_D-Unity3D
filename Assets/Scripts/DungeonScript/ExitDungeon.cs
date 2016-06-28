@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using System;
 
 public class ExitDungeon : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class ExitDungeon : MonoBehaviour
                 SceneManager.LoadScene(1);
                 BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
                 Start.Gtx = BaseCombat.Gtx;
+                Array.Clear( SetProfil.HerosAdventure, 0, SetProfil.HerosAdventure.Length );
+
             }
         }
 	}
