@@ -545,8 +545,11 @@ public class BoardManager : NetworkBehaviour
                     break;
             }
         }
-        */
-        S_M_D.Dungeon.Room thisroom = room as S_M_D.Dungeon.Room;
-        thisroom.events.Remove( "Chest" );
+        */  
+        if ( room is S_M_D.Dungeon.Room && ( ( S_M_D.Dungeon.Room ) room ).events.Contains( "Chest" ) )
+        {
+            S_M_D.Dungeon.Room thisroom = room as S_M_D.Dungeon.Room;
+            thisroom.events.Remove( "Chest" );
+        }
     }
 }
