@@ -27,6 +27,18 @@ public class SetItemInventory : MonoBehaviour {
                 if (SetProfil.HeroOpen.Equipement[3] != null) SetProfil.HeroOpen.RemoveItem(SetProfil.HeroOpen.Equipement[3]);
             }
             UpdatePanel();
+            GameObject.Find("ArmorT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDefense.ToString();
+            GameObject.Find("AttackT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDamage.ToString();
+            GameObject.Find("HitChanceT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivHitChance.ToString();
+            GameObject.Find("CritT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectCritChance.ToString();
+            GameObject.Find("SpeedT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivSpeed.ToString();
+            GameObject.Find("DodgeT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDodgeChance.ToString();
+            GameObject.Find("FireResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivFireRes.ToString();
+            GameObject.Find("MagicResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivMagicRes.ToString();
+            GameObject.Find("PoisonResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivPoisonRes.ToString();
+            GameObject.Find("BleedingResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivBleedingRes.ToString();
+            GameObject.Find("WaterResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivWaterRes.ToString();
+            GameObject.Find("AffectResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivAffectRes.ToString();
         }
     }
     public void OnClickPlayerItem()
@@ -91,6 +103,18 @@ public class SetItemInventory : MonoBehaviour {
                 SetProfil.HeroOpen.RemoveAndAddAnItem(SetProfil.HeroOpen.Equipement[2], item);
             }
         }
+        GameObject.Find("ArmorT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDefense.ToString();
+        GameObject.Find("AttackT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDamage.ToString();
+        GameObject.Find("HitChanceT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivHitChance.ToString();
+        GameObject.Find("CritT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectCritChance.ToString();
+        GameObject.Find("SpeedT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivSpeed.ToString();
+        GameObject.Find("DodgeT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivDodgeChance.ToString();
+        GameObject.Find("FireResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivFireRes.ToString();
+        GameObject.Find("MagicResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivMagicRes.ToString();
+        GameObject.Find("PoisonResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivPoisonRes.ToString();
+        GameObject.Find("BleedingResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivBleedingRes.ToString();
+        GameObject.Find("WaterResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivWaterRes.ToString();
+        GameObject.Find("AffectResT").GetComponent<Text>().text = SetProfil.HeroOpen.EffectivAffectRes.ToString();
     }
     public void UpdatePanel()
     {
