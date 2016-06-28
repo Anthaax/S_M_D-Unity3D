@@ -25,6 +25,8 @@ public class SpellsInfos : MonoBehaviour {
             {
                 GameObject.Find("Arrow" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
                 GameObject.Find("Arrow"+i).GetComponent<Image>().enabled = false;
+                GameObject.Find("ArrowH" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/1024px-Red_Arrow_Down.svg");
+                GameObject.Find("ArrowH" + i).GetComponent<Image>().enabled = false;
             }
         }
         BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;

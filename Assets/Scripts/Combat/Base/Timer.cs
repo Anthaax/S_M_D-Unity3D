@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour {
     private void CombatIsOver()
     {
         //if (BaseCombat.Combat.CheckIfTheCombatWasOver())
-        SceneManager.LoadScene( 1 );
+        // SceneManager.LoadScene( 1 );
         //BoardManager.Map = BaseCombat.Map;
         //BoardManager.Gtx = BaseCombat.Gtx;
         //BoardManager.hero = BaseCombat.Heros;

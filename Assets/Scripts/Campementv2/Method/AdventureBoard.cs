@@ -14,6 +14,7 @@ public class AdventureBoard : MonoBehaviour {
     public static string HostAddress;
     public static string HostState;
     public static string Online;
+    public static int Port;
 
 	// Update is called once per frame
 	void Update () {
@@ -30,6 +31,7 @@ public class AdventureBoard : MonoBehaviour {
 
         HostState = SelectHost;
         Online = SelectMode;
+        Port = 25015;
 
         if(SelectMode == "Offline")
         {
@@ -59,10 +61,11 @@ public class AdventureBoard : MonoBehaviour {
                 SceneManager.LoadScene(2);
                 BoardManager.hero = SetProfil.HerosAdventure;
                 BoardManager.Gtx = Start.Gtx;
-
+                Start.Gtx.DungeonManager.InitializedCatalogue( );
+                Map map = Start.Gtx.DungeonManager.MapCatalogue.First( );
+                BoardManager.Map = map;
             }
         }
-        
         //
     }
 
