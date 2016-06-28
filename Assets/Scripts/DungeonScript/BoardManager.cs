@@ -35,7 +35,23 @@ public class BoardManager : NetworkBehaviour
     private Animator player2Animator;
     public bool isActive { get; set; }
 
-    public void Start()
+    //public void Start()
+    //{
+    //    if (!online)
+    //        this.InitBoard();
+    //    else
+    //    {
+    //        if (isServer) // We're a server so we just initialize the map
+    //        {
+    //            Debug.Log("Server initializing map");
+    //            this.InitBoard();
+    //        }
+    //    }
+
+    //    isActive = true;
+
+    //}
+    public void OnLevelWasLoaded( int i)
     {
         if (!online)
             this.InitBoard();
@@ -43,13 +59,12 @@ public class BoardManager : NetworkBehaviour
         {
             if (isServer) // We're a server so we just initialize the map
             {
-                Debug.Log("Server initializing map");
+                Debug.Log( "Server initializing map" );
                 this.InitBoard();
             }
         }
 
         isActive = true;
-
     }
 
     public string mapToString()
@@ -216,6 +231,10 @@ public class BoardManager : NetworkBehaviour
                 else if (Map.isNotVisited(Map.Grid[y, x]))
                 {
                     toInstantiate = floorTiles[1];
+                }
+                else if (Map.isVisited( Map.Grid[y, x] ))
+                {
+                    toInstantiate = floorTiles[0];
                 }
 
                 instance = Instantiate(toInstantiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
@@ -459,7 +478,10 @@ public class BoardManager : NetworkBehaviour
                 }
                 else if (r.events.Contains("Combat"))
                 {
+                    r.events.Remove( "Combat" );
                     SceneManager.LoadScene( 3 );
+                    Network.Disconnect();
+                    GameObject.Find( "NetworkManager" ).GetComponent<NetworkMan>().StopServer();
                     BaseCombat.Gtx = Gtx;
                     BaseCombat.Heros = hero;
                     BaseCombat.Map = Map;
@@ -488,7 +510,7 @@ public class BoardManager : NetworkBehaviour
             }
             else if ( r.chest[ 0 ] is S_M_D.Character.BaseTrinket )
             {
-                inputSprite = Resources.Load<Sprite>( "Sprites/Dungeon/Trinket.png" );
+                inputSprite = Resources.Load<Sprite>( "Sprites/Dungeon/Trinket" );
             }
 
             menu.transform.Find( "ItemImage" ).GetComponent<Image>( ).sprite = inputSprite;
@@ -509,7 +531,8 @@ public class BoardManager : NetworkBehaviour
             menu.transform.Find( "FireRes" ).GetComponent<Text>( ).text = r.chest[ 0 ].FireRes.ToString( );
 
             isActive = false;
-            
+            r.events.Remove( "Chest" );
+
         }
 
         if ( room is S_M_D.Dungeon.Room && ( ( S_M_D.Dungeon.Room ) room ).events.Contains( "Combat" ) )
