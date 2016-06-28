@@ -107,10 +107,24 @@ public class Start : MonoBehaviour {
             }
             else
             {
-                ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = true;
-                ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + building.Name.ToString());
+                if(!isBaseBuilding(building.Name))
+                {
+                    Debug.Log("Name : " + building.Name.ToString());
+                    ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().enabled = true;
+                    ButtonsBuildings.Find(t => t.name == building.Name.ToString()).GetComponent<Button>().image.sprite = Resources.Load<Sprite>("Sprites/Buildings/" + building.Name.ToString());
+                }
+                
             }
         }
+    }
+
+    private bool isBaseBuilding(BuildingNameEnum building)
+    {
+        if (building == BuildingNameEnum.Townhall || building == BuildingNameEnum.Caravan
+            || building == BuildingNameEnum.Cemetery)
+            return true;
+
+        return false;
     }
 
     public static GameContext Gtx
