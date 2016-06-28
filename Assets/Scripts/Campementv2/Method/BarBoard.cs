@@ -3,6 +3,7 @@ using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
 using S_M_D.Character;
+using System;
 
 public class BarBoard : MonoBehaviour {
 
@@ -11,6 +12,12 @@ public class BarBoard : MonoBehaviour {
     {
 
     }
+    public static bool HeroesValid;
+
+    public static void Initialize()
+    {
+        HeroesValid = false;
+    }
 
     public void ValidHeroes()
     {
@@ -18,7 +25,12 @@ public class BarBoard : MonoBehaviour {
         if (SetProfil.coupleHerosBar[0] != null && SetProfil.coupleHerosBar[1] != null)
         {
             bar.SetHeros(SetProfil.coupleHerosBar[0], SetProfil.coupleHerosBar[1]);
+            HeroesValid = true;
+            GameObject.Find("RemoveHero1Bar").SetActive(false);
+            GameObject.Find("RemoveHero2Bar").SetActive(false);
+            GameObject.Find("Valid").SetActive(false);
             Start.MenuBGBar.SetActive(false);
+            Array.Clear(SetProfil.coupleHerosBar, 0, SetProfil.coupleHerosBar.Length);
         }
         //
     }

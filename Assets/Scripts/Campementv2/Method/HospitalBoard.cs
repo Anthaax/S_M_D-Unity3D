@@ -12,6 +12,8 @@ public class HospitalBoard : MonoBehaviour {
 	
 	}
 
+    public static bool SicknessRemove;
+
     public void TryRemoveSickness()
     {
         Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding( BuildingNameEnum.Hospital) as Hospital;
@@ -36,7 +38,8 @@ public class HospitalBoard : MonoBehaviour {
             Staphyloccocus s = hospital.Hero.Sicknesses.Find(t => t.Name == "Staphyloccocus") as Staphyloccocus;
             hospital.HealHero(s);
         }
-
+        SicknessRemove = true;
+        GameObject.Find("RemoveHero").SetActive(false);
         CheckSicknesses(hospital.Hero, hospital);
     }
 
@@ -67,6 +70,7 @@ public class HospitalBoard : MonoBehaviour {
 
     public static void InitializedButtonsHospitalBoard()
     {
+        SicknessRemove = false;
         foreach (Button button in Start.ButtonsSicknesses)
         {
             if (button.name != "Close")
@@ -77,7 +81,8 @@ public class HospitalBoard : MonoBehaviour {
 
     public static void CheckSicknesses(BaseHeros heros, BaseBuilding building)
     {
-       
+        Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+        
         for (int i = 0; i < Start.ButtonsSicknesses.Length; i++)
         {
             Button button = Start.ButtonsSicknesses[i];
@@ -85,7 +90,7 @@ public class HospitalBoard : MonoBehaviour {
             {
                 if(button.name != "RemoveHero")
                 {
-                    button.GetComponentsInChildren<Text>()[1].text = "" + (1000 / building.Level);
+                    button.GetComponentsInChildren<Text>()[1].text = "" + hospital.ActionPrice;
                     SetToInactiveButton(button);
                 }
                 
@@ -96,7 +101,7 @@ public class HospitalBoard : MonoBehaviour {
         {
             for (int j = 0; j < Start.ButtonsSicknesses.Length; j++)
             {
-                if (heros.Sicknesses[i].Name == Start.ButtonsSicknesses[j].name)
+                if (heros.Sicknesses[i].Name == Start.ButtonsSicknesses[j].name && Start.Gtx.MoneyManager.Money >= hospital.ActionPrice)
                 {
                     SetToActiveButton(Start.ButtonsSicknesses[j]);
                 }

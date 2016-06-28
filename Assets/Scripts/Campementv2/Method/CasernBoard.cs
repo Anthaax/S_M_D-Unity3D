@@ -65,7 +65,8 @@ public class CasernBoard : MonoBehaviour {
         {
             foreach(Button b in Start.MenuBGCasern.GetComponentsInChildren<Button>())
             {
-                SetToInactiveButton(b);
+                if(b.name != "Close")
+                    SetToInactiveButton(b);
             }
         }
 

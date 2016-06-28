@@ -7,6 +7,7 @@ using S_M_D.Character;
 using UnityEngine.Networking;
 using S_M_D.Dungeon;
 using System.Linq;
+using System;
 
 public class AdventureBoard : MonoBehaviour {
 
@@ -48,6 +49,7 @@ public class AdventureBoard : MonoBehaviour {
 
 
                 //Start.Gtx.DungeonManager.cr
+                Array.Clear(SetProfil.HerosAdventure,0, SetProfil.HerosAdventure.Length);
                 Start.PanelBoardMission.SetActive(false);
             }
         }

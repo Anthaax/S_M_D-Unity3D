@@ -3,6 +3,7 @@ using System.Collections;
 using S_M_D.Camp.Class;
 using UnityEngine.UI;
 using S_M_D.Character;
+using System;
 
 public class HotelBoard : MonoBehaviour {
 	
@@ -10,6 +11,12 @@ public class HotelBoard : MonoBehaviour {
 	void Update () {
 	
 	}
+    public static bool HeroesValid;
+
+    public static void Initialize()
+    {
+        HeroesValid = false;
+    }
 
     public void ValidHeroes()
     {
@@ -17,7 +24,12 @@ public class HotelBoard : MonoBehaviour {
         {
             Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
             hotel.SetHeros(SetProfil.coupleHerosHotel[0], SetProfil.coupleHerosHotel[1]);
+            HeroesValid = true;
+            GameObject.Find("RemoveHero1").SetActive(false);
+            GameObject.Find("RemoveHero2").SetActive(false);
+            GameObject.Find("Valid").SetActive(false);
             Start.MenuBGHotel.SetActive(false);
+            Array.Clear(SetProfil.coupleHerosHotel, 0, SetProfil.coupleHerosHotel.Length);
         }
         
     }
