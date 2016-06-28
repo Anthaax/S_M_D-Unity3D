@@ -79,6 +79,8 @@ public class Start : MonoBehaviour {
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
         caravan.Initialized();
 
+        CasernBoard.SetBoard();
+
         setButtonsBuildings();
     }
 	
