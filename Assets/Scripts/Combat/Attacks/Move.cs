@@ -17,7 +17,6 @@ public class MoveHero : MonoBehaviour
             BaseCombat.Combat.NextTurn();
         }
         Attacking.AfterAction();
-        SpellsAndStats.UpdateSpell();
     }
     public void MoveAction()
     {

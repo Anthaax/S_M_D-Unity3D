@@ -5,6 +5,7 @@ using S_M_D.Camp.Class;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using S_M_D.Spell;
+using System;
 
 public class CasernBoard : MonoBehaviour {
 
@@ -130,6 +131,8 @@ public class CasernBoard : MonoBehaviour {
                     {
                         hero.Spells[i].IsEquiped = false;
                         CheckEquiped(i, hero.Spells[i]);
+                        SpellComparer compare = new SpellComparer();
+                        Array.Sort( hero.Spells, compare );
                     }
                     else
                     {
@@ -137,10 +140,12 @@ public class CasernBoard : MonoBehaviour {
                         {
                             hero.Spells[i].IsEquiped = true;
                             CheckEquiped(i, hero.Spells[i]);
+                            SpellComparer compare = new SpellComparer();
+                            Array.Sort( hero.Spells, compare );
                         }
-
                     }
                 }
+                SetBoard();
                 break;
             }
         }

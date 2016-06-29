@@ -14,7 +14,7 @@ public class SpellsAndStats : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	public static void UpdateSpell () {
+	void Update () {
         BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
         if (heros !=null)
         {
@@ -25,7 +25,7 @@ public class SpellsAndStats : MonoBehaviour {
                 else
                     GameObject.Find("Spell" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Combat/Characters/Spells/NoSpell");
 
-                if (heros.Mana < heros.Spells[i - 1].ManaCost || heros.Spells[i - 1].CooldownManager.IsOnCooldown)
+                if (heros.Mana < heros.Spells[i - 1].ManaCost || heros.Spells[i - 1].CooldownManager.IsOnCooldown || !heros.Spells[i - 1].IsEquiped)
                 {
                     GameObject.Find( "Spell" + i ).GetComponent<Button>().enabled = false;
                     GameObject.Find( "Spell" + i ).GetComponent<Image>().color = Color.gray;
