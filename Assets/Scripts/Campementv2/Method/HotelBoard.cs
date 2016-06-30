@@ -13,9 +13,10 @@ public class HotelBoard : MonoBehaviour {
 	}
     public static bool HeroesValid;
 
-    public static void Initialize()
+    public static void Init()
     {
-        HeroesValid = false;
+        SetProfil.InitBoardHotel();
+
     }
 
     public void ValidHeroes()

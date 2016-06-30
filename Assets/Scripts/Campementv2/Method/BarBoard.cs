@@ -14,9 +14,9 @@ public class BarBoard : MonoBehaviour {
     }
     public static bool HeroesValid;
 
-    public static void Initialize()
+    public static void Init()
     {
-        SetProfil.testBoardBar();
+        SetProfil.InitBoardBar();
 
     }
 

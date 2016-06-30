@@ -66,18 +66,18 @@ public class Start : MonoBehaviour {
         ButtonsTownHall = MenuBGTownhall.GetComponentsInChildren<Button>();
 
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
+        caravan.HerosDispo.Clear();
         caravan.Initialized();
 
         CasernBoard.SetBoard();
-        //BarBoard.Initialize();
-        HotelBoard.Initialize();
 
         setButtonsBuildings();
         //-----------------------
         setHeroesList();
 
 
-        BarBoard.Initialize();
+        BarBoard.Init();
+        HotelBoard.Init();
         DesactiveBoard();
     }
 	

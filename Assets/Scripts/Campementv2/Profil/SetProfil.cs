@@ -314,11 +314,12 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
     }
 
-    public static void testBoardBar()
+    public static void InitBoardBar()
     {
         Bar bar = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Bar) as Bar;
         GameObject IconeHero1 = GameObject.Find("BarHero1");
         GameObject IconeHero2 = GameObject.Find("BarHero2");
+        Debug.Log("Hero1 = " + bar.Hero1 + "; Hero2 = " + bar.Hero2);
         if (bar.Hero1 != null && bar.Hero2 != null)
         {
             BarBoard.HeroesValid = true;
@@ -338,6 +339,32 @@ public class SetProfil : MonoBehaviour {
             BarBoard.HeroesValid = false;
         }
     }
+
+    public static void InitBoardHotel()
+    {
+        Hotel hotel = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hotel) as Hotel;
+        GameObject IconeHero1 = GameObject.Find("HotelHero1");
+        GameObject IconeHero2 = GameObject.Find("HotelHero2");
+
+        if (hotel.Hero1 != null && hotel.Hero2 != null)
+        {
+            HotelBoard.HeroesValid = true;
+            string sex = hotel.Hero1.IsMale ? "M" : "F";
+            IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + hotel.Hero1.CharacterClassName + "Icone" + sex);
+            string sex2 = hotel.Hero2.IsMale ? "M" : "F";
+            IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + hotel.Hero2.CharacterClassName + "Icone" + sex2);
+
+            GameObject.Find("RemoveHero1").SetActive(false);
+            GameObject.Find("RemoveHero2").SetActive(false);
+            GameObject.Find("Valid").SetActive(false);
+            
+            RemoveHeroesFromList(hotel.Hero1, hotel.Hero2);
+        }
+        else
+        {
+            HotelBoard.HeroesValid = false;
+        }
+    }
    public void ShowProfilPlayer()
     {
 
@@ -354,6 +381,10 @@ public class SetProfil : MonoBehaviour {
 
     public static void RemoveHeroesFromList(params BaseHeros[] heroes)
     {
+        foreach(BaseHeros h in heroes)
+        {
+            Debug.Log("h : " + h.CharacterName);
+        }
         foreach(BaseHeros h in heroes)
             SetToInactiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
     }
