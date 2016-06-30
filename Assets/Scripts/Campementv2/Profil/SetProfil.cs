@@ -316,26 +316,26 @@ public class SetProfil : MonoBehaviour {
 
     public static void testBoardBar()
     {
-        if (!BarBoard.HeroesValid)
+        Bar bar = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Bar) as Bar;
+        GameObject IconeHero1 = GameObject.Find("BarHero1");
+        GameObject IconeHero2 = GameObject.Find("BarHero2");
+        if (bar.Hero1 != null && bar.Hero2 != null)
         {
-            Bar bar = Start.Gtx.PlayerInfo.GetBuilding( BuildingNameEnum.Bar ) as Bar;
-            GameObject IconeHero1 = GameObject.Find( "BarHero1" );
-            GameObject IconeHero2 = GameObject.Find( "BarHero2" );
-            coupleHerosBar[0] = bar.Hero1;
-            coupleHerosBar[1] = bar.Hero2;
-            if (coupleHerosBar[0] != null)
-            {
-                string sex = coupleHerosBar[0].IsMale ? "M" : "F";
-                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/" + coupleHerosBar[0].CharacterClassName + "Icone" + sex );
-                //---
-            }
-            if (coupleHerosBar[1] != null)
-            {
-                string sex = coupleHerosBar[1].IsMale ? "M" : "F";
-                IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/" + coupleHerosBar[1].CharacterClassName + "Icone" + sex );
-                //---
-            }
-            
+            BarBoard.HeroesValid = true;
+            string sex = bar.Hero1.IsMale ? "M" : "F";
+            IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + bar.Hero1.CharacterClassName + "Icone" + sex);
+            string sex2 = bar.Hero2.IsMale ? "M" : "F";
+            IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + bar.Hero2.CharacterClassName + "Icone" + sex2);
+
+            GameObject.Find("RemoveHero1Bar").SetActive(false);
+            GameObject.Find("RemoveHero2Bar").SetActive(false);
+            GameObject.Find("Valid").SetActive(false);
+
+            RemoveHeroesFromList(bar.Hero1, bar.Hero2);
+        }
+        else
+        {
+            BarBoard.HeroesValid = false;
         }
     }
    public void ShowProfilPlayer()
@@ -350,6 +350,12 @@ public class SetProfil : MonoBehaviour {
             if (item.Itemtype == BaseItem.ItemTypes.Weapon) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
             if (item.Itemtype == BaseItem.ItemTypes.Trinket) GameObject.Find("Item" + x).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
         }
+    }
+
+    public static void RemoveHeroesFromList(params BaseHeros[] heroes)
+    {
+        foreach(BaseHeros h in heroes)
+            SetToInactiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
     }
     public static void SetToInactiveButton(Button button)
     {

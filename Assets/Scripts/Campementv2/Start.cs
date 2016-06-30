@@ -55,22 +55,6 @@ public class Start : MonoBehaviour {
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
 
-        BarBoard.Initialize();
-
-        MenuBGArmory.SetActive(false);
-        MenuBGTownhall.SetActive(false);
-        MenuBGBar.SetActive(false);
-        MenuBGCaravan.SetActive(false);
-        MenuBGCasern.SetActive(false);
-        MenuBGCemetery.SetActive(false);
-        MenuBGHospital.SetActive(false);
-        MenuBGMentalhospital.SetActive(false);
-        MenuBGHotel.SetActive(false);
-        MenuProfil.SetActive(false);
-        PanelBoardMission.SetActive(false);
-        MenuProfilPlayer.SetActive(false);
-        MenuProfilStuff.SetActive(false);
-
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
 
@@ -90,13 +74,37 @@ public class Start : MonoBehaviour {
 
         setButtonsBuildings();
         //-----------------------
+        setHeroesList();
 
 
+        BarBoard.Initialize();
+        DesactiveBoard();
     }
 	
+    void DesactiveBoard()
+    {
+        MenuBGArmory.SetActive(false);
+        MenuBGTownhall.SetActive(false);
+        MenuBGBar.SetActive(false);
+        MenuBGCaravan.SetActive(false);
+        MenuBGCasern.SetActive(false);
+        MenuBGCemetery.SetActive(false);
+        MenuBGHospital.SetActive(false);
+        MenuBGMentalhospital.SetActive(false);
+        MenuBGHotel.SetActive(false);
+        MenuProfil.SetActive(false);
+        PanelBoardMission.SetActive(false);
+        MenuProfilPlayer.SetActive(false);
+        MenuProfilStuff.SetActive(false);
+    }
     
 	// Update is called once per frame
 	void Update () {
+        setHeroesList();
+	}
+
+    private void setHeroesList()
+    {
         int x = 1;
         foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
         {
@@ -107,7 +115,7 @@ public class Start : MonoBehaviour {
             x++;
 
         }
-	}
+    }
 
     private void setButtonsBuildings()
     {

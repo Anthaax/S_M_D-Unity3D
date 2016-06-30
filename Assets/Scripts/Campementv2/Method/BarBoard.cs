@@ -16,16 +16,7 @@ public class BarBoard : MonoBehaviour {
 
     public static void Initialize()
     {
-        HeroesValid = false;
-        /* Bar bar = Start.Gtx.PlayerInfo.GetBuilding( BuildingNameEnum.Bar ) as Bar;
-
-         SetProfil.coupleHerosBar[0] = bar.Hero1;
-         Debug.Log( bar.Hero1 + "Heros 1" );
-         SetProfil.coupleHerosBar[1] = bar.Hero2;
-         Debug.Log( bar.Hero2 + "Heros 2");*/
         SetProfil.testBoardBar();
-
-
 
     }
 
