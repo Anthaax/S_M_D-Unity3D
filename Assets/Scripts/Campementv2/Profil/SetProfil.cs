@@ -313,6 +313,31 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
         GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
     }
+
+    public static void testBoardBar()
+    {
+        if (!BarBoard.HeroesValid)
+        {
+            Bar bar = Start.Gtx.PlayerInfo.GetBuilding( BuildingNameEnum.Bar ) as Bar;
+            GameObject IconeHero1 = GameObject.Find( "BarHero1" );
+            GameObject IconeHero2 = GameObject.Find( "BarHero2" );
+            coupleHerosBar[0] = bar.Hero1;
+            coupleHerosBar[1] = bar.Hero2;
+            if (coupleHerosBar[0] != null)
+            {
+                string sex = coupleHerosBar[0].IsMale ? "M" : "F";
+                IconeHero1.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/" + coupleHerosBar[0].CharacterClassName + "Icone" + sex );
+                //---
+            }
+            if (coupleHerosBar[1] != null)
+            {
+                string sex = coupleHerosBar[1].IsMale ? "M" : "F";
+                IconeHero2.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/" + coupleHerosBar[1].CharacterClassName + "Icone" + sex );
+                //---
+            }
+            
+        }
+    }
    public void ShowProfilPlayer()
     {
 
@@ -336,5 +361,9 @@ public class SetProfil : MonoBehaviour {
         button.GetComponent<Image>().color = Color.white;
         button.enabled = true;
     }
-
+    public static Sprite ShowImage(BaseHeros heros)
+    {
+        string sex = heros.IsMale ? "M" : "F";
+        return Resources.Load<Sprite>( "Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex );
+    }
 }

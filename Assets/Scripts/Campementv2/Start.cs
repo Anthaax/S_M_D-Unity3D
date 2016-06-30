@@ -55,6 +55,8 @@ public class Start : MonoBehaviour {
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
 
+        BarBoard.Initialize();
+
         MenuBGArmory.SetActive(false);
         MenuBGTownhall.SetActive(false);
         MenuBGBar.SetActive(false);
@@ -83,10 +85,13 @@ public class Start : MonoBehaviour {
         caravan.Initialized();
 
         CasernBoard.SetBoard();
-        BarBoard.Initialize();
+        //BarBoard.Initialize();
         HotelBoard.Initialize();
 
         setButtonsBuildings();
+        //-----------------------
+
+
     }
 	
     

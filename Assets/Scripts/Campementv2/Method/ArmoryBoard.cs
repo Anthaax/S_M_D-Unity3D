@@ -21,5 +21,9 @@ public class ArmoryBoard : MonoBehaviour {
         
     }
 
+    public void Initialized()
+    {
+
+    }
     
 }
