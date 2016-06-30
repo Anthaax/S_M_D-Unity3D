@@ -356,7 +356,7 @@ public class SetProfil : MonoBehaviour {
 
             GameObject.Find("RemoveHero1").SetActive(false);
             GameObject.Find("RemoveHero2").SetActive(false);
-            GameObject.Find("Valid").SetActive(false);
+            GameObject.Find("ValidHotel").SetActive(false);
             
             RemoveHeroesFromList(hotel.Hero1, hotel.Hero2);
         }
