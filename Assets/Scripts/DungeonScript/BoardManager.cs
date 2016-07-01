@@ -90,7 +90,7 @@ public class BoardManager : NetworkBehaviour
             }
         }
 
-        SceneManager.LoadScene(3);
+        //SceneManager.LoadScene(3);
         Network.Disconnect();
         GameObject.Find("NetworkManager").GetComponent<NetworkMan>().StopServer();
         BaseCombat.Gtx = Gtx;

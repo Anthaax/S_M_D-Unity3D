@@ -78,6 +78,8 @@ public class Start : MonoBehaviour {
 
         BarBoard.Init();
         HotelBoard.Init();
+        HospitalBoard.Init();
+        MentalHospitalBoard.Init();
         DesactiveBoard();
     }
 	
