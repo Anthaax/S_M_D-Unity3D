@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using S_M_D.Spell;
+using S_M_D.Character;
 
 public class SpellInformation : MonoBehaviour {
+
+    public Spells spell;
+    int position;
+    bool[] cible;
+
+    public GameObject arrowPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -12,23 +20,27 @@ public class SpellInformation : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown( 0 ))
-        {
-            EventSystem es = EventSystem.current;
-            if (es == null)
-            {
-                Debug.Log( "Es est null" );
-                return;
-            }
-            GameObject currentSel = es.currentSelectedGameObject;
-            if (currentSel == null)
-                return;
-            Debug.Log( currentSel.name );
-        }
+        
     }
 
-    public void ShowSpellInformation()
+    public void OnClick()
     {
-        Debug.Log( "zqkdmlzejfiozndpoimsrjgmzlqsdjreofdihtsdmo!lgjfdo" );
+        position = 0;
+        foreach(BaseHeros H in StartCombat.Combat.Heros)
+        {
+            if (H == StartCombat.Combat.GetCharacterTurn())
+            {
+                break;
+            }
+                position++;
+        }
+        cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);
+        int i = 0;
+        foreach(bool b in cible)
+        {
+            if (b)
+                Instantiate(arrowPrefab, new Vector3(StartCombat.monstersGO[i].transform.position.x, StartCombat.monstersGO[i].transform.position.y + 1, 0), Quaternion.identity);
+              i++;
+        }
     }
 }

@@ -15,11 +15,19 @@ public class StartCombat : MonoBehaviour {
     private static HeroAttacks attack;
     private static BaseHeros[] heros;
     private static Map map;
+
+    public static GameObject[] monstersGO;
+
     public GameObject CharacterH;
     public GameObject CharacterM;
+    public BaseHeros Htest;
+    public HerosIni Hini;
+    
+    
     // Use this for initialization
     void Awake()
     {
+
         Gtx = GameContext.CreateNewGame();
         Gtx.DungeonManager.InitializedCatalogue();
         Map = Gtx.DungeonManager.MapCatalogue.First();
@@ -40,14 +48,22 @@ public class StartCombat : MonoBehaviour {
             HerosIni yo = data.GetComponent<HerosIni>();
             yo.init(H);
             x -= 2;
+            Htest = H;
+            Hini = yo;
         }
-
+        
         int y = 0;
+        int idx = 0;
+        monstersGO = new GameObject[4];
         foreach(BaseMonster M in Combat.Monsters)
         {
-            Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity);
+            GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
+            monstersGO[idx++] = monsterGO;
             y += 2;
         }
+
+        Hini.ShowSpellAndSpellInfo(Htest);
+        Hini.SetMenu(Htest);
     }
 	void Start () {
 	

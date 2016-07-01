@@ -17,6 +17,8 @@ public class HerosIni : MonoBehaviour {
     public GameObject Bleeding;
     public GameObject Spell;
     Dictionary<string, GameObject> Affect = new Dictionary<string, GameObject>();
+    float X = -25;
+    float Y = -85;
 
     public void init(BaseHeros heros)
     {
@@ -31,7 +33,6 @@ public class HerosIni : MonoBehaviour {
         Affect.Add("Bleeding", Bleeding);
         Debug.Log(_combat.DamageOnTime.Count);
         _combat.DamageOnTime[heros] = StartCombat.Gtx.PlayerInfo.MyHeros[0].Spells[1].KindOfEffect;
-        ShowSpellAndSpellInfo( heros );
         ShowDamageOnTime();
     }
 	
@@ -47,15 +48,26 @@ public class HerosIni : MonoBehaviour {
     {
         float count = 2;
         GameObject canvas = GameObject.Find( "SuperCanvas" );
-        canvas.AddComponent<Canvas>();
         for (int i = 0; i < 4; i++)
         {
             Vector3 vector = gameObject.transform.position;
-            GameObject gameObj = Instantiate( Spell, new Vector3( vector.x, vector.y - count, vector.z ), Quaternion.identity ) as GameObject;
-            gameObj.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>( "Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name );
+            GameObject gameObj = Instantiate( Spell, new Vector3( X, Y - count, vector.z ), Quaternion.identity ) as GameObject;
+            gameObj.transform.SetParent(canvas.transform, false);
+            Debug.Log(hero);
+            gameObj.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name );
             gameObj.name = hero.Spells[i].Name;
-            //gameObj.transform.parent = canvas.transform;
+            gameObj.GetComponent<SpellInformation>().spell = hero.Spells[i];
             count += 0.5f;
+
+            if (i == 0 || i == 2)
+                Y -= 60;
+            else
+            {
+                Y = -85;
+                X += 60;
+            }
+               
+               
         }
     }
     public void ShowDamageOnTime()
@@ -76,5 +88,10 @@ public class HerosIni : MonoBehaviour {
     public void ShowSpellInformation()
     {
         Debug.Log( "Salut" );
+    }
+
+    public void SetMenu(BaseHeros heros)
+    {
+        GameObject.Find("DamageT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
     }
 }
