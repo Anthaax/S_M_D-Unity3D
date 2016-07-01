@@ -12,7 +12,7 @@ public class StartCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
-    private static HeroAttack attack;
+    private static HeroAttacks attack;
     private static BaseHeros[] heros;
     private static Map map;
     public GameObject CharacterH;
@@ -33,20 +33,20 @@ public class StartCombat : MonoBehaviour {
             c.HPmax = 200;
         });
 
-        int x = 0;
+        int x = -1;
         foreach(BaseHeros H in Combat.Heros)
         {
             GameObject data = Instantiate(CharacterH, new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
             HerosIni yo = data.GetComponent<HerosIni>();
             yo.init(H);
-            x++;
+            x -= 2;
         }
 
-        int y = -1;
+        int y = 0;
         foreach(BaseMonster M in Combat.Monsters)
         {
             Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity);
-            y--;
+            y += 2;
         }
     }
 	void Start () {
@@ -58,7 +58,10 @@ public class StartCombat : MonoBehaviour {
 	
 	}
 
-
+    void OnGUI()
+    {
+        
+    }
     public static CombatManager Combat
     {
         get
@@ -85,7 +88,7 @@ public class StartCombat : MonoBehaviour {
         }
     }
 
-    public static HeroAttack Attack
+    public static HeroAttacks Attack
     {
         get
         {
