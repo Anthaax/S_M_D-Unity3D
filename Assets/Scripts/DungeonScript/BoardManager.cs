@@ -90,6 +90,13 @@ public class BoardManager : NetworkBehaviour
             }
         }
 
+        SceneManager.LoadScene(3);
+        Network.Disconnect();
+        GameObject.Find("NetworkManager").GetComponent<NetworkMan>().StopServer();
+        BaseCombat.Gtx = Gtx;
+        BaseCombat.Heros = hero;
+        BaseCombat.Map = Map;
+
         isActive = true;
     }
     public void getOtherPlayersHeroes( )
