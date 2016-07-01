@@ -54,6 +54,7 @@ public class LoadGame : MonoBehaviour {
 
     public void ChargeSave()
     {
+        if (!Directory.Exists( @"C:\SauvegardeS_M_D" )) Directory.CreateDirectory( @"C:\SauvegardeS_M_D" );
         string[] saveFile = Directory.GetFiles(@"C:\SauvegardeS_M_D", "*", SearchOption.TopDirectoryOnly);
         List<string> file = saveFile.ToList();
         for (int i = 0; i < 4; i++)
@@ -65,7 +66,7 @@ public class LoadGame : MonoBehaviour {
             {
                 FileInfo fileinfo = new FileInfo(file[i]);
                 int partie = i + 1;
-                save.GetComponent<Text>().text = "Partie " + partie + " Date : " + fileinfo.CreationTime.ToString();
+                save.GetComponent<Text>().text = "Partie " + partie + " Date : " + fileinfo.LastAccessTime.ToString();
             }
             else
             {
