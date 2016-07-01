@@ -11,6 +11,7 @@ public class MentalHospitalBoard : MonoBehaviour {
 	void Update () {
 	
 	}
+    public static bool MentalSicknessRemove;
 
     public void TryRemoveMentalPsycho()
     {
@@ -37,6 +38,8 @@ public class MentalHospitalBoard : MonoBehaviour {
             mentalHospital.DeletePsychologyHero(f);
         }
 
+        MentalSicknessRemove = true;
+        GameObject.Find("RemoveHero").SetActive(false);
         CheckSicknesses(mentalHospital.Hero, mentalHospital);
     }
 
@@ -68,6 +71,7 @@ public class MentalHospitalBoard : MonoBehaviour {
 
     public static void InitializedButtonsMentalHospitalBoard()
     {
+        MentalSicknessRemove = false;
         foreach (Button button in Start.ButtonsMentalPsycho)
         {
             if (button.name != "Close")

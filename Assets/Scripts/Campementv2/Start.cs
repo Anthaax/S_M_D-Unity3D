@@ -23,6 +23,7 @@ public class Start : MonoBehaviour {
     public static GameObject MenuProfil;
     public static GameObject PanelBoardMission;
     public static GameObject MenuProfilPlayer;
+    public static GameObject MenuProfilStuff;
 
     public static Button[] ButtonsSicknesses;
     public static Button[] ButtonsMentalPsycho;
@@ -47,24 +48,12 @@ public class Start : MonoBehaviour {
         MenuProfil = GameObject.Find("Profil");
         PanelBoardMission = GameObject.Find("PanelBoardMission");
         MenuProfilPlayer = GameObject.Find("ProfilPlayer");
+        MenuProfilStuff = GameObject.Find("ProfilStuff");
 
         ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
-
-        MenuBGArmory.SetActive(false);
-        MenuBGTownhall.SetActive(false);
-        MenuBGBar.SetActive(false);
-        MenuBGCaravan.SetActive(false);
-        MenuBGCasern.SetActive(false);
-        MenuBGCemetery.SetActive(false);
-        MenuBGHospital.SetActive(false);
-        MenuBGMentalhospital.SetActive(false);
-        MenuBGHotel.SetActive(false);
-        MenuProfil.SetActive(false);
-        PanelBoardMission.SetActive(false);
-        MenuProfilPlayer.SetActive(false);
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
@@ -77,16 +66,45 @@ public class Start : MonoBehaviour {
         ButtonsTownHall = MenuBGTownhall.GetComponentsInChildren<Button>();
 
         Caravan caravan = Gtx.PlayerInfo.GetBuilding(S_M_D.Camp.Class.BuildingNameEnum.Caravan) as Caravan;
+        caravan.HerosDispo.Clear();
         caravan.Initialized();
 
         CasernBoard.SetBoard();
 
         setButtonsBuildings();
+        //-----------------------
+        setHeroesList();
+
+
+        BarBoard.Init();
+        HotelBoard.Init();
+        DesactiveBoard();
     }
 	
+    void DesactiveBoard()
+    {
+        MenuBGArmory.SetActive(false);
+        MenuBGTownhall.SetActive(false);
+        MenuBGBar.SetActive(false);
+        MenuBGCaravan.SetActive(false);
+        MenuBGCasern.SetActive(false);
+        MenuBGCemetery.SetActive(false);
+        MenuBGHospital.SetActive(false);
+        MenuBGMentalhospital.SetActive(false);
+        MenuBGHotel.SetActive(false);
+        MenuProfil.SetActive(false);
+        PanelBoardMission.SetActive(false);
+        MenuProfilPlayer.SetActive(false);
+        MenuProfilStuff.SetActive(false);
+    }
     
 	// Update is called once per frame
 	void Update () {
+        setHeroesList();
+	}
+
+    private void setHeroesList()
+    {
         int x = 1;
         foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
         {
@@ -97,7 +115,7 @@ public class Start : MonoBehaviour {
             x++;
 
         }
-	}
+    }
 
     private void setButtonsBuildings()
     {

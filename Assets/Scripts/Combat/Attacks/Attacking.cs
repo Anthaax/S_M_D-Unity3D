@@ -82,7 +82,6 @@ public class Attacking : MonoBehaviour
         BaseCombat.Combat.IaMonster.MonsterTurnAndDoNextTurn(Monster);
         GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = MonsterAction();
         BaseCombat.Combat.IaMonster.MosterAction.Clear();
-        SpellsAndStats.UpdateSpell();
 
         yield return new WaitForSeconds( 3 );
         animator.Play(Monster.Type + "Idle");
@@ -99,7 +98,6 @@ public class Attacking : MonoBehaviour
                 GameObject.Find( "Arrow" + i ).GetComponent<Image>().enabled = false;
             }
         }
-        SpellsAndStats.UpdateSpell();
     }
     private string MonsterAction()
     {

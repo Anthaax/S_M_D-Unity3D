@@ -27,8 +27,6 @@ public class BaseCombat : MonoBehaviour {
         GameObject.Find("Arrow3").GetComponent<Image>().enabled = false;
         GameObject.Find("Arrow4").GetComponent<Image>().enabled = false;
 
-        Gtx.DungeonManager.InitializedCatalogue();
-        Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
         Combat.Monsters.ToList().ForEach( c => 
@@ -37,7 +35,6 @@ public class BaseCombat : MonoBehaviour {
                                             c.HPmax = 200;
                                         });
         Attack.Target = -1;
-        SpellsAndStats.UpdateSpell();
     }
 	// Use this for initialization
 	void Start () {

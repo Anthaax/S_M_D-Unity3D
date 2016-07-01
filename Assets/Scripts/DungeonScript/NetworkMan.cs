@@ -4,12 +4,14 @@ using UnityEngine.Networking;
 
 public class NetworkMan : NetworkManager {
     public static bool Launch;
+    private bool alreadyLaunched;
 	// Use this for initialization
 	void Start () {
         
     }
     public void OnLevelWasLoaded( int i )
     {
+        alreadyLaunched = false;
         if (Launch)
         {
             Debug.Log( "StopServer" );
@@ -38,13 +40,6 @@ public class NetworkMan : NetworkManager {
             {
                 StartClient();
             }
-        }
-        if (NetworkClient.active && !ClientScene.ready)
-        {
-            ClientScene.Ready( client.connection );
-
-
-            ClientScene.AddPlayer( 0 );
         }
         AdventureBoard.Port++;
     }
@@ -78,6 +73,15 @@ public class NetworkMan : NetworkManager {
 
     // Update is called once per frame
     void Update () {
-	
-	}
+
+        if (AdventureBoard.HostState != "Meneur" && client != null && client.connection != null && !alreadyLaunched)
+        if (NetworkClient.active && !ClientScene.ready)
+        {
+            ClientScene.Ready( client.connection );
+
+
+            ClientScene.AddPlayer( 0 );
+                alreadyLaunched = true;
+        }
+    }
 }

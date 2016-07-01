@@ -7,6 +7,7 @@ using S_M_D.Character;
 using UnityEngine.Networking;
 using S_M_D.Dungeon;
 using System.Linq;
+using System;
 
 public class AdventureBoard : MonoBehaviour {
 
@@ -61,6 +62,7 @@ public class AdventureBoard : MonoBehaviour {
                 BoardManager.Gtx = Start.Gtx;
                 Start.Gtx.DungeonManager.InitializedCatalogue( );
                 Map map = Start.Gtx.DungeonManager.MapCatalogue.First( );
+                Start.Gtx.DungeonManager.CreateDungeon(SetProfil.HerosAdventure, map);
                 BoardManager.Map = map;
             }
         }
