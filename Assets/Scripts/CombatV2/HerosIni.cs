@@ -31,7 +31,6 @@ public class HerosIni : MonoBehaviour {
         Affect.Add("Water", Water);
         Affect.Add("Poison", Poison);
         Affect.Add("Bleeding", Bleeding);
-        Debug.Log(_combat.DamageOnTime.Count);
         _combat.DamageOnTime[heros] = StartCombat.Gtx.PlayerInfo.MyHeros[0].Spells[1].KindOfEffect;
         ShowDamageOnTime();
     }
@@ -47,13 +46,12 @@ public class HerosIni : MonoBehaviour {
     public void ShowSpellAndSpellInfo(BaseHeros hero)
     {
         float count = 2;
-        GameObject canvas = GameObject.Find( "SuperCanvas" );
+        GameObject canvas = GameObject.Find( "HeroSpells" );
         for (int i = 0; i < 4; i++)
         {
             Vector3 vector = gameObject.transform.position;
             GameObject gameObj = Instantiate( Spell, new Vector3( X, Y - count, vector.z ), Quaternion.identity ) as GameObject;
             gameObj.transform.SetParent(canvas.transform, false);
-            Debug.Log(hero);
             gameObj.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name );
             gameObj.name = hero.Spells[i].Name;
             gameObj.GetComponent<SpellInformation>().spell = hero.Spells[i];
@@ -69,6 +67,8 @@ public class HerosIni : MonoBehaviour {
                
                
         }
+        X = -25;
+        Y = -85;
     }
     public void ShowDamageOnTime()
     {
@@ -90,8 +90,87 @@ public class HerosIni : MonoBehaviour {
         Debug.Log( "Salut" );
     }
 
-    public void SetMenu(BaseHeros heros)
+    public static void SwitchHerosGOPositions()
     {
+        StartCombat sCombat = Camera.main.GetComponent<StartCombat>();
+
+
+        for (int i = 0; i < 4; i++)
+        {
+            Debug.Log("Hero " + i + " class = " + StartCombat.Combat.Heros[i].CharacterClassName);
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            Debug.Log("Hero in battle " + i + " class = " + sCombat.herosInBattle[i].CharacterClassName);
+        }
+
+
+
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject relatedGo = null;
+            for (int j = 0; j < 4; j++)
+            {
+                if (StartCombat.Heros[i] == sCombat.herosInBattle[j])
+                    relatedGo = sCombat.herosGo[j]; 
+            }
+            if (relatedGo != null)
+            {
+                relatedGo.transform.position = new Vector3(-1 - i * 2, relatedGo.transform.position.y);
+            }
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject relatedGo = null;
+            for (int j = 0; j < 4; j++)
+            {
+                if (StartCombat.Heros[i] == sCombat.herosInBattle[j])
+                {
+                    relatedGo = sCombat.herosGo[j];
+                    GameObject GoToSwitch = sCombat.herosGo[i];
+                    sCombat.herosGo[i] = relatedGo;
+                    sCombat.herosGo[j] = GoToSwitch;
+                    BaseHeros tmp = sCombat.herosInBattle[j];
+                    sCombat.herosInBattle[j] = sCombat.herosInBattle[i];
+                    sCombat.herosInBattle[i] = tmp;
+                    //break;
+                }
+            }
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            sCombat.herosInBattle[i] = StartCombat.Heros[i];
+        }
+    }
+
+    public static void SetMenu(BaseHeros heros)
+    {
+
+        // Setting HP
+        GameObject.Find("HP").GetComponent<Text>().text = heros.HP.ToString() + "/" + heros.EffectivHPMax.ToString();
+
+        // Setting Mana
+        GameObject.Find("MANA").GetComponent<Text>().text = heros.Mana.ToString() + "/" + heros.EffectivManaMax.ToString();
+
+        GameObject.Find("CharacterName").GetComponent<Text>().text = heros.CharacterName;
+        GameObject.Find("CharacterClass").GetComponent<Text>().text = heros.CharacterClassName;
+        //GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + ((heros.IsMale == true) ? "M" : "F"));
+        // Pour test, rétablir la ligne précedente quand test terminé.
+        GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
+
         GameObject.Find("DamageT").GetComponent<Text>().text = heros.EffectivDamage.ToString();
+        GameObject.Find("HitT").GetComponent<Text>().text = heros.EffectivHitChance.ToString();
+        GameObject.Find("CritT").GetComponent<Text>().text = heros.EffectCritChance.ToString();
+        GameObject.Find("SpeedT").GetComponent<Text>().text = heros.EffectivSpeed.ToString();
+        GameObject.Find("DefenseT").GetComponent<Text>().text = heros.EffectivDefense.ToString();
+        GameObject.Find("DodgeT").GetComponent<Text>().text = heros.EffectivDodgeChance.ToString();
+        GameObject.Find("MagicRT").GetComponent<Text>().text = heros.EffectivMagicRes.ToString();
+        GameObject.Find("FireRT").GetComponent<Text>().text = heros.EffectivFireRes.ToString();
+        GameObject.Find("PoisonRT").GetComponent<Text>().text = heros.EffectivPoisonRes.ToString();
+        GameObject.Find("BleedingRT").GetComponent<Text>().text = heros.EffectivBleedingRes.ToString();
+        GameObject.Find("WaterRT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
+        GameObject.Find("AffectRT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
+
     }
 }

@@ -22,8 +22,10 @@ public class StartCombat : MonoBehaviour {
     public GameObject CharacterM;
     public BaseHeros Htest;
     public HerosIni Hini;
-    
-    
+    public BaseMonster[] monstersInFight;
+
+    public GameObject[] herosGo;
+    public BaseHeros[] herosInBattle;
     // Use this for initialization
     void Awake()
     {
@@ -41,30 +43,50 @@ public class StartCombat : MonoBehaviour {
             c.HPmax = 200;
         });
 
+        herosGo = new GameObject[4];
+        herosInBattle = new BaseHeros[4];
         int x = -1;
+        int i = 0;
+        Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
-            GameObject data = Instantiate(CharacterH, new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
-            HerosIni yo = data.GetComponent<HerosIni>();
-            yo.init(H);
+            Debug.Log("Classname = " + H.CharacterClassName);
+            GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
+            herosGo[i] = data;
+            herosInBattle[i++] = H;
+            HerosIni heroIni = data.GetComponent<HerosIni>();
+            heroIni.init(H);
             x -= 2;
-            Htest = H;
-            Hini = yo;
+            //Htest = H;
+            Hini = heroIni;
         }
         
         int y = 0;
         int idx = 0;
         monstersGO = new GameObject[4];
+        monstersInFight = new BaseMonster[4];
         foreach(BaseMonster M in Combat.Monsters)
         {
             GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
-            monstersGO[idx++] = monsterGO;
+            monstersGO[idx] = monsterGO;
+            monstersInFight[idx] = M;
             y += 2;
+            idx++;
         }
 
         Hini.ShowSpellAndSpellInfo(Htest);
-        Hini.SetMenu(Htest);
+        HerosIni.SetMenu(Htest);
     }
+
+    public void ChangeSpells(BaseHeros hero)
+    {
+        foreach (Transform t in GameObject.Find("HeroSpells").transform)
+        {
+            Destroy(t.gameObject);
+        }
+        Hini.ShowSpellAndSpellInfo(hero);
+    }
+
 	void Start () {
 	
 	}
