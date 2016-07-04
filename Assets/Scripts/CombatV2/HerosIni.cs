@@ -55,6 +55,11 @@ public class HerosIni : MonoBehaviour {
             gameObj.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name );
             gameObj.name = hero.Spells[i].Name;
             gameObj.GetComponent<SpellInformation>().spell = hero.Spells[i];
+            if (hero.Spells[i].CooldownManager.IsOnCooldown)
+            {
+                gameObj.GetComponent<Button>().enabled = false;
+                gameObj.GetComponent<Image>().color = Color.grey;
+            }
             count += 0.5f;
 
             if (i == 0 || i == 2)

@@ -49,7 +49,7 @@ public class StartCombat : MonoBehaviour {
         Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
-            Debug.Log("Classname = " + H.CharacterClassName);
+
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
             herosGo[i] = data;
             herosInBattle[i++] = H;
