@@ -36,42 +36,6 @@ public class BoardManager : NetworkBehaviour
     public bool isActive { get; set; }
     private bool heroesSent = false;
 
-    //public void Start()
-    //{
-    //    if (!online)
-    //        this.InitBoard();
-    //    else
-    //    {
-    //        if (isServer) // We're a server so we just initialize the map
-    //        {
-    //            Debug.Log("Server initializing map");
-    //            this.InitBoard();
-    //        }
-    //    }
-
-    //    isActive = true;
-
-    //}
-    //public void OnLevelWasLoaded( int i)
-    //{
-    //    if (!online)
-    //        this.InitBoard();
-    //    else
-    //    {
-    //        if (isServer) // We're a server so we just initialize the map
-    //        {
-    //            Debug.Log( "Server initializing map" );
-    //            this.InitBoard();
-    //        }
-    //        else
-    //        {
-
-    //            this.getOtherPlayersHeroes( );
-    //        }
-    //    }
-
-    //    isActive = true;
-    //}
     public void Start( )
     {
         if ( !online )
@@ -89,13 +53,6 @@ public class BoardManager : NetworkBehaviour
                 this.getOtherPlayersHeroes( );
             }
         }
-
-        //SceneManager.LoadScene(3);
-        Network.Disconnect();
-        GameObject.Find("NetworkManager").GetComponent<NetworkMan>().StopServer();
-        BaseCombat.Gtx = Gtx;
-        BaseCombat.Heros = hero;
-        BaseCombat.Map = Map;
 
         isActive = true;
     }
@@ -355,130 +312,10 @@ public class BoardManager : NetworkBehaviour
         initMisc( );
     }
 
-    //// Update is called once per frame
-    //void Update( )
-    //{
-    //    if ( isServer && NetworkServer.connections.Count != 0 && heroesSent == false )
-    //    {
-    //        Debug.Log( "Inside getOtherPlayersHeroes" );
-    //        this.getOtherPlayersHeroes( );
-    //        heroesSent = true;
-    //    }
-    //    if ( !isActive )
-    //        return;
-    //    if ( !isServer && !mapInitialized )
-    //    {
-    //        Cmd_AskServerForMap( );
-    //        mapInitialized = true;
-    //    }
-
-    //    if ( !isServer )
-    //        return;
-    //    if ( Input.GetMouseButtonDown( 0 ) )
-    //    {
-    //        Ray ray = Camera.main.ScreenPointToRay( Input.mousePosition );
-    //        RaycastHit hit;
-    //        if ( Physics.Raycast( ray, out hit, float.MaxValue ) )
-    //        {
-    //            string cellName = hit.transform.gameObject.name;
-    //            int y = ( int ) hit.transform.gameObject.transform.position.y;
-    //            int x = ( int ) hit.transform.gameObject.transform.position.x;
-    //            MapItem room = Map.Grid[ y, x ];
-    //            Debug.Log( x + " " + y );
-    //            if ( room != null )
-    //            {
-    //                if ( ( Map.isVisited( room ) || Map.isNotVisited( room ) ) )
-    //                {
-    //                    StopAllCoroutines( );
-    //                    List<Point> cellsToDest = Map.leeAlgorithm( Map.HeroPosition, new Point( x, y ) );
-    //                    int i = 0;
-    //                    string s = "";
-    //                    string s2 = "";
-    //                    for ( i = 0; i < cellsToDest.Count; i++ )
-    //                    {
-    //                        s += cellsToDest[ i ].X.ToString( ) + " " + cellsToDest[ i ].Y.ToString( ) + '\n';
-    //                        if ( i < cellsToDest.Count - 1 )
-    //                            s2 += cellsToDest[ i ].X.ToString( ) + " " + cellsToDest[ i ].Y.ToString( ) + '\n'; ;
-    //                    }
-    //                    Debug.Log( s );
-    //                    Rpc_MoveHero( s, "p1" );
-    //                    StartCoroutine( moveHero( "p1", cellsToDest, 0.1f, room ) );
-    //                    if ( player2 != null )
-    //                    {
-    //                        StartCoroutine( moveHero( "p2", cellsToDest, 0.1f, room ) );
-    //                        Rpc_MoveHero( s2, "p2" );
-    //                    }
-    //                }
-    //            }
-
-
-    //        }
-    //        else
-    //            Debug.Log( "No object was clicked" );
-    //    }
-    //    else if ( Input.GetKey( KeyCode.RightArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.X + 1 < Map.Width && Map.Grid[ Map.HeroPosition.Y, Map.HeroPosition.X + 1 ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
-    //            if(player2 != null)
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X + 1, Map.HeroPosition.Y, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }              
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.LeftArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.X - 1 >= 0 && Map.Grid[ Map.HeroPosition.Y, Map.HeroPosition.X - 1 ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X - 1, Map.HeroPosition.Y ), 0.1f , "p1") );
-    //            if(player2 != null)
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X - 1, Map.HeroPosition.Y, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.UpArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.Y + 1 < Map.Height && Map.Grid[ Map.HeroPosition.Y + 1, Map.HeroPosition.X ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), 0.1f, "p1" ) );
-    //            if ( player2 != null )
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y + 1, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.DownArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.Y - 1 >= 0 && Map.Grid[ Map.HeroPosition.Y - 1, Map.HeroPosition.X ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), 0.1f, "p1" ) );
-    //            if ( player2 != null )
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y - 1, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-    //        }
-    //    }
-    //}
-
-
     // Update is called once per frame
     void Update( )
     {
+        Debug.Log( isServer );
         if ( isServer && NetworkServer.connections.Count != 0 && heroesSent == false )
         {
             Debug.Log( "Inside getOtherPlayersHeroes" );
@@ -487,7 +324,7 @@ public class BoardManager : NetworkBehaviour
         }
         if ( !isActive )
             return;
-        if ( !isServer && !mapInitialized )
+        if ( !isServer && !mapInitialized && AdventureBoard.Online == "Online" && AdventureBoard.HostState == "Suiveur" )
         {
             Cmd_AskServerForMap( );
             mapInitialized = true;
@@ -543,6 +380,7 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), player1 ) );
                 if ( player2 != null )
                 {
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
@@ -557,6 +395,7 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X - 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X - 1, Map.HeroPosition.Y ),player1 ) );
                 if ( player2 != null )
                 {
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
@@ -571,6 +410,7 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), player1 ) );
                 if ( player2 != null )
                 {
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
@@ -585,6 +425,7 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), player1 ) );
                 if ( player2 != null )
                 {
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
@@ -627,16 +468,13 @@ public class BoardManager : NetworkBehaviour
             heroAnimator.SetInteger( "direction", 0 );
         for ( int i = 0; i <= 5; i++ )
         {
-
-            //player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
-            //Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
-
             float step = 0.2f * Time.deltaTime;
-            playerGo.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, 0f ), new Vector3( heroPos.X + diffX * i, heroPos.Y + diffY * i, 0f ), step );
-            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, -10f ), new Vector3( heroPos.X + diffX * i, heroPos.Y + diffY * i, -10f ), step );
+            playerGo.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, 0f ), new Vector3( dest.X, dest.Y, 0f ), step );
+            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, -10f ), new Vector3( dest.X, dest.Y, -10f ), step );
 
             yield return new WaitForSeconds( waitTime / 10f );
         }
+        playerGo.transform.position = new Vector3( dest.X, dest.Y );
         if ( player == "p1" )
             Map.HeroPosition = dest;
         else
@@ -672,6 +510,7 @@ public class BoardManager : NetworkBehaviour
 
             yield return new WaitForSeconds( waitTime / 10f );
         }
+        player1.transform.position = new Vector3( dest.X, dest.Y );
         Map.HeroPosition = dest;
         yield return new WaitForSeconds( waitTime );
         discoverRoom( Map.Grid[ dest.Y, dest.X ] );
@@ -730,21 +569,61 @@ public class BoardManager : NetworkBehaviour
 
     }
 
-    IEnumerator moveHeroByKey(Vector3 end)
+    IEnumerator moveHeroByKey(Vector3 end, GameObject player)
     {
-        Rigidbody2D rb2D = player1.GetComponent<Rigidbody2D>( );
+        //Rigidbody2D rb2D = player.GetComponent<Rigidbody2D>( );
 
-        float sqrRemainingDistance = ( transform.position - end ).sqrMagnitude; 
-        float moveTime = 0.1f;
-        float inverseMoveTime = 1f / moveTime;
+        //float sqrRemainingDistance = ( transform.position - end ).sqrMagnitude; 
+        //float moveTime = 0.1f;
+        //float inverseMoveTime = 1f / moveTime;
 
-        while ( sqrRemainingDistance > float.Epsilon )
+        //while ( sqrRemainingDistance > float.Epsilon )
+        //{
+        //    Vector3 newPosition = Vector3.MoveTowards( rb2D.position, end, inverseMoveTime * Time.deltaTime );
+        //    rb2D.MovePosition( newPosition );
+        //    sqrRemainingDistance = ( transform.position - end ).sqrMagnitude;
+        //    yield return null;
+        //    break;
+        //}
+        //Camera.main.transform.position = new Vector3( end.x, end.y, -10f );
+        //discoverRoom( Map.Grid[(int)end.y,(int)end.x]);
+        float hSpeed = Input.GetAxis( "Horizontal" );
+        float vSpeed = Input.GetAxis( "Vertical" );
+        float Speed = 8.0f;
+
+        if ( hSpeed > 0 )
         {
-            Vector3 newPosition = Vector3.MoveTowards( rb2D.position, end, inverseMoveTime * Time.deltaTime );
-            rb2D.MovePosition( newPosition );
-            sqrRemainingDistance = ( transform.position - end ).sqrMagnitude;
-            yield return null;
+            transform.localScale = new Vector3( -1, 1, 1 );
+            //m_Animator.Play( "LinkWalkLeft" );
+            //direction = "Left";
+
         }
+
+        else if ( hSpeed < 0 )
+        {
+            transform.localScale = new Vector3( 1, 1, 1 );
+            //m_Animator.Play( "LinkWalkLeft" );
+            //direction = "Left";
+        }
+
+
+        else if ( vSpeed > 0 )
+        {
+            transform.localScale = new Vector3( -1, 1, 1 );
+            //m_Animator.Play( "LinkWalkUp" );
+            //direction = "Up";
+        }
+        else if ( vSpeed < 0 )
+        {
+            transform.localScale = new Vector3( 1, 1, 1 );
+            //m_Animator.Play( "LinkWalkDown" );
+            //direction = "Down";
+        }
+
+        player.GetComponent<Rigidbody2D>( ).velocity = new Vector2( hSpeed * Speed, player.GetComponent<Rigidbody2D>( ).velocity.y );
+        player.GetComponent<Rigidbody2D>( ).velocity = new Vector2( player.GetComponent<Rigidbody2D>( ).velocity.x, vSpeed * Speed );
+
+        yield return null;
     }
 
     [ClientRpc]
