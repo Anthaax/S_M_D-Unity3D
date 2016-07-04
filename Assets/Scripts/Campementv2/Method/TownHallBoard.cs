@@ -92,6 +92,8 @@ public class TownHallBoard : MonoBehaviour {
         {
             Caravan building = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Caravan) as Caravan;
             building.LevelUP();
+            building.HerosDispo.Clear();
+            building.Initialized();
         }
         else if (buildingName == "Casern")
         {
