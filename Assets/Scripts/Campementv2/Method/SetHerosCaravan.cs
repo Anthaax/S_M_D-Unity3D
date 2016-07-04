@@ -25,21 +25,22 @@ public class SetHerosCaravan : MonoBehaviour {
         int x = 1;
         for(x = 1; x < (caravan.HerosDispo.Count)+1; x++)
         {
-                GameObject.Find("HeroDispo" + x).SetActive(true);
-                GameObject.Find("HeroDispo" + x + "T").GetComponent<Text>().text = caravan.HerosDispo[x-1].CharacterName;
-                GameObject.Find("HeroDispo" + x + "Prix").GetComponent<Text>().text += caravan.HerosDispo[x-1].Price.ToString();
-                if (caravan.HerosDispo[x-1].IsMale == true) GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + caravan.HerosDispo[x-1].CharacterClassName + "IconeM");
-                else GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + caravan.HerosDispo[x-1].CharacterClassName + "IconeF");
+            Debug.Log(caravan.HerosDispo.Count + "Nombre de heros dispos");
+            GameObject.Find("HeroDispo" + x).SetActive(true);
+            GameObject.Find("HeroDispo" + x + "T").GetComponent<Text>().text = caravan.HerosDispo[x-1].CharacterName;
+            GameObject.Find("HeroDispo" + x + "Prix").GetComponent<Text>().text = caravan.HerosDispo[x-1].Price.ToString();
+            string sex = caravan.HerosDispo[x - 1].IsMale ? "M" : "F";
+            GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + caravan.HerosDispo[x - 1].CharacterClassName + "Icone" + sex);
         }
-        while (x < 5)
+       /* while (x < 5)
         {
             GameObject.Find("HeroDispo" + x).SetActive(false);
             /*
             GameObject.Find("HeroDispo" + x + "T").GetComponent<Text>().text = "";
             GameObject.Find("HeroDispo" + x + "Prix").GetComponent<Text>().text += "";
             GameObject.Find("HeroDispo" + x + "I").GetComponent<Image>().sprite = null;
-            */
+            
             x += 1;
-        }
+        }*/
     }
 }
