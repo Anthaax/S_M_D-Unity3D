@@ -107,14 +107,12 @@ public class Start : MonoBehaviour {
 
     private void setHeroesList()
     {
-        int x = 1;
-        foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
+        for(int i = 0; i < _gtx.PlayerInfo.MyHeros.Count; i++)
         {
-            GameObject.Find("Hero" + x + "T").GetComponent<Text>().text = heros.CharacterName;
-            // GameObject.Find("Hero" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            if (heros.IsMale == true) GameObject.Find("Hero" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeM");
-            else GameObject.Find("Hero" + x + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
-            x++;
+            BaseHeros heros = _gtx.PlayerInfo.MyHeros[i];
+            string sex = heros.IsMale ? "M" : "F";
+            GameObject.Find("Hero" + (i + 1) + "T").GetComponent<Text>().text = heros.CharacterName;
+            GameObject.Find("Hero" + (i + 1) + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
 
         }
     }
