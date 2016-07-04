@@ -66,6 +66,13 @@ public class SpellInformation : MonoBehaviour {
         */
         Debug.Log("Position = " + position);
         cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);
+        int id = 0;
+        foreach(BaseMonster M in StartCombat.Combat.Monsters)
+        {
+            if (M.HP <= 0)
+                cible[id] = false;
+            id++;
+        }
         int i = 0;
         foreach(bool b in cible)
         {
@@ -77,6 +84,8 @@ public class SpellInformation : MonoBehaviour {
                 arrow.name = "redarrow";
                 arrow.transform.localScale = new Vector3(6, 6, 1);
                 arrow.transform.SetParent(canvas.transform, false);
+                arrow.GetComponent<ArrowScript>().MonsterPosition = i;
+                arrow.GetComponent<ArrowScript>().AssociatedSpell = spell;
             }
                 i++;
         }

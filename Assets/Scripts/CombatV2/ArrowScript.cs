@@ -8,6 +8,7 @@ public class ArrowScript : MonoBehaviour {
     public bool Selected;
     public Spells AssociatedSpell;
     public GameObject AttackPrefab;
+    public int MonsterPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -46,5 +47,7 @@ public class ArrowScript : MonoBehaviour {
             attackButton.transform.position = new Vector3(260, -120, 0);
             attackButton.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
         }
+
+        gameObject.name = "GreenArrow";
     }
 }

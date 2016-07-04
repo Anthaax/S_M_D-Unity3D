@@ -39,13 +39,12 @@ public class StartCombat : MonoBehaviour {
         Combat = Gtx.DungeonManager.CbtManager;
         Combat.Monsters.ToList().ForEach(c =>
         {
-            c.HP = 200;
-            c.HPmax = 200;
+
         });
 
         herosGo = new GameObject[4];
         herosInBattle = new BaseHeros[4];
-        int x = -1;
+        int x = -2;
         int i = 0;
         Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
@@ -68,6 +67,9 @@ public class StartCombat : MonoBehaviour {
         foreach(BaseMonster M in Combat.Monsters)
         {
             GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
+            GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/HpMonsterBar"), new Vector3(y*36, 40, 0), Quaternion.identity) as GameObject;
+            data.GetComponent<HpBarCheck>().monster = M;
+            data.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
             monstersGO[idx] = monsterGO;
             monstersInFight[idx] = M;
             y += 2;
