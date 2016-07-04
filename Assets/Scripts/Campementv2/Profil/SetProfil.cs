@@ -89,9 +89,10 @@ public class SetProfil : MonoBehaviour {
 
         else if (Start.MenuBGHospital.activeInHierarchy)
         {
-            if(!HospitalBoard.SicknessRemove)
+            Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+            if (!HospitalBoard.SicknessRemove && !HospitalBoard.isInBuilding())
             {
-                Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+                
                 //---
                 if (hospital.Hero != null)
                 {
@@ -99,6 +100,7 @@ public class SetProfil : MonoBehaviour {
                     SetToActiveButton(Start.pHeroes.Find(t => t.GetComponentInChildren<Text>().text == h.CharacterName).GetComponentInChildren<Button>());
                 }
                 hospital.SetHero(heros);
+                heros.InBuilding = null;
                 GameObject IconeHero = GameObject.Find("HospitalHero");
                 string sex = heros.IsMale ? "M" : "F";
                 IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
@@ -116,10 +118,11 @@ public class SetProfil : MonoBehaviour {
         }
         else if (Start.MenuBGMentalhospital.activeInHierarchy)
         {
-            if (!MentalHospitalBoard.MentalSicknessRemove)
+            MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+            if (!MentalHospitalBoard.MentalSicknessRemove && !MentalHospitalBoard.isInBuilding())
             {
-                MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
-                heros.GetPsycho(new Crazyness());
+               
+                heros.GetPsycho(new Agressivity());
                 //---
                 if (mentalHospital.Hero != null)
                 {
@@ -365,7 +368,38 @@ public class SetProfil : MonoBehaviour {
             HotelBoard.HeroesValid = false;
         }
     }
-   public void ShowProfilPlayer()
+
+    public static void InitBoardHospital()
+    {
+        Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+        GameObject IconeHero = GameObject.Find("HospitalHero");
+        //---
+        if (hospital.Hero != null && hospital.Hero.InBuilding != null)
+        {
+            string sex = hospital.Hero.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + hospital.Hero.CharacterClassName + "Icone" + sex);
+
+            GameObject.Find("RemoveHero").SetActive(false);
+
+            RemoveHeroesFromList(hospital.Hero);
+        }
+    }
+    public static void InitBoardMentalHospital()
+    {
+        MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+        GameObject IconeHero = GameObject.Find("MentalHospitalHero");
+        //---
+        if (mentalHospital.Hero != null && mentalHospital.Hero.InBuilding != null)
+        {
+            string sex = mentalHospital.Hero.IsMale ? "M" : "F";
+            IconeHero.GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + mentalHospital.Hero.CharacterClassName + "Icone" + sex);
+
+            GameObject.Find("RemoveHero").SetActive(false);
+
+            RemoveHeroesFromList(mentalHospital.Hero);
+        }
+    }
+    public void ShowProfilPlayer()
     {
 
         GameObject.Find("GoldT").GetComponent<Text>().text = Start.Gtx.MoneyManager.Money.ToString();

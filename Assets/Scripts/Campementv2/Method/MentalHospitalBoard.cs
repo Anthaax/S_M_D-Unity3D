@@ -13,6 +13,12 @@ public class MentalHospitalBoard : MonoBehaviour {
 	}
     public static bool MentalSicknessRemove;
 
+    public static void Init()
+    {
+        SetProfil.InitBoardMentalHospital();
+
+    }
+
     public void TryRemoveMentalPsycho()
     {
         MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
@@ -39,6 +45,7 @@ public class MentalHospitalBoard : MonoBehaviour {
         }
 
         MentalSicknessRemove = true;
+        mentalHospital.SetHero(mentalHospital.Hero);
         GameObject.Find("RemoveHero").SetActive(false);
         CheckSicknesses(mentalHospital.Hero, mentalHospital);
     }
@@ -78,6 +85,15 @@ public class MentalHospitalBoard : MonoBehaviour {
                 if (button.name != "RemoveHero")
                     SetToInactiveButton(button);
         }
+    }
+
+    public static bool isInBuilding()
+    {
+        MentalHospital mentalHospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.MentalHospital) as MentalHospital;
+        if (mentalHospital.Hero != null && mentalHospital.Hero.InBuilding != null)
+            return true;
+        else
+            return false;
     }
 
     public static void CheckSicknesses(BaseHeros heros, BaseBuilding building)

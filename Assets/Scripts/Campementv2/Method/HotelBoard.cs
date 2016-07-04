@@ -28,7 +28,7 @@ public class HotelBoard : MonoBehaviour {
             HeroesValid = true;
             GameObject.Find("RemoveHero1").SetActive(false);
             GameObject.Find("RemoveHero2").SetActive(false);
-            GameObject.Find("Valid").SetActive(false);
+            GameObject.Find("ValidHotel").SetActive(false);
             Start.MenuBGHotel.SetActive(false);
             Array.Clear(SetProfil.coupleHerosHotel, 0, SetProfil.coupleHerosHotel.Length);
         }

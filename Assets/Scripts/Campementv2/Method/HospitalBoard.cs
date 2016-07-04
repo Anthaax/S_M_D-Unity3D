@@ -14,6 +14,12 @@ public class HospitalBoard : MonoBehaviour {
 
     public static bool SicknessRemove;
 
+    public static void Init()
+    {
+        SetProfil.InitBoardHospital();
+
+    }
+
     public void TryRemoveSickness()
     {
         Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding( BuildingNameEnum.Hospital) as Hospital;
@@ -39,6 +45,7 @@ public class HospitalBoard : MonoBehaviour {
             hospital.HealHero(s);
         }
         SicknessRemove = true;
+        hospital.SetHero(hospital.Hero);
         GameObject.Find("RemoveHero").SetActive(false);
         CheckSicknesses(hospital.Hero, hospital);
     }
@@ -77,6 +84,15 @@ public class HospitalBoard : MonoBehaviour {
                 if (button.name != "RemoveHero")
                     SetToInactiveButton(button);
         }
+    }
+
+    public static bool isInBuilding()
+    {
+        Hospital hospital = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Hospital) as Hospital;
+        if (hospital.Hero != null && hospital.Hero.InBuilding != null)
+            return true;
+        else
+            return false;
     }
 
     public static void CheckSicknesses(BaseHeros heros, BaseBuilding building)

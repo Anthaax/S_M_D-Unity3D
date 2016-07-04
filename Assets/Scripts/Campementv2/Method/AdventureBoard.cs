@@ -45,6 +45,7 @@ public class AdventureBoard : MonoBehaviour {
                 BoardManager.Gtx = Start.Gtx;
                 Start.Gtx.DungeonManager.InitializedCatalogue();
                 Map map = Start.Gtx.DungeonManager.MapCatalogue.First();
+                Start.Gtx.DungeonManager.CreateDungeon(BoardManager.hero, map);
                 BoardManager.Map = map;
 
 
