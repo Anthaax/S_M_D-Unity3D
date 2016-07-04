@@ -77,6 +77,8 @@ public class SpellInformation : MonoBehaviour {
                 arrow.name = "redarrow";
                 arrow.transform.localScale = new Vector3(6, 6, 1);
                 arrow.transform.SetParent(canvas.transform, false);
+                arrow.GetComponent<ArrowScript>().MonsterPosition = i;
+                arrow.GetComponent<ArrowScript>().AssociatedSpell = spell;
             }
                 i++;
         }

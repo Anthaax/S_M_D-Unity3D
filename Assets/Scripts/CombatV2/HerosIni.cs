@@ -93,20 +93,7 @@ public class HerosIni : MonoBehaviour {
     public static void SwitchHerosGOPositions()
     {
         StartCombat sCombat = Camera.main.GetComponent<StartCombat>();
-
-
-        for (int i = 0; i < 4; i++)
-        {
-            Debug.Log("Hero " + i + " class = " + StartCombat.Combat.Heros[i].CharacterClassName);
-        }
-
-        for (int i = 0; i < 4; i++)
-        {
-            Debug.Log("Hero in battle " + i + " class = " + sCombat.herosInBattle[i].CharacterClassName);
-        }
-
-
-
+        
         for (int i = 0; i < 4; i++)
         {
             GameObject relatedGo = null;
@@ -117,7 +104,7 @@ public class HerosIni : MonoBehaviour {
             }
             if (relatedGo != null)
             {
-                relatedGo.transform.position = new Vector3(-1 - i * 2, relatedGo.transform.position.y);
+                relatedGo.transform.position = new Vector3(-2 - i * 2, relatedGo.transform.position.y);
             }
         }
         for (int i = 0; i < 4; i++)
@@ -171,6 +158,21 @@ public class HerosIni : MonoBehaviour {
         GameObject.Find("BleedingRT").GetComponent<Text>().text = heros.EffectivBleedingRes.ToString();
         GameObject.Find("WaterRT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
         GameObject.Find("AffectRT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
+
+        float Y;
+        if (heros.HP > 0)
+        {
+            Y = (92.5f * (100f * heros.HP / heros.EffectivHPMax)) / 100;
+            GameObject.Find("HpBar2").GetComponent<RectTransform>().sizeDelta =
+                new Vector2(Y, 11.2f);
+        }
+
+        if (heros.Mana > 0)
+        {
+            Y = (92.5f * (100f * heros.Mana / heros.EffectivManaMax)) / 100;
+            GameObject.Find("ManaBar2").GetComponent<RectTransform>().sizeDelta =
+                new Vector2(Y, 11.2f);
+        }
 
     }
 }

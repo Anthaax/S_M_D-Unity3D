@@ -16,6 +16,8 @@ public class PassTurnButton : MonoBehaviour {
 
     public void OnClick()
     {
+        if (Camera.main.GetComponent<CombatLogic>().monstersTurn)
+            return;
         BaseCharacter c = StartCombat.Combat.NextTurn();
         Camera.main.GetComponent<CombatLogic>().timeLeft = 30.0f;
         //GameObject.Find("SpellInfo").GetComponent<Text>().text = "";
