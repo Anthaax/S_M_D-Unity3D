@@ -101,7 +101,6 @@ public class AttackEnemyButton : MonoBehaviour {
                 M.IsDead = true;
         }
         // Checking if combat is over.
-        CombatLogic clogic = GameObject.Find("CombatLogic").GetComponent<CombatLogic>();
 
     }
     public IEnumerator SelfDestroyTextHero(GameObject text, float delay)

@@ -49,7 +49,7 @@ public class StartCombat : MonoBehaviour {
         Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
-
+            
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
             herosGo[i] = data;
             herosInBattle[i++] = H;
@@ -95,8 +95,9 @@ public class StartCombat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+       
+
+    }
 
     void OnGUI()
     {

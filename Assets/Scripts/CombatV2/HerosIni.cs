@@ -24,8 +24,8 @@ public class HerosIni : MonoBehaviour {
     {
         _heros = heros;
         _combat = StartCombat.Combat;
-        Animator animator = gameObject.GetComponent<Animator>();
-        animator.runtimeAnimatorController = Resources.Load("Animations/CombatV2"+heros.CharacterClassName) as RuntimeAnimatorController;
+        gameObject.GetComponent<Animator>().Play(heros.CharacterClassName+"Idle", 0);
+
         started = true;
         Affect.Add("Fire", Fire);
         Affect.Add("Water", Water);
