@@ -44,7 +44,8 @@ public class CasernBoard : MonoBehaviour {
                         {
                             if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "BuySpell")
                                 SetToActiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
-
+                            if (spellsBox[i].GetComponentsInChildren<Button>()[j].name == "UpSpell")
+                                SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[j]);
 
                         }
                     }
@@ -59,7 +60,10 @@ public class CasernBoard : MonoBehaviour {
                     SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[1]);
                     SetToInactiveButton(spellsBox[i].GetComponentsInChildren<Button>()[2]);
                 }
+                
             }
+
+
         }
 
         else
@@ -97,7 +101,6 @@ public class CasernBoard : MonoBehaviour {
         if(FindSpellByName(spellName).IsBuy)
         {
             Casern casern = Start.Gtx.PlayerInfo.GetBuilding(BuildingNameEnum.Casern) as Casern;
-            Debug.Log("obj: " + spellName);
             casern.UpgradeSpellToHero(FindSpellByName(spellName));
             SetBoard();
         }
@@ -131,8 +134,8 @@ public class CasernBoard : MonoBehaviour {
                     {
                         hero.Spells[i].IsEquiped = false;
                         CheckEquiped(i, hero.Spells[i]);
-                        SpellComparer compare = new SpellComparer();
-                        Array.Sort( hero.Spells, compare );
+                        /*SpellComparer compare = new SpellComparer();
+                        Array.Sort( hero.Spells, compare );*/
                     }
                     else
                     {
@@ -140,8 +143,8 @@ public class CasernBoard : MonoBehaviour {
                         {
                             hero.Spells[i].IsEquiped = true;
                             CheckEquiped(i, hero.Spells[i]);
-                            SpellComparer compare = new SpellComparer();
-                            Array.Sort( hero.Spells, compare );
+                            /*SpellComparer compare = new SpellComparer();
+                            Array.Sort( hero.Spells, compare );*/
                         }
                     }
                 }

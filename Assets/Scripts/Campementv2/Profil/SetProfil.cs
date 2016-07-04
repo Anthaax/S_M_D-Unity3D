@@ -12,12 +12,22 @@ public class SetProfil : MonoBehaviour {
     public static BaseHeros[] coupleHerosBar = new BaseHeros[2];
     public static BaseHeros[] HerosAdventure = new BaseHeros[4];
     public static BaseHeros HeroOpen;
+
+    private bool HerosExist(int index)
+    {
+        return index <= Start.Gtx.PlayerInfo.MyHeros.Count;
+    }
+
     public void Show()
     {
         string name = gameObject.name;
         int index = int.Parse("" + name[name.Length - 2]);
-        BaseHeros heros = Start.Gtx.PlayerInfo.MyHeros[index - 1];
         Start.MenuProfil.SetActive(false);
+
+        if (!HerosExist(index))
+            return;
+
+        BaseHeros heros = Start.Gtx.PlayerInfo.MyHeros[index - 1];
 
         if (Start.MenuBGArmory.activeInHierarchy)
         {
@@ -211,6 +221,8 @@ public class SetProfil : MonoBehaviour {
         }
         else if (Start.PanelBoardMission.activeInHierarchy)
         {
+            Debug.Log("Dans Le panelMission");
+            Start.MenuProfil.SetActive(false);
             List<GameObject> IconeHeros = new List<GameObject>();
             IconeHeros.Add(GameObject.Find("AdvHero1"));
             IconeHeros.Add(GameObject.Find("AdvHero2"));
@@ -234,6 +246,7 @@ public class SetProfil : MonoBehaviour {
 
         else
         {
+            Debug.Log("Dans Le panelProfil");
             HeroOpen = heros;
             Start.MenuProfil.SetActive(true);
             //GameObject.Find("Icone").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "IconeF");
