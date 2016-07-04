@@ -6,7 +6,7 @@ public class Pass : MonoBehaviour {
 
 	public void Onclick()
     {
-        BaseCombat.Combat.NextTurn();
+        StartCombat.Combat.NextTurn();
         Timer T = GameObject.Find("Timer").GetComponent<Timer>();
         T.timeLeft = 30.0f;
         GameObject.Find("SpellInfo").GetComponent<Text>().text = "";

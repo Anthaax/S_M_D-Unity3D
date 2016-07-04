@@ -12,14 +12,24 @@ public class StartCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
-    private static HeroAttack attack;
+    private static HeroAttacks attack;
     private static BaseHeros[] heros;
     private static Map map;
+
+    public static GameObject[] monstersGO;
+
     public GameObject CharacterH;
     public GameObject CharacterM;
+    public BaseHeros Htest;
+    public HerosIni Hini;
+    public BaseMonster[] monstersInFight;
+
+    public GameObject[] herosGo;
+    public BaseHeros[] herosInBattle;
     // Use this for initialization
     void Awake()
     {
+
         Gtx = GameContext.CreateNewGame();
         Gtx.DungeonManager.InitializedCatalogue();
         Map = Gtx.DungeonManager.MapCatalogue.First();
@@ -29,26 +39,56 @@ public class StartCombat : MonoBehaviour {
         Combat = Gtx.DungeonManager.CbtManager;
         Combat.Monsters.ToList().ForEach(c =>
         {
-            c.HP = 200;
-            c.HPmax = 200;
+
         });
 
-        int x = 0;
+        herosGo = new GameObject[4];
+        herosInBattle = new BaseHeros[4];
+        int x = -2;
+        int i = 0;
+        Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
-            GameObject data = Instantiate(CharacterH, new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
-            HerosIni yo = data.GetComponent<HerosIni>();
-            yo.init(H);
-            x++;
+            Debug.Log("Classname = " + H.CharacterClassName);
+            GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
+            herosGo[i] = data;
+            herosInBattle[i++] = H;
+            HerosIni heroIni = data.GetComponent<HerosIni>();
+            heroIni.init(H);
+            x -= 2;
+            //Htest = H;
+            Hini = heroIni;
         }
-
-        int y = -1;
+        
+        int y = 0;
+        int idx = 0;
+        monstersGO = new GameObject[4];
+        monstersInFight = new BaseMonster[4];
         foreach(BaseMonster M in Combat.Monsters)
         {
-            Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity);
-            y--;
+            GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
+            GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/HpMonsterBar"), new Vector3(y*36, 40, 0), Quaternion.identity) as GameObject;
+            data.GetComponent<HpBarCheck>().monster = M;
+            data.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
+            monstersGO[idx] = monsterGO;
+            monstersInFight[idx] = M;
+            y += 2;
+            idx++;
         }
+
+        Hini.ShowSpellAndSpellInfo(Htest);
+        HerosIni.SetMenu(Htest);
     }
+
+    public void ChangeSpells(BaseHeros hero)
+    {
+        foreach (Transform t in GameObject.Find("HeroSpells").transform)
+        {
+            Destroy(t.gameObject);
+        }
+        Hini.ShowSpellAndSpellInfo(hero);
+    }
+
 	void Start () {
 	
 	}
@@ -58,7 +98,10 @@ public class StartCombat : MonoBehaviour {
 	
 	}
 
-
+    void OnGUI()
+    {
+        
+    }
     public static CombatManager Combat
     {
         get
@@ -85,7 +128,7 @@ public class StartCombat : MonoBehaviour {
         }
     }
 
-    public static HeroAttack Attack
+    public static HeroAttacks Attack
     {
         get
         {

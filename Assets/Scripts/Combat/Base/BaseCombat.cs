@@ -12,7 +12,7 @@ public class BaseCombat : MonoBehaviour {
 
     private static CombatManager _combat;
     private static GameContext gtx;
-    private static HeroAttack attack;
+    private static HeroAttacks attack;
     private static BaseHeros[] heros;
     private static Map map;
 
@@ -20,7 +20,7 @@ public class BaseCombat : MonoBehaviour {
 
     void Awake()
     {
-        attack = new HeroAttack();
+        attack = new HeroAttacks();
 
         GameObject.Find("Arrow1").GetComponent<Image>().enabled = false;
         GameObject.Find("Arrow2").GetComponent<Image>().enabled = false;
@@ -120,7 +120,7 @@ public class BaseCombat : MonoBehaviour {
         }
     }
 
-    public static HeroAttack Attack
+    public static HeroAttacks Attack
     {
         get
         {

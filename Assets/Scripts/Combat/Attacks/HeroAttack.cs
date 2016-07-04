@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading;
 using S_M_D.Spell;
 
-public class HeroAttack {
+public class HeroAttacks {
 
     int _target;
     Spells spell;
