@@ -66,6 +66,13 @@ public class SpellInformation : MonoBehaviour {
         */
         Debug.Log("Position = " + position);
         cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);
+        int id = 0;
+        foreach(BaseMonster M in StartCombat.Combat.Monsters)
+        {
+            if (M.HP <= 0)
+                cible[id] = false;
+            id++;
+        }
         int i = 0;
         foreach(bool b in cible)
         {
