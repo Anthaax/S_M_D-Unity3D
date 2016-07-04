@@ -12,6 +12,6 @@ public class BuyHero : MonoBehaviour {
         int index = int.Parse("" + name[name.Length - 1]);
         BaseHeros heros = caravan.HerosDispo[index - 1];
         caravan.BuyHero(heros);
-
+        caravan.HerosDispo.Remove( heros );
     }
 }
