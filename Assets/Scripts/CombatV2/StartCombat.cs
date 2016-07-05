@@ -37,11 +37,13 @@ public class StartCombat : MonoBehaviour {
         herosInBattle = new BaseHeros[4];
         int x = -2;
         int i = 0;
+        int yolo = 0;
         Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
             
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
+            data.name = Combat.Heros[yolo].CharacterName;
             herosGo[i] = data;
             herosInBattle[i++] = H;
             HerosIni heroIni = data.GetComponent<HerosIni>();
@@ -49,6 +51,7 @@ public class StartCombat : MonoBehaviour {
             x -= 2;
             //Htest = H;
             Hini = heroIni;
+            yolo++;
         }
         
         int y = 0;

@@ -38,18 +38,7 @@ public class AttackEnemyButton : MonoBehaviour {
                 Hp[i] = M.HP;
                 i++;
             }           
-            for (x =0; x<Camera.main.GetComponent<StartCombat>().herosInBattle.Length; x++ )
-            {
-                if (Camera.main.GetComponent<StartCombat>().herosInBattle[x] == H)
-                {
-                    break;
-                }
-                else
-                {
-                    x++;
-                }                          
-            }
-            StartCoroutine(AttackAnim(Camera.main.GetComponent<StartCombat>().herosGo[x], H, 2));
+            StartCoroutine(AttackAnim(GameObject.Find(H.CharacterName), H, 2));
 
             StartCombat.Combat.SpellManager.HeroLaunchSpell(spell, position);
             i = 0;
