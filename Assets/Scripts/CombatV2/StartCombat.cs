@@ -29,7 +29,12 @@ public class StartCombat : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-
+        Debug.Log(Heros);
+        Debug.Log(Heros[0]);
+        Debug.Log(Heros[1]);
+        Debug.Log(Heros[2]);
+        Debug.Log(Heros[3]);
+        Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
 

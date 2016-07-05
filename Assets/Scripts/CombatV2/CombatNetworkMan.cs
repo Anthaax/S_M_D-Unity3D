@@ -8,6 +8,9 @@ public class CombatNetworkMan : NetworkManager
     private bool alreadyLaunched;
     private bool CNMLaunched = false;
 
+    int updates, callOnServer;
+    bool serverCalled;
+
     // Use this for initialization
     void Start()
     {
@@ -20,7 +23,11 @@ public class CombatNetworkMan : NetworkManager
             return;
         else
             CNMLaunched = true;
+        NetworkServer.DisconnectAll();
+        updates = 0;
+        callOnServer = 0;
         Debug.Log("Level loaded.");
+        serverCalled = false;
         alreadyLaunched = false;
         if (Launch)
         {
@@ -49,12 +56,13 @@ public class CombatNetworkMan : NetworkManager
             {
                 StartServer();
             }
-            else
-            {
-                StartClient();
-            }
         }
         AdventureBoard.Port++;
+    }
+
+    void OnFailedToConnect(NetworkConnectionError error)
+    {
+        Debug.Log("Could not connect to server: " + error);
     }
 
     void OnServerInitialized()
@@ -82,17 +90,46 @@ public class CombatNetworkMan : NetworkManager
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
+        if (updates < 240)
+            updates++;
+        if (updates >= 240 && updates < 520)
+            updates = 240;
+        if (callOnServer < 400)
+            callOnServer++;
+        if (updates == 240)
+        {
+            Debug.Log("Updates == 240");
+            if (AdventureBoard.Online != "Offline" && AdventureBoard.HostState != "Meneur")
+            {
+                Debug.Log("CLIENT STARTED");
+                StartClient();
+            }
+            updates = 550;
+        }
+        if (callOnServer >= 400 && !serverCalled && AdventureBoard.HostState == "Meneur" && AdventureBoard.Online != "Offline")
+        {
+            serverCalled = true;
+            GameObject combatLogic = GameObject.Find("CombatLogic");
+            NetworkServer.Spawn(combatLogic);
+        }
         if (AdventureBoard.HostState != "Meneur" && client != null && client.connection != null && !alreadyLaunched)
+        {
+            ClientScene.RegisterPrefab(Resources.Load<GameObject>("Prefabs/CombatLogic"));
+            Debug.Log("Inside condition");
             if (NetworkClient.active && !ClientScene.ready)
             {
                 ClientScene.Ready(client.connection);
-
-
-                ClientScene.AddPlayer(0);
+                ClientScene.AddPlayer(1);
+                alreadyLaunched = true;
+                Debug.Log("ADDED PLAYER");
+            }
+            else
+            {
+                ClientScene.AddPlayer(1);
                 alreadyLaunched = true;
             }
+        }
     }
 }
