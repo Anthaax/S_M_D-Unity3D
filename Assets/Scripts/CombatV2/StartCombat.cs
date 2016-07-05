@@ -30,17 +30,8 @@ public class StartCombat : MonoBehaviour {
     void Awake()
     {
 
-        Gtx = GameContext.CreateNewGame();
-        Gtx.DungeonManager.InitializedCatalogue();
-        Map = Gtx.DungeonManager.MapCatalogue.First();
-        Heros = Gtx.PlayerInfo.MyHeros.ToArray();
-        Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
-        Combat.Monsters.ToList().ForEach(c =>
-        {
-
-        });
 
         herosGo = new GameObject[4];
         herosInBattle = new BaseHeros[4];

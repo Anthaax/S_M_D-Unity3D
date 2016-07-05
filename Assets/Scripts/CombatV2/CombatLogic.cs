@@ -342,13 +342,13 @@ public class CombatLogic : NetworkBehaviour {
 
     private void CombatIsOver()
     {
-        if (BaseCombat.Combat.CheckIfTheCombatWasOver())
+        if (StartCombat.Combat.CheckIfTheCombatWasOver())
         {
             SceneManager.LoadScene(2);
 
-            BoardManager.Map = BaseCombat.Map;
-            BoardManager.Gtx = BaseCombat.Gtx;
-            BoardManager.hero = BaseCombat.Heros;
+            BoardManager.Map = StartCombat.Map;
+            BoardManager.Gtx = StartCombat.Gtx;
+            BoardManager.hero = StartCombat.Heros;
             BoardManager.Gtx.DungeonManager.CbtManager.ApplyRewward();
         }
     }

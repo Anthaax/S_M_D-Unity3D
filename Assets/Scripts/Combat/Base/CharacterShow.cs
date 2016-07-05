@@ -9,8 +9,8 @@ public class CharacterShow : MonoBehaviour {
     BaseMonster[] monsters;
 	// Use this for initialization
 	void Start () {
-        heros = BaseCombat.Combat.Heros;
-        monsters = BaseCombat.Combat.Monsters;
+        heros = StartCombat.Combat.Heros;
+        monsters = StartCombat.Combat.Monsters;
 
         int i = 1;
         int j = 1;
@@ -33,8 +33,8 @@ public class CharacterShow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        heros = BaseCombat.Combat.Heros;
-        monsters = BaseCombat.Combat.Monsters;
+        heros = StartCombat.Combat.Heros;
+        monsters = StartCombat.Combat.Monsters;
 
         int j = 1;
         int x = 1;

@@ -677,9 +677,9 @@ public class BoardManager : NetworkBehaviour
                 else if (r.events.Contains("Combat"))
                 {
                     r.events.Remove( "Combat" );
-                    BaseCombat.Gtx = Gtx;
-                    BaseCombat.Heros = hero;
-                    BaseCombat.Map = Map;
+                    StartCombat.Gtx = Gtx;
+                    StartCombat.Heros = hero;
+                    StartCombat.Map = Map;
                     SceneManager.LoadScene( 3 );
                     Network.Disconnect();
                     GameObject.Find( "NetworkManager" ).GetComponent<NetworkMan>().StopServer();
