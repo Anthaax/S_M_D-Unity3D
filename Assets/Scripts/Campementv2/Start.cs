@@ -32,6 +32,7 @@ public class Start : MonoBehaviour {
     public static List<GameObject> ButtonsBuildings;
     public static List<GameObject> CasernSpells;
     public static List<GameObject> pHeroes;
+    public static List<GameObject> DeathHeroes;
     // Use this for initialization
     void Awake () {
 
@@ -54,6 +55,7 @@ public class Start : MonoBehaviour {
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
+        DeathHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("DeathHeroes"));
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
@@ -75,7 +77,7 @@ public class Start : MonoBehaviour {
         //-----------------------
         
         setHeroesList();
-
+        _gtx.PlayerInfo.MyHeros[0].IsDead = true;
 
         BarBoard.Init();
         HotelBoard.Init();
