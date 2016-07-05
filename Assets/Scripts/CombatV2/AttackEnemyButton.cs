@@ -21,6 +21,8 @@ public class AttackEnemyButton : MonoBehaviour {
 
     public void OnClick()
     {
+        int x;
+        BaseHeros H = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
         GameObject Arrow = GameObject.Find("GreenArrow");
         if (Arrow)
         {
@@ -34,7 +36,20 @@ public class AttackEnemyButton : MonoBehaviour {
             {
                 Hp[i] = M.HP;
                 i++;
+            }           
+            for (x =0; x<Camera.main.GetComponent<StartCombat>().herosInBattle.Length; x++ )
+            {
+                if (Camera.main.GetComponent<StartCombat>().herosInBattle[x] == H)
+                {
+                    break;
+                }
+                else
+                {
+                    x++;
+                }
+                           
             }
+            StartCoroutine(AttackAnim(Camera.main.GetComponent<StartCombat>().herosGo[x], H, 2));
 
             StartCombat.Combat.SpellManager.HeroLaunchSpell(spell, position);
             i = 0;
@@ -105,11 +120,17 @@ public class AttackEnemyButton : MonoBehaviour {
     }
     public IEnumerator SelfDestroyTextHero(GameObject text, float delay)
     {
-        Debug.Log("Destroying text");
-        Debug.Log(text.GetComponent<Text>().text);
+    
         yield return new WaitForSeconds(delay);
         Destroy(text.gameObject);
         GameObject.Find("Pass").GetComponent<PassTurnButton>().OnClick();
 
+    }
+
+    public IEnumerator AttackAnim(GameObject prefab,BaseHeros hero, float delay)
+    {
+        prefab.GetComponent<Animator>().Play(hero.CharacterClassName + "Attack", 0);
+        yield return new WaitForSeconds(delay);
+        prefab.GetComponent<Animator>().Play(hero.CharacterClassName + "Idle", 0);
     }
 }
