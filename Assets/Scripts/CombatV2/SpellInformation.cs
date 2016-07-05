@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using S_M_D.Spell;
 using S_M_D.Character;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class SpellInformation : MonoBehaviour {
 
@@ -95,5 +96,7 @@ public class SpellInformation : MonoBehaviour {
             }
                 i++;
         }
+
+        GameObject.Find("SpellT").GetComponent<Text>().text = spell.Name + "\n" + spell.Description + "\n Damage : " + spell.KindOfEffect.Damage + "\n Mana : " + spell.ManaCost;
     }
 }

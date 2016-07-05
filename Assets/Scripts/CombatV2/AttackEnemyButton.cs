@@ -21,11 +21,12 @@ public class AttackEnemyButton : MonoBehaviour {
 
     public void OnClick()
     {
-        int x;
-        BaseHeros H = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
+        
         GameObject Arrow = GameObject.Find("GreenArrow");
         if (Arrow)
         {
+            int x;
+            BaseHeros H = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
             spell = Arrow.GetComponent<ArrowScript>().AssociatedSpell;
             position = Arrow.GetComponent<ArrowScript>().MonsterPosition;
             KindOfEffect[] effects = new KindOfEffect[4];
@@ -46,8 +47,7 @@ public class AttackEnemyButton : MonoBehaviour {
                 else
                 {
                     x++;
-                }
-                           
+                }                          
             }
             StartCoroutine(AttackAnim(Camera.main.GetComponent<StartCombat>().herosGo[x], H, 2));
 

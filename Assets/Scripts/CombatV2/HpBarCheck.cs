@@ -19,7 +19,7 @@ public class HpBarCheck : MonoBehaviour {
             GameObject obj = gameObject.transform.GetChild(0).gameObject;
             Y = (40f * (100f * monster.HP / monster.EffectivHPMax)) / 100;
             obj.GetComponent<RectTransform>().sizeDelta =
-                new Vector2(Y, 6f);
+                new Vector2(Y, 3f);
             HP = monster.HP;
         }
         else if (monster.HP<=0)
