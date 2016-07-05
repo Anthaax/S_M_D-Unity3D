@@ -3,6 +3,7 @@ using System.Collections;
 using S_M_D.Spell;
 using S_M_D.Character;
 using UnityEngine.UI;
+using System;
 
 public class AttackEnemyButton : MonoBehaviour {
 
@@ -25,6 +26,8 @@ public class AttackEnemyButton : MonoBehaviour {
         {
             spell = Arrow.GetComponent<ArrowScript>().AssociatedSpell;
             position = Arrow.GetComponent<ArrowScript>().MonsterPosition;
+            KindOfEffect[] effects = new KindOfEffect[4];
+            
             int i = 0;
             int[] Hp = new int[4];
             foreach (BaseMonster M in StartCombat.Combat.Monsters)
@@ -34,11 +37,42 @@ public class AttackEnemyButton : MonoBehaviour {
             }
 
             StartCombat.Combat.SpellManager.HeroLaunchSpell(spell, position);
+            i = 0;
+            foreach (BaseMonster M in StartCombat.Combat.Monsters)
+            {
+                Hp[i] -= M.HP;
+                i++;
+            }
+
+            int j = 0;
+            foreach (BaseMonster M in StartCombat.Combat.Monsters)
+            {
+                KindOfEffect effect;
+                StartCombat.Combat.DamageOnTime.TryGetValue(M, out effect);
+                effects[j] = effect;
+                j++;
+            }
+
+            CombatLogic clogic = GameObject.Find("CombatLogic").GetComponent<CombatLogic>();
+            string[] effectsString = new string[4];
+            for (int k = 0; k < 4; k++)
+            {
+                if (effects[k] == null)
+                {
+                    effectsString[k] = "null";
+                }
+                else
+                {
+                    effectsString[k] = effects[k].DamageType.ToString();
+                }
+            }
+            clogic.AttackMonster(Hp[0], Hp[1], Hp[2], Hp[3], 0,0,0,0,
+               effectsString[0], effectsString[1], effectsString[2], effectsString[3]);
+           
 
             i = 0;
             foreach (BaseMonster M in StartCombat.Combat.Monsters)
             {
-                Hp[i] = Hp[i] - M.HP;
                 if (Hp[i] != 0)
                 {
                     GameObject text = CombatLogic.AddTextToCanvas();
@@ -58,8 +92,15 @@ public class AttackEnemyButton : MonoBehaviour {
                 }
 
                 i++;
-             }            
+             }
+            Destroy(Arrow.gameObject);          
             }               
+        foreach (BaseMonster M in StartCombat.Combat.Monsters)
+        {
+            if (M.HP <= 0)
+                M.IsDead = true;
+        }
+        // Checking if combat is over.
 
     }
     public IEnumerator SelfDestroyTextHero(GameObject text, float delay)

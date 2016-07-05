@@ -28,11 +28,19 @@ public class SpellInformation : MonoBehaviour {
 
     public void OnClick()
     {
-        if (Camera.main.GetComponent<CombatLogic>().monstersTurn)
+        CombatLogic clogic = GameObject.Find("CombatLogic").GetComponent<CombatLogic>();
+        if (clogic.monstersTurn)
         {
             Debug.Log("Can't target enemy during enemy's turn.");
             return;
         }
+        // Penser à enlever les commentaires.
+       /* if (clogic.playersTurn != ((clogic.isServer) ? "p1" : "p2"))
+        {
+            Debug.Log("Not your player's turn.");
+            return;
+        }
+        */
         // Deleting the previously instantiated arrows
         GameObject[] arrows;
         if (GameObject.Find("redarrow") != null)
@@ -53,7 +61,6 @@ public class SpellInformation : MonoBehaviour {
                 break;
             position++;
         }
-        Debug.Log("Character turn = " + StartCombat.Combat.GetCharacterTurn().CharacterName);
         /*
         foreach(BaseHeros H in StartCombat.Combat.Heros)
         {
@@ -64,7 +71,6 @@ public class SpellInformation : MonoBehaviour {
                 position++;
         }
         */
-        Debug.Log("Position = " + position);
         cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);
         int id = 0;
         foreach(BaseMonster M in StartCombat.Combat.Monsters)
