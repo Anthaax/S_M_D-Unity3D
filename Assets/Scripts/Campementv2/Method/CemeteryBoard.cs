@@ -16,8 +16,8 @@ public class CemeteryBoard : MonoBehaviour {
         {
             BaseHeros heros = Start.Gtx.PlayerInfo.DeadHero[i];
             string sex = heros.IsMale ? "M" : "F";
-            GameObject.Find("Hero" + (i + 1) + "T").GetComponent<Text>().text = heros.CharacterName;
-            GameObject.Find("Hero" + (i + 1) + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
+            GameObject.Find("DHero" + (i + 1) + "T").GetComponent<Text>().text = heros.CharacterName;
+            GameObject.Find("DHero" + (i + 1) + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
         }
     }
 }
