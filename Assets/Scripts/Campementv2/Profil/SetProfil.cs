@@ -21,7 +21,9 @@ public class SetProfil : MonoBehaviour {
     public void Show()
     {
         string name = gameObject.name;
-        int index = int.Parse("" + name[name.Length - 2]);
+        string help = name.Substring(4);
+        int index = int.Parse("" + help.Remove(help.Length - 1));
+
         Start.MenuProfil.SetActive(false);
 
         if (!HerosExist(index))

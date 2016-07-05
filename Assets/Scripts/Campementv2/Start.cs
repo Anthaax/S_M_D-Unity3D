@@ -77,7 +77,6 @@ public class Start : MonoBehaviour {
         //-----------------------
         
         setHeroesList();
-        _gtx.PlayerInfo.MyHeros[0].IsDead = true;
 
         BarBoard.Init();
         HotelBoard.Init();
