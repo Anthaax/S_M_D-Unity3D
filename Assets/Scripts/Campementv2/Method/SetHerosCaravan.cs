@@ -27,10 +27,24 @@ public class SetHerosCaravan : MonoBehaviour {
                 string sex = caravan.HerosDispo[x - 1].IsMale ? "M" : "F";
                 GameObject.Find( "HeroDispo" + x + "I" ).GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/" + caravan.HerosDispo[x - 1].CharacterClassName + "Icone" + sex );
             }
+            else if (x <= caravan.MaxNewHero)
+            {
+                GameObject.Find( "HeroDispo" + x + "T" ).GetComponent<Text>().text = "Indisponible";
+
+                GameObject.Find( "HeroDispo" + x + "Prix" ).GetComponent<Text>().text = "";
+
+                GameObject.Find( "HeroDispo" + x + "I" ).GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/noprofil" );
+                GameObject.Find( "HeroDispo" + x + "I" ).GetComponent<Button>().enabled = false;
+
+                GameObject.Find( "UpHeroDispo" + x ).GetComponent<Button>().enabled = false;
+                GameObject.Find( "UpHeroDispo" + x ).GetComponent<Image>().color = Color.red;
+            }
             else
             {
                 GameObject.Find( "HeroDispo" + x + "I" ).GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Icones/noprofil" );
                 GameObject.Find( "HeroDispo" + x + "I" ).GetComponent<Button>().enabled = false;
+
+                GameObject.Find( "HeroDispo" + x + "Prix" ).GetComponent<Text>().text = "";
 
                 GameObject.Find( "HeroDispo" + x + "T" ).GetComponent<Text>().text = "Niveau" +( x - 2) + "Requis";
 
@@ -39,4 +53,5 @@ public class SetHerosCaravan : MonoBehaviour {
             }
         }
     }
+
 }

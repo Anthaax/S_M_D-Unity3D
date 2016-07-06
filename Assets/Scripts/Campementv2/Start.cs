@@ -32,6 +32,7 @@ public class Start : MonoBehaviour {
     public static List<GameObject> ButtonsBuildings;
     public static List<GameObject> CasernSpells;
     public static List<GameObject> pHeroes;
+    public static List<GameObject> DeathHeroes;
     // Use this for initialization
     void Awake () {
 
@@ -54,6 +55,7 @@ public class Start : MonoBehaviour {
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));
         pHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("pHero"));
+        DeathHeroes = new List<GameObject>(GameObject.FindGameObjectsWithTag("DeathHeroes"));
 
         ButtonsSicknesses = MenuBGHospital.GetComponentsInChildren<Button>();
         HospitalBoard.InitializedButtonsHospitalBoard();
@@ -73,14 +75,15 @@ public class Start : MonoBehaviour {
 
         setButtonsBuildings();
         //-----------------------
+        
         setHeroesList();
-
 
         BarBoard.Init();
         HotelBoard.Init();
         HospitalBoard.Init();
         MentalHospitalBoard.Init();
         DesactiveBoard();
+
     }
 	
     void DesactiveBoard()
@@ -105,15 +108,52 @@ public class Start : MonoBehaviour {
         setHeroesList();
 	}
 
+    private void RemoveDeathHeroes()
+    {
+        int nb = -1;
+        while(nb != 0)
+        {
+            nb = 0;
+            foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
+            {
+                if (heros.IsDead)
+                    nb++;
+            }
+
+            if (nb > 0)
+            {
+                foreach (BaseHeros heros in _gtx.PlayerInfo.MyHeros)
+                {
+                    if (heros.IsDead)
+                    {
+                        heros.Die();
+                        break;
+                    }
+                }
+                nb--;
+            }
+        }
+    }
+
+    private void ResetHeroesList()
+    {
+        for (int i = 0; i < pHeroes.Count; i++)
+        {
+            GameObject.Find("Hero" + (i + 1) + "T").GetComponent<Text>().text = "";
+            GameObject.Find("Hero" + (i + 1) + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/HeroDefault");
+        }
+    }
+
     private void setHeroesList()
     {
+        RemoveDeathHeroes();
+        ResetHeroesList();
         for(int i = 0; i < _gtx.PlayerInfo.MyHeros.Count; i++)
         {
             BaseHeros heros = _gtx.PlayerInfo.MyHeros[i];
             string sex = heros.IsMale ? "M" : "F";
             GameObject.Find("Hero" + (i + 1) + "T").GetComponent<Text>().text = heros.CharacterName;
             GameObject.Find("Hero" + (i + 1) + "I").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Icones/" + heros.CharacterClassName + "Icone" + sex);
-
         }
     }
 

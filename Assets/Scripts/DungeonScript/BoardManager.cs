@@ -39,19 +39,23 @@ public class BoardManager : NetworkBehaviour
     private int updates = 0;
     public void Start( )
     {
-        if ( !online )
-            this.InitBoard( );
+        if (AdventureBoard.Online != "Online")
+        {
+            for (int i = 0; i < 4; i++)
+                hero[i].Owner = "p1";
+            this.InitBoard();
+        }
         else
         {
-            if ( isServer ) // We're a server so we just initialize the map
+            if (isServer) // We're a server so we just initialize the map
             {
-                Debug.Log( "Server initializing map" );
-                this.InitBoard( );
+                Debug.Log("Server initializing map");
+                this.InitBoard();
             }
             else
             {
 
-                this.getOtherPlayersHeroes( );
+                this.getOtherPlayersHeroes();
             }
         }
 

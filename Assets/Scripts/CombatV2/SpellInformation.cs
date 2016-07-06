@@ -36,12 +36,12 @@ public class SpellInformation : MonoBehaviour {
             return;
         }
         // Penser à enlever les commentaires.
-       /* if (clogic.playersTurn != ((clogic.isServer) ? "p1" : "p2"))
+        if (clogic.playersTurn != ((clogic.isServer) ? "p1" : "p2"))
         {
             Debug.Log("Not your player's turn.");
             return;
         }
-        */
+        
         // Deleting the previously instantiated arrows
         GameObject[] arrows;
         if (GameObject.Find("redarrow") != null)
