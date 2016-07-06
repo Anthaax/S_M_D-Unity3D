@@ -9,7 +9,8 @@ using S_M_D.Spell;
 using System.Linq;
 using S_M_D.Character.Monsters;
 
-public class CombatLogic : NetworkBehaviour {
+public class CombatLogic : NetworkBehaviour
+{
 
     public float timeLeft = 30.0f;
     public bool monstersTurn = false;
@@ -27,7 +28,7 @@ public class CombatLogic : NetworkBehaviour {
     void Update()
     {
         if (!monstersTurn)
-        timeLeft -= Time.deltaTime;
+            timeLeft -= Time.deltaTime;
         //CombatIsOver();
         if (timeLeft <= 0)
         {
@@ -76,7 +77,7 @@ public class CombatLogic : NetworkBehaviour {
         for (int i = 0; i < 4; i++)
         {
             MonsterType type = (MonsterType)Enum.Parse(typeof(MonsterType), monstersType[i]);
-            StartCombat.Combat.Monsters[i] = mconfig.CreateMonster(type, monstersLevel[i]); 
+            StartCombat.Combat.Monsters[i] = mconfig.CreateMonster(type, monstersLevel[i]);
         }
         StartCombat.Combat.CharacterOrderAttack.Clear();
         StartCombat.Combat.InitializedOderAttack();
@@ -113,7 +114,7 @@ public class CombatLogic : NetworkBehaviour {
         monstersTurn = false;
         // Basic check
         if (monsterPos < 4)
-            StartCombat.monstersGO[monsterPos].GetComponent<Animator>().Play(M.Type+"Idle",0);
+            StartCombat.monstersGO[monsterPos].GetComponent<Animator>().Play(M.Type + "Idle", 0);
         HerosIni.SwitchHerosGOPositions();
 
         // Leave the fight
@@ -151,7 +152,7 @@ public class CombatLogic : NetworkBehaviour {
         {
             Object.GetComponent<Animator>().Play(H.CharacterClassName + "Hurt", 0);
             yield return new WaitForSeconds(delay);
-            if (H.HP<=0)
+            if (H.HP <= 0)
             {
                 Object.GetComponent<Animator>().Play(H.CharacterClassName + "Dead", 0);
             }
@@ -159,11 +160,11 @@ public class CombatLogic : NetworkBehaviour {
             {
                 Object.GetComponent<Animator>().Play(H.CharacterClassName + "Idle", 0);
             }
-            
+
         }
-        
+
     }
- 
+
 
     public static GameObject AddTextToCanvas()
     {
@@ -190,7 +191,7 @@ public class CombatLogic : NetworkBehaviour {
     }
 
     [Command]
-    public void Cmd_ApplyDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement)
+    public void Cmd_ApplyDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement, string effect1, string effect2, string effect3, string effect4)
     {
         int[] herosHp = new int[4];
         herosHp[0] = hero1HP;
@@ -213,44 +214,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
                 StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
-            }
-        }
-        BaseHeros[] herosFinaux = new BaseHeros[4];
-        int pos;
-        for (pos = 0; pos < 4; pos++)
-        {
-            herosFinaux[pos + herosPos[pos]] = StartCombat.Combat.Heros[pos];
-        }
-        for (int i = 0; i < 4; i++)
-        {
-            StartCombat.Combat.Heros[i] = herosFinaux[i];
-        }
-    }
-
-    [ClientRpc]
-    public void Rpc_ApplyDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement)
-    {
-        int[] herosHp = new int[4];
-        herosHp[0] = hero1HP;
-        herosHp[1] = hero2HP;
-        herosHp[2] = hero3HP;
-        herosHp[3] = hero4HP;
-        int[] herosPos = new int[4];
-        herosPos[0] = hero1Movement;
-        herosPos[1] = hero2Movement;
-        herosPos[2] = hero3Movement;
-        herosPos[3] = hero4Movement;
-        for (int i = 0; i < 4; i++)
-        {
-            if ((herosHp[i]) != 0)
-            {
-                GameObject text = CombatLogic.AddTextToCanvas();
-                text.GetComponent<Text>().text = "-" + herosHp[i].ToString();
-                GameObject heroGo = GetHeroGORelatedToHero(StartCombat.Heros[i]);
-                text.transform.position = new Vector3(heroGo.transform.position.x - i * 65, heroGo.transform.position.y + 10, 0);
-                text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
-                StartCoroutine(SelfDestroyText(text, 2.0f));
-                StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
+                StartCombat.Combat.Heros[i].HP -= Math.Abs(herosHp[i]);
             }
         }
         BaseHeros[] herosFinaux = new BaseHeros[4];
@@ -263,18 +227,102 @@ public class CombatLogic : NetworkBehaviour {
         {
             StartCombat.Combat.Heros[i] = herosFinaux[i];
         }
-        
+        string[] effects = new string[4];
+        effects[0] = effect1;
+        effects[1] = effect2;
+        effects[2] = effect3;
+        effects[3] = effect4;
+        for (int i = 0; i < 4; i++)
+        {
+            if (effects[i] != "null")
+            {
+                DamageTypeEnum damagetype = (DamageTypeEnum)Enum.Parse(typeof(DamageTypeEnum), effects[i]);
+                KindOfEffect e = null;
+                foreach (BaseMonster M in StartCombat.Combat.Monsters)
+                {
+                    foreach (Spells S in M.Spells)
+                    {
+                        if (S.KindOfEffect.DamageType == damagetype)
+                            e = S.KindOfEffect;
+                    }
+                }
+                if (e != null)
+                    StartCombat.Combat.DamageOnTime[StartCombat.Combat.Heros[i]] = e;
+            }
+        }
     }
 
-    public void SendDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement)
+    [ClientRpc]
+    public void Rpc_ApplyDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement, string effect1, string effect2, string effect3, string effect4)
+    {
+        int[] herosHp = new int[4];
+        herosHp[0] = hero1HP;
+        herosHp[1] = hero2HP;
+        herosHp[2] = hero3HP;
+        herosHp[3] = hero4HP;
+        int[] herosPos = new int[4];
+        herosPos[0] = hero1Movement;
+        herosPos[1] = hero2Movement;
+        herosPos[2] = hero3Movement;
+        herosPos[3] = hero4Movement;
+        for (int i = 0; i < 4; i++)
+        {
+            if ((herosHp[i]) != 0)
+            {
+                GameObject text = CombatLogic.AddTextToCanvas();
+                text.GetComponent<Text>().text = "-" + herosHp[i].ToString();
+                GameObject heroGo = GetHeroGORelatedToHero(StartCombat.Heros[i]);
+                text.transform.position = new Vector3(heroGo.transform.position.x - i * 65, heroGo.transform.position.y + 10, 0);
+                text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
+                StartCoroutine(SelfDestroyText(text, 2.0f));
+                StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
+                StartCombat.Combat.Heros[i].HP -= Math.Abs(herosHp[i]);
+            }
+        }
+        BaseHeros[] herosFinaux = new BaseHeros[4];
+        int j;
+        for (j = 0; j < 4; j++)
+        {
+            herosFinaux[j + herosPos[j]] = StartCombat.Combat.Heros[j];
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            StartCombat.Combat.Heros[i] = herosFinaux[i];
+        }
+        string[] effects = new string[4];
+        effects[0] = effect1;
+        effects[1] = effect2;
+        effects[2] = effect3;
+        effects[3] = effect4;
+        for (int i = 0; i < 4; i++)
+        {
+            if (effects[i] != "null")
+            {
+                DamageTypeEnum damagetype = (DamageTypeEnum)Enum.Parse(typeof(DamageTypeEnum), effects[i]);
+                KindOfEffect e = null;
+                foreach (BaseMonster M in StartCombat.Combat.Monsters)
+                {
+                    foreach (Spells S in M.Spells)
+                    {
+                        if (S.KindOfEffect.DamageType == damagetype)
+                            e = S.KindOfEffect;
+                    }
+                }
+                if (e != null)
+                    StartCombat.Combat.DamageOnTime[StartCombat.Combat.Heros[i]] = e;
+            }
+        }
+    }
+
+    public void SendDamagesAndPositions(int hero1HP, int hero2HP, int hero3HP, int hero4HP, int hero1Movement, int hero2Movement, int hero3Movement, int hero4Movement, string effect1, string effect2, string effect3, string effect4)
     {
         if (isServer)
         {
-            Rpc_ApplyDamagesAndPositions(hero1HP, hero2HP, hero3HP, hero4HP, hero1Movement, hero2Movement, hero3Movement, hero4Movement);
+            Rpc_ApplyDamagesAndPositions(hero1HP, hero2HP, hero3HP, hero4HP, hero1Movement, hero2Movement, hero3Movement, hero4Movement, effect1, effect2, effect3, effect4);
         }
         else
         {
-            Cmd_ApplyDamagesAndPositions(hero1HP, hero2HP, hero3HP, hero4HP, hero1Movement, hero2Movement, hero3Movement, hero4Movement);
+            Cmd_ApplyDamagesAndPositions(hero1HP, hero2HP, hero3HP, hero4HP, hero1Movement, hero2Movement, hero3Movement, hero4Movement, effect1, effect2, effect3, effect4);
         }
     }
 
@@ -297,10 +345,10 @@ public class CombatLogic : NetworkBehaviour {
             newHeros[i++] = h;
         int[] herosMovement = new int[4];
         int j = 0;
-        foreach(BaseHeros H in oldHeros)
+        foreach (BaseHeros H in oldHeros)
         {
             int k = 0;
-            foreach(BaseHeros H2 in newHeros)
+            foreach (BaseHeros H2 in newHeros)
             {
                 if (H == H2)
                 {
@@ -316,11 +364,24 @@ public class CombatLogic : NetworkBehaviour {
         {
             charsNewLife[z] = Camera.main.GetComponent<StartCombat>().herosInBattle[z].HP;
         }
-        SendDamagesAndPositions(charsNewLife[0] - charsOldLife[0],
-                                charsNewLife[1] - charsOldLife[1],
-                                charsNewLife[2] - charsOldLife[2],
-                                charsNewLife[3] - charsOldLife[3],
-                                herosMovement[0], herosMovement[1], herosMovement[2], herosMovement[3]);    
+        string[] effects = new string[4];
+        int hi = 0;
+        foreach (BaseHeros H in StartCombat.Heros)
+        {
+            KindOfEffect effect;
+            StartCombat.Combat.DamageOnTime.TryGetValue(H, out effect);
+            if (effect != null)
+                effects[hi] = effect.DamageType.ToString();
+            else
+                effects[hi] = "null";
+            hi++;
+        }
+        SendDamagesAndPositions(charsOldLife[0] - charsNewLife[0],
+                                charsOldLife[1] - charsNewLife[1],
+                                charsOldLife[2] - charsNewLife[2],
+                                charsOldLife[3] - charsNewLife[3],
+                                herosMovement[0], herosMovement[1], herosMovement[2], herosMovement[3],
+                                effects[0], effects[1], effects[2], effects[3]);
         for (i = 0; i < 4; i++)
         {
             charsNewLife[i] = Camera.main.GetComponent<StartCombat>().herosInBattle[i].HP;
@@ -345,7 +406,7 @@ public class CombatLogic : NetworkBehaviour {
         }
         // Basic check
         if (monsterGoPositionInFight < 4)
-            StartCombat.monstersGO[monsterGoPositionInFight].GetComponent<Animator>().Play(monster.Type+"Attack",0);
+            StartCombat.monstersGO[monsterGoPositionInFight].GetComponent<Animator>().Play(monster.Type + "Attack", 0);
         StartCoroutine(TemporizeMonstersAction(monster, 1.0f, monsterGoPositionInFight, nextChar));
     }
 
@@ -367,7 +428,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.position = new Vector3(StartCombat.monstersGO[i].transform.position.x + i * 65, StartCombat.monstersGO[i].transform.position.y + 10, 0);
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
-                StartCombat.Combat.Monsters[i].HP -= monstersHp[i];
+                StartCombat.Combat.Monsters[i].HP -= Math.Abs(monstersHp[i]);
             }
         }
         string[] monstersEffects = new string[4];
@@ -394,7 +455,7 @@ public class CombatLogic : NetworkBehaviour {
         {
             foreach (var spell in hero.Spells)
             {
-                if(spell.KindOfEffect.DamageType  == damage)
+                if (spell.KindOfEffect.DamageType == damage)
                 {
                     return spell.KindOfEffect;
                 }
@@ -420,7 +481,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.position = new Vector3(StartCombat.monstersGO[i].transform.position.x + i * 65, StartCombat.monstersGO[i].transform.position.y + 10, 0);
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
-                StartCombat.Combat.Monsters[i].HP -= monstersHp[i];
+                StartCombat.Combat.Monsters[i].HP -= Math.Abs(monstersHp[i]);
             }
         }
         string[] monstersEffects = new string[4];
