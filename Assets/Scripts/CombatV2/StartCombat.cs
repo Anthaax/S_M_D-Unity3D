@@ -49,6 +49,12 @@ public class StartCombat : MonoBehaviour {
             
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
             data.name = Combat.Heros[yolo].CharacterName;
+
+            GameObject data2 = Instantiate(Resources.Load<GameObject>("Prefabs/HpHeroBar"), new Vector3(x * 36, 40, 1), Quaternion.identity) as GameObject;
+            data2.GetComponent<HeroHpBarCheck>().Hero = H;
+            data2.GetComponent<HeroHpBarCheck>().heroGo = data;
+            data2.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
+
             herosGo[i] = data;
             herosInBattle[i++] = H;
             HerosIni heroIni = data.GetComponent<HerosIni>();
