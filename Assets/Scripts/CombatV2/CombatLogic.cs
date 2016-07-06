@@ -7,12 +7,22 @@ using UnityEngine.Networking;
 using System;
 using S_M_D.Spell;
 using System.Linq;
+using S_M_D.Character.Monsters;
 
 public class CombatLogic : NetworkBehaviour {
 
     public float timeLeft = 30.0f;
     public bool monstersTurn = false;
     public string playersTurn;
+
+    // Client will get the monsters from the server
+    void Start()
+    {
+        if (!isServer)
+        {
+            Cmd_AskServerMonsters();
+        }
+    }
 
     void Update()
     {
@@ -28,6 +38,54 @@ public class CombatLogic : NetworkBehaviour {
         GameObject.Find("TimerText").GetComponent<Text>().text = timeLeft.ToString();
         if (StartCombat.Combat.GetCharacterTurn() is BaseHeros)
             playersTurn = ((BaseHeros)StartCombat.Combat.GetCharacterTurn()).Owner;
+    }
+
+    [Command]
+    public void Cmd_AskServerMonsters()
+    {
+        string[] monstersType = new string[4];
+        int[] monstersLevel = new int[4];
+        for (int i = 0; i < 4; i++)
+        {
+            monstersType[i] = "null";
+            monstersLevel[i] = 0;
+        }
+        int idx = 0;
+        foreach (BaseMonster M in StartCombat.Combat.Monsters)
+        {
+            monstersType[idx] = M.Type.ToString();
+            monstersLevel[idx++] = M.Lvl;
+        }
+        Rpc_SendClientMonsters(monstersType[0], monstersType[1], monstersType[2], monstersType[3], monstersLevel[0], monstersLevel[1], monstersLevel[2], monstersLevel[3]);
+    }
+
+    [ClientRpc]
+    public void Rpc_SendClientMonsters(string m1type, string m2type, string m3type, string m4type, int m1lvl, int m2lvl, int m3lvl, int m4lvl)
+    {
+        string[] monstersType = new string[4];
+        int[] monstersLevel = new int[4];
+        monstersType[0] = m1type;
+        monstersType[1] = m2type;
+        monstersType[2] = m3type;
+        monstersType[3] = m4type;
+        monstersLevel[0] = m1lvl;
+        monstersLevel[1] = m2lvl;
+        monstersLevel[2] = m3lvl;
+        monstersLevel[3] = m4lvl;
+        MonsterConfiguration mconfig = new MonsterConfiguration();
+        for (int i = 0; i < 4; i++)
+        {
+            MonsterType type = (MonsterType)Enum.Parse(typeof(MonsterType), monstersType[i]);
+            StartCombat.Combat.Monsters[i] = mconfig.CreateMonster(type, monstersLevel[i]); 
+        }
+        StartCombat.Combat.CharacterOrderAttack.Clear();
+        StartCombat.Combat.InitializedOderAttack();
+        Debug.Log("INITIALIZATION MONSTERS");
+        for (int i = 0; i < 4; i++)
+        {
+            Debug.Log("Monster " + i + " type = " + monstersType[i]);
+            StartCombat.monstersGO[i].GetComponent<Animator>().Play(monstersType[i] + "Idle", 0);
+        }
     }
 
     public IEnumerator TemporizeMonstersAction(float waitTimeInSecs, int monsterPos, BaseCharacter nextChar)
