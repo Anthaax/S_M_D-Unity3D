@@ -126,7 +126,15 @@ public class CombatLogic : NetworkBehaviour {
         {
             Object.GetComponent<Animator>().Play(H.CharacterClassName + "Hurt", 0);
             yield return new WaitForSeconds(delay);
-            Object.GetComponent<Animator>().Play(H.CharacterClassName + "Idle", 0);
+            if (H.HP<=0)
+            {
+                Object.GetComponent<Animator>().Play(H.CharacterClassName + "Dead", 0);
+            }
+            else
+            {
+                Object.GetComponent<Animator>().Play(H.CharacterClassName + "Idle", 0);
+            }
+            
         }
         
     }

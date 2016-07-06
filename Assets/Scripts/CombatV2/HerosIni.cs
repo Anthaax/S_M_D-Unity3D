@@ -31,7 +31,6 @@ public class HerosIni : MonoBehaviour {
         Affect.Add("Water", Water);
         Affect.Add("Poison", Poison);
         Affect.Add("Bleeding", Bleeding);
-        _combat.DamageOnTime[heros] = StartCombat.Gtx.PlayerInfo.MyHeros[0].Spells[1].KindOfEffect;
         ShowDamageOnTime();
     }
 	

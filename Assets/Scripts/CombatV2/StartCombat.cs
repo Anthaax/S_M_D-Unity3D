@@ -65,6 +65,8 @@ public class StartCombat : MonoBehaviour {
         monstersInFight = new BaseMonster[4];
         foreach(BaseMonster M in Combat.Monsters)
         {
+            M.EffectivHPMax = 200;
+            M.HP = 200;
             GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
             monsterGO.GetComponent<Animator>().Play(M.Type + "Idle", 0);
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/HpMonsterBar"), new Vector3(y*36, 40, 0), Quaternion.identity) as GameObject;
