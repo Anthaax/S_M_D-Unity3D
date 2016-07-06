@@ -112,6 +112,25 @@ public class CombatLogic : NetworkBehaviour {
         Destroy(text.gameObject);
     }
 
+    public IEnumerator DamageAnim(BaseHeros H, float delay)
+    {
+        GameObject Object = null;
+        foreach (GameObject obj in Camera.main.GetComponent<StartCombat>().herosGo)
+        {
+            if (obj.name == H.CharacterName)
+            {
+                Object = obj;
+            }
+        }
+        if (Object != null)
+        {
+            Object.GetComponent<Animator>().Play(H.CharacterClassName + "Hurt", 0);
+            yield return new WaitForSeconds(delay);
+            Object.GetComponent<Animator>().Play(H.CharacterClassName + "Idle", 0);
+        }
+        
+    }
+
     public static GameObject AddTextToCanvas()
     {
 
@@ -159,6 +178,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.position = new Vector3(heroGo.transform.position.x - i * 65, heroGo.transform.position.y + 10, 0);
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
+                StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
             }
         }
         BaseHeros[] herosFinaux = new BaseHeros[4];
@@ -196,6 +216,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.position = new Vector3(heroGo.transform.position.x - i * 65, heroGo.transform.position.y + 10, 0);
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
+                StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
             }
         }
         BaseHeros[] herosFinaux = new BaseHeros[4];
@@ -277,6 +298,7 @@ public class CombatLogic : NetworkBehaviour {
                 text.transform.position = new Vector3(heroGo.transform.position.x - i * 65, heroGo.transform.position.y + 10, 0);
                 text.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
                 StartCoroutine(SelfDestroyText(text, 2.0f));
+                StartCoroutine(DamageAnim(StartCombat.Heros[i], 2f));
             }
         }
 

@@ -21,7 +21,9 @@ public class SetProfil : MonoBehaviour {
     public void Show()
     {
         string name = gameObject.name;
-        int index = int.Parse("" + name[name.Length - 2]);
+        string help = name.Substring(4);
+        int index = int.Parse("" + help.Remove(help.Length - 1));
+
         Start.MenuProfil.SetActive(false);
 
         if (!HerosExist(index))
@@ -328,6 +330,44 @@ public class SetProfil : MonoBehaviour {
         GameObject.Find("BleedingResT").GetComponent<Text>().text = heros.EffectivBleedingRes.ToString();
         GameObject.Find("WaterResT").GetComponent<Text>().text = heros.EffectivWaterRes.ToString();
         GameObject.Find("AffectResT").GetComponent<Text>().text = heros.EffectivAffectRes.ToString();
+        if (heros.Equipement[0] != null) GameObject.Find("ArmorProfilText").GetComponent<Text>().text = heros.Equipement[0].ItemName;
+        else GameObject.Find("ArmorProfilText").GetComponent<Text>().text = "";
+        if (heros.Equipement[1] != null) GameObject.Find("WeaponProfilText").GetComponent<Text>().text = heros.Equipement[1].ItemName;
+        else GameObject.Find("WeaponProfilText").GetComponent<Text>().text = "";
+        if (heros.Equipement[2] != null) GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = heros.Equipement[2].ItemName;
+        else GameObject.Find("Trinket1ProfilText").GetComponent<Text>().text = "";
+        if (heros.Equipement[3] != null) GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = heros.Equipement[3].ItemName;
+        else GameObject.Find("Trinket2ProfilText").GetComponent<Text>().text = "";
+        if (heros.Equipement[0] != null) GameObject.Find("ArmorProfil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/A_Armor04");
+        else GameObject.Find("ArmorProfil").GetComponent<Image>().sprite = null;
+        if (heros.Equipement[1] != null) GameObject.Find("WeaponProfil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Sword10");
+        else GameObject.Find("WeaponProfil").GetComponent<Image>().sprite = null;
+        if (heros.Equipement[2] != null) GameObject.Find("Trinket1Profil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
+        else GameObject.Find("Trinket1Profil").GetComponent<Image>().sprite = null;
+        if (heros.Equipement[3] != null) GameObject.Find("Trinket2Profil").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Stats/S_Light01");
+        else GameObject.Find("Trinket2Profil").GetComponent<Image>().sprite = null;
+        /*
+        Diarrhea d = new Diarrhea();
+        Fever f = new Fever();
+        heros.GetSickness(d);
+        heros.GetSickness(f);
+        Crazyness c = new Crazyness();
+        heros.GetPsycho(c);
+        */
+        int i = 1;
+        foreach (Sickness p in heros.Sicknesses)
+        {
+            Debug.Log(p.Name);
+            GameObject.Find("Maladie" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Sicknesses/Normal/" + p.Name);
+            i += 1;
+        }
+        i = 1;
+        foreach (Psychology p in heros.Psycho)
+        {
+            Debug.Log(p.Name);
+            GameObject.Find("Sick" + i).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Sicknesses/Mental/" + p.Name);
+            i += 1;
+        }
     }
 
     public static void InitBoardBar()
