@@ -10,8 +10,8 @@ public class MonsterIni : MonoBehaviour {
     public void init(BaseMonster monster)
     {
         _monster = monster;
-        Animator animator = gameObject.GetComponent<Animator>();
-        animator.runtimeAnimatorController = Resources.Load("Animations/CombatV2" + _monster.Type) as RuntimeAnimatorController;
+        Debug.Log("swag");
+        gameObject.GetComponent<Animator>().Play(monster.Type + "Idle", 0);
         started = true;
     }
 
