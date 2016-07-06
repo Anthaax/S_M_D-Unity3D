@@ -29,28 +29,26 @@ public class StartCombat : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-
-        Gtx = GameContext.CreateNewGame();
-        Gtx.DungeonManager.InitializedCatalogue();
-        Map = Gtx.DungeonManager.MapCatalogue.First();
-        Heros = Gtx.PlayerInfo.MyHeros.ToArray();
+        Debug.Log(Heros);
+        Debug.Log(Heros[0]);
+        Debug.Log(Heros[1]);
+        Debug.Log(Heros[2]);
+        Debug.Log(Heros[3]);
         Gtx.DungeonManager.CreateDungeon(Heros, Map);
         Gtx.DungeonManager.LaunchCombat();
         Combat = Gtx.DungeonManager.CbtManager;
-        Combat.Monsters.ToList().ForEach(c =>
-        {
-
-        });
 
         herosGo = new GameObject[4];
         herosInBattle = new BaseHeros[4];
         int x = -2;
         int i = 0;
+        int yolo = 0;
         Htest = Combat.Heros[0];
         foreach(BaseHeros H in Combat.Heros)
         {
-            Debug.Log("Classname = " + H.CharacterClassName);
+            
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/" + H.CharacterClassName), new Vector3(x, 0, 0), Quaternion.identity) as GameObject;
+            data.name = Combat.Heros[yolo].CharacterName;
             herosGo[i] = data;
             herosInBattle[i++] = H;
             HerosIni heroIni = data.GetComponent<HerosIni>();
@@ -58,6 +56,7 @@ public class StartCombat : MonoBehaviour {
             x -= 2;
             //Htest = H;
             Hini = heroIni;
+            yolo++;
         }
         
         int y = 0;
@@ -95,8 +94,9 @@ public class StartCombat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+       
+
+    }
 
     void OnGUI()
     {

@@ -16,10 +16,11 @@ public class PassTurnButton : MonoBehaviour {
 
     public void OnClick()
     {
-        if (Camera.main.GetComponent<CombatLogic>().monstersTurn)
+        if (GameObject.Find("CombatLogic").GetComponent<CombatLogic>().monstersTurn)
             return;
+        GameObject.Find("CombatLogic").GetComponent<CombatLogic>().PassTurnForOtherPlayer();
         BaseCharacter c = StartCombat.Combat.NextTurn();
-        Camera.main.GetComponent<CombatLogic>().timeLeft = 30.0f;
+        GameObject.Find("CombatLogic").GetComponent<CombatLogic>().timeLeft = 30.0f;
         //GameObject.Find("SpellInfo").GetComponent<Text>().text = "";
 
         GameObject[] arrows;
@@ -41,6 +42,6 @@ public class PassTurnButton : MonoBehaviour {
             HerosIni.SetMenu((BaseHeros)c);
         }
         else
-            Camera.main.GetComponent<CombatLogic>().DoMonstersAction((BaseMonster)c);
+            GameObject.Find("CombatLogic").GetComponent<CombatLogic>().DoMonstersAction((BaseMonster)c);
     }
 }

@@ -23,8 +23,8 @@ public class FleeCombatButton : MonoBehaviour {
         }
         Debug.Log("Leaving the fight.");
         SceneManager.LoadScene(2);
-        BoardManager.Map = BaseCombat.Map;
-        BoardManager.Gtx = BaseCombat.Gtx;
-        BoardManager.hero = BaseCombat.Heros;
+        BoardManager.Map = StartCombat.Map;
+        BoardManager.Gtx = StartCombat.Gtx;
+        BoardManager.hero = StartCombat.Heros;
     }
 }

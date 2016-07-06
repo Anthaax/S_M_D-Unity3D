@@ -13,7 +13,7 @@ public class Attacking : MonoBehaviour
 
     public void OnClick()
     {
-        if (BaseCombat.Attack.Spell != null && BaseCombat.Attack.Target >= 0)
+        if (StartCombat.Attack.Spell != null && StartCombat.Attack.Target >= 0)
         {
 
             StartCoroutine( Movement() );
@@ -26,7 +26,7 @@ public class Attacking : MonoBehaviour
 
     void Update()
     {
-        BaseMonster monster = BaseCombat.Combat.GetCharacterTurn() as BaseMonster;
+        BaseMonster monster = StartCombat.Combat.GetCharacterTurn() as BaseMonster;
 
         if (monster != null)
         {
@@ -43,8 +43,8 @@ public class Attacking : MonoBehaviour
     {
         int y = 0;
         int x = 1;
-        BaseHeros H = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
-        foreach (BaseHeros HS in BaseCombat.Combat.Heros)
+        BaseHeros H = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
+        foreach (BaseHeros HS in StartCombat.Combat.Heros)
         {
             if (H == HS)
             {
@@ -55,10 +55,10 @@ public class Attacking : MonoBehaviour
         Animator animator = GameObject.Find( "Heros" + y ).GetComponent<Animator>();
         animator.Play( H.CharacterClassName + "Attack" );     
         yield return new WaitForSeconds( 2 );
-        Debug.Log("Monstre n°" + BaseCombat.Attack.Target);
-        BaseCombat.Combat.SpellManager.HeroLaunchSpell(BaseCombat.Attack.Spell, BaseCombat.Attack.Target);
-        BaseCombat.Combat.NextTurn();
-        BaseCombat.Attack.Target = -1;
+        Debug.Log("Monstre n°" + StartCombat.Attack.Target);
+        StartCombat.Combat.SpellManager.HeroLaunchSpell(StartCombat.Attack.Spell, StartCombat.Attack.Target);
+        StartCombat.Combat.NextTurn();
+        StartCombat.Attack.Target = -1;
         Timer T = GameObject.Find("Timer").GetComponent<Timer>();
         T.timeLeft = 30.0f;
         animator.Play( H.CharacterClassName + "Idle" );
@@ -69,7 +69,7 @@ public class Attacking : MonoBehaviour
     {
         int y = 0;
         int x = 1;
-        foreach (BaseMonster M in BaseCombat.Combat.Monsters)
+        foreach (BaseMonster M in StartCombat.Combat.Monsters)
         {
             if (Monster == M)
             {
@@ -79,9 +79,9 @@ public class Attacking : MonoBehaviour
         }
         Animator animator = GameObject.Find("Monstre" + y).GetComponent<Animator>();
         animator.Play(Monster.Type+"Attack");
-        BaseCombat.Combat.IaMonster.MonsterTurnAndDoNextTurn(Monster);
+        StartCombat.Combat.IaMonster.MonsterTurnAndDoNextTurn(Monster);
         GameObject.Find( "SpellsAttack" ).GetComponent<Text>().text = MonsterAction();
-        BaseCombat.Combat.IaMonster.MosterAction.Clear();
+        StartCombat.Combat.IaMonster.MosterAction.Clear();
 
         yield return new WaitForSeconds( 3 );
         animator.Play(Monster.Type + "Idle");
@@ -101,8 +101,8 @@ public class Attacking : MonoBehaviour
     }
     private string MonsterAction()
     {
-        if (BaseCombat.Combat.IaMonster.MosterAction.Count != 0)
-            return BaseCombat.Combat.IaMonster.MosterAction.Keys.First().Name;
+        if (StartCombat.Combat.IaMonster.MosterAction.Count != 0)
+            return StartCombat.Combat.IaMonster.MosterAction.Keys.First().Name;
         else
             return "Changement de position";
     }

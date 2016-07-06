@@ -11,26 +11,26 @@ public class MoveHero : MonoBehaviour
 {
     void OnCLick()
     {
-        if( BaseCombat.Attack.Target <= 0 && BaseCombat.Attack.Spell == null)
+        if( StartCombat.Attack.Target <= 0 && StartCombat.Attack.Spell == null)
         {
             MoveAction();
-            BaseCombat.Combat.NextTurn();
+            StartCombat.Combat.NextTurn();
         }
         Attacking.AfterAction();
     }
     public void MoveAction()
     {
-        BaseHeros hero = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
-        BaseHeros hero2 = BaseCombat.Combat.Heros[BaseCombat.Attack.Target];
+        BaseHeros hero = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
+        BaseHeros hero2 = StartCombat.Combat.Heros[StartCombat.Attack.Target];
 
-        BaseCombat.Combat.SpellManager.MoveCharacter<BaseHeros>( GetPositionOfTheHero( hero ), BaseCombat.Attack.Target );
+        StartCombat.Combat.SpellManager.MoveCharacter<BaseHeros>( GetPositionOfTheHero( hero ), StartCombat.Attack.Target );
     }
 
     private int GetPositionOfTheHero( BaseHeros hero )
     {
-        for (int i = 0; i < BaseCombat.Combat.Heros.Length; i++)
+        for (int i = 0; i < StartCombat.Combat.Heros.Length; i++)
         {
-            if (hero == BaseCombat.Combat.Heros[i])
+            if (hero == StartCombat.Combat.Heros[i])
                 return i;
         }
         return 0;

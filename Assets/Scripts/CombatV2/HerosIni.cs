@@ -24,8 +24,8 @@ public class HerosIni : MonoBehaviour {
     {
         _heros = heros;
         _combat = StartCombat.Combat;
-        Animator animator = gameObject.GetComponent<Animator>();
-        animator.runtimeAnimatorController = Resources.Load("Animations/CombatV2"+heros.CharacterClassName) as RuntimeAnimatorController;
+        gameObject.GetComponent<Animator>().Play(heros.CharacterClassName+"Idle", 0);
+
         started = true;
         Affect.Add("Fire", Fire);
         Affect.Add("Water", Water);
@@ -55,6 +55,11 @@ public class HerosIni : MonoBehaviour {
             gameObj.GetComponent<Image>().sprite = Resources.Load<Sprite>( "Sprites/Combat/Characters/Spells/" + hero.Spells[i].Name );
             gameObj.name = hero.Spells[i].Name;
             gameObj.GetComponent<SpellInformation>().spell = hero.Spells[i];
+            if (hero.Spells[i].CooldownManager.IsOnCooldown || hero.Spells[i].ManaCost > hero.Mana)
+            {
+                gameObj.GetComponent<Button>().enabled = false;
+                gameObj.GetComponent<Image>().color = Color.grey;
+            }
             count += 0.5f;
 
             if (i == 0 || i == 2)

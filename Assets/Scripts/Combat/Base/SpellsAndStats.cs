@@ -15,7 +15,7 @@ public class SpellsAndStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
+        BaseHeros heros = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
         if (heros !=null)
         {
             for (int i = 1; i < 5; i++)
@@ -57,7 +57,7 @@ public class SpellsAndStats : MonoBehaviour {
         count++;
         int x = 1;
         int y = 1;
-        foreach (BaseMonster M in BaseCombat.Combat.Monsters)
+        foreach (BaseMonster M in StartCombat.Combat.Monsters)
         {
             Animator animator = GameObject.Find("Monstre" + y).GetComponent<Animator>();
             

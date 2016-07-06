@@ -28,7 +28,7 @@ public class SpellsInfos : MonoBehaviour {
 
             }
         }
-        BaseHeros heros = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
+        BaseHeros heros = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
 
         bool[] target = new bool[4];
         string result = gameObject.name.Substring(gameObject.name.Length - 1);
@@ -43,21 +43,21 @@ public class SpellsInfos : MonoBehaviour {
         {
             string arrow = "Arrow"+(i + 1);
             if (target[i] == true)
-                if (!BaseCombat.Combat.Monsters[i].IsDead)
+                if (!StartCombat.Combat.Monsters[i].IsDead)
                     if (GameObject.Find(arrow) != null)
                 GameObject.Find(arrow).GetComponent<Image>().enabled = true;
         }
 
 
-        BaseCombat.Attack.Spell = heros.Spells[R - 1];
+        StartCombat.Attack.Spell = heros.Spells[R - 1];
 
     }
 
     private int Position(BaseHeros hero)
     {
-        for (int i = 0; i < BaseCombat.Combat.Heros.Length; i++)
+        for (int i = 0; i < StartCombat.Combat.Heros.Length; i++)
         {
-            if (hero == BaseCombat.Combat.Heros[i])
+            if (hero == StartCombat.Combat.Heros[i])
                 return i;
         }
         return 0;

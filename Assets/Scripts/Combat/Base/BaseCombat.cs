@@ -43,7 +43,7 @@ public class BaseCombat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        BaseHeros Player = BaseCombat.Combat.GetCharacterTurn() as BaseHeros;
+        BaseHeros Player = StartCombat.Combat.GetCharacterTurn() as BaseHeros;
         Vector3 placement = new Vector3(0, 0, 0);
         if (Player!= null)
         {

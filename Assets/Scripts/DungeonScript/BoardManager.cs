@@ -36,66 +36,28 @@ public class BoardManager : NetworkBehaviour
     public bool isActive { get; set; }
     private bool heroesSent = false;
 
-    //public void Start()
-    //{
-    //    if (!online)
-    //        this.InitBoard();
-    //    else
-    //    {
-    //        if (isServer) // We're a server so we just initialize the map
-    //        {
-    //            Debug.Log("Server initializing map");
-    //            this.InitBoard();
-    //        }
-    //    }
-
-    //    isActive = true;
-
-    //}
-    //public void OnLevelWasLoaded( int i)
-    //{
-    //    if (!online)
-    //        this.InitBoard();
-    //    else
-    //    {
-    //        if (isServer) // We're a server so we just initialize the map
-    //        {
-    //            Debug.Log( "Server initializing map" );
-    //            this.InitBoard();
-    //        }
-    //        else
-    //        {
-
-    //            this.getOtherPlayersHeroes( );
-    //        }
-    //    }
-
-    //    isActive = true;
-    //}
+    private int updates = 0;
     public void Start( )
     {
-        if ( !online )
-            this.InitBoard( );
+        if (AdventureBoard.Online != "Online")
+        {
+            for (int i = 0; i < 4; i++)
+                hero[i].Owner = "p1";
+            this.InitBoard();
+        }
         else
         {
-            if ( isServer ) // We're a server so we just initialize the map
+            if (isServer) // We're a server so we just initialize the map
             {
-                Debug.Log( "Server initializing map" );
-                this.InitBoard( );
+                Debug.Log("Server initializing map");
+                this.InitBoard();
             }
             else
             {
 
-                this.getOtherPlayersHeroes( );
+                this.getOtherPlayersHeroes();
             }
         }
-
-        //SceneManager.LoadScene(3);
-        Network.Disconnect();
-        GameObject.Find("NetworkManager").GetComponent<NetworkMan>().StopServer();
-        BaseCombat.Gtx = Gtx;
-        BaseCombat.Heros = hero;
-        BaseCombat.Map = Map;
 
         isActive = true;
     }
@@ -112,30 +74,60 @@ public class BoardManager : NetworkBehaviour
         }
     }
 
-
     [Command]
-    public void Cmd_ServerCreateOtherPlayersHeroes( string className, string name, int isGuy, int idWeapon1, int idWeapon2, int idWeapon3, int idWeapon4, int level, int heroNb )
+    public void Cmd_ServerCreateOtherPlayersHeroes(string className, string name, int isGuy, int idWeapon1, int idWeapon2, int idWeapon3, int idWeapon4, int level, int heroNb)
     {
-        Debug.Log( "Inside hero creation" );
-        Gtx.PlayerInfo.CreateHeroForMulti( className, name, isGuy, idWeapon1, idWeapon2, idWeapon3, idWeapon4, level );// Method
-        hero[ heroNb - 1 ] = Gtx.PlayerInfo.OnlineDude[ heroNb - 3 ];
+        Debug.Log("Inside hero creation");
+        Gtx.PlayerInfo.CreateHeroForMulti(className, name, isGuy, idWeapon1, idWeapon2, idWeapon3, idWeapon4, level);// Method
+        hero[heroNb - 1] = Gtx.PlayerInfo.OnlineDude[heroNb - 3];
+        if (heroNb == 4)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Debug.Log("Hero " + i + " name = " + hero[i].CharacterName);
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                if (i < 2)
+                    hero[i].Owner = "p1";
+                else
+                    hero[i].Owner = "p2";
+            }
+        }
 
     }
 
     [ClientRpc]
-    public void Rpc_ClientCreateOtherPlayersHeroes( string className, string name, int isGuy, int idWeapon1, int idWeapon2, int idWeapon3, int idWeapon4, int level, int heroNb )
+    public void Rpc_ClientCreateOtherPlayersHeroes(string className, string name, int isGuy, int idWeapon1, int idWeapon2, int idWeapon3, int idWeapon4, int level, int heroNb)
     {
-        Debug.Log( "Inside hero creation" );
-        Gtx.PlayerInfo.CreateHeroForMulti( className, name, isGuy, idWeapon1, idWeapon2, idWeapon3, idWeapon4, level );// Method
-        hero[ heroNb - 1 ] = Gtx.PlayerInfo.OnlineDude[ heroNb - 3 ];
-
+        Debug.Log("Inside hero creation");
+        Gtx.PlayerInfo.CreateHeroForMulti(className, name, isGuy, idWeapon1, idWeapon2, idWeapon3, idWeapon4, level);// Method
+        hero[heroNb - 1] = Gtx.PlayerInfo.OnlineDude[heroNb - 3];
+        if (heroNb == 4)
+        {
+            BaseHeros hero0 = hero[0];
+            BaseHeros hero1 = hero[1];
+            BaseHeros hero2 = hero[2];
+            BaseHeros hero3 = hero[3];
+            hero[2] = hero0;
+            hero[3] = hero1;
+            hero[0] = hero2;
+            hero[1] = hero3;
+            for (int i = 0; i < 4; i++)
+            {
+                if (i < 2)
+                    hero[i].Owner = "p1";
+                else
+                    hero[i].Owner = "p2";
+            }
+        }
     }
 
     [ClientRpc]
     public void Rpc_AskClientToSendHeroes( )
     {
         Debug.Log( "AskClientToSendHeroes" );
-        for ( int i = 0; i < 2; i++ )
+        for (int i = 2; i < 4; i++)
         {
             int equip1Id, equip2Id, equip3Id, equip4Id;
             if ( hero[ i ].Equipement[ 0 ] == null ) equip1Id = 0; else equip1Id = hero[ i ].Equipement[ 0 ].ItemId;
@@ -144,7 +136,7 @@ public class BoardManager : NetworkBehaviour
             if ( hero[ i ].Equipement[ 3 ] == null ) equip4Id = 0; else equip4Id = hero[ i ].Equipement[ 3 ].ItemId;
             int isMale;
             if ( hero[ i ].IsMale ) isMale = 0; else isMale = 1;
-            Cmd_ServerCreateOtherPlayersHeroes( hero[ i ].CharacterClassName, hero[ i ].CharacterName, isMale, equip1Id, equip2Id, equip3Id, equip4Id, hero[ i ].Lvl, 3 + i );
+            Cmd_ServerCreateOtherPlayersHeroes( hero[ i ].CharacterClassName, hero[ i ].CharacterName, isMale, equip1Id, equip2Id, equip3Id, equip4Id, hero[ i ].Lvl, 1 + i );
         }
     }
 
@@ -199,7 +191,7 @@ public class BoardManager : NetworkBehaviour
             pts.Add(new Point(int.Parse(coords[0]), int.Parse(coords[1])));
         }
         MapItem r = Map.Grid[pts[0].Y, pts[0].X];
-        StartCoroutine(moveHero(player, pts, 0.1f, r));
+        StartCoroutine(moveHero(player, pts, 0.1f, r, pts[0].X, pts[0].Y));
     }
     
     [Command]
@@ -355,139 +347,25 @@ public class BoardManager : NetworkBehaviour
         initMisc( );
     }
 
-    //// Update is called once per frame
-    //void Update( )
-    //{
-    //    if ( isServer && NetworkServer.connections.Count != 0 && heroesSent == false )
-    //    {
-    //        Debug.Log( "Inside getOtherPlayersHeroes" );
-    //        this.getOtherPlayersHeroes( );
-    //        heroesSent = true;
-    //    }
-    //    if ( !isActive )
-    //        return;
-    //    if ( !isServer && !mapInitialized )
-    //    {
-    //        Cmd_AskServerForMap( );
-    //        mapInitialized = true;
-    //    }
-
-    //    if ( !isServer )
-    //        return;
-    //    if ( Input.GetMouseButtonDown( 0 ) )
-    //    {
-    //        Ray ray = Camera.main.ScreenPointToRay( Input.mousePosition );
-    //        RaycastHit hit;
-    //        if ( Physics.Raycast( ray, out hit, float.MaxValue ) )
-    //        {
-    //            string cellName = hit.transform.gameObject.name;
-    //            int y = ( int ) hit.transform.gameObject.transform.position.y;
-    //            int x = ( int ) hit.transform.gameObject.transform.position.x;
-    //            MapItem room = Map.Grid[ y, x ];
-    //            Debug.Log( x + " " + y );
-    //            if ( room != null )
-    //            {
-    //                if ( ( Map.isVisited( room ) || Map.isNotVisited( room ) ) )
-    //                {
-    //                    StopAllCoroutines( );
-    //                    List<Point> cellsToDest = Map.leeAlgorithm( Map.HeroPosition, new Point( x, y ) );
-    //                    int i = 0;
-    //                    string s = "";
-    //                    string s2 = "";
-    //                    for ( i = 0; i < cellsToDest.Count; i++ )
-    //                    {
-    //                        s += cellsToDest[ i ].X.ToString( ) + " " + cellsToDest[ i ].Y.ToString( ) + '\n';
-    //                        if ( i < cellsToDest.Count - 1 )
-    //                            s2 += cellsToDest[ i ].X.ToString( ) + " " + cellsToDest[ i ].Y.ToString( ) + '\n'; ;
-    //                    }
-    //                    Debug.Log( s );
-    //                    Rpc_MoveHero( s, "p1" );
-    //                    StartCoroutine( moveHero( "p1", cellsToDest, 0.1f, room ) );
-    //                    if ( player2 != null )
-    //                    {
-    //                        StartCoroutine( moveHero( "p2", cellsToDest, 0.1f, room ) );
-    //                        Rpc_MoveHero( s2, "p2" );
-    //                    }
-    //                }
-    //            }
-
-
-    //        }
-    //        else
-    //            Debug.Log( "No object was clicked" );
-    //    }
-    //    else if ( Input.GetKey( KeyCode.RightArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.X + 1 < Map.Width && Map.Grid[ Map.HeroPosition.Y, Map.HeroPosition.X + 1 ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
-    //            if(player2 != null)
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X + 1, Map.HeroPosition.Y, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }              
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.LeftArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.X - 1 >= 0 && Map.Grid[ Map.HeroPosition.Y, Map.HeroPosition.X - 1 ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X - 1, Map.HeroPosition.Y ), 0.1f , "p1") );
-    //            if(player2 != null)
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X - 1, Map.HeroPosition.Y, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.UpArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.Y + 1 < Map.Height && Map.Grid[ Map.HeroPosition.Y + 1, Map.HeroPosition.X ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), 0.1f, "p1" ) );
-    //            if ( player2 != null )
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y + 1, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-    //        }
-    //    }
-    //    else if ( Input.GetKey( KeyCode.DownArrow ) )
-    //    {
-    //        if ( Map.HeroPosition.Y - 1 >= 0 && Map.Grid[ Map.HeroPosition.Y - 1, Map.HeroPosition.X ] != null )
-    //        {
-    //            Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
-    //            StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), 0.1f, "p1" ) );
-    //            if ( player2 != null )
-    //            {
-    //                StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
-    //                Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y - 1, "p1" );
-    //                Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
-    //            }
-    //        }
-    //    }
-    //}
-
-
     // Update is called once per frame
     void Update( )
     {
         if ( isServer && NetworkServer.connections.Count != 0 && heroesSent == false )
         {
-            Debug.Log( "Inside getOtherPlayersHeroes" );
-            this.getOtherPlayersHeroes( );
-            heroesSent = true;
+            if (updates < 240)
+                updates++;
+            if (updates >= 240)
+                updates = 240;
+            if (updates == 240)
+            {
+                Debug.Log("Inside getOtherPlayersHeroes");
+                this.getOtherPlayersHeroes();
+                heroesSent = true;
+            }
         }
         if ( !isActive )
             return;
-        if ( !isServer && !mapInitialized )
+        if ( !isServer && !mapInitialized && AdventureBoard.Online == "Online" && AdventureBoard.HostState == "Suiveur" )
         {
             Cmd_AskServerForMap( );
             mapInitialized = true;
@@ -523,10 +401,10 @@ public class BoardManager : NetworkBehaviour
                         }
                         Debug.Log( s );
                         Rpc_MoveHero( s, "p1" );
-                        StartCoroutine( moveHero( "p1", cellsToDest, 0.1f, room ) );
+                        StartCoroutine( moveHero( "p1", cellsToDest, 0.1f, room, cellsToDest[0].X, cellsToDest[0].Y) );
                         if ( player2 != null )
                         {
-                            StartCoroutine( moveHero( "p2", cellsToDest, 0.1f, room ) );
+                            StartCoroutine( moveHero( "p2", cellsToDest, 0.1f, room, cellsToDest[0].X, cellsToDest[0].Y));
                             Rpc_MoveHero( s2, "p2" );
                         }
                     }
@@ -543,8 +421,10 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X + 1, Map.HeroPosition.Y ), player1 ) );
                 if ( player2 != null )
                 {
+                    Rpc_ActivateEventOnClient(p.X + 1, p.Y);
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
                     Rpc_MoveHeroToCell( Map.HeroPosition.X + 1, Map.HeroPosition.Y, "p1" );
                     Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
@@ -557,8 +437,10 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X - 1, Map.HeroPosition.Y ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X - 1, Map.HeroPosition.Y ),player1 ) );
                 if ( player2 != null )
                 {
+                    Rpc_ActivateEventOnClient(p.X - 1, p.Y);
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
                     Rpc_MoveHeroToCell( Map.HeroPosition.X - 1, Map.HeroPosition.Y, "p1" );
                     Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
@@ -571,8 +453,10 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X, Map.HeroPosition.Y + 1 ), player1 ) );
                 if ( player2 != null )
                 {
+                    Rpc_ActivateEventOnClient(p.X, p.Y + 1);
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
                     Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y + 1, "p1" );
                     Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
@@ -585,8 +469,10 @@ public class BoardManager : NetworkBehaviour
             {
                 Point p = new Point( Map.HeroPosition.X, Map.HeroPosition.Y );
                 StartCoroutine( moveHeroToCell( new Point( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), 0.1f, "p1" ) );
+                //StartCoroutine( moveHeroByKey( new Vector3( Map.HeroPosition.X, Map.HeroPosition.Y - 1 ), player1 ) );
                 if ( player2 != null )
                 {
+                    Rpc_ActivateEventOnClient(p.X, p.Y - 1);
                     StartCoroutine( moveHeroToCell( new Point( p.X, p.Y ), 0.1f, "p2" ) );
                     Rpc_MoveHeroToCell( Map.HeroPosition.X, Map.HeroPosition.Y - 1, "p1" );
                     Rpc_MoveHeroToCell( p.X, p.Y, "p2" );
@@ -627,22 +513,19 @@ public class BoardManager : NetworkBehaviour
             heroAnimator.SetInteger( "direction", 0 );
         for ( int i = 0; i <= 5; i++ )
         {
-
-            //player1.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, 0f );
-            //Camera.main.transform.position = new Vector3( map.HeroPosition.X + diffX * i, map.HeroPosition.Y + diffY * i, -10f );
-
             float step = 0.2f * Time.deltaTime;
-            playerGo.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, 0f ), new Vector3( heroPos.X + diffX * i, heroPos.Y + diffY * i, 0f ), step );
-            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, -10f ), new Vector3( heroPos.X + diffX * i, heroPos.Y + diffY * i, -10f ), step );
+            playerGo.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, 0f ), new Vector3( dest.X, dest.Y, 0f ), step );
+            Camera.main.transform.position = Vector3.MoveTowards( new Vector3( heroPos.X, heroPos.Y, -10f ), new Vector3( dest.X, dest.Y, -10f ), step );
 
             yield return new WaitForSeconds( waitTime / 10f );
         }
+        playerGo.transform.position = new Vector3( dest.X, dest.Y );
         if ( player == "p1" )
             Map.HeroPosition = dest;
         else
             player2Position = dest;
         yield return new WaitForSeconds( waitTime );
-        discoverRoom( Map.Grid[ dest.Y, dest.X ] );
+        discoverRoom( Map.Grid[ dest.Y, dest.X ], dest.X, dest.Y );
     }
 
     public IEnumerator moveHeroToCell( Point dest, float waitTime )
@@ -672,12 +555,13 @@ public class BoardManager : NetworkBehaviour
 
             yield return new WaitForSeconds( waitTime / 10f );
         }
+        player1.transform.position = new Vector3( dest.X, dest.Y );
         Map.HeroPosition = dest;
         yield return new WaitForSeconds( waitTime );
-        discoverRoom( Map.Grid[ dest.Y, dest.X ] );
+        discoverRoom( Map.Grid[ dest.Y, dest.X ], dest.X, dest.Y );
     }
 
-    IEnumerator moveHero(string player, List<Point> cellsToDest, float waitTime, MapItem room)
+    IEnumerator moveHero(string player, List<Point> cellsToDest, float waitTime, MapItem room, int x, int y)
     {
         Animator anim;
         Point heroPosition;
@@ -724,27 +608,73 @@ public class BoardManager : NetworkBehaviour
         }
         //Camera.main.transform.position = new Vector3(map.HeroPosition.X, map.HeroPosition.Y, -10f);
 
-        discoverRoom(room);
+        discoverRoom(room, x, y);
 
         Debug.Log("inside moveHero");
 
     }
 
-    IEnumerator moveHeroByKey(Vector3 end)
+    IEnumerator moveHeroByKey(Vector3 end, GameObject player)
     {
-        Rigidbody2D rb2D = player1.GetComponent<Rigidbody2D>( );
+        //Rigidbody2D rb2D = player.GetComponent<Rigidbody2D>( );
 
-        float sqrRemainingDistance = ( transform.position - end ).sqrMagnitude; 
-        float moveTime = 0.1f;
-        float inverseMoveTime = 1f / moveTime;
+        //float sqrRemainingDistance = ( transform.position - end ).sqrMagnitude; 
+        //float moveTime = 0.1f;
+        //float inverseMoveTime = 1f / moveTime;
 
-        while ( sqrRemainingDistance > float.Epsilon )
+        //while ( sqrRemainingDistance > float.Epsilon )
+        //{
+        //    Vector3 newPosition = Vector3.MoveTowards( rb2D.position, end, inverseMoveTime * Time.deltaTime );
+        //    rb2D.MovePosition( newPosition );
+        //    sqrRemainingDistance = ( transform.position - end ).sqrMagnitude;
+        //    yield return null;
+        //    break;
+        //}
+        //Camera.main.transform.position = new Vector3( end.x, end.y, -10f );
+        //discoverRoom( Map.Grid[(int)end.y,(int)end.x]);
+        float hSpeed = Input.GetAxis( "Horizontal" );
+        float vSpeed = Input.GetAxis( "Vertical" );
+        float Speed = 8.0f;
+
+        if ( hSpeed > 0 )
         {
-            Vector3 newPosition = Vector3.MoveTowards( rb2D.position, end, inverseMoveTime * Time.deltaTime );
-            rb2D.MovePosition( newPosition );
-            sqrRemainingDistance = ( transform.position - end ).sqrMagnitude;
-            yield return null;
+            transform.localScale = new Vector3( -1, 1, 1 );
+            //m_Animator.Play( "LinkWalkLeft" );
+            //direction = "Left";
+
         }
+
+        else if ( hSpeed < 0 )
+        {
+            transform.localScale = new Vector3( 1, 1, 1 );
+            //m_Animator.Play( "LinkWalkLeft" );
+            //direction = "Left";
+        }
+
+
+        else if ( vSpeed > 0 )
+        {
+            transform.localScale = new Vector3( -1, 1, 1 );
+            //m_Animator.Play( "LinkWalkUp" );
+            //direction = "Up";
+        }
+        else if ( vSpeed < 0 )
+        {
+            transform.localScale = new Vector3( 1, 1, 1 );
+            //m_Animator.Play( "LinkWalkDown" );
+            //direction = "Down";
+        }
+
+        player.GetComponent<Rigidbody2D>( ).velocity = new Vector2( hSpeed * Speed, player.GetComponent<Rigidbody2D>( ).velocity.y );
+        player.GetComponent<Rigidbody2D>( ).velocity = new Vector2( player.GetComponent<Rigidbody2D>( ).velocity.x, vSpeed * Speed );
+
+        yield return null;
+    }
+
+    [ClientRpc]
+    public void Rpc_ActivateEventOnClient(int x, int y)
+    {
+        discoverRoom(Map.Grid[y, x], x, y);
     }
 
     [ClientRpc]
@@ -754,7 +684,7 @@ public class BoardManager : NetworkBehaviour
         StartCoroutine( moveHeroToCell( new Point( x, y ), 0.1f, player ) );
     }
 
-    public void discoverRoom(MapItem room)
+    public void discoverRoom(MapItem room, int x, int y)
     {
         if (Map.isNotVisited(room))
         {
@@ -798,12 +728,13 @@ public class BoardManager : NetworkBehaviour
                 else if (r.events.Contains("Combat"))
                 {
                     r.events.Remove( "Combat" );
-                    BaseCombat.Gtx = Gtx;
-                    BaseCombat.Heros = hero;
-                    BaseCombat.Map = Map;
+                    StartCombat.Gtx = Gtx;
+                    StartCombat.Heros = hero;
+                    StartCombat.Map = Map;
+                    Destroy(GameObject.Find("NetworkManager").gameObject);
+                    //Network.Disconnect();
                     SceneManager.LoadScene( 3 );
-                    Network.Disconnect();
-                    GameObject.Find( "NetworkManager" ).GetComponent<NetworkMan>().StopServer();
+                    //GameObject.Find( "NetworkManager" ).GetComponent<NetworkMan>().StopServer();
                     
                 }
             }
@@ -855,27 +786,5 @@ public class BoardManager : NetworkBehaviour
 
         }
 
-        if ( room is S_M_D.Dungeon.Room && ( ( S_M_D.Dungeon.Room ) room ).events.Contains( "Combat" ) )
-        {
-            //SceneManager.LoadScene( "Combat" );
-        }
-        // setting non visited rooms images (monster or items room)
-        /*
-        for (int i = 0; i < map.NotVisited.Count; i++)
-        {
-            Room r = findRoomById(this.rooms, (int)this.notVisited[i]);
-            switch (r.roomType)
-            {
-                case ROOM_MONSTERS:
-                    this.goArray[r.getCenterY(), r.getCenterX()].GetComponent<SpriteRenderer>().sprite = Resources.Load("Sprites/skeleton", typeof(Sprite)) as Sprite;
-                    Debug.Log("Monster room");
-                    break;
-                case ROOM_ITEMS:
-                    this.goArray[r.getCenterY(), r.getCenterX()].GetComponent<SpriteRenderer>().sprite = Resources.Load("Sprites/Treasure", typeof(Sprite)) as Sprite;
-                    Debug.Log("Item room");
-                    break;
-            }
-        }
-        */
     }
 }

@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour {
         CombatIsOver();
         if (timeLeft <= 0)
         {
-            BaseCombat.Combat.NextTurn();
+            StartCombat.Combat.NextTurn();
             timeLeft = 30.0f;
         }
         GameObject.Find("TimerText").GetComponent<Text>().text = timeLeft.ToString();
@@ -21,13 +21,13 @@ public class Timer : MonoBehaviour {
 
     private void CombatIsOver()
     {
-        if (BaseCombat.Combat.CheckIfTheCombatWasOver())
+        if (StartCombat.Combat.CheckIfTheCombatWasOver())
         {
             SceneManager.LoadScene( 2 );
 
-            BoardManager.Map = BaseCombat.Map;
-            BoardManager.Gtx = BaseCombat.Gtx;
-            BoardManager.hero = BaseCombat.Heros;
+            BoardManager.Map = StartCombat.Map;
+            BoardManager.Gtx = StartCombat.Gtx;
+            BoardManager.hero = StartCombat.Heros;
             BoardManager.Gtx.DungeonManager.CbtManager.ApplyRewward();
         }
     }

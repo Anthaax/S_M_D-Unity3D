@@ -22,7 +22,7 @@ public class ArrowScript : MonoBehaviour {
 
     public void OnClick()
     {
-        if (Camera.main.GetComponent<CombatLogic>().monstersTurn)
+        if (GameObject.Find("CombatLogic").GetComponent<CombatLogic>().monstersTurn)
         {
             Debug.Log("Can't target enemy during enemy's turn.");
             return;

@@ -21,8 +21,8 @@ public class ExitDungeon : MonoBehaviour
             if (currentSel.name == "ExitDungeon")
             {
                 SceneManager.LoadScene(1);
-                BaseCombat.Gtx.DungeonManager.EndOfTheDuengon();
-                Start.Gtx = BaseCombat.Gtx;
+                StartCombat.Gtx.DungeonManager.EndOfTheDuengon();
+                Start.Gtx = StartCombat.Gtx;
                 Array.Clear( SetProfil.HerosAdventure, 0, SetProfil.HerosAdventure.Length );
 
             }
