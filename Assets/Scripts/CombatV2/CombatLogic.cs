@@ -88,6 +88,24 @@ public class CombatLogic : NetworkBehaviour {
         }
     }
 
+    [ClientRpc]
+    public void Rpc_ClientCombatEnd()
+    {
+        SceneManager.LoadScene(2);
+        BoardManager.Map = StartCombat.Map;
+        BoardManager.Gtx = StartCombat.Gtx;
+        BoardManager.hero = StartCombat.Heros;
+    }
+
+    public void CombatEnd()
+    {
+        SceneManager.LoadScene(2);
+        BoardManager.Map = StartCombat.Map;
+        BoardManager.Gtx = StartCombat.Gtx;
+        BoardManager.hero = StartCombat.Heros;
+        Rpc_ClientCombatEnd();
+    }
+
     public IEnumerator TemporizeMonstersAction(BaseMonster M, float waitTimeInSecs, int monsterPos, BaseCharacter nextChar)
     {
 
@@ -97,6 +115,13 @@ public class CombatLogic : NetworkBehaviour {
         if (monsterPos < 4)
             StartCombat.monstersGO[monsterPos].GetComponent<Animator>().Play(M.Type+"Idle",0);
         HerosIni.SwitchHerosGOPositions();
+
+        // Leave the fight
+        if (StartCombat.Combat.CheckIfTheCombatWasOver() && isServer)
+        {
+            CombatEnd();
+        }
+
         if (nextChar is BaseMonster)
             DoMonstersAction((BaseMonster)nextChar);
         else

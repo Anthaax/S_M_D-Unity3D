@@ -71,6 +71,7 @@ public class StartCombat : MonoBehaviour {
             monsterGO.GetComponent<Animator>().Play(M.Type + "Idle", 0);
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/HpMonsterBar"), new Vector3(y*36, 40, 0), Quaternion.identity) as GameObject;
             data.GetComponent<HpBarCheck>().monster = M;
+            data.GetComponent<HpBarCheck>().monsterGO = monsterGO;
             data.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
             monstersGO[idx] = monsterGO;
             monstersInFight[idx] = M;

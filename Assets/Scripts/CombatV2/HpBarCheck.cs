@@ -16,6 +16,7 @@ public class HpBarCheck : MonoBehaviour {
     public GameObject Spell;
     private GameObject obj2;
     private KindOfEffect effect;
+    public GameObject monsterGO;
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class HpBarCheck : MonoBehaviour {
             string dtype = effect2.DamageType.ToString();
             GameObject status;
             Affect.TryGetValue(dtype, out status);
-            obj2 = Instantiate(status, new Vector3(0, 0, 1), Quaternion.identity) as GameObject;
+            obj2 = Instantiate(status, new Vector3(monsterGO.transform.position.x, monsterGO.transform.position.y - 2, 1), Quaternion.identity) as GameObject;
             Debug.Log(status);
             effect = effect2;
 

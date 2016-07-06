@@ -26,5 +26,6 @@ public class FleeCombatButton : MonoBehaviour {
         BoardManager.Map = StartCombat.Map;
         BoardManager.Gtx = StartCombat.Gtx;
         BoardManager.hero = StartCombat.Heros;
+        GameObject.Find("CombatLogic").GetComponent<CombatLogic>().Rpc_ClientCombatEnd();
     }
 }
