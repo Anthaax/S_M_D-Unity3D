@@ -88,14 +88,14 @@ public class CombatLogic : NetworkBehaviour {
         }
     }
 
-    public IEnumerator TemporizeMonstersAction(float waitTimeInSecs, int monsterPos, BaseCharacter nextChar)
+    public IEnumerator TemporizeMonstersAction(BaseMonster M, float waitTimeInSecs, int monsterPos, BaseCharacter nextChar)
     {
 
         yield return new WaitForSeconds(waitTimeInSecs);
         monstersTurn = false;
         // Basic check
         if (monsterPos < 4)
-            StartCombat.monstersGO[monsterPos].GetComponent<Animator>().Play("OrcIdle");
+            StartCombat.monstersGO[monsterPos].GetComponent<Animator>().Play(M.Type+"Idle",0);
         HerosIni.SwitchHerosGOPositions();
         if (nextChar is BaseMonster)
             DoMonstersAction((BaseMonster)nextChar);
@@ -130,6 +130,7 @@ public class CombatLogic : NetworkBehaviour {
         }
         
     }
+ 
 
     public static GameObject AddTextToCanvas()
     {
@@ -311,8 +312,8 @@ public class CombatLogic : NetworkBehaviour {
         }
         // Basic check
         if (monsterGoPositionInFight < 4)
-            StartCombat.monstersGO[monsterGoPositionInFight].GetComponent<Animator>().Play("OrcAttack");
-        StartCoroutine(TemporizeMonstersAction(1.0f, monsterGoPositionInFight, nextChar));
+            StartCombat.monstersGO[monsterGoPositionInFight].GetComponent<Animator>().Play(monster.Type+"Attack",0);
+        StartCoroutine(TemporizeMonstersAction(monster, 1.0f, monsterGoPositionInFight, nextChar));
     }
 
     [Command]

@@ -93,6 +93,7 @@ public class AttackEnemyButton : MonoBehaviour {
                         }
                     }
                     StartCoroutine(SelfDestroyTextHero(text, 2.0f));
+                    StartCoroutine(MonsterHurtAnim(M, 2.0f,i));
                 }
 
                 i++;
@@ -121,5 +122,13 @@ public class AttackEnemyButton : MonoBehaviour {
         prefab.GetComponent<Animator>().Play(hero.CharacterClassName + "Attack", 0);
         yield return new WaitForSeconds(delay);
         prefab.GetComponent<Animator>().Play(hero.CharacterClassName + "Idle", 0);
+    }
+
+    public IEnumerator MonsterHurtAnim(BaseMonster M, float delay,int i)
+    {
+        Debug.Log(M.Type);
+        StartCombat.monstersGO[i].GetComponent<Animator>().Play(M.Type + "Hurt");
+        yield return new WaitForSeconds(delay);
+        StartCombat.monstersGO[i].GetComponent<Animator>().Play(M.Type + "Idle");
     }
 }
