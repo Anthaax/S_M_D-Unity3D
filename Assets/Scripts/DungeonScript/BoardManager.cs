@@ -58,7 +58,10 @@ public class BoardManager : NetworkBehaviour
                 this.getOtherPlayersHeroes();
             }
         }
-
+        if (GameObject.Find("menu") != null)
+        {
+            GameObject.Find("menu").SetActive(false);
+        }
         isActive = true;
     }
     public void getOtherPlayersHeroes( )
@@ -731,7 +734,8 @@ public class BoardManager : NetworkBehaviour
                     StartCombat.Gtx = Gtx;
                     StartCombat.Heros = hero;
                     StartCombat.Map = Map;
-                    Destroy(GameObject.Find("NetworkManager").gameObject);
+                    if (GameObject.Find("NetworkManager") != null)
+                        Destroy(GameObject.Find("NetworkManager").gameObject);
                     //Network.Disconnect();
                     SceneManager.LoadScene( 3 );
                     //GameObject.Find( "NetworkManager" ).GetComponent<NetworkMan>().StopServer();
