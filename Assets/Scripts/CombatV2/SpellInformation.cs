@@ -72,6 +72,8 @@ public class SpellInformation : MonoBehaviour {
                 position++;
         }
         */
+        if (spell.CooldownManager.IsOnCooldown)
+            return;
         cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);
         int id = 0;
         foreach(BaseMonster M in StartCombat.Combat.Monsters)

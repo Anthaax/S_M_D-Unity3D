@@ -16,11 +16,14 @@ public class FleeCombatButton : MonoBehaviour {
 
     public void OnClick()
     {
-        if (Camera.main.GetComponent<CombatLogic>().monstersTurn)
+        if (GameObject.Find("CombatLogic").GetComponent<CombatLogic>().monstersTurn)
         {
             Debug.Log("Can't flee on monster's turn.");
             return;
         }
+
+        if (GameObject.Find("CombatNetworkManager") != null)
+            Destroy(GameObject.Find("CombatNetworkManager").gameObject);
         Debug.Log("Leaving the fight.");
         SceneManager.LoadScene(2);
         BoardManager.Map = StartCombat.Map;
