@@ -139,7 +139,7 @@ public class CombatLogic : NetworkBehaviour
         HerosIni.SwitchHerosGOPositions();
 
         // Leave the fight
-        if (StartCombat.Combat.CheckIfTheCombatWasOver() && isServer)
+        if (StartCombat.Combat.CheckIfTheCombatWasOver())
         {
             CombatEnd();
         }
