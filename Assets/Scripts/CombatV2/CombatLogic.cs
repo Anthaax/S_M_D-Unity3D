@@ -93,6 +93,8 @@ public class CombatLogic : NetworkBehaviour
     [ClientRpc]
     public void Rpc_ClientCombatEnd()
     {
+        if (GameObject.Find("CombatNetworkManager") != null)
+            Destroy(GameObject.Find("CombatNetworkManager").gameObject);
         SceneManager.LoadScene(2);
         BoardManager.Map = StartCombat.Map;
         BoardManager.Gtx = StartCombat.Gtx;
@@ -102,6 +104,8 @@ public class CombatLogic : NetworkBehaviour
     [Command]
     public void Cmd_ServerCombatEnd()
     {
+        if (GameObject.Find("CombatNetworkManager") != null)
+            Destroy(GameObject.Find("CombatNetworkManager").gameObject);
         SceneManager.LoadScene(2);
         BoardManager.Map = StartCombat.Map;
         BoardManager.Gtx = StartCombat.Gtx;
