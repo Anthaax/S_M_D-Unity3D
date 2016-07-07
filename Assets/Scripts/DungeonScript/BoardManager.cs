@@ -225,6 +225,12 @@ public class BoardManager : NetworkBehaviour
         Vector3 hero2Position = new Vector3( Map.HeroPosition.X, Map.HeroPosition.Y, 0.0f );
         if ( Map.HeroPosition.X - 1 >= 0 && Map.Grid[ Map.HeroPosition.Y, Map.HeroPosition.X - 1 ] != null )
             hero2Position = new Vector3( Map.HeroPosition.X - 1, Map.HeroPosition.Y , 0.0f);
+        else if (Map.HeroPosition.X + 1 < Map.Width && Map.Grid[Map.HeroPosition.Y, Map.HeroPosition.X + 1] != null)
+            hero2Position = new Vector3(Map.HeroPosition.X + 1, Map.HeroPosition.Y, 0.0f);
+        else if (Map.HeroPosition.Y - 1  >= 0 && Map.Grid[Map.HeroPosition.Y - 1, Map.HeroPosition.X] != null)
+            hero2Position = new Vector3(Map.HeroPosition.X, Map.HeroPosition.Y - 1, 0.0f);
+        else if (Map.HeroPosition.Y + 1 < Map.Height && Map.Grid[Map.HeroPosition.Y + 1, Map.HeroPosition.X] != null)
+            hero2Position = new Vector3(Map.HeroPosition.X, Map.HeroPosition.Y + 1, 0.0f);
         player2 = Instantiate( playerPrefab[ 1 ], hero2Position, Quaternion.identity ) as GameObject;
         Cmd_SendServerHero2Position(( int ) hero2Position.x, (int)hero2Position.y );
         player2Position = new Point((int)hero2Position.x, (int)hero2Position.y);
