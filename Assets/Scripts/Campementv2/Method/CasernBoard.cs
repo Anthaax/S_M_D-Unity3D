@@ -134,8 +134,9 @@ public class CasernBoard : MonoBehaviour {
                     {
                         hero.Spells[i].IsEquiped = false;
                         CheckEquiped(i, hero.Spells[i]);
-                        /*SpellComparer compare = new SpellComparer();
-                        Array.Sort( hero.Spells, compare );*/
+                        SpellComparer compare = new SpellComparer();
+                        Array.Sort( hero.Spells, compare );
+                        SetBoard();
                     }
                     else
                     {
@@ -143,8 +144,9 @@ public class CasernBoard : MonoBehaviour {
                         {
                             hero.Spells[i].IsEquiped = true;
                             CheckEquiped(i, hero.Spells[i]);
-                            /*SpellComparer compare = new SpellComparer();
-                            Array.Sort( hero.Spells, compare );*/
+                            SpellComparer compare = new SpellComparer();
+                            Array.Sort( hero.Spells, compare );
+                            SetBoard();
                         }
                     }
                 }
