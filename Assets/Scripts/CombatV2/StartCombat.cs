@@ -26,6 +26,8 @@ public class StartCombat : MonoBehaviour {
 
     public GameObject[] herosGo;
     public BaseHeros[] herosInBattle;
+
+    public GameObject[] monstersHpBar;
     // Use this for initialization
     void Awake()
     {
@@ -69,6 +71,7 @@ public class StartCombat : MonoBehaviour {
         int idx = 0;
         monstersGO = new GameObject[4];
         monstersInFight = new BaseMonster[4];
+        monstersHpBar = new GameObject[4];
         foreach(BaseMonster M in Combat.Monsters)
         {
             M.EffectivHPMax = 200;
@@ -76,6 +79,7 @@ public class StartCombat : MonoBehaviour {
             GameObject monsterGO = Instantiate(CharacterM, new Vector3(y, 0, 0), Quaternion.identity) as GameObject;
             monsterGO.GetComponent<Animator>().Play(M.Type + "Idle", 0);
             GameObject data = Instantiate(Resources.Load<GameObject>("Prefabs/HpMonsterBar"), new Vector3(y*36, 40, 0), Quaternion.identity) as GameObject;
+            monstersHpBar[idx] = data;
             data.GetComponent<HpBarCheck>().monster = M;
             data.GetComponent<HpBarCheck>().monsterGO = monsterGO;
             data.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);

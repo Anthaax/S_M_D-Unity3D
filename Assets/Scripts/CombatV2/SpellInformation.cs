@@ -39,6 +39,13 @@ public class SpellInformation : MonoBehaviour {
         if (clogic.playersTurn != ((clogic.isServer) ? "p1" : "p2"))
         {
             Debug.Log("Not your player's turn.");
+            GameObject t = CombatLogic.AddTextToCanvas();
+            t.GetComponent<Text>().text = "Not your player's turn, can't play !";
+            t.GetComponent<Text>().color = Color.red;
+            t.transform.SetParent(GameObject.Find("SuperCanvas").transform, false);
+            t.transform.position = new Vector3(280, 550, 1);
+
+            StartCoroutine(GameObject.Find("CombatLogic").GetComponent<CombatLogic>().SelfDestroyText(t, 2.0f));
             return;
         }
         
@@ -62,16 +69,6 @@ public class SpellInformation : MonoBehaviour {
                 break;
             position++;
         }
-        /*
-        foreach(BaseHeros H in StartCombat.Combat.Heros)
-        {
-            if (H == StartCombat.Combat.GetCharacterTurn())
-            {
-                break;
-            }
-                position++;
-        }
-        */
         if (spell.CooldownManager.IsOnCooldown)
             return;
         cible = StartCombat.Combat.SpellManager.WhoCanBeTargetable(spell, position);

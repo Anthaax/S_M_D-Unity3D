@@ -84,9 +84,10 @@ public class CombatLogic : NetworkBehaviour
         Debug.Log("INITIALIZATION MONSTERS");
         for (int i = 0; i < 4; i++)
         {
-            Debug.Log("Monster " + i + " type = " + monstersType[i]);
             StartCombat.monstersGO[i].GetComponent<Animator>().Play(monstersType[i] + "Idle", 0);
+            Camera.main.GetComponent<StartCombat>().monstersHpBar[i].GetComponent<HpBarCheck>().monster = StartCombat.Combat.Monsters[i];
         }
+
     }
 
     [ClientRpc]
