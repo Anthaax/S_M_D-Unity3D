@@ -784,6 +784,7 @@ public class BoardManager : NetworkBehaviour
             menu.transform.Find( "WaterRes" ).GetComponent<Text>( ).text = r.chest[ 0 ].WaterRes.ToString( );
             menu.transform.Find( "MagicRes" ).GetComponent<Text>( ).text = r.chest[ 0 ].MagicRes.ToString( );
             menu.transform.Find( "FireRes" ).GetComponent<Text>( ).text = r.chest[ 0 ].FireRes.ToString( );
+            Gtx.PlayerInfo.MyItems.Add( r.chest[0] );
 
             isActive = false;
             r.events.Remove( "Chest" );

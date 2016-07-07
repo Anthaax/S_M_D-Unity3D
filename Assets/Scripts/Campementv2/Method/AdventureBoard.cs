@@ -31,9 +31,11 @@ public class AdventureBoard : MonoBehaviour {
 
         HostState = SelectHost;
         Online = SelectMode;
+        if (Port < 25015)
         Port = 25015;
 
-        if(SelectMode == "Offline")
+
+        if (SelectMode == "Offline")
         {
             if (SetProfil.HerosAdventure[0] != null && SetProfil.HerosAdventure[1] != null
             && SetProfil.HerosAdventure[2] != null && SetProfil.HerosAdventure[3] != null)

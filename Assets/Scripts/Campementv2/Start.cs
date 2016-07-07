@@ -6,6 +6,7 @@ using S_M_D;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using S_M_D.Camp.Class;
+using System;
 
 public class Start : MonoBehaviour {
 
@@ -51,6 +52,7 @@ public class Start : MonoBehaviour {
         MenuProfilPlayer = GameObject.Find("ProfilPlayer");
         MenuProfilStuff = GameObject.Find("ProfilStuff");
 
+        Array.Clear( SetProfil.HerosAdventure, 0, SetProfil.HerosAdventure.Length );
         ButtonsBuildings = new List<GameObject>(GameObject.FindGameObjectsWithTag("Building"));
         CasernSpells = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spell"));
         CasernSpells.Sort((t1, t2) => string.Compare(t1.name, t2.name));

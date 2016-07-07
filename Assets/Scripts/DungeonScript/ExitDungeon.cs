@@ -23,7 +23,6 @@ public class ExitDungeon : MonoBehaviour
                 SceneManager.LoadScene(1);
                 StartCombat.Gtx.DungeonManager.EndOfTheDuengon();
                 Start.Gtx = StartCombat.Gtx;
-                Array.Clear( SetProfil.HerosAdventure, 0, SetProfil.HerosAdventure.Length );
 
             }
         }
