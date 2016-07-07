@@ -105,6 +105,10 @@ public class AttackEnemyButton : MonoBehaviour {
             if (M.HP <= 0)
                 M.IsDead = true;
         }
+        if (StartCombat.Combat.CheckIfTheCombatWasOver())
+        {
+            GameObject.Find("CombatLogic").GetComponent<CombatLogic>().CombatEnd();
+        }
         // Checking if combat is over.
 
     }

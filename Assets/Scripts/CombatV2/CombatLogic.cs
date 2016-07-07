@@ -99,13 +99,33 @@ public class CombatLogic : NetworkBehaviour
         BoardManager.hero = StartCombat.Heros;
     }
 
-    public void CombatEnd()
+    [Command]
+    public void Cmd_ServerCombatEnd()
     {
         SceneManager.LoadScene(2);
         BoardManager.Map = StartCombat.Map;
         BoardManager.Gtx = StartCombat.Gtx;
         BoardManager.hero = StartCombat.Heros;
-        Rpc_ClientCombatEnd();
+    }
+
+    public void CombatEnd()
+    {
+        if (!isServer)
+        {
+            Cmd_ServerCombatEnd();
+            SceneManager.LoadScene(2);
+            BoardManager.Map = StartCombat.Map;
+            BoardManager.Gtx = StartCombat.Gtx;
+            BoardManager.hero = StartCombat.Heros;
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
+            BoardManager.Map = StartCombat.Map;
+            BoardManager.Gtx = StartCombat.Gtx;
+            BoardManager.hero = StartCombat.Heros;
+            Rpc_ClientCombatEnd();
+        }
     }
 
     public IEnumerator TemporizeMonstersAction(BaseMonster M, float waitTimeInSecs, int monsterPos, BaseCharacter nextChar)
